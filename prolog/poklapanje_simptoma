@@ -1,0 +1,40 @@
+simptomi(dijabeticka_koma,[prekoma,zamorenost,malaksalost,apatija,povecana_potreba_za_snom,glavobolja,bolovi_listovi,povecana_zedj,gubitak_apetita,muka,povracanje,opstipacja,bolovi_trbuh,
+produbljeno_disanje,miris_aceton,suva_koza,suva_usta,zenice_prosirene,nereaguje_na_svetlost,mlitav_tonus,hiporefleksija,mali_mek_frekventivan_puls,rumeno_lice,gubitak_svesti]).
+
+simptomi(hipoglikemija,[zamorenost,malaksalost,slabost_kolena,glad,prisilne_radnje,depresija,glavobolja,zevanje,drhtavica,izbijanje_znoja,grcevi,lupanje_srca,mioza,midrijaza,bolovi_trbuh_gore,bolovi_trbuh,
+muka,povracanje,dijareja,
+gubitak_svesti,zanesenost,strah,manicka_razdrazljivost,povecan_tonus,babinski_pozitivan,neartikulisan_govor,rumeno_lice,bledo_lice]).
+
+simptomi(akutna_insuficijencija_nadbubreznih_zlezda,[zamorenost,glavobolja,nesvestica,bolovi_misici,povracanje,dijareja,nizak_pritisak,bledo_lice,ubrzan_puls,zenice_ukocene,babinski_pozitivan,
+pigmentacija_otkrivenih_delova_tela]).
+
+simptomi(tireotoksicka_kriza,[postoperaciono_stanje_stitne_zlezde,ubrzan_puls,povracanje,dijareja,povecana_zedj,zanesenost,pomucena_svest,apatija,malaksalost,zamorenost,nesanica,anoreksija,poremecaj_govora]).
+
+simptomi(miksedemska_koma,[bledo_lice,suva_koza,lomljiva_kosa,insuficijantno_disanje,apatija,dezorjentisanost,pomucena_svest,spor_puls]).
+
+simptomi(kolemija,[pospanost,nesanica,pogled_u_daljinu,dezorjentisanost,poremecaj_govora,drhtavica,miris_zemlja,crven_jezik,vlazna_usta,rumeno_lice,zenice_prosirene,ne_reaguje_na_svetlost,nizak_pritisak,ubrzan_puls,napipana_slezina]).
+
+simptomi(sindrom_nedostatka_soli,[suva_usta,suva_koza,povecana_zedj,nesvestica,muka,povracanje,glavobolja,grcenje,bolovi_misici,bolovi_listovi,bolovi_trbuh,halucinacija]).
+simptomi(akutni_difuzni_glomerulonefritis,[povisen_pritisak,bledo_lice,podbulost,edemi]).
+simptomi(akutni_pijelonefritis,[zamorenost,drhtavica,herpes]).
+simptomi(uremija_u_nefrocirozi,[bledo_lice,tamno_prljava_koza,miris_mokrace,produbljeno_disanje,podrhtavanje_misica,pojacani_refleksi,gubitak_apetita,suva_usta,stucanje,povracanje,glavobolja,apatija,povremena_euforija]).
+simptomi(akutna_tubularna_bubrezna_insufijencija,[nizak_pritisak,anurija]).
+
+
+poredi(manje,X,Y) :- X < Y.
+poredi(vise,X,Y) :- X > Y.
+
+temperatura(dijabeticka_koma,36,manje).
+temperatura(miksedemska_koma,35,manje).
+temperatura(akutna_insuficijencija_nadbubreznih_zlezda,36,manje).
+temperatura(tireotoksicka_kriza,40,vise).
+temperatura(kolemija,38,vise).
+temperatura(sindrom_nedostatka_soli,39,vise).
+
+
+poklapanje_simptoma([],Temp,Bolest,N) :- temperatura(Bolest,X,Y),poredi(Y,Temp,X), N=1.
+poklapanje_simptoma([],Temp,Bolest,N) :- temperatura(Bolest,X,Y), \+ poredi(Y,Temp,X), N=0.
+poklapanje_simptoma([],Temp,Bolest,0) :- \+ temperatura(Bolest,X,Y).
+
+poklapanje_simptoma([H|T],Temp,Bolest,N) :- simptomi(Bolest,Ls),member(H,Ls) , poklapanje_simptoma(T,Temp,Bolest,N2), N is N2 + 1.
+poklapanje_simptoma([H|T],Temp,Bolest,N) :- simptomi(Bolest,Ls),\+ member(H,Ls), poklapanje_simptoma(T,Temp,Bolest,N).
