@@ -6,13 +6,32 @@ import java.awt.event.ActionListener;
 
 public class AnamnezaFrame {
     private JPanel anamnezaPanel;
-    private JTextField textField1;
-    private JButton unesiButton;
     private JButton zavrsiButton;
     private JList list1;
-    private JList list2;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JTextField textField4;
+    private JComboBox cbPol;
+    private JComboBox cbRasa;
+    private JTextField tfSimptom;
+    private JButton unesiButton;
+    private JList listSimptom;
+    private JPanel unetiSimPanel;
+    private JButton izbaciButton;
 
     public AnamnezaFrame() {
+
+        cbPol.addItem("Muško");
+        cbPol.addItem("Žensko");
+
+        cbRasa.addItem("Bela");
+        cbRasa.addItem("Crna");
+        cbRasa.addItem("Hispanac");
+        cbRasa.addItem("Druge");
+
+        DefaultListModel dlmSimptomi = new DefaultListModel();
+        listSimptom.setModel(dlmSimptomi);
+
         zavrsiButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -24,6 +43,26 @@ public class AnamnezaFrame {
                 dialog.setSize(800,400);
                 dialog.setModal(true);
                 dialog.setVisible(true);
+            }
+        });
+        unesiButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String simptom = tfSimptom.getText();
+
+                if(simptom.trim().equals(""))
+                    return;
+
+                dlmSimptomi.addElement(simptom);
+
+            }
+        });
+        izbaciButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(listSimptom.getSelectedIndex() != -1)
+                    dlmSimptomi.remove(listSimptom.getSelectedIndex());
             }
         });
     }
