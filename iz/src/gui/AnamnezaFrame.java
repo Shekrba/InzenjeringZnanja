@@ -35,6 +35,29 @@ public class AnamnezaFrame {
         zavrsiButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                if(textField2.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Unesite ime pacijenta.");
+                    return;
+                }
+
+                if(textField3.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Unesite prezime pacijenta.");
+                    return;
+                }
+
+                if(textField4.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Unesite godine pacijenta.");
+                    return;
+                }
+
+                try{
+                    Integer.parseInt(textField4.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Morate uneti broj u polje \"Godine\".");
+                    return;
+                }
+
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
