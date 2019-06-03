@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "emphysema";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node emphysema
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_chest_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node shortness_of_breath
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node chest_tightness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node cough
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node nausea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node ache_all_over
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node back_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node cross_eyed
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node itchy_eyelid
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node excessive_growth
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node emotional_symptoms
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node elbow_cramps_or_spasms
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (emphysema)
+{
+ data = ( 0.018 0.982 );
+}
+
+potential (sharp_chest_pain | emphysema)
+{
+ data = (( 0.89 0.110000014 )
+( 0.245685 0.754315 ));
+}
+
+potential (shortness_of_breath | emphysema)
+{
+ data = (( 0.69 0.31 )
+( 0.15669398 0.843306 ));
+}
+
+potential (chest_tightness | emphysema)
+{
+ data = (( 0.69 0.31 )
+( 0.090353005 0.909647 ));
+}
+
+potential (cough | emphysema)
+{
+ data = (( 0.51 0.49 )
+( 0.07321332 0.92678666 ));
+}
+
+potential (nausea | emphysema)
+{
+ data = (( 0.51 0.49 )
+( 0.21565637 0.7843436 ));
+}
+
+potential (ache_all_over | emphysema)
+{
+ data = (( 0.51 0.49 )
+( 0.0070885033 0.9929115 ));
+}
+
+potential (back_pain | emphysema)
+{
+ data = (( 0.51 0.49 )
+( 0.082216375 0.9177836 ));
+}
+
+potential (cross_eyed | emphysema)
+{
+ data = (( 0.04 0.96 )
+( 0.0 1.0 ));
+}
+
+potential (itchy_eyelid | emphysema)
+{
+ data = (( 0.04 0.96 )
+( 0.0 1.0 ));
+}
+
+potential (excessive_growth | emphysema)
+{
+ data = (( 0.04 0.96 )
+( 0.0 1.0 ));
+}
+
+potential (emotional_symptoms | emphysema)
+{
+ data = (( 0.04 0.96 )
+( 0.0 1.0 ));
+}
+
+potential (elbow_cramps_or_spasms | emphysema)
+{
+ data = (( 0.04 0.96 )
+( 0.0 1.0 ));
+}
+

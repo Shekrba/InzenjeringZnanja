@@ -1,0 +1,137 @@
+net
+{
+     node_size = (0 0);
+     name = "viral_hepatitis";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node viral_hepatitis
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node abusing_alcohol
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node drug_abuse
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node melena
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node stomach_bloating
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node symptoms_of_the_kidneys
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node hand_or_finger_stiffness_or_tightness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node low_self_esteem
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node incontinence_of_stool
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (viral_hepatitis)
+{
+ data = ( 0.048 0.952 );
+}
+
+potential (sharp_abdominal_pain | viral_hepatitis)
+{
+ data = (( 0.26 0.74 )
+( 0.38018903 0.61981094 ));
+}
+
+potential (abusing_alcohol | viral_hepatitis)
+{
+ data = (( 0.13 0.87 )
+( 0.0 1.0 ));
+}
+
+potential (drug_abuse | viral_hepatitis)
+{
+ data = (( 0.13 0.87 )
+( 0.0 1.0 ));
+}
+
+potential (melena | viral_hepatitis)
+{
+ data = (( 0.03 0.97 )
+( 0.0042149997 0.995785 ));
+}
+
+potential (stomach_bloating | viral_hepatitis)
+{
+ data = (( 0.02 0.98 )
+( 0.01677 0.98323 ));
+}
+
+potential (symptoms_of_the_kidneys | viral_hepatitis)
+{
+ data = (( 0.01 0.99 )
+( 7.35E-4 0.999265 ));
+}
+
+potential (hand_or_finger_stiffness_or_tightness | viral_hepatitis)
+{
+ data = (( 0.01 0.99 )
+( 0.0 1.0 ));
+}
+
+potential (low_self_esteem | viral_hepatitis)
+{
+ data = (( 0.01 0.99 )
+( 0.0 1.0 ));
+}
+
+potential (incontinence_of_stool | viral_hepatitis)
+{
+ data = (( 0.01 0.99 )
+( 0.0 1.0 ));
+}
+

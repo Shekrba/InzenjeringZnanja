@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "meningitis";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node meningitis
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node headache
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fever
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node neck_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node ache_all_over
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node back_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node seizures
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node nausea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node low_back_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node cough
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node leg_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node neck_stiffness_or_tightness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (meningitis)
+{
+ data = ( 1.1999999E-6 0.9999988 );
+}
+
+potential (headache | meningitis)
+{
+ data = (( 0.87 0.13 )
+( 0.021138 0.978862 ));
+}
+
+potential (fever | meningitis)
+{
+ data = (( 0.8 0.19999999 )
+( 0.113751 0.886249 ));
+}
+
+potential (vomiting | meningitis)
+{
+ data = (( 0.53 0.47000003 )
+( 0.249966 0.750034 ));
+}
+
+potential (neck_pain | meningitis)
+{
+ data = (( 0.48 0.52 )
+( 0.0 1.0 ));
+}
+
+potential (ache_all_over | meningitis)
+{
+ data = (( 0.42 0.58000004 )
+( 0.016268 0.983732 ));
+}
+
+potential (back_pain | meningitis)
+{
+ data = (( 0.31 0.69 )
+( 0.091396004 0.908604 ));
+}
+
+potential (seizures | meningitis)
+{
+ data = (( 0.31 0.69 )
+( 0.0050025 0.9949975 ));
+}
+
+potential (nausea | meningitis)
+{
+ data = (( 0.31 0.69 )
+( 0.224836 0.775164 ));
+}
+
+potential (low_back_pain | meningitis)
+{
+ data = (( 0.26 0.74 )
+( 0.0 1.0 ));
+}
+
+potential (cough | meningitis)
+{
+ data = (( 0.26 0.74 )
+( 0.082393005 0.917607 ));
+}
+
+potential (leg_pain | meningitis)
+{
+ data = (( 0.26 0.74 )
+( 0.0014715001 0.9985285 ));
+}
+
+potential (neck_stiffness_or_tightness | meningitis)
+{
+ data = (( 0.21 0.79 )
+( 0.0 1.0 ));
+}
+

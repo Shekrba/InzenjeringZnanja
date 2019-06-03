@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "hyponatremia";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node hyponatremia
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node weakness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node nausea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node shortness_of_breath
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node dizziness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_chest_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node headache
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node back_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fever
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fainting
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node seizures
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (hyponatremia)
+{
+ data = ( 0.0172 0.9828 );
+}
+
+potential (weakness | hyponatremia)
+{
+ data = (( 0.55 0.45 )
+( 0.091437995 0.908562 ));
+}
+
+potential (vomiting | hyponatremia)
+{
+ data = (( 0.53 0.47000003 )
+( 0.24085064 0.7591494 ));
+}
+
+potential (nausea | hyponatremia)
+{
+ data = (( 0.48 0.52 )
+( 0.21658038 0.7834196 ));
+}
+
+potential (shortness_of_breath | hyponatremia)
+{
+ data = (( 0.44 0.56 )
+( 0.16154598 0.838454 ));
+}
+
+potential (dizziness | hyponatremia)
+{
+ data = (( 0.44 0.56 )
+( 0.0485115 0.9514885 ));
+}
+
+potential (sharp_abdominal_pain | hyponatremia)
+{
+ data = (( 0.38 0.62 )
+( 0.386133 0.61386704 ));
+}
+
+potential (sharp_chest_pain | hyponatremia)
+{
+ data = (( 0.33 0.66999996 )
+( 0.25602898 0.743971 ));
+}
+
+potential (headache | hyponatremia)
+{
+ data = (( 0.33 0.66999996 )
+( 0.015463042 0.98453695 ));
+}
+
+potential (back_pain | hyponatremia)
+{
+ data = (( 0.28 0.72 )
+( 0.08658037 0.9134196 ));
+}
+
+potential (fever | hyponatremia)
+{
+ data = (( 0.28 0.72 )
+( 0.10893596 0.89106405 ));
+}
+
+potential (fainting | hyponatremia)
+{
+ data = (( 0.25 0.75 )
+( 0.0 1.0 ));
+}
+
+potential (seizures | hyponatremia)
+{
+ data = (( 0.23 0.77 )
+( 0.0010468719 0.9989531 ));
+}
+

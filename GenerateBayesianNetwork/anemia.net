@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "anemia";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node anemia
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fatigue
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node weakness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node dizziness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node shortness_of_breath
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node nosebleed
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node heavy_menstrual_flow
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node melena
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node unpredictable_menstruation
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting_blood
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node changes_in_stool_appearance
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node recent_pregnancy
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node too_little_hair
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (anemia)
+{
+ data = ( 0.1 0.9 );
+}
+
+potential (fatigue | anemia)
+{
+ data = (( 0.32 0.68 )
+( 0.07606301 0.92393696 ));
+}
+
+potential (weakness | anemia)
+{
+ data = (( 0.28 0.72 )
+( 0.07289799 0.927102 ));
+}
+
+potential (dizziness | anemia)
+{
+ data = (( 0.27 0.73 )
+( 0.0290795 0.9709205 ));
+}
+
+potential (shortness_of_breath | anemia)
+{
+ data = (( 0.26 0.74 )
+( 0.14311399 0.856886 ));
+}
+
+potential (nosebleed | anemia)
+{
+ data = (( 0.08 0.92 )
+( 1.7000001E-4 0.99983 ));
+}
+
+potential (heavy_menstrual_flow | anemia)
+{
+ data = (( 0.08 0.92 )
+( 0.0 1.0 ));
+}
+
+potential (melena | anemia)
+{
+ data = (( 0.04 0.96 )
+( 0.0016550001 0.998345 ));
+}
+
+potential (unpredictable_menstruation | anemia)
+{
+ data = (( 0.03 0.97 )
+( 0.0 1.0 ));
+}
+
+potential (vomiting_blood | anemia)
+{
+ data = (( 0.03 0.97 )
+( 0.009135 0.990865 ));
+}
+
+potential (changes_in_stool_appearance | anemia)
+{
+ data = (( 0.02 0.98 )
+( 0.015 0.985 ));
+}
+
+potential (recent_pregnancy | anemia)
+{
+ data = (( 0.02 0.98 )
+( 0.0084 0.9916 ));
+}
+
+potential (too_little_hair | anemia)
+{
+ data = (( 0.02 0.98 )
+( 0.0 1.0 ));
+}
+
