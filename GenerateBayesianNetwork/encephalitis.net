@@ -1,0 +1,163 @@
+net
+{
+     node_size = (0 0);
+     name = "encephalitis";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node encephalitis
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node headache
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node loss_of_sensation
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node seizures
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node dizziness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node leg_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fatigue
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node disturbance_of_memory
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node problems_with_movement
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node paresthesia
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node joint_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node leg_weakness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (encephalitis)
+{
+ data = ( 5.0E-5 0.99995 );
+}
+
+potential (headache | encephalitis)
+{
+ data = (( 0.62 0.38 )
+( 0.021108042 0.97889197 ));
+}
+
+potential (loss_of_sensation | encephalitis)
+{
+ data = (( 0.53 0.47000003 )
+( 8.2599994E-4 0.999174 ));
+}
+
+potential (seizures | encephalitis)
+{
+ data = (( 0.53 0.47000003 )
+( 0.0049763722 0.9950236 ));
+}
+
+potential (dizziness | encephalitis)
+{
+ data = (( 0.39 0.61 )
+( 0.05606 0.94394 ));
+}
+
+potential (leg_pain | encephalitis)
+{
+ data = (( 0.39 0.61 )
+( 0.0014523121 0.9985477 ));
+}
+
+potential (fatigue | encephalitis)
+{
+ data = (( 0.3 0.7 )
+( 0.10804801 0.891952 ));
+}
+
+potential (disturbance_of_memory | encephalitis)
+{
+ data = (( 0.3 0.7 )
+( 0.0040849997 0.995915 ));
+}
+
+potential (problems_with_movement | encephalitis)
+{
+ data = (( 0.18 0.82 )
+( 0.004303 0.995697 ));
+}
+
+potential (paresthesia | encephalitis)
+{
+ data = (( 0.18 0.82 )
+( 0.001708 0.998292 ));
+}
+
+potential (joint_pain | encephalitis)
+{
+ data = (( 0.18 0.82 )
+( 0.0 1.0 ));
+}
+
+potential (leg_weakness | encephalitis)
+{
+ data = (( 0.18 0.82 )
+( 5.25E-4 0.999475 ));
+}
+

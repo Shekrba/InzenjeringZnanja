@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "cirrhosis";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node cirrhosis
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node shortness_of_breath
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node peripheral_edema
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fatigue
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node upper_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node abdominal_distention
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node stomach_bloating
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node blood_in_stool
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node regurgitation
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node symptoms_of_the_kidneys
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting_blood
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node melena
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (cirrhosis)
+{
+ data = ( 0.0027 0.9973 );
+}
+
+potential (sharp_abdominal_pain | cirrhosis)
+{
+ data = (( 0.39 0.61 )
+( 0.391616 0.608384 ));
+}
+
+potential (shortness_of_breath | cirrhosis)
+{
+ data = (( 0.3 0.7 )
+( 0.16830398 0.83169603 ));
+}
+
+potential (peripheral_edema | cirrhosis)
+{
+ data = (( 0.24 0.76 )
+( 0.008950001 0.99105 ));
+}
+
+potential (fatigue | cirrhosis)
+{
+ data = (( 0.2 0.8 )
+( 0.107523 0.892477 ));
+}
+
+potential (upper_abdominal_pain | cirrhosis)
+{
+ data = (( 0.2 0.8 )
+( 0.049999997 0.95 ));
+}
+
+potential (abdominal_distention | cirrhosis)
+{
+ data = (( 0.16 0.84000003 )
+( 0.0 1.0 ));
+}
+
+potential (stomach_bloating | cirrhosis)
+{
+ data = (( 0.1 0.9 )
+( 0.01746 0.98254 ));
+}
+
+potential (blood_in_stool | cirrhosis)
+{
+ data = (( 0.1 0.9 )
+( 0.0255 0.9745 ));
+}
+
+potential (regurgitation | cirrhosis)
+{
+ data = (( 0.08 0.92 )
+( 0.037449997 0.96255 ));
+}
+
+potential (symptoms_of_the_kidneys | cirrhosis)
+{
+ data = (( 0.05 0.95 )
+( 0.00108 0.99892 ));
+}
+
+potential (vomiting_blood | cirrhosis)
+{
+ data = (( 0.05 0.95 )
+( 0.012 0.988 ));
+}
+
+potential (melena | cirrhosis)
+{
+ data = (( 0.05 0.95 )
+( 0.00552 0.99448 ));
+}
+

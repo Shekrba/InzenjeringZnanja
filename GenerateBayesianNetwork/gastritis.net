@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "gastritis";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node gastritis
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node nausea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node burning_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_chest_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node upper_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node diarrhea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fever
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node headache
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node heartburn
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting_blood
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node regurgitation
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (gastritis)
+{
+ data = ( 0.045 0.955 );
+}
+
+potential (sharp_abdominal_pain | gastritis)
+{
+ data = (( 0.82 0.18 )
+( 0.355769 0.64423096 ));
+}
+
+potential (vomiting | gastritis)
+{
+ data = (( 0.75 0.25 )
+( 0.21621664 0.7837834 ));
+}
+
+potential (nausea | gastritis)
+{
+ data = (( 0.65 0.35000002 )
+( 0.19558638 0.8044136 ));
+}
+
+potential (burning_abdominal_pain | gastritis)
+{
+ data = (( 0.55 0.45 )
+( 0.0975 0.90250003 ));
+}
+
+potential (sharp_chest_pain | gastritis)
+{
+ data = (( 0.41 0.59000003 )
+( 0.24325499 0.756745 ));
+}
+
+potential (upper_abdominal_pain | gastritis)
+{
+ data = (( 0.4 0.6 )
+( 0.032539997 0.96746 ));
+}
+
+potential (diarrhea | gastritis)
+{
+ data = (( 0.4 0.6 )
+( 0.0092279995 0.990772 ));
+}
+
+potential (fever | gastritis)
+{
+ data = (( 0.27 0.73 )
+( 0.10160196 0.89839804 ));
+}
+
+potential (headache | gastritis)
+{
+ data = (( 0.24 0.76 )
+( 0.010339043 0.989661 ));
+}
+
+potential (heartburn | gastritis)
+{
+ data = (( 0.24 0.76 )
+( 0.08922 0.91078 ));
+}
+
+potential (vomiting_blood | gastritis)
+{
+ data = (( 0.2 0.8 )
+( 0.003135 0.996865 ));
+}
+
+potential (regurgitation | gastritis)
+{
+ data = (( 0.15 0.85 )
+( 0.030915998 0.969084 ));
+}
+

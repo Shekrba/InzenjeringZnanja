@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "celiac_disease";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node celiac_disease
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node diarrhea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node regurgitation
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fatigue
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node nausea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node allergic_reaction
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_chest_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fears_and_phobias
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node peripheral_edema
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node leg_lump_or_mass
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node constipation
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (celiac_disease)
+{
+ data = ( 0.01 0.99 );
+}
+
+potential (sharp_abdominal_pain | celiac_disease)
+{
+ data = (( 0.52 0.48000002 )
+( 0.38746902 0.61253095 ));
+}
+
+potential (diarrhea | celiac_disease)
+{
+ data = (( 0.52 0.48000002 )
+( 0.022028001 0.977972 ));
+}
+
+potential (regurgitation | celiac_disease)
+{
+ data = (( 0.47 0.53 )
+( 0.032966 0.967034 ));
+}
+
+potential (fatigue | celiac_disease)
+{
+ data = (( 0.41 0.59000003 )
+( 0.103963 0.896037 ));
+}
+
+potential (vomiting | celiac_disease)
+{
+ data = (( 0.41 0.59000003 )
+( 0.24586664 0.75413334 ));
+}
+
+potential (nausea | celiac_disease)
+{
+ data = (( 0.34 0.65999997 )
+( 0.22143638 0.7785636 ));
+}
+
+potential (allergic_reaction | celiac_disease)
+{
+ data = (( 0.25 0.75 )
+( 0.0 1.0 ));
+}
+
+potential (sharp_chest_pain | celiac_disease)
+{
+ data = (( 0.25 0.75 )
+( 0.25920498 0.740795 ));
+}
+
+potential (fears_and_phobias | celiac_disease)
+{
+ data = (( 0.15 0.85 )
+( 3.5999998E-5 0.999964 ));
+}
+
+potential (peripheral_edema | celiac_disease)
+{
+ data = (( 0.15 0.85 )
+( 0.008098001 0.991902 ));
+}
+
+potential (leg_lump_or_mass | celiac_disease)
+{
+ data = (( 0.15 0.85 )
+( 0.0 1.0 ));
+}
+
+potential (constipation | celiac_disease)
+{
+ data = (( 0.15 0.85 )
+( 0.1305 0.8695 ));
+}
+

@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "parkinson_disease";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node parkinson_disease
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node abnormal_involuntary_movements
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node problems_with_movement
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node disturbance_of_memory
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node dizziness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node weakness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node stiffness_all_over
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node leg_weakness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node focal_weakness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node muscle_stiffness_or_tightness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node difficulty_speaking
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node leg_stiffness_or_tightness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fears_and_phobias
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (parkinson_disease)
+{
+ data = ( 0.0011999999 0.9988 );
+}
+
+potential (abnormal_involuntary_movements | parkinson_disease)
+{
+ data = (( 0.64 0.36 )
+( 0.002016 0.997984 ));
+}
+
+potential (problems_with_movement | parkinson_disease)
+{
+ data = (( 0.41 0.59000003 )
+( 0.00382 0.99618 ));
+}
+
+potential (disturbance_of_memory | parkinson_disease)
+{
+ data = (( 0.28 0.72 )
+( 0.0037639998 0.996236 ));
+}
+
+potential (dizziness | parkinson_disease)
+{
+ data = (( 0.25 0.75 )
+( 0.055779498 0.9442205 ));
+}
+
+potential (weakness | parkinson_disease)
+{
+ data = (( 0.22 0.78 )
+( 0.100634 0.899366 ));
+}
+
+potential (stiffness_all_over | parkinson_disease)
+{
+ data = (( 0.07 0.93 )
+( 3.8399998E-4 0.999616 ));
+}
+
+potential (leg_weakness | parkinson_disease)
+{
+ data = (( 0.07 0.93 )
+( 4.5E-4 0.99955 ));
+}
+
+potential (focal_weakness | parkinson_disease)
+{
+ data = (( 0.05 0.95 )
+( 0.0014830001 0.998517 ));
+}
+
+potential (muscle_stiffness_or_tightness | parkinson_disease)
+{
+ data = (( 0.05 0.95 )
+( 0.0 1.0 ));
+}
+
+potential (difficulty_speaking | parkinson_disease)
+{
+ data = (( 0.04 0.96 )
+( 9.1E-4 0.99909 ));
+}
+
+potential (leg_stiffness_or_tightness | parkinson_disease)
+{
+ data = (( 0.03 0.97 )
+( 3.5999998E-5 0.999964 ));
+}
+
+potential (fears_and_phobias | parkinson_disease)
+{
+ data = (( 0.03 0.97 )
+( 0.0015 0.9985 ));
+}
+
