@@ -1,9 +1,14 @@
 package gui;
 
+import model.Bolest;
+import util.DiagnosisUtil;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ZavrsiAmnezuFrame {
     private JPanel zavrsiAmnezuPanel;
@@ -31,11 +36,33 @@ public class ZavrsiAmnezuFrame {
 
     public ZavrsiAmnezuFrame() {
 
-        numberOfSym.addItem("2");
-        numberOfSym.addItem("1");
+        ArrayList<Bolest> bolesti = MainFrame.getBolesti();
+
+        ArrayList<Integer> poklapanja = new ArrayList<>();
+        for (Bolest b: bolesti) {
+            if(!poklapanja.contains(b.getPoklapanje())) {
+                poklapanja.add(b.getPoklapanje());
+            }
+        }
+
+        Collections.sort(poklapanja);
+        Collections.reverse(poklapanja);
+
+        for (Integer p: poklapanja) {
+            numberOfSym.addItem(p+"");
+        }
 
         ArrayList<String> diseases = new ArrayList<String>();
         ArrayList<Integer> percents = new ArrayList<Integer>();
+
+        for (Bolest b: bolesti) {
+            if(b.getPoklapanje() == poklapanja.get(0)){
+                diseases.add(b.getNaziv());
+                percents.add(b.getProcenat());
+            }
+        }
+
+        sortDiseases(diseases,percents);
 
         ArrayList<JLabel> bolestLab= new ArrayList<>();
         bolestLab.add(lab1);
@@ -61,14 +88,6 @@ public class ZavrsiAmnezuFrame {
         bolestBut.add(but5);
         bolestBut.add(but6);
 
-        diseases.add("Acute respiratory distress syndrome");
-        percents.add(50);
-
-        diseases.add("Ischemic heart disease");
-        percents.add(68);
-
-        sortDiseases(diseases,percents);
-
         for (int i = 0; i < diseases.size(); i++){
 
             bolestLab.get(i).setText(diseases.get(i));
@@ -79,6 +98,9 @@ public class ZavrsiAmnezuFrame {
             bolestProg.get(i).setStringPainted(true);
 
             bolestBut.get(i).setVisible(true);
+
+            if(i==5)
+                break;
         }
 
         zatvoriButton.addActionListener(new ActionListener() {
@@ -90,13 +112,49 @@ public class ZavrsiAmnezuFrame {
         numberOfSym.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                bolestProg.get(0).setValue(10);
+                int selected = Integer.parseInt(String.valueOf(numberOfSym.getSelectedItem()));
+
+                for(int i = 0; i<=5; i++){
+                    bolestBut.get(i).setVisible(false);
+                    bolestLab.get(i).setVisible(false);
+                    bolestProg.get(i).setVisible(false);
+                }
+
+                diseasePanel.repaint();
+                diseasePanel.revalidate();
+
+                diseases.clear();
+                percents.clear();
+
+                for (Bolest b: bolesti) {
+                    if(b.getPoklapanje() == selected){
+                        diseases.add(b.getNaziv());
+                        percents.add(b.getProcenat());
+                    }
+                }
+
+                sortDiseases(diseases,percents);
+
+                for (int i = 0; i < diseases.size(); i++){
+
+                    bolestLab.get(i).setText(diseases.get(i));
+                    bolestLab.get(i).setVisible(true);
+
+                    bolestProg.get(i).setValue(percents.get(i));
+                    bolestProg.get(i).setVisible(true);
+                    bolestProg.get(i).setStringPainted(true);
+
+                    bolestBut.get(i).setVisible(true);
+
+                    if(i==5)
+                        break;
+                }
             }
         });
         but1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+
                 JOptionPane.showMessageDialog(null,"Sharp chest pain");
             }
         });

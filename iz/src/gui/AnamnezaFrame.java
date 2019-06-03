@@ -1,6 +1,7 @@
 package gui;
 
 
+import model.Bolest;
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
 import util.DiagnosisUtil;
 
@@ -77,7 +78,7 @@ public class AnamnezaFrame {
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
                     sms.add(dlmSimptomi.get(i).toString());
                 }
-                DiagnosisUtil.findDiagnosis(sms,12,"male");
+                MainFrame.setBolesti(DiagnosisUtil.findDiagnosis(sms,12,"male"));
 
                 dialog.setTitle("Anamnesis");
                 dialog.setContentPane(new ZavrsiAmnezuFrame().getZavrsiAmnezuPanel());

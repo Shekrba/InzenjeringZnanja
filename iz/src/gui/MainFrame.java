@@ -3,11 +3,13 @@ package gui;
 import de.javasoft.synthetica.aluoxide.SyntheticaAluOxideLookAndFeel;
 import de.javasoft.synthetica.dark.SyntheticaDarkLookAndFeel;
 import de.javasoft.synthetica.plain.SyntheticaPlainLookAndFeel;
+import model.Bolest;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class MainFrame {
 
@@ -17,6 +19,7 @@ public class MainFrame {
     private JButton ANAMNEZAButton;
     private static JFrame frame;
     private static JDialog dialog;
+    private static ArrayList<Bolest> bolesti;
 
     public MainFrame() {
         ANAMNEZAButton.addActionListener(new ActionListener() {
@@ -100,5 +103,13 @@ public class MainFrame {
 
     public static void setDialog(JDialog dialog) {
         MainFrame.dialog = dialog;
+    }
+
+    public static ArrayList<Bolest> getBolesti() {
+        return bolesti;
+    }
+
+    public static void setBolesti(ArrayList<Bolest> bolesti) {
+        MainFrame.bolesti = bolesti;
     }
 }
