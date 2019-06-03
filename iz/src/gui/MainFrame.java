@@ -23,10 +23,11 @@ public class MainFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dialog = new JDialog();
-                dialog.setTitle("Anamneza");
+                dialog.setTitle("Anamnesis");
                 dialog.setContentPane(new AnamnezaFrame().getAnamnezaPanel());
                 dialog.setSize(800,600);
                 dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);
             }
         });
@@ -38,7 +39,6 @@ public class MainFrame {
         {
             UIManager.setLookAndFeel(new SyntheticaDarkLookAndFeel());
             EventQueue.invokeLater(() -> new MainFrame());
-
         }
         catch (Exception e)
         {
@@ -50,6 +50,7 @@ public class MainFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setSize(800,600);
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 
