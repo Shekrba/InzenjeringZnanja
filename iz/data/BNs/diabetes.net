@@ -1,0 +1,59 @@
+net
+{
+     node_size = (0 0);
+     name = "diabetes";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node diabetes
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node weight_gain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node thirst
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node symptoms_of_the_kidneys
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (diabetes)
+{
+ data = ( 0.06 0.94 );
+}
+
+potential (weight_gain | diabetes)
+{
+ data = (( 0.07 0.93 )
+( 3.8000004E-4 0.99962 ));
+}
+
+potential (thirst | diabetes)
+{
+ data = (( 0.02 0.98 )
+( 0.0 1.0 ));
+}
+
+potential (symptoms_of_the_kidneys | diabetes)
+{
+ data = (( 0.01 0.99 )
+( 6.15E-4 0.999385 ));
+}
+

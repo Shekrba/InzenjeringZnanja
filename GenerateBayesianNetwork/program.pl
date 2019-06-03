@@ -1,3 +1,7 @@
+poklapanje_simptoma([],Bolest,0,[]).
+poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),member(H,Ls) , poklapanje_simptoma(T,Bolest,N2,L1), N is N2 + 1, append([H],L1,L).
+poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),\+ member(H,Ls), poklapanje_simptoma(T,Bolest,N,L).
+
 simptomi(acute_respiratory_distress_syndrome,[shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
 
 uzmi(bolest,acute_respiratory_distress_syndrome).

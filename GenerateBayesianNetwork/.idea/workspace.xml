@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a5a570b-f08b-4de9-b78c-ae6b1aaa9dff" name="Default Changelist" comment="" />
+    <list default="true" id="1a5a570b-f08b-4de9-b78c-ae6b1aaa9dff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/.idea/iz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/acute_respiratory_distress_syndrome.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/anemia.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/bell_palsy.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/bronchiectasis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/cardiomyopathy.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/celiac_disease.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/cerebral_palsy.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/chronic_constipation.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/cirrhosis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/coagulation_bleeding_disorder.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/dementia.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/diabetes.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/emphysema.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/encephalitis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/gastritis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/gastroesophageal_reflux_disease_gerd.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/hyperlipidemia.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/hypertensive_heart_disease.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/hyponatremia.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/ischemic_heart_disease.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/meningitis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/multiple_sclerosis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/myocarditis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/parkinson_disease.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/polymyalgia_rheumatica.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/urinary_tract_infection.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/BNs/viral_hepatitis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/data/program.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/jar/jiprolog-4.1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/jar/unbbayes-4.22.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../iz/src/util/DiagnosisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/program.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/ZavrsiAmnezuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/ZavrsiAmnezuFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/gui/AnamnezaFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/AnamnezaFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/gui/AnamnezaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/AnamnezaFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/model/Bolest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/model/Bolest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,10 +78,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/example/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
+            <state relative-caret-position="-1538">
               <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -41,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program.pl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8412">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="21">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -65,6 +114,9 @@
       <replace>bolest</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -79,6 +131,7 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -88,22 +141,24 @@
         <subPane>
           <expand>
             <path>
-              <item name="BayesExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BayesExample" type="462c0819:PsiDirectoryNode" />
+              <item name="GenerateBayesianNetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GenerateBayesianNetwork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BayesExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BayesExample" type="462c0819:PsiDirectoryNode" />
+              <item name="GenerateBayesianNetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GenerateBayesianNetwork" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BayesExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BayesExample" type="462c0819:PsiDirectoryNode" />
+              <item name="GenerateBayesianNetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GenerateBayesianNetwork" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BayesExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GenerateBayesianNetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GenerateBayesianNetwork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -114,6 +169,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -176,16 +232,19 @@
       <workItem from="1559339833720" duration="3838000" />
       <workItem from="1559499775754" duration="9279000" />
       <workItem from="1559585511810" duration="1662000" />
+      <workItem from="1559593005410" duration="274000" />
+      <workItem from="1559594449989" duration="618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15396000" />
+    <option name="totallyTimeSpent" value="16288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2591146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -220,20 +279,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/program.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/example/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
+        <state relative-caret-position="-1538">
           <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program.pl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8412">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

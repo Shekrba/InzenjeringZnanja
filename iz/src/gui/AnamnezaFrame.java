@@ -2,11 +2,13 @@ package gui;
 
 
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
+import util.DiagnosisUtil;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class AnamnezaFrame {
     private JPanel anamnezaPanel;
@@ -70,6 +72,12 @@ public class AnamnezaFrame {
 
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
+
+                ArrayList<String> sms=new ArrayList<String>();
+                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
+                    sms.add(dlmSimptomi.get(i).toString());
+                }
+                DiagnosisUtil.findDiagnosis(sms,12,"male");
 
                 dialog.setTitle("Anamnesis");
                 dialog.setContentPane(new ZavrsiAmnezuFrame().getZavrsiAmnezuPanel());

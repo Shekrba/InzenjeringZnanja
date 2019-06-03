@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "gastroesophageal_reflux_disease_gerd";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node gastroesophageal_reflux_disease_gerd
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_chest_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node heartburn
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node cough
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node nausea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node burning_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node upper_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node difficulty_in_swallowing
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node regurgitation
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node chest_tightness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node hoarse_voice
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (gastroesophageal_reflux_disease_gerd)
+{
+ data = ( 0.2 0.8 );
+}
+
+potential (sharp_chest_pain | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.44 0.56 )
+( 0.173705 0.826295 ));
+}
+
+potential (sharp_abdominal_pain | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.43 0.57 )
+( 0.30666903 0.693331 ));
+}
+
+potential (vomiting | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.33 0.66999996 )
+( 0.18396662 0.81603336 ));
+}
+
+potential (heartburn | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.33 0.66999996 )
+( 0.03402 0.96598 ));
+}
+
+potential (cough | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.33 0.66999996 )
+( 0.016393313 0.9836067 ));
+}
+
+potential (nausea | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.28 0.72 )
+( 0.16883637 0.83116364 ));
+}
+
+potential (burning_abdominal_pain | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.21 0.79 )
+( 0.08025 0.91975 ));
+}
+
+potential (upper_abdominal_pain | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.16 0.84000003 )
+( 0.01854 0.98146 ));
+}
+
+potential (difficulty_in_swallowing | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.16 0.84000003 )
+( 3.8399998E-4 0.999616 ));
+}
+
+potential (regurgitation | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.13 0.87 )
+( 0.011666 0.988334 ));
+}
+
+potential (chest_tightness | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.11 0.89 )
+( 0.080773 0.919227 ));
+}
+
+potential (hoarse_voice | gastroesophageal_reflux_disease_gerd)
+{
+ data = (( 0.1 0.9 )
+( 0.0 1.0 ));
+}
+

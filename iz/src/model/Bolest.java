@@ -1,17 +1,30 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Bolest {
-    ArrayList<String> simptomi;
-    int procenat;
-    String naziv;
+    private ArrayList<String> simptomi;
+    private int procenat;
+    private int poklapanje;
+    private String naziv;
 
-    public Bolest(ArrayList<String> simptomi, int procenat, String naziv) {
+    public Bolest(){
+
+    }
+
+    public Bolest(ArrayList<String> simptomi, int procenat, int poklapanje, String naziv) {
         this.simptomi = simptomi;
         this.procenat = procenat;
+        this.poklapanje = poklapanje;
         this.naziv = naziv;
+    }
+
+    public int getPoklapanje() {
+        return poklapanje;
+    }
+
+    public void setPoklapanje(int poklapanje) {
+        this.poklapanje = poklapanje;
     }
 
     public ArrayList<String> getSimptomi() {

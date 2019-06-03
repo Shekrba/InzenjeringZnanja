@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "dementia";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node dementia
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node disturbance_of_memory
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node problems_with_movement
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node dizziness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node depressive_or_psychotic_symptoms
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node abnormal_involuntary_movements
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node paresthesia
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node hostile_behavior
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node delusions_or_hallucinations
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node difficulty_speaking
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node insomnia
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node disturbance_of_smell_or_taste
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node focal_weakness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (dementia)
+{
+ data = ( 0.0069999998 0.993 );
+}
+
+potential (disturbance_of_memory | dementia)
+{
+ data = (( 0.53 0.47000003 )
+( 3.9E-4 0.99961 ));
+}
+
+potential (problems_with_movement | dementia)
+{
+ data = (( 0.45 0.55 )
+( 0.0011619999 0.998838 ));
+}
+
+potential (dizziness | dementia)
+{
+ data = (( 0.32 0.68 )
+( 0.053839505 0.9461605 ));
+}
+
+potential (depressive_or_psychotic_symptoms | dementia)
+{
+ data = (( 0.32 0.68 )
+( 2.45E-4 0.999755 ));
+}
+
+potential (abnormal_involuntary_movements | dementia)
+{
+ data = (( 0.26 0.74 )
+( 9.6399995E-4 0.999036 ));
+}
+
+potential (paresthesia | dementia)
+{
+ data = (( 0.21 0.79 )
+( 2.47E-4 0.999753 ));
+}
+
+potential (hostile_behavior | dementia)
+{
+ data = (( 0.21 0.79 )
+( 0.0 1.0 ));
+}
+
+potential (delusions_or_hallucinations | dementia)
+{
+ data = (( 0.15 0.85 )
+( 0.0 1.0 ));
+}
+
+potential (difficulty_speaking | dementia)
+{
+ data = (( 0.13 0.87 )
+( 4.7999998E-5 0.999952 ));
+}
+
+potential (insomnia | dementia)
+{
+ data = (( 0.13 0.87 )
+( 0.0315 0.9685 ));
+}
+
+potential (disturbance_of_smell_or_taste | dementia)
+{
+ data = (( 0.13 0.87 )
+( 0.0 1.0 ));
+}
+
+potential (focal_weakness | dementia)
+{
+ data = (( 0.09 0.90999997 )
+( 9.13E-4 0.999087 ));
+}
+

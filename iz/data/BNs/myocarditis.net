@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "myocarditis";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node myocarditis
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node palpitations
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node ache_all_over
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node cough
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node chest_tightness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fever
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_chest_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node weakness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node diarrhea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node headache
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node difficulty_breathing
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node dizziness
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node coughing_up_sputum
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (myocarditis)
+{
+ data = ( 0.0106 0.9894 );
+}
+
+potential (palpitations | myocarditis)
+{
+ data = (( 0.67 0.32999998 )
+( 0.11749 0.88251 ));
+}
+
+potential (ache_all_over | myocarditis)
+{
+ data = (( 0.56 0.44 )
+( 0.010332504 0.9896675 ));
+}
+
+potential (cough | myocarditis)
+{
+ data = (( 0.56 0.44 )
+( 0.07645732 0.9235427 ));
+}
+
+potential (chest_tightness | myocarditis)
+{
+ data = (( 0.56 0.44 )
+( 0.09683701 0.903163 ));
+}
+
+potential (fever | myocarditis)
+{
+ data = (( 0.56 0.44 )
+( 0.107815966 0.892184 ));
+}
+
+potential (sharp_chest_pain | myocarditis)
+{
+ data = (( 0.56 0.44 )
+( 0.25576898 0.744231 ));
+}
+
+potential (weakness | myocarditis)
+{
+ data = (( 0.38 0.62 )
+( 0.09687 0.90313 ));
+}
+
+potential (diarrhea | myocarditis)
+{
+ data = (( 0.38 0.62 )
+( 0.023200002 0.9768 ));
+}
+
+potential (headache | myocarditis)
+{
+ data = (( 0.38 0.62 )
+( 0.017111043 0.98288894 ));
+}
+
+potential (difficulty_breathing | myocarditis)
+{
+ data = (( 0.38 0.62 )
+( 0.106197 0.893803 ));
+}
+
+potential (dizziness | myocarditis)
+{
+ data = (( 0.38 0.62 )
+( 0.0520515 0.9479485 ));
+}
+
+potential (coughing_up_sputum | myocarditis)
+{
+ data = (( 0.38 0.62 )
+( 5.96E-4 0.999404 ));
+}
+
