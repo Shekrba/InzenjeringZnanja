@@ -151,11 +151,142 @@ public class ZavrsiAmnezuFrame {
                 }
             }
         });
+
         but1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                JOptionPane.showMessageDialog(null,"Sharp chest pain");
+                Bolest bol = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab1.getText())){
+                        bol = b;
+                        break;
+                    }
+                }
+
+                String text = "";
+
+                for (String s: bol.getSimptomi()) {
+                    text += s + "\n";
+                }
+
+                JOptionPane.showMessageDialog(null,text,"SYMPTHOMS",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        but2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                Bolest bol = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab2.getText())){
+                        bol = b;
+                        break;
+                    }
+                }
+
+                String text = "";
+
+                for (String s: bol.getSimptomi()) {
+                    text += s + "\n";
+                }
+
+                JOptionPane.showMessageDialog(null,text,"SYMPTHOMS",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        but3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                Bolest bol = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab3.getText())){
+                        bol = b;
+                        break;
+                    }
+                }
+
+                String text = "";
+
+                for (String s: bol.getSimptomi()) {
+                    text += s + "\n";
+                }
+
+                JOptionPane.showMessageDialog(null,text,"SYMPTHOMS",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        but4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                Bolest bol = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab4.getText())){
+                        bol = b;
+                        break;
+                    }
+                }
+
+                String text = "";
+
+                for (String s: bol.getSimptomi()) {
+                    text += s + "\n";
+                }
+
+                JOptionPane.showMessageDialog(null,text,"SYMPTHOMS",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        but5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                Bolest bol = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab5.getText())){
+                        bol = b;
+                        break;
+                    }
+                }
+
+                String text = "";
+
+                for (String s: bol.getSimptomi()) {
+                    text += s + "\n";
+                }
+
+                JOptionPane.showMessageDialog(null,text,"SYMPTHOMS",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        but6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                Bolest bol = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab6.getText())){
+                        bol = b;
+                        break;
+                    }
+                }
+
+                String text = "";
+
+                for (String s: bol.getSimptomi()) {
+                    text += s + "\n";
+                }
+
+                JOptionPane.showMessageDialog(null,text,"SYMPTHOMS",JOptionPane.INFORMATION_MESSAGE);
             }
         });
     }

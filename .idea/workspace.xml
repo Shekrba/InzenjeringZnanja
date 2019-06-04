@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5cea6ee9-96ce-4789-a462-9355e89460b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iz/iz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iz/iz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iz/src/gui/AnamnezaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/iz/src/gui/AnamnezaFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iz/src/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/iz/src/gui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iz/src/gui/AnamnezaFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
+            <state relative-caret-position="463">
               <caret line="80" column="80" selection-start-line="80" selection-start-column="80" selection-end-line="80" selection-end-column="80" />
               <folding>
                 <element signature="e#759#767#0" expanded="true" />
@@ -42,17 +40,23 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+            <state relative-caret-position="79">
+              <caret line="152" column="11" lean-forward="true" selection-start-line="152" selection-start-column="11" selection-end-line="152" selection-end-column="11" />
               <folding>
                 <element signature="e#1459#1467#0" expanded="true" />
                 <element signature="e#1522#1531#0" expanded="true" />
                 <element signature="e#3119#3120#0" expanded="true" />
-                <element signature="e#4892#4893#0" expanded="true" />
-                <element signature="e#5014#5015#0" expanded="true" />
+                <element signature="class#5266:5886" />
+                <element signature="class#5925:6545" />
+                <element signature="class#6584:7204" />
+                <element signature="class#7243:7863" />
+                <element signature="class#7902:8522" />
+                <element signature="class#7903:8523" />
+                <element signature="e#8614#8615#0" expanded="true" />
+                <element signature="e#8736#8737#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
@@ -142,8 +146,8 @@
         <option value="$PROJECT_DIR$/iz/src/model/Bolest.java" />
         <option value="$PROJECT_DIR$/iz/src/gui/MainFrame.java" />
         <option value="$PROJECT_DIR$/iz/src/gui/AnamnezaFrame.java" />
-        <option value="$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.java" />
         <option value="$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.form" />
+        <option value="$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.java" />
       </list>
     </option>
   </component>
@@ -177,20 +181,6 @@
               <item name="iz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InzZnanja" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="AnamnezaFrame" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="InzZnanja" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="MainFrame" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="InzZnanja" type="b2602c69:ProjectViewProjectNode" />
@@ -268,7 +258,7 @@
       <option name="presentableId" value="Default" />
       <updated>1559129127888</updated>
       <workItem from="1559129130981" duration="11393000" />
-      <workItem from="1559499131939" duration="25434000" />
+      <workItem from="1559499131939" duration="27048000" />
     </task>
     <task id="LOCAL-00001" summary="Doradjen gui za AnamnezaFrame">
       <created>1559135694326</created>
@@ -302,7 +292,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36827000" />
+    <option name="totallyTimeSpent" value="38441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -415,12 +405,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iz/src/gui/AnamnezaFrame.form">
+    <entry file="file://$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/iz/src/gui/AnamnezaFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="463">
           <caret line="80" column="80" selection-start-line="80" selection-start-column="80" selection-end-line="80" selection-end-column="80" />
           <folding>
             <element signature="e#759#767#0" expanded="true" />
@@ -432,22 +422,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/iz/src/gui/AnamnezaFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+        <state relative-caret-position="79">
+          <caret line="152" column="11" lean-forward="true" selection-start-line="152" selection-start-column="11" selection-end-line="152" selection-end-column="11" />
           <folding>
             <element signature="e#1459#1467#0" expanded="true" />
             <element signature="e#1522#1531#0" expanded="true" />
             <element signature="e#3119#3120#0" expanded="true" />
-            <element signature="e#4892#4893#0" expanded="true" />
-            <element signature="e#5014#5015#0" expanded="true" />
+            <element signature="class#5266:5886" />
+            <element signature="class#5925:6545" />
+            <element signature="class#6584:7204" />
+            <element signature="class#7243:7863" />
+            <element signature="class#7902:8522" />
+            <element signature="class#7903:8523" />
+            <element signature="e#8614#8615#0" expanded="true" />
+            <element signature="e#8736#8737#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iz/src/gui/ZavrsiAmnezuFrame.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
