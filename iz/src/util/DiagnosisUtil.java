@@ -90,9 +90,7 @@ public class DiagnosisUtil {
         try {
             BaseIO io=new NetIO();
             net = (ProbabilisticNetwork)io.load(new File("data/BNs/"+b.getNaziv()+".net"));
-            IInferenceAlgorithm algorithm = new JunctionTreeAlgorithm();
-            algorithm.setNetwork(net);
-            algorithm.run();
+
 
             //change strating probibility based on age and sex
             JIPEngine engine = new JIPEngine();
@@ -107,7 +105,9 @@ public class DiagnosisUtil {
             while ( (solution = query.nextSolution()) != null) {
                 for(JIPVariable var : solution.getVariables()){
                     ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
-                    bolestNode.setMarginalAt(0,bolestNode.getMarginalAt(0)*Float.parseFloat(var.getValue().toString()));
+                    PotentialTable bolestProb=bolestNode.getProbabilityFunction();
+                    bolestProb.setValue(0,bolestProb.getValue(0)*Float.parseFloat(var.getValue().toString()));
+                    bolestProb.setValue(1,1-bolestProb.getValue(0));
                 }
             }
             JIPQuery query1;
@@ -132,21 +132,26 @@ public class DiagnosisUtil {
             JIPTerm solution1;
             while ( (solution1 = query1.nextSolution()) != null) {
                 for(JIPVariable var : solution1.getVariables()){
+
                     ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
-                    bolestNode.setMarginalAt(0,bolestNode.getMarginalAt(0)*Float.parseFloat(var.getValue().toString()));
+                    PotentialTable bolestProb=bolestNode.getProbabilityFunction();
+                    bolestProb.setValue(0,bolestProb.getValue(0)*Float.parseFloat(var.getValue().toString()));
+                    bolestProb.setValue(1,1-bolestProb.getValue(0));
+
                 }
             }
+
+
+
+            IInferenceAlgorithm algorithm = new JunctionTreeAlgorithm();
+            algorithm.setNetwork(net);
+            algorithm.run();
 
             for (String sympom:
                     b.getSimptomi()) {
                 ProbabilisticNode factNode = (ProbabilisticNode)net.getNode(sympom);
                 int stateIndex = 0; // index of state "green"
                 factNode.addFinding(stateIndex);
-
-                System.out.println();
-
-                // propagation
-
             }
 
             try {
@@ -156,10 +161,7 @@ public class DiagnosisUtil {
             }
             ProbabilisticNode diseaseNode = (ProbabilisticNode)net.getNode(b.getNaziv());
             ret=Math.round(((ProbabilisticNode)diseaseNode).getMarginalAt(0)*100);
-            System.out.println(b.getNaziv());
-            System.out.println(diseaseNode.getStateAt(0) + ": " + ret);
-            System.out.println(diseaseNode.getStateAt(1) + ": " + ((ProbabilisticNode)diseaseNode).getMarginalAt(1));
-
+          
         } catch (IOException e) {
             e.printStackTrace();
         }
