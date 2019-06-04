@@ -71,7 +71,7 @@ public class DiagnosisUtil {
                 }
             }
 
-            b.setProcenat(calculateProb(b));
+            b.setProcenat(calculateProb(b,age,pol));
             if(b.getPoklapanje()!=0)
                 ret.add(b);
         }
@@ -80,7 +80,7 @@ public class DiagnosisUtil {
         return ret;
     }
 
-    private static int calculateProb(Bolest b){
+    private static int calculateProb(Bolest b,int age,String pol){
 
         int ret=0;
 
@@ -94,6 +94,48 @@ public class DiagnosisUtil {
             algorithm.setNetwork(net);
             algorithm.run();
 
+            //change strating probibility based on age and sex
+            JIPEngine engine = new JIPEngine();
+            engine.consultFile("data/program.pl");
+            JIPQuery query;
+            if(pol.equals("Male")) {
+                query = engine.openSynchronousQuery("sex_factor(" + b.getNaziv() + ",male,X)");
+            }else{
+                query = engine.openSynchronousQuery("sex_factor(" + b.getNaziv() + ",female,X)");
+            }
+            JIPTerm solution;
+            while ( (solution = query.nextSolution()) != null) {
+                for(JIPVariable var : solution.getVariables()){
+                    ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
+                    bolestNode.setMarginalAt(0,bolestNode.getMarginalAt(0)*Float.parseFloat(var.getValue().toString()));
+                }
+            }
+            JIPQuery query1;
+            if(age<=1) {
+                query1 = engine.openSynchronousQuery("ages_factor(" + b.getNaziv() + ",0,1,X)");
+            }else if(age>1 && age<=4){
+                query1 = engine.openSynchronousQuery("ages_factor(" + b.getNaziv() + ",1,4,X)");
+            }else if(age>4 && age<=14){
+                query1 = engine.openSynchronousQuery("ages_factor(" + b.getNaziv() + ",5,14,X)");
+            }else if(age>14 && age<=29){
+                query1 = engine.openSynchronousQuery("ages_factor(" + b.getNaziv() + ",15,29,X)");
+            }else if(age>29 && age<=44){
+                query1 = engine.openSynchronousQuery("ages_factor(" + b.getNaziv() + ",30,44,X)");
+            }else if(age>44 && age<=59){
+                query1 = engine.openSynchronousQuery("ages_factor(" + b.getNaziv() + ",45,59,X)");
+            }else if(age>59 && age<=74){
+                query1 = engine.openSynchronousQuery("ages_factor(" + b.getNaziv() + ",60,74,X)");
+            }else {
+                query1 = engine.openSynchronousQuery("ages_factor(" + b.getNaziv() + ",75,150,X)");
+            }
+
+            JIPTerm solution1;
+            while ( (solution1 = query1.nextSolution()) != null) {
+                for(JIPVariable var : solution1.getVariables()){
+                    ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
+                    bolestNode.setMarginalAt(0,bolestNode.getMarginalAt(0)*Float.parseFloat(var.getValue().toString()));
+                }
+            }
 
             for (String sympom:
                     b.getSimptomi()) {

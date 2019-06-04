@@ -2,56 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fed0268-c5e0-4e3d-9b1f-63b92b6cfc88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/iz.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/acute_respiratory_distress_syndrome.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/anemia.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/bell_palsy.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/bronchiectasis.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/cardiomyopathy.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/celiac_disease.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/cerebral_palsy.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/chronic_constipation.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/cirrhosis.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/coagulation_bleeding_disorder.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/dementia.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/diabetes.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/emphysema.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/encephalitis.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/gastritis.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/gastroesophageal_reflux_disease_gerd.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/hyperlipidemia.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/hypertensive_heart_disease.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/hyponatremia.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/ischemic_heart_disease.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/meningitis.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/multiple_sclerosis.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/myocarditis.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/parkinson_disease.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/polymyalgia_rheumatica.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/urinary_tract_infection.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BNs/viral_hepatitis.net" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/program.pl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jar/commons-logging-1.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jar/jiprolog-4.1.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jar/jpf-1.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jar/unbbayes-4.22.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/DiagnosisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/program.pl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/MainFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/AnamnezaFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AnamnezaFrame.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Bolest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Bolest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/data/program.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/DiagnosisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/DiagnosisUtil.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="966">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -86,12 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2423#2431#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -99,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/util/DiagnosisUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="114" column="55" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
+            <state relative-caret-position="168">
+              <caret line="133" column="47" selection-start-line="133" selection-start-column="47" selection-end-line="133" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,12 +129,13 @@
             <path>
               <item name="iz" type="b2602c69:ProjectViewProjectNode" />
               <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iz" type="b2602c69:ProjectViewProjectNode" />
               <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="jar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,17 +206,18 @@
       <option name="presentableId" value="Default" />
       <updated>1559592482170</updated>
       <workItem from="1559592485349" duration="788000" />
-      <workItem from="1559593281614" duration="8778000" />
+      <workItem from="1559593281614" duration="11199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9566000" />
+    <option name="totallyTimeSpent" value="11987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2421875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2421875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -275,7 +226,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -312,8 +263,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="966">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -322,12 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2423#2431#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="147">
+          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -354,8 +301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/DiagnosisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="114" column="55" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
+        <state relative-caret-position="168">
+          <caret line="133" column="47" selection-start-line="133" selection-start-column="47" selection-end-line="133" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
