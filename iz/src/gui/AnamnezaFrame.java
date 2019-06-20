@@ -24,6 +24,16 @@ public class AnamnezaFrame {
     private JList listSimptom;
     private JPanel unetiSimPanel;
     private JButton izbaciButton;
+    private JTextField tfHeight;
+    private JTextField tfWeight;
+    private JTextField tfBlood;
+    private JTextField tfTemperature;
+    private JTextField tfFamilly;
+    private JButton inputButton;
+    private JList listFamilly;
+    private JButton removeFamilly;
+    private JButton bloodTestsButton;
+    public static JDialog dialogBlood;
 
     public AnamnezaFrame() {
 
@@ -39,6 +49,9 @@ public class AnamnezaFrame {
 
         DefaultListModel dlmSimptomi = new DefaultListModel();
         listSimptom.setModel(dlmSimptomi);
+
+        DefaultListModel dlmFamilly = new DefaultListModel();
+        listFamilly.setModel(dlmFamilly);
 
         zavrsiButton.addActionListener(new ActionListener() {
             @Override
@@ -113,6 +126,41 @@ public class AnamnezaFrame {
             public void actionPerformed(ActionEvent e) {
                 if(listSimptom.getSelectedIndex() != -1)
                     dlmSimptomi.remove(listSimptom.getSelectedIndex());
+            }
+        });
+        removeFamilly.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(listFamilly.getSelectedIndex() != -1)
+                    dlmFamilly.remove(listFamilly.getSelectedIndex());
+            }
+        });
+        inputButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String familly = tfFamilly.getText();
+
+                if(familly.trim().equals("") || dlmFamilly.contains(familly))
+                    return;
+
+
+                dlmFamilly.addElement(familly);
+
+                tfFamilly.setText("");
+            }
+        });
+        bloodTestsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                dialogBlood = new JDialog();
+
+                dialogBlood.setTitle("Blood tests");
+                dialogBlood.setContentPane(new BloodFrame().getBloodPanel());
+                dialogBlood.setSize(600,400);
+                dialogBlood.setModal(true);
+                dialogBlood.setLocationRelativeTo(null);
+                dialogBlood.setVisible(true);
             }
         });
     }
@@ -430,5 +478,13 @@ public class AnamnezaFrame {
         keywords.add("Diminished vision");
         keywords.add("Eyelid lesion or rash");
         keywords.add("Abnormal involuntary movements");
+    }
+
+    public JDialog getDialogBlood() {
+        return dialogBlood;
+    }
+
+    public void setDialogBlood(JDialog dialogBlood) {
+        this.dialogBlood = dialogBlood;
     }
 }
