@@ -4,11 +4,13 @@ poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),\+ member(H,Ls), po
 
 simptomi(acute_respiratory_distress_syndrome,[shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
 
+uzmi(bolest,anemia).
+
+
 uzmi(bolest,acute_respiratory_distress_syndrome).
 uzmi(bolest,hypertensive_heart_disease).
 uzmi(bolest,ischemic_heart_disease).
 uzmi(bolest,diabetes).
-uzmi(bolest,anemia).
 uzmi(bolest,coagulation_bleeding_disorder).
 uzmi(bolest,viral_hepatitis).
 uzmi(bolest,gastroesophageal_reflux_disease_gerd).
