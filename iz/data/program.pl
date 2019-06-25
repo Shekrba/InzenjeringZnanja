@@ -13,11 +13,23 @@ uzmi(bolest,acute_respiratory_distress_syndrome).
 uzmi(bolest,viral_hepatitis).
 uzmi(bolest,cardiomyopathy).
 
+infekcija(myocarditis).
+infekcija(meningitis).
+infekcija(urinary_tract_infection).
+infekcija(acute_respiratory_distress_syndrome).
+infekcija(viral_hepatitis).
+infekcija(cardiomyopathy).
+
 %heart:
 uzmi(bolest,ischemic_heart_disease).
 uzmi(bolest,hypertensive_heart_disease).
 uzmi(bolest,cardiomyopathy).
 uzmi(bolest,myocarditis).
+
+heart(ischemic_heart_disease).
+heart(hypertensive_heart_disease).
+heart(cardiomyopathy).
+heart(myocarditis).
 
 %cancer:
 
@@ -25,20 +37,32 @@ uzmi(bolest,myocarditis).
 uzmi(bolest,cirrhosis).
 uzmi(bolest,viral_hepatitis).
 
+liver(cirrhosis).
+liver(viral_hepatitis).
+
 %autoimune:
 uzmi(bolest,celiac_disease).
 uzmi(bolest,cerebral_palsy).
 uzmi(bolest,multiple_sclerosis).
 
+autoimune(celiac_disease).
+autoimune(cerebral_palsy).
+autoimune(multiple_sclerosis).
+
 %kidney_deasease:
 uzmi(bolest,hyponatremia).
 
+kidney(hyponatremia).
+
 uzmi(bolest,anemia).
+anemia(anemia).
+
 uzmi(bolest,diabetes).
+diabetes(diabetes).
+
 uzmi(bolest,gastroesophageal_reflux_disease_gerd).
 uzmi(bolest,emphysema).
 uzmi(bolest,gastritis).
-uzmi(bolest,cirrhosis).
 
 
 
