@@ -4,35 +4,43 @@ poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),\+ member(H,Ls), po
 
 simptomi(acute_respiratory_distress_syndrome,[shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
 
-uzmi(bolest,anemia).
 
-
-uzmi(bolest,acute_respiratory_distress_syndrome).
-uzmi(bolest,hypertensive_heart_disease).
-uzmi(bolest,ischemic_heart_disease).
-uzmi(bolest,diabetes).
-uzmi(bolest,coagulation_bleeding_disorder).
-uzmi(bolest,viral_hepatitis).
-uzmi(bolest,gastroesophageal_reflux_disease_gerd).
-uzmi(bolest,chronic_constipation).
-uzmi(bolest,emphysema).
-uzmi(bolest,urinary_tract_infection).
-uzmi(bolest,dementia).
-uzmi(bolest,hyperlipidemia).
-uzmi(bolest,cardiomyopathy).
-uzmi(bolest,bronchiectasis).
-uzmi(bolest,celiac_disease).
-uzmi(bolest,gastritis).
-uzmi(bolest,cirrhosis).
-uzmi(bolest,hyponatremia).
-uzmi(bolest,cerebral_palsy).
-uzmi(bolest,polymyalgia_rheumatica).
+%infekcije:
 uzmi(bolest,myocarditis).
 uzmi(bolest,meningitis).
+uzmi(bolest,urinary_tract_infection).
+uzmi(bolest,acute_respiratory_distress_syndrome).
+uzmi(bolest,viral_hepatitis).
+uzmi(bolest,cardiomyopathy).
+
+%heart:
+uzmi(bolest,ischemic_heart_disease).
+uzmi(bolest,hypertensive_heart_disease).
+uzmi(bolest,cardiomyopathy).
+uzmi(bolest,myocarditis).
+
+%cancer:
+
+%liver_desease
+uzmi(bolest,cirrhosis).
+uzmi(bolest,viral_hepatitis).
+
+%autoimune:
+uzmi(bolest,celiac_disease).
+uzmi(bolest,cerebral_palsy).
 uzmi(bolest,multiple_sclerosis).
-uzmi(bolest,parkinson_disease).
-uzmi(bolest,encephalitis).
-uzmi(bolest,bell_palsy).
+
+%kidney_deasease:
+uzmi(bolest,hyponatremia).
+
+uzmi(bolest,anemia).
+uzmi(bolest,diabetes).
+uzmi(bolest,gastroesophageal_reflux_disease_gerd).
+uzmi(bolest,emphysema).
+uzmi(bolest,gastritis).
+uzmi(bolest,cirrhosis).
+
+
 
 
 prevalence(acute_respiratory_distress_syndrome,0.07).
@@ -114,22 +122,6 @@ anemia(recent_pregnancy,2).
 anemia(too_little_hair,2).
 
 
-simptomi(coagulation_bleeding_disorder,[leg_pain,leg_swelling,nosebleed,blood_in_urine,eye_redness,melena,lymphedema,hemoptysis,leg_cramps_or_spasms,early_or_late_onset_of_menopause,knee_swelling,vaginal_pain]).
-
-prevalence(coagulation_bleeding_disorder,0.1).
-
-coagulation_bleeding_disorder(leg_pain,30).
-coagulation_bleeding_disorder(leg_swelling,17).
-coagulation_bleeding_disorder(nosebleed,17).
-coagulation_bleeding_disorder(blood_in_urine,17).
-coagulation_bleeding_disorder(eye_redness,11).
-coagulation_bleeding_disorder(melena,8).
-coagulation_bleeding_disorder(lymphedema,8).
-coagulation_bleeding_disorder(hemoptysis,8).
-coagulation_bleeding_disorder(leg_cramps_or_spasms,4).
-coagulation_bleeding_disorder(early_or_late_onset_of_menopause,4).
-coagulation_bleeding_disorder(knee_swelling,4).
-coagulation_bleeding_disorder(vaginal_pain,4).
 
 
 simptomi(viral_hepatitis,[sharp_abdominal_pain,abusing_alcohol,drug_abuse,melena,stomach_bloating,symptoms_of_the_kidneys,hand_or_finger_stiffness_or_tightness,low_self_esteem,incontinence_of_stool]).
@@ -164,23 +156,6 @@ gastroesophageal_reflux_disease_gerd(regurgitation,13).
 gastroesophageal_reflux_disease_gerd(chest_tightness,11).
 gastroesophageal_reflux_disease_gerd(hoarse_voice,10).
 
-
-simptomi(chronic_constipation,[constipation,sharp_abdominal_pain,burning_abdominal_pain,vomiting,nausea,lower_abdominal_pain,rectal_bleeding,blood_in_stool,pain_of_the_anus,retention_of_urine,stomach_bloating,changes_in_stool_appearance]).
-
-prevalence(chronic_constipation,15.0).
-
-chronic_constipation(constipation,87).
-chronic_constipation(sharp_abdominal_pain,77).
-chronic_constipation(burning_abdominal_pain,37).
-chronic_constipation(vomiting,34).
-chronic_constipation(nausea,29).
-chronic_constipation(lower_abdominal_pain,19).
-chronic_constipation(rectal_bleeding,18).
-chronic_constipation(blood_in_stool,17).
-chronic_constipation(pain_of_the_anus,13).
-chronic_constipation(retention_of_urine,11).
-chronic_constipation(stomach_bloating,11).
-chronic_constipation(changes_in_stool_appearance,10).
 
 
 simptomi(emphysema,[sharp_chest_pain,shortness_of_breath,chest_tightness,cough,nausea,ache_all_over,back_pain,cross_eyed,itchy_eyelid,excessive_growth,emotional_symptoms,elbow_cramps_or_spasms]).
@@ -219,33 +194,7 @@ urinary_tract_infection(retention_of_urine,26).
 urinary_tract_infection(lower_abdominal_pain,25).
 
 
-simptomi(dementia,[disturbance_of_memory,problems_with_movement,dizziness,depressive_or_psychotic_symptoms,abnormal_involuntary_movements,paresthesia,hostile_behavior,delusions_or_hallucinations,difficulty_speaking,insomnia,disturbance_of_smell_or_taste,focal_weakness]).
 
-prevalence(dementia,0.7).
-
-dementia(disturbance_of_memory,53).
-dementia(problems_with_movement,45).
-dementia(dizziness,32).
-dementia(depressive_or_psychotic_symptoms,32).
-dementia(abnormal_involuntary_movements,26).
-dementia(paresthesia,21).
-dementia(hostile_behavior,21).
-dementia(delusions_or_hallucinations,15).
-dementia(difficulty_speaking,13).
-dementia(insomnia,13).
-dementia(disturbance_of_smell_or_taste,13).
-dementia(focal_weakness,9).
-
-
-simptomi(hyperlipidemia,[sharp_chest_pain,weight_gain,lymphedema,smoking_problems,leg_cramps_or_spasms]).
-
-prevalence(hyperlipidemia,0.2).
-
-hyperlipidemia(sharp_chest_pain,25).
-hyperlipidemia(weight_gain,10).
-hyperlipidemia(lymphedema,2).
-hyperlipidemia(smoking_problems,2).
-hyperlipidemia(leg_cramps_or_spasms,2).
 
 
 simptomi(cardiomyopathy,[shortness_of_breath,sharp_chest_pain,fatigue,peripheral_edema,palpitations,chest_tightness,weight_gain,irregular_heartbeat,heartburn,excessive_urination_at_night,decreased_heart_rate,muscle_weakness]).
@@ -265,23 +214,6 @@ cardiomyopathy(excessive_urination_at_night,2).
 cardiomyopathy(decreased_heart_rate,2).
 cardiomyopathy(muscle_weakness,2).
 
-
-simptomi(bronchiectasis,[cough,shortness_of_breath,hemoptysis,difficulty_breathing,coughing_up_sputum,nasal_congestion,coryza,sore_throat,fever,fatigue,drainage_in_throat,fluid_retention]).
-
-prevalence(bronchiectasis,0.13).
-
-bronchiectasis(cough,74).
-bronchiectasis(shortness_of_breath,56).
-bronchiectasis(hemoptysis,47).
-bronchiectasis(difficulty_breathing,41).
-bronchiectasis(coughing_up_sputum,41).
-bronchiectasis(nasal_congestion,34).
-bronchiectasis(coryza,34).
-bronchiectasis(sore_throat,34).
-bronchiectasis(fever,25).
-bronchiectasis(fatigue,25).
-bronchiectasis(drainage_in_throat,25).
-bronchiectasis(fluid_retention,14).
 
 
 simptomi(celiac_disease,[sharp_abdominal_pain,diarrhea,regurgitation,fatigue,vomiting,nausea,allergic_reaction,sharp_chest_pain,fears_and_phobias,peripheral_edema,leg_lump_or_mass,constipation]).
@@ -374,22 +306,6 @@ cerebral_palsy(lip_sore,2).
 cerebral_palsy(tongue_lesions,2).
 
 
-simptomi(polymyalgia_rheumatica,[fatigue,shoulder_pain,leg_pain,ache_all_over,sharp_chest_pain,muscle_pain,hip_pain,irregular_heartbeat,leg_weakness,stiffness_all_over,difficulty_in_swallowing,temper_problems]).
-
-prevalence(polymyalgia_rheumatica,0.32).
-
-polymyalgia_rheumatica(fatigue,47).
-polymyalgia_rheumatica(shoulder_pain,42).
-polymyalgia_rheumatica(leg_pain,36).
-polymyalgia_rheumatica(ache_all_over,36).
-polymyalgia_rheumatica(sharp_chest_pain,30).
-polymyalgia_rheumatica(muscle_pain,22).
-polymyalgia_rheumatica(hip_pain,22).
-polymyalgia_rheumatica(irregular_heartbeat,22).
-polymyalgia_rheumatica(leg_weakness,12).
-polymyalgia_rheumatica(stiffness_all_over,12).
-polymyalgia_rheumatica(difficulty_in_swallowing,12).
-polymyalgia_rheumatica(temper_problems,12).
 
 
 simptomi(myocarditis,[palpitations,ache_all_over,cough,chest_tightness,fever,sharp_chest_pain,weakness,diarrhea,headache,difficulty_breathing,dizziness,coughing_up_sputum]).
@@ -445,58 +361,6 @@ multiple_sclerosis(abnormal_involuntary_movements,12).
 multiple_sclerosis(leg_stiffness_or_tightness,12).
 multiple_sclerosis(focal_weakness,11).
 
-
-simptomi(parkinson_disease,[abnormal_involuntary_movements,problems_with_movement,disturbance_of_memory,dizziness,weakness,stiffness_all_over,leg_weakness,focal_weakness,muscle_stiffness_or_tightness,difficulty_speaking,leg_stiffness_or_tightness,fears_and_phobias]).
-
-prevalence(parkinson_disease,0.12).
-
-parkinson_disease(abnormal_involuntary_movements,64).
-parkinson_disease(problems_with_movement,41).
-parkinson_disease(disturbance_of_memory,28).
-parkinson_disease(dizziness,25).
-parkinson_disease(weakness,22).
-parkinson_disease(stiffness_all_over,7).
-parkinson_disease(leg_weakness,7).
-parkinson_disease(focal_weakness,5).
-parkinson_disease(muscle_stiffness_or_tightness,5).
-parkinson_disease(difficulty_speaking,4).
-parkinson_disease(leg_stiffness_or_tightness,3).
-parkinson_disease(fears_and_phobias,3).
-
-
-simptomi(encephalitis,[headache,loss_of_sensation,seizures,dizziness,leg_pain,fatigue,disturbance_of_memory,problems_with_movement,paresthesia,insomnia,joint_pain,leg_weakness]).
-
-prevalence(encephalitis,0.005).
-
-encephalitis(headache,62).
-encephalitis(loss_of_sensation,53).
-encephalitis(seizures,53).
-encephalitis(dizziness,39).
-encephalitis(leg_pain,39).
-encephalitis(fatigue,30).
-encephalitis(disturbance_of_memory,30).
-encephalitis(problems_with_movement,18).
-encephalitis(paresthesia,18).
-encephalitis(joint_pain,18).
-encephalitis(leg_weakness,18).
-
-
-simptomi(bell_palsy,[focal_weakness,loss_of_sensation,symptoms_of_the_face,headache,facial_pain,weakness,peripheral_edema,symptoms_of_eye,paresthesia,diminished_vision,eyelid_lesion_or_rash,abnormal_involuntary_movements]).
-
-prevalence(bell_palsy,0.1).
-
-bell_palsy(focal_weakness,82).
-bell_palsy(loss_of_sensation,70).
-bell_palsy(symptoms_of_the_face,67).
-bell_palsy(headache,51).
-bell_palsy(facial_pain,39).
-bell_palsy(weakness,28).
-bell_palsy(peripheral_edema,24).
-bell_palsy(symptoms_of_eye,21).
-bell_palsy(paresthesia,19).
-bell_palsy(diminished_vision,19).
-bell_palsy(eyelid_lesion_or_rash,16).
-bell_palsy(abnormal_involuntary_movements,16).
 
 
 sex_factor(acute_respiratory_distress_syndrome,male,1.1).
@@ -574,42 +438,7 @@ terapija(anemia,anagrelide_28_days).
 terapija(anemia,dextran_1).
 
 
-sex_factor(polymyalgia_rheumatica,male,0.7).
-sex_factor(polymyalgia_rheumatica,female,1.3).
 
-ages_factor(polymyalgia_rheumatica,0,1,0.0221).
-ages_factor(polymyalgia_rheumatica,1,4,0.022).
-ages_factor(polymyalgia_rheumatica,5,14,0.022).
-ages_factor(polymyalgia_rheumatica,15,29,0.1).
-ages_factor(polymyalgia_rheumatica,30,44,0.1).
-ages_factor(polymyalgia_rheumatica,45,59,0.3).
-ages_factor(polymyalgia_rheumatica,60,74,2.6).
-ages_factor(polymyalgia_rheumatica,75,150,5.4).
-
-
-testovi(polymyalgia_rheumatica,lipid_panel).
-testovi(polymyalgia_rheumatica,mammography_mammogram).
-testovi(polymyalgia_rheumatica,examination_of_breast).
-testovi(polymyalgia_rheumatica,bone_density_scan).
-testovi(polymyalgia_rheumatica,rectal_examination).
-testovi(polymyalgia_rheumatica,physical_therapy_exercises_exercises).
-testovi(polymyalgia_rheumatica,biopsy).
-testovi(polymyalgia_rheumatica,procedures_on_spleen_spleen_operation).
-
-
-terapija(polymyalgia_rheumatica,prednisone_28_days).
-terapija(polymyalgia_rheumatica,atenolol_28_days).
-terapija(polymyalgia_rheumatica,alendronate).
-terapija(polymyalgia_rheumatica,calcium_carbonate_28_days).
-terapija(polymyalgia_rheumatica,methotrexate_28_days).
-terapija(polymyalgia_rheumatica,carbidopa_28_days).
-terapija(polymyalgia_rheumatica,rituximab_21_days).
-terapija(polymyalgia_rheumatica,bumetanide_28_days).
-terapija(polymyalgia_rheumatica,raloxifene_evista_28_days).
-terapija(polymyalgia_rheumatica,latanoprost_28_days).
-terapija(polymyalgia_rheumatica,amiodarone_28_days).
-terapija(polymyalgia_rheumatica,tolterodine_detrol_28_days).
-terapija(polymyalgia_rheumatica,diclofenac_28_days).
 
 
 sex_factor(myocarditis,male,1.4).
@@ -726,40 +555,6 @@ terapija(multiple_sclerosis,cyclophosphamide_28_days).
 terapija(multiple_sclerosis,armodafinil_nuvigil_28_days).
 
 
-sex_factor(parkinson_disease,male,1.4).
-sex_factor(parkinson_disease,female,0.7).
-
-ages_factor(parkinson_disease,0,1,0.022).
-ages_factor(parkinson_disease,1,4,0.022).
-ages_factor(parkinson_disease,5,14,0.022).
-ages_factor(parkinson_disease,15,29,0.022).
-ages_factor(parkinson_disease,30,44,0.1).
-ages_factor(parkinson_disease,45,59,0.7).
-ages_factor(parkinson_disease,60,74,2.8).
-ages_factor(parkinson_disease,75,150,4.8).
-
-
-testovi(parkinson_disease,other_diagnostic_procedures_interview_evaluation_consultation).
-testovi(parkinson_disease,physical_therapy_exercises_exercises).
-testovi(parkinson_disease,magnetic_resonance_imaging_mri).
-testovi(parkinson_disease,depression_screen_depression_screening).
-testovi(parkinson_disease,occupational_therapy_assessment_speech_therapy).
-testovi(parkinson_disease,prostate_specific_antigen_measurement_prostate_specific_antigen_test).
-testovi(parkinson_disease,referral_to_home_health_care_service).
-testovi(parkinson_disease,other_or_therapeutic_nervous_system_procedures).
-
-
-terapija(parkinson_disease,ropinirole_28_days).
-terapija(parkinson_disease,pramipexole_mirapex_28_days).
-terapija(parkinson_disease,amantadine_28_days).
-terapija(parkinson_disease,donepezil_aricept_28_days).
-terapija(parkinson_disease,rasagiline_azilect_28_days).
-terapija(parkinson_disease,carbidopa_28_days).
-terapija(parkinson_disease,entacapone_comtan_28_days).
-terapija(parkinson_disease,memantine_namenda_28_days).
-terapija(parkinson_disease,selegiline_28_days).
-terapija(parkinson_disease,trihexyphenidyl_artane_28_days).
-terapija(parkinson_disease,rivastigmine_exelon_28_days).
 
 
 sex_factor(hypertensive_heart_disease,male,1.0).
@@ -844,33 +639,6 @@ terapija(diabetes,sitagliptin_januvia_28_days).
 terapija(diabetes,exenatide_byetta_28_days).
 
 
-sex_factor(coagulation_bleeding_disorder,male,0.9).
-sex_factor(coagulation_bleeding_disorder,female,1.1).
-
-ages_factor(coagulation_bleeding_disorder,0,1,0.1).
-ages_factor(coagulation_bleeding_disorder,1,4,0.3).
-ages_factor(coagulation_bleeding_disorder,5,14,0.1).
-ages_factor(coagulation_bleeding_disorder,15,29,0.7).
-ages_factor(coagulation_bleeding_disorder,30,44,1.0).
-ages_factor(coagulation_bleeding_disorder,45,59,1.1).
-ages_factor(coagulation_bleeding_disorder,60,74,1.6).
-ages_factor(coagulation_bleeding_disorder,75,150,2.1).
-
-
-terapija(coagulation_bleeding_disorder,warfarin_28_days).
-terapija(coagulation_bleeding_disorder,enoxaparin_lovenox_7_days).
-terapija(coagulation_bleeding_disorder,heparin_7_days).
-terapija(coagulation_bleeding_disorder,pyridoxine).
-terapija(coagulation_bleeding_disorder,hydroxychloroquine_plaquenil_28_days).
-terapija(coagulation_bleeding_disorder,acarbose_28_days).
-terapija(coagulation_bleeding_disorder,vitamin_k_1_mephyton_7_days).
-terapija(coagulation_bleeding_disorder,torsemide_28_days).
-terapija(coagulation_bleeding_disorder,chlorotrianisene_tace).
-terapija(coagulation_bleeding_disorder,protamines_protamine).
-terapija(coagulation_bleeding_disorder,factor_viii).
-terapija(coagulation_bleeding_disorder,menthol_topical).
-terapija(coagulation_bleeding_disorder,levobunolol_ophthalmic).
-
 
 sex_factor(viral_hepatitis,male,1.4).
 sex_factor(viral_hepatitis,female,0.7).
@@ -922,32 +690,6 @@ terapija(gastroesophageal_reflux_disease_gerd,dexlansoprazole_dexilant_28_days).
 terapija(gastroesophageal_reflux_disease_gerd,nizatidine_axid_28_days).
 terapija(gastroesophageal_reflux_disease_gerd,aluminum_hydroxide_m_a_h_).
 
-
-sex_factor(chronic_constipation,male,0.9).
-sex_factor(chronic_constipation,female,1.1).
-
-ages_factor(chronic_constipation,0,1,2.8).
-ages_factor(chronic_constipation,1,4,2.0).
-ages_factor(chronic_constipation,5,14,2.1).
-ages_factor(chronic_constipation,15,29,0.7).
-ages_factor(chronic_constipation,30,44,0.5).
-ages_factor(chronic_constipation,45,59,0.6).
-ages_factor(chronic_constipation,60,74,0.7).
-ages_factor(chronic_constipation,75,150,1.3).
-
-
-terapija(chronic_constipation,polyethylene_glycol_3350_miralax_28_days).
-terapija(chronic_constipation,docusate_colace_21_days).
-terapija(chronic_constipation,magnesium_citrate).
-terapija(chronic_constipation,bisacodyl_the_magic_bullet_21_days).
-terapija(chronic_constipation,lactulose_21_days).
-terapija(chronic_constipation,glycerin_fleet_21_days).
-terapija(chronic_constipation,psyllium_28_days).
-terapija(chronic_constipation,sennosides,_usp_perdiem_28_days).
-terapija(chronic_constipation,mineral_oil_stye).
-terapija(chronic_constipation,guar_gum).
-terapija(chronic_constipation,benzylpenicilloyl_polylysine_pre-pen).
-terapija(chronic_constipation,lubiprostone_amitiza_28_days).
 
 
 sex_factor(emphysema,male,1.9).
@@ -1004,55 +746,6 @@ terapija(urinary_tract_infection,clofazimine).
 terapija(urinary_tract_infection,trospium_sanctura_28_days).
 
 
-sex_factor(dementia,male,0.9).
-sex_factor(dementia,female,1.1).
-
-ages_factor(dementia,0,1,0.02).
-ages_factor(dementia,1,4,0.02).
-ages_factor(dementia,5,14,0.2).
-ages_factor(dementia,15,29,0.1).
-ages_factor(dementia,30,44,0.1).
-ages_factor(dementia,45,59,0.6).
-ages_factor(dementia,60,74,2.0).
-ages_factor(dementia,75,150,5.8).
-
-
-terapija(dementia,donepezil_aricept_28_days).
-terapija(dementia,memantine_namenda_28_days).
-terapija(dementia,rivastigmine_exelon_28_days).
-terapija(dementia,galantamine_28_days).
-terapija(dementia,mirtazapine_28_days).
-terapija(dementia,thiamine_28_days).
-terapija(dementia,pramipexole_mirapex_28_days).
-terapija(dementia,felodipine_28_days).
-terapija(dementia,bisacodyl_the_magic_bullet_21_days).
-terapija(dementia,modafinil_provigil_28_days).
-terapija(dementia,raloxifene_evista_28_days).
-terapija(dementia,deferasirox_exjade_28_days).
-
-
-sex_factor(hyperlipidemia,male,1.1).
-sex_factor(hyperlipidemia,female,0.9).
-
-ages_factor(hyperlipidemia,0,1,0.02).
-ages_factor(hyperlipidemia,1,4,0.02).
-ages_factor(hyperlipidemia,5,14,0.1).
-ages_factor(hyperlipidemia,15,29,0.1).
-ages_factor(hyperlipidemia,30,44,0.6).
-ages_factor(hyperlipidemia,45,59,1.7).
-ages_factor(hyperlipidemia,60,74,2.5).
-ages_factor(hyperlipidemia,75,150,1.7).
-
-
-terapija(hyperlipidemia,simvastatin_28_days).
-terapija(hyperlipidemia,omega_3_fatty_acids).
-terapija(hyperlipidemia,rosuvastatin_crestor_28_days).
-terapija(hyperlipidemia,pravastatin_28_days).
-terapija(hyperlipidemia,fenofibrate_tricor_28_days).
-terapija(hyperlipidemia,lovastatin_28_days).
-terapija(hyperlipidemia,ezetimibe_zetia_28_days).
-terapija(hyperlipidemia,niacin_28_days).
-terapija(hyperlipidemia,gemfibrozil_28_days).
 
 
 sex_factor(cardiomyopathy,male,1.4).
@@ -1083,29 +776,7 @@ terapija(cardiomyopathy,isosorbide_28_days).
 terapija(cardiomyopathy,torsemide_28_days).
 
 
-sex_factor(bronchiectasis,male,0.5).
-sex_factor(bronchiectasis,female,1.4).
 
-ages_factor(bronchiectasis,0,1,0.02).
-ages_factor(bronchiectasis,1,4,0.5).
-ages_factor(bronchiectasis,5,14,0.7).
-ages_factor(bronchiectasis,15,29,0.7).
-ages_factor(bronchiectasis,30,44,0.4).
-ages_factor(bronchiectasis,45,59,0.8).
-ages_factor(bronchiectasis,60,74,2.1).
-ages_factor(bronchiectasis,75,150,2.5).
-
-
-terapija(bronchiectasis,tiotropium_spiriva_28_days).
-terapija(bronchiectasis,combivent_28_days).
-terapija(bronchiectasis,tobramycin_tobi_14_days).
-terapija(bronchiectasis,moxifloxacin_avelox_14_days).
-terapija(bronchiectasis,aztreonam_7_days).
-terapija(bronchiectasis,robitussin_dm_7_days).
-terapija(bronchiectasis,oxybutynin_28_days).
-terapija(bronchiectasis,alprostadil_muse_21_days).
-terapija(bronchiectasis,ethambutol_28_days).
-terapija(bronchiectasis,cefotetan_7_days).
 
 
 sex_factor(celiac_disease,male,0.6).
@@ -1236,61 +907,6 @@ terapija(cerebral_palsy,budesonide_28_days).
 terapija(cerebral_palsy,zonisamide_28_days).
 terapija(cerebral_palsy,tizanidine_28_days).
 terapija(cerebral_palsy,clorazepate_28_days).
-
-
-sex_factor(encephalitis,male,1.2).
-sex_factor(encephalitis,female,0.8).
-
-ages_factor(encephalitis,0,1,0.6).
-ages_factor(encephalitis,1,4,0.3).
-ages_factor(encephalitis,5,14,1.8).
-ages_factor(encephalitis,15,29,0.6).
-ages_factor(encephalitis,30,44,1.1).
-ages_factor(encephalitis,45,59,1.6).
-ages_factor(encephalitis,60,74,1.0).
-ages_factor(encephalitis,75,150,0.2).
-
-
-terapija(encephalitis,baclofen_28_days).
-terapija(encephalitis,gabapentin_28_days).
-terapija(encephalitis,tizanidine_28_days).
-terapija(encephalitis,diazepam_valium_28_days).
-terapija(encephalitis,pregabalin_lyrica_28_days).
-terapija(encephalitis,lamotrigine_lamictal_28_days).
-terapija(encephalitis,interferon_beta_1a_avonex_28_days).
-terapija(encephalitis,valproic_acid).
-terapija(encephalitis,vancomycin_7_days).
-terapija(encephalitis,diclofenac_28_days).
-terapija(encephalitis,topiramate_topamax_28_days).
-terapija(encephalitis,albumin_human,_usp_albutein).
-terapija(encephalitis,oxaprozin_28_days).
-
-
-sex_factor(bell_palsy,male,0.9).
-sex_factor(bell_palsy,female,1.1).
-
-ages_factor(bell_palsy,0,1,0.2).
-ages_factor(bell_palsy,1,4,0.2).
-ages_factor(bell_palsy,5,14,0.4).
-ages_factor(bell_palsy,15,29,0.9).
-ages_factor(bell_palsy,30,44,1.3).
-ages_factor(bell_palsy,45,59,1.4).
-ages_factor(bell_palsy,60,74,1.0).
-ages_factor(bell_palsy,75,150,1.1).
-
-
-terapija(bell_palsy,prednisone_28_days).
-terapija(bell_palsy,acyclovir_21_days).
-terapija(bell_palsy,valacyclovir_valtrex_21_days).
-terapija(bell_palsy,famciclovir_14_days).
-terapija(bell_palsy,olopatadine_ophthalmic).
-terapija(bell_palsy,lyme_disease_vaccine).
-terapija(bell_palsy,dextran_1).
-terapija(bell_palsy,rimabotulinumtoxinb_myobloc_28_days).
-terapija(bell_palsy,diclofenac_topical_product).
-terapija(bell_palsy,tetrahydrozoline_ophthalmic).
-terapija(bell_palsy,biotin_28_days).
-terapija(bell_palsy,mineral_oil_stye).
 
 
 
