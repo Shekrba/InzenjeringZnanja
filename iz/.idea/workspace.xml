@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/fuzzy/fcl/Male.fcl" line="40" />
+    <bookmark url="file://$PROJECT_DIR$/fuzzy/fcl/cbcMale.fcl" line="40" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fed0268-c5e0-4e3d-9b1f-63b92b6cfc88" name="Default Changelist" comment="Male.fcl">
+    <list default="true" id="4fed0268-c5e0-4e3d-9b1f-63b92b6cfc88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fuzzy/fcl/bmpFemale.fcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy/fcl/bmpMale.fcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy/fcl/cbcFemale.fcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy/fcl/cbcMale.fcl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/data/program.pl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuzzy/fcl/Male.fcl" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzy/fcl/Male.fcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuzzy/fcl/Male.fcl" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/program.pl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="48">
+              <caret line="156" selection-start-line="156" selection-end-line="156" />
             </state>
           </provider>
         </entry>
@@ -43,10 +47,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuzzy/fcl/Male.fcl">
+        <entry file="file://$PROJECT_DIR$/fuzzy/fcl/cbcMale.fcl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+            <state relative-caret-position="134">
+              <caret line="137" column="49" lean-forward="true" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuzzy/fcl/bmpMale.fcl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="147" column="56" lean-forward="true" selection-start-line="147" selection-start-column="56" selection-end-line="147" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuzzy/fcl/bmpFemale.fcl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuzzy/fcl/cbcFemale.fcl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1782">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -69,11 +100,22 @@
       <find>bronc</find>
       <find>park</find>
       <find>enc</find>
+      <find>botassium</find>
+      <find>myoca</find>
+      <find>testovi(uri</find>
+      <find>testovi(car</find>
+      <find>testovi(hype</find>
+      <find>testovi(</find>
+      <find>testovi(emp</find>
     </findStrings>
+    <replaceStrings>
+      <replace>potassium</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="djare28 &lt;darko.jandric@gmail.com&gt;" />
         <option value="d" />
         <option value="djare28" />
       </list>
@@ -90,7 +132,11 @@
         <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
         <option value="$USER_HOME$/Downloads/template.fcl" />
         <option value="$USER_HOME$/Downloads/zadatak1.fcl" />
+        <option value="$PROJECT_DIR$/fuzzy/fcl/Female.fcl" />
         <option value="$PROJECT_DIR$/fuzzy/fcl/Male.fcl" />
+        <option value="$PROJECT_DIR$/fuzzy/fcl/bmp.fcl" />
+        <option value="$PROJECT_DIR$/fuzzy/fcl/bmpFemale.fcl" />
+        <option value="$PROJECT_DIR$/fuzzy/fcl/bmpMale.fcl" />
         <option value="$PROJECT_DIR$/data/program.pl" />
       </list>
     </option>
@@ -107,6 +153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +205,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,18 +215,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Steering" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\darko\Desktop\InzenjeringZnanja\InzenjeringZnanja\iz\fuzzy\fcl" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\IZ\MedicalDiagnosis\InzenjeringZnanja\iz\jar" />
       <recent name="C:\IZ\MedicalDiagnosis\InzenjeringZnanja\iz\data\BNs" />
       <recent name="C:\IZ\MedicalDiagnosis\InzenjeringZnanja\iz\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\darko\Desktop\InzenjeringZnanja\InzenjeringZnanja\iz\data\BNs" />
+      <recent name="C:\Users\darko\Desktop\InzenjeringZnanja\InzenjeringZnanja\iz\fuzzy\fcl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -232,18 +280,29 @@
       <workItem from="1561076987851" duration="30000" />
       <workItem from="1561373666984" duration="797000" />
       <workItem from="1561374482816" duration="794000" />
-      <workItem from="1561411422716" duration="5950000" />
+      <workItem from="1561411422716" duration="8052000" />
+      <workItem from="1561460810301" duration="21000" />
+      <workItem from="1561495823563" duration="2251000" />
+      <workItem from="1561498283305" duration="10948000" />
     </task>
+    <task id="LOCAL-00001" summary="grupisanje bolesti">
+      <created>1561424469264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561424469264</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35079000" />
+    <option name="totallyTimeSpent" value="50401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17609255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1818766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -252,7 +311,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.32839838" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.32839838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -279,7 +338,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Male.fcl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Male.fcl" />
+    <MESSAGE value="grupisanje bolesti" />
+    <option name="LAST_COMMIT_MESSAGE" value="grupisanje bolesti" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/BNs/acute_respiratory_distress_syndrome.net">
@@ -342,6 +402,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/BNs/Male (1).fcl" />
+    <entry file="file://$PROJECT_DIR$/fuzzy/fcl/cbcMale.fcl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="137" column="49" lean-forward="true" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzzy/fcl/cbcFemale.fcl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1782">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzzy/fcl/bmpFemale.fcl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzzy/fcl/bmpMale.fcl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="147" column="56" lean-forward="true" selection-start-line="147" selection-start-column="56" selection-end-line="147" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Downloads/zadatak1.fcl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -349,17 +438,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuzzy/fcl/Male.fcl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/program.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="48">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
         </state>
       </provider>
     </entry>
