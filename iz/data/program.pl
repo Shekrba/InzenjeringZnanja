@@ -2,6 +2,8 @@ poklapanje_simptoma([],Bolest,0,[]).
 poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),member(H,Ls) , poklapanje_simptoma(T,Bolest,N2,L1), N is N2 + 1, append([H],L1,L).
 poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),\+ member(H,Ls), poklapanje_simptoma(T,Bolest,N,L).
 
+simptomi(acute_respiratory_distress_syndrome,[shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
+
 
 %infekcije:
 uzmi(bolest,myocarditis).
@@ -11,11 +13,23 @@ uzmi(bolest,acute_respiratory_distress_syndrome).
 uzmi(bolest,viral_hepatitis).
 uzmi(bolest,cardiomyopathy).
 
+infekcija(myocarditis).
+infekcija(meningitis).
+infekcija(urinary_tract_infection).
+infekcija(acute_respiratory_distress_syndrome).
+infekcija(viral_hepatitis).
+infekcija(cardiomyopathy).
+
 %heart:
 uzmi(bolest,ischemic_heart_disease).
 uzmi(bolest,hypertensive_heart_disease).
 uzmi(bolest,cardiomyopathy).
 uzmi(bolest,myocarditis).
+
+heart(ischemic_heart_disease).
+heart(hypertensive_heart_disease).
+heart(cardiomyopathy).
+heart(myocarditis).
 
 %cancer:
 
@@ -23,141 +37,35 @@ uzmi(bolest,myocarditis).
 uzmi(bolest,cirrhosis).
 uzmi(bolest,viral_hepatitis).
 
+liver(cirrhosis).
+liver(viral_hepatitis).
+
 %autoimune:
 uzmi(bolest,celiac_disease).
 uzmi(bolest,cerebral_palsy).
 uzmi(bolest,multiple_sclerosis).
 
+autoimune(celiac_disease).
+autoimune(cerebral_palsy).
+autoimune(multiple_sclerosis).
+
 %kidney_deasease:
 uzmi(bolest,hyponatremia).
 
+kidney(hyponatremia).
+
 uzmi(bolest,anemia).
+anemia(anemia).
 
 uzmi(bolest,diabetes).
+diabetes(diabetes).
 
 uzmi(bolest,gastroesophageal_reflux_disease_gerd).
 uzmi(bolest,emphysema).
 uzmi(bolest,gastritis).
 
 
-testovi(urinary_tract_infection, urinalysis);
-testovi(urinary_tract_infection, hematologic_tests_blood_test);
-testovi(urinary_tract_infection, complete_blood_count_cbc);
-testovi(urinary_tract_infection, intravenous_fluid_replacement);
-testovi(urinary_tract_infection, glucose_measurement_glucose_level);
-testovi(urinary_tract_infection, kidney_function_tests_kidney_function_test);
-testovi(urinary_tract_infection, electrolytes_panel);
 
-testovi(viral_hepatitis, hematologic_tests_blood_test);
-testovi(viral_hepatitis, complete_blood_count_cbc);
-testovi(viral_hepatitis, complete_physical_skin_exam_performed);
-testovi(viral_hepatitis, lipid_panel);
-testovi(viral_hepatitis, ultrasonography_ultrasound);
-testovi(viral_hepatitis, other_diagnostic_procedures_interview);
-testovi(viral_hepatitis, mental_health_counseling);
-
-testovi(cardiomyopathy, hematologic_tests_blood_test);
-testovi(cardiomyopathy, electrocardiogram);
-testovi(cardiomyopathy, ultrasonography_ultrasound);
-testovi(cardiomyopathy, echocardiography);
-testovi(cardiomyopathy, lipid_panel);
-testovi(cardiomyopathy, other_diagnostic_procedures_interview);
-testovi(cardiomyopathy, hemoglobin_a1c_measurement);
-
-testovi(ischemic_heart_disease, hematologic_tests_blood_test);
-testovi(ischemic_heart_disease, electrocardiogram);
-testovi(ischemic_heart_disease, complete_blood_count_cbc);
-testovi(ischemic_heart_disease, glucose_measurement_glucose_level);
-testovi(ischemic_heart_disease, lipid_panel);
-testovi(ischemic_heart_disease, ultrasonography_ultrasound);
-testovi(ischemic_heart_disease, electrolytes_panel);
-testovi(ischemic_heart_disease, echocardiography);
-
-testovi(hypertensive_heart_disease, hematologic_tests_blood_test);
-testovi(hypertensive_heart_disease, complete_blood_count_cbc);
-testovi(hypertensive_heart_disease, electrocardiogram);
-testovi(hypertensive_heart_disease, glucose_measurement_glucose_level);
-testovi(hypertensive_heart_disease, lipid_panel);
-testovi(hypertensive_heart_disease, ultrasonography_ultrasound);
-testovi(hypertensive_heart_disease, complete_physical_skin_exam_performed);
-testovi(hypertensive_heart_disease, electrolytes_panel);
-
-testovi(cirrhosis, hematologic_tests_blood_test);
-testovi(cirrhosis, complete_blood_count_cbc);
-testovi(cirrhosis, glucose_measurement_glucose_level);
-testovi(cirrhosis, electrolytes_panel);
-testovi(cirrhosis, lipid_panel);
-testovi(cirrhosis, liver_function_test);
-testovi(cirrhosis, hemoglobin_a1c_measurement);
-testovi(cirrhosis, ultrasonography_ultrasound);
-
-testovi(cerebral_palsy, physical_therapy_exercises_exercises);
-testovi(cerebral_palsy, other_diagnostic_procedures_interview);
-testovi(cerebral_palsy, occupational_therapy_assessment_speech_therapy);
-testovi(cerebral_palsy, injections_and_aspirations_of_muscles);
-testovi(cerebral_palsy, other_therapeutic_procedures);
-testovi(cerebral_palsy, magnetic_resonance_imaging_mri);
-testovi(cerebral_palsy, electroencephalogram_eeg);
-testovi(cerebral_palsy, bone_density_scan);
-
-testovi(celiac_disease, hemoglobin_a1c_measurement);
-testovi(celiac_disease, complete_blood_count_cbc);
-testovi(celiac_disease, complete_physical_skin_exam_performed);
-testovi(celiac_disease, biopsy);
-testovi(celiac_disease, hemoglobin_a1c_measurement);
-testovi(celiac_disease, lipid_panel);
-testovi(celiac_disease, upper_gastrointestinal_endoscopy);
-testovi(celiac_disease, examination_of_foot);
-
-testovi(hyponatremia, hematologic_tests_blood_test);
-testovi(hyponatremia, complete_blood_count_cbc);
-testovi(hyponatremia, radiographic_imaging_procedure);
-testovi(hyponatremia, intravenous_fluid_replacement);
-testovi(hyponatremia, electrolytes_panel);
-testovi(hyponatremia, glucose_measurement_glucose_level);
-testovi(hyponatremia, kidney_function_tests_kidney_function_test);
-testovi(hyponatremia, urinalysis);
-
-testovi(diabetes, hematologic_tests_blood_test);
-testovi(diabetes, glucose_measurement_glucose_level);
-testovi(diabetes, hemoglobin_a1c_measurement);
-testovi(diabetes, lipid_panel);
-testovi(diabetes, complete_physical_skin_exam_performed);
-testovi(diabetes, wound_care_management);
-testovi(diabetes, examination_of_foot);
-testovi(diabetes, prostate_specific_antigen_measurement);
-
-testovi(emphysema, radiographic_imaging_procedure);
-testovi(emphysema, plain_x_ray);
-testovi(emphysema, complete_blood_count_cbc);
-testovi(emphysema, hematologic_tests_blood_test);
-testovi(emphysema, x-ray_computed_tomography_scan_ct);
-testovi(emphysema, kidney_function_tests_kidney_function_test);
-testovi(emphysema, intravenous_fluid_replacement);
-testovi(emphysema, electrocardiogram);
-
-testovi(gastritis, hematologic_tests_blood_test);
-testovi(gastritis, complete_blood_count_cbc);
-testovi(gastritis, urinalysis);
-testovi(gastritis, intravenous_fluid_replacement);
-testovi(gastritis, glucose_measurement_glucose_level);
-testovi(gastritis, kidney_function_tests_kidney_function_test);
-testovi(gastritis, electrolytes_panel);
-testovi(gastritis, liver_function_test);
-
-testovi(gastroesophageal_reflux_disease_gerd, electrocardiogram);
-testovi(gastroesophageal_reflux_disease_gerd, lipid_panel);
-testovi(gastroesophageal_reflux_disease_gerd, other_diagnostic_procedures_interview);
-testovi(gastroesophageal_reflux_disease_gerd, hemoglobin_a1c_measurement);
-testovi(gastroesophageal_reflux_disease_gerd, sigmoidoscopy_or_colonoscopy);
-testovi(gastroesophageal_reflux_disease_gerd, upper_gastrointestinal_endoscopy);
-testovi(gastroesophageal_reflux_disease_gerd, rectal_examination);
-testovi(gastroesophageal_reflux_disease_gerd, mammography);
-
-
-
-
-simptomi(acute_respiratory_distress_syndrome,[shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
 
 prevalence(acute_respiratory_distress_syndrome,0.07).
 
