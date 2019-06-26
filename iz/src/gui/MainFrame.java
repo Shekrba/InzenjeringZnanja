@@ -1,8 +1,8 @@
 package gui;
 
-import de.javasoft.synthetica.aluoxide.SyntheticaAluOxideLookAndFeel;
 import de.javasoft.synthetica.dark.SyntheticaDarkLookAndFeel;
-import de.javasoft.synthetica.plain.SyntheticaPlainLookAndFeel;
+import model.CBC;
+import model.BMP;
 import model.Bolest;
 
 import javax.swing.*;
@@ -20,11 +20,17 @@ public class MainFrame {
     private static JFrame frame;
     private static JDialog dialog;
     private static ArrayList<Bolest> bolesti;
+    private static CBC cbc;
+    private static BMP bmp;
 
     public MainFrame() {
         ANAMNEZAButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                cbc = new CBC();
+                bmp = new BMP();
+
                 dialog = new JDialog();
                 dialog.setTitle("Anamnesis");
                 dialog.setContentPane(new AnamnezaFrame().getAnamnezaPanel());
@@ -111,5 +117,21 @@ public class MainFrame {
 
     public static void setBolesti(ArrayList<Bolest> bolesti) {
         MainFrame.bolesti = bolesti;
+    }
+
+    public static CBC getCbc() {
+        return cbc;
+    }
+
+    public static void setCbc(CBC cbc) {
+        MainFrame.cbc = cbc;
+    }
+
+    public static BMP getBmp() {
+        return bmp;
+    }
+
+    public static void setBmp(BMP bmp) {
+        MainFrame.bmp = bmp;
     }
 }

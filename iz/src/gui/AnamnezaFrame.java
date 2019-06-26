@@ -1,7 +1,6 @@
 package gui;
 
 
-import model.Bolest;
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
 import util.DiagnosisUtil;
 
@@ -9,7 +8,6 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class AnamnezaFrame {
     private JPanel anamnezaPanel;
@@ -33,6 +31,7 @@ public class AnamnezaFrame {
     private JList listFamilly;
     private JButton removeFamilly;
     private JButton bloodTestsButton;
+    private JButton BMPButton;
     public static JDialog dialogBlood;
 
     public AnamnezaFrame() {
@@ -156,7 +155,20 @@ public class AnamnezaFrame {
                 dialogBlood = new JDialog();
 
                 dialogBlood.setTitle("Blood tests");
-                dialogBlood.setContentPane(new BloodFrame().getBloodPanel());
+                dialogBlood.setContentPane(new CBC().getBloodPanel());
+                dialogBlood.setSize(600,400);
+                dialogBlood.setModal(true);
+                dialogBlood.setLocationRelativeTo(null);
+                dialogBlood.setVisible(true);
+            }
+        });
+        BMPButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dialogBlood = new JDialog();
+
+                dialogBlood.setTitle("Blood tests");
+                dialogBlood.setContentPane(new BMP().getBmp());
                 dialogBlood.setSize(600,400);
                 dialogBlood.setModal(true);
                 dialogBlood.setLocationRelativeTo(null);
