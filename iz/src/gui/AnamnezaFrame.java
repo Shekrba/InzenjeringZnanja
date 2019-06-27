@@ -39,10 +39,13 @@ public class AnamnezaFrame {
 
 
         ArrayList<String> keywords = new ArrayList<String>();
+        ArrayList<String> keywordsFamilly = new ArrayList<String>();
 
         addElements(keywords);
+        addElementsFamilly(keywordsFamilly);
 
         AutoCompleteDecorator.decorate(tfSimptom, keywords, false);
+        AutoCompleteDecorator.decorate(tfFamilly, keywordsFamilly, false);
 
         cbPol.addItem("Male");
         cbPol.addItem("Female");
@@ -530,6 +533,29 @@ public class AnamnezaFrame {
         keywords.add("Diminished vision");
         keywords.add("Eyelid lesion or rash");
         keywords.add("Abnormal involuntary movements");
+    }
+
+    public void addElementsFamilly(ArrayList<String> keywordsFamilly){
+        keywordsFamilly.add("myocarditis");
+        keywordsFamilly.add("meningitis");
+        keywordsFamilly.add("urinary_tract_infection");
+        keywordsFamilly.add("acute_respiratory_distress_syndrome");
+        keywordsFamilly.add("viral_hepatitis");
+        keywordsFamilly.add("cardiomyopathy");
+        keywordsFamilly.add("ischemic_heart_disease");
+        keywordsFamilly.add("hypertensive_heart_disease");
+        keywordsFamilly.add("hyponatremia");
+        keywordsFamilly.add("diabetes");
+        keywordsFamilly.add("anemia");
+        keywordsFamilly.add("gastroesophageal_reflux_disease_gerd");
+        keywordsFamilly.add("emphysema");
+        keywordsFamilly.add("celiac_disease");
+        keywordsFamilly.add("gastritis");
+        keywordsFamilly.add("cirrhosis");
+        keywordsFamilly.add("cerebral_palsy");
+        keywordsFamilly.add("multiple_sclerosis");
+        keywordsFamilly.add("acute_pancreatitis");
+        keywordsFamilly.add("the_pancreatic_cancer");
     }
 
     public JDialog getDialogBlood() {

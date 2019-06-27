@@ -14,20 +14,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/program.pl">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="929" column="8" selection-start-line="929" selection-start-column="8" selection-end-line="929" selection-end-column="8" />
+            <state relative-caret-position="249">
+              <caret line="551" column="46" lean-forward="true" selection-start-line="551" selection-start-column="46" selection-end-line="551" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1120#1128#0" expanded="true" />
+                <element signature="e#1189#1197#0" expanded="true" />
+                <element signature="e#4648#4656#0" expanded="true" />
+                <element signature="e#8012#8013#0" expanded="true" />
+                <element signature="e#8048#8049#0" expanded="true" />
+                <element signature="e#8106#8107#0" expanded="true" />
+                <element signature="e#8156#8157#0" expanded="true" />
+                <element signature="method#addElements#0;class#AnamnezaFrame#0" />
+                <element signature="e#20494#20495#0" expanded="true" />
+                <element signature="e#20528#20529#0" expanded="true" />
+                <element signature="e#20583#20584#0" expanded="true" />
+                <element signature="e#20629#20630#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/program.pl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="49" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="185" column="5" lean-forward="true" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
+            <state relative-caret-position="226">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2295#2296#0" expanded="true" />
@@ -84,37 +113,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1120#1128#0" expanded="true" />
-                <element signature="e#4648#4656#0" expanded="true" />
-                <element signature="e#8012#8013#0" expanded="true" />
-                <element signature="e#8048#8049#0" expanded="true" />
-                <element signature="e#8106#8107#0" expanded="true" />
-                <element signature="e#8156#8157#0" expanded="true" />
-                <element signature="e#20494#20495#0" expanded="true" />
-                <element signature="e#20528#20529#0" expanded="true" />
-                <element signature="e#20583#20584#0" expanded="true" />
-                <element signature="e#20629#20630#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -147,7 +149,6 @@
       <find>testovi</find>
       <find>complete</find>
       <find>%TESTOVI</find>
-      <find>simptomi</find>
       <find>urinalysis</find>
       <find>bolestBut</find>
       <find>acti</find>
@@ -158,6 +159,7 @@
       <find>infection</find>
       <find>selected</find>
       <find>dlm</find>
+      <find>simptomi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form" />
         <option value="$PROJECT_DIR$/data/program.pl" />
         <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" />
-        <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
         <option value="$PROJECT_DIR$/src/gui/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
       </list>
     </option>
   </component>
@@ -286,12 +288,12 @@
       <workItem from="1561553219062" duration="23000" />
       <workItem from="1561582366824" duration="3884000" />
       <workItem from="1561587221921" duration="13480000" />
-      <workItem from="1561664707753" duration="2595000" />
+      <workItem from="1561664707753" duration="3799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20375000" />
+    <option name="totallyTimeSpent" value="21579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -306,7 +308,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.3001464" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.29868227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -316,7 +318,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013423" side_tool="true" weight="0.32796487" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.4986979" visible="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4986979" weight="0.32796487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -407,6 +409,9 @@
     <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -414,40 +419,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/program.pl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="929" column="8" selection-start-line="929" selection-start-column="8" selection-end-line="929" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1120#1128#0" expanded="true" />
-            <element signature="e#4648#4656#0" expanded="true" />
-            <element signature="e#8012#8013#0" expanded="true" />
-            <element signature="e#8048#8049#0" expanded="true" />
-            <element signature="e#8106#8107#0" expanded="true" />
-            <element signature="e#8156#8157#0" expanded="true" />
-            <element signature="e#20494#20495#0" expanded="true" />
-            <element signature="e#20528#20529#0" expanded="true" />
-            <element signature="e#20583#20584#0" expanded="true" />
-            <element signature="e#20629#20630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="185" column="5" lean-forward="true" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
+        <state relative-caret-position="226">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2295#2296#0" expanded="true" />
@@ -498,6 +473,35 @@
             <element signature="e#4509#4510#0" expanded="true" />
             <element signature="e#4612#4613#0" expanded="true" />
             <element signature="e#4661#4662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/program.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="551" column="46" lean-forward="true" selection-start-line="551" selection-start-column="46" selection-end-line="551" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1120#1128#0" expanded="true" />
+            <element signature="e#1189#1197#0" expanded="true" />
+            <element signature="e#4648#4656#0" expanded="true" />
+            <element signature="e#8012#8013#0" expanded="true" />
+            <element signature="e#8048#8049#0" expanded="true" />
+            <element signature="e#8106#8107#0" expanded="true" />
+            <element signature="e#8156#8157#0" expanded="true" />
+            <element signature="method#addElements#0;class#AnamnezaFrame#0" />
+            <element signature="e#20494#20495#0" expanded="true" />
+            <element signature="e#20528#20529#0" expanded="true" />
+            <element signature="e#20583#20584#0" expanded="true" />
+            <element signature="e#20629#20630#0" expanded="true" />
           </folding>
         </state>
       </provider>
