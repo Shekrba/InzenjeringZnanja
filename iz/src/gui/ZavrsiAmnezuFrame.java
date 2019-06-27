@@ -63,14 +63,24 @@ public class ZavrsiAmnezuFrame {
         }
 
         ArrayList<String> diseases = new ArrayList<String>();
-        ArrayList<Integer> percents = new ArrayList<Integer>();
+        ArrayList<Integer> oldPercents = new ArrayList<Integer>();
+        int sum=0;
 
         for (Bolest b: bolesti) {
             if(b.getPoklapanje() == poklapanja.get(0)){
                 diseases.add(b.getNaziv());
-                percents.add(b.getProcenat());
+                oldPercents.add(b.getProcenat());
+                sum+=b.getProcenat();
             }
         }
+
+        ArrayList<Integer> percents = new ArrayList<Integer>();
+
+        for(int i=0 ; i<oldPercents.size() ; i++){
+            percents.add((int)Math.round((float)oldPercents.get(i)*1.0/sum*100));
+        }
+
+
 
         sortDiseases(diseases,percents);
 
@@ -146,12 +156,24 @@ public class ZavrsiAmnezuFrame {
                 diseases.clear();
                 percents.clear();
 
+                ArrayList<Integer> oldPercents = new ArrayList<Integer>();
+                int sum=0;
+
                 for (Bolest b: bolesti) {
                     if(b.getPoklapanje() == selected){
                         diseases.add(b.getNaziv());
-                        percents.add(b.getProcenat());
+                        oldPercents.add(b.getProcenat());
+                        sum+=b.getProcenat();
                     }
                 }
+
+                ArrayList<Integer> percents = new ArrayList<Integer>();
+
+                for(int i=0 ; i<oldPercents.size() ; i++){
+                    percents.add((int)Math.round((float)oldPercents.get(i)*1.0/sum*100));
+                }
+
+
 
                 sortDiseases(diseases,percents);
 

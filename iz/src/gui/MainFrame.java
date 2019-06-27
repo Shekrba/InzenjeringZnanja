@@ -6,10 +6,12 @@ import model.BMP;
 import model.Bolest;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainFrame {
 
@@ -22,10 +24,14 @@ public class MainFrame {
     private static ArrayList<Bolest> bolesti;
     private static CBC cbc;
     private static BMP bmp;
+
     private static double bmi;
     private static double temperatura;
     private static double pritisakLow;
     private static double pritisakHigh;
+
+
+    private static List<String> positiveBloodTests=new ArrayList<>();
 
 
     public MainFrame() {
@@ -145,6 +151,7 @@ public class MainFrame {
         MainFrame.bmp = bmp;
     }
 
+
     public static double getBmi() {
         return bmi;
     }
@@ -175,5 +182,13 @@ public class MainFrame {
 
     public static void setPritisakHigh(double pritisakHigh) {
         MainFrame.pritisakHigh = pritisakHigh;
+
+    }
+    public static List<String> getPositiveBloodTests() {
+        return positiveBloodTests;
+    }
+
+    public static void setPositiveBloodTests(List<String> positiveBloodTests) {
+        MainFrame.positiveBloodTests = positiveBloodTests;
     }
 }

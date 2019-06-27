@@ -67,7 +67,9 @@ public class CBC {
                 MainFrame.getCbc().setRedBloodCellCount(rbccDouble);
                 MainFrame.getCbc().setWhiteBloodCellCount(wbccDouble);
 
-                AnamnezaFrame.bloodTests = true;
+
+
+
 
                 AnamnezaFrame.dialogBlood.dispose();
             }
