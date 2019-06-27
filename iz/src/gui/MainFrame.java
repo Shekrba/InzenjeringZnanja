@@ -34,7 +34,7 @@ public class MainFrame {
                 dialog = new JDialog();
                 dialog.setTitle("Anamnesis");
                 dialog.setContentPane(new AnamnezaFrame().getAnamnezaPanel());
-                dialog.setSize(1000,800);
+                dialog.setSize(800,750);
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);

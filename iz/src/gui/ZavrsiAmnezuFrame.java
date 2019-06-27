@@ -33,6 +33,13 @@ public class ZavrsiAmnezuFrame {
     private JButton but4;
     private JButton but5;
     private JButton but6;
+    private JList testList;
+    private JButton ter1;
+    private JButton ter2;
+    private JButton ter3;
+    private JButton ter4;
+    private JButton ter5;
+    private JButton ter6;
 
     public ZavrsiAmnezuFrame() {
 
@@ -88,6 +95,14 @@ public class ZavrsiAmnezuFrame {
         bolestBut.add(but5);
         bolestBut.add(but6);
 
+        ArrayList<JButton> bolestTer = new ArrayList<>();
+        bolestTer.add(ter1);
+        bolestTer.add(ter2);
+        bolestTer.add(ter3);
+        bolestTer.add(ter4);
+        bolestTer.add(ter5);
+        bolestTer.add(ter6);
+
         for (int i = 0; i < diseases.size(); i++){
 
             bolestLab.get(i).setText(diseases.get(i));
@@ -98,6 +113,7 @@ public class ZavrsiAmnezuFrame {
             bolestProg.get(i).setStringPainted(true);
 
             bolestBut.get(i).setVisible(true);
+            bolestTer.get(i).setVisible(true);
 
             if(i==5)
                 break;
@@ -118,6 +134,7 @@ public class ZavrsiAmnezuFrame {
                     bolestBut.get(i).setVisible(false);
                     bolestLab.get(i).setVisible(false);
                     bolestProg.get(i).setVisible(false);
+                    bolestTer.get(i).setVisible(false);
                 }
 
                 diseasePanel.repaint();
@@ -145,6 +162,7 @@ public class ZavrsiAmnezuFrame {
                     bolestProg.get(i).setStringPainted(true);
 
                     bolestBut.get(i).setVisible(true);
+                    bolestTer.get(i).setVisible(true);
 
                     if(i==5)
                         break;
@@ -287,6 +305,68 @@ public class ZavrsiAmnezuFrame {
                 }
 
                 JOptionPane.showMessageDialog(null,text,"SYMPTHOMS",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        //TERAPIJA
+
+        ter1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String text = "";
+
+                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        ter2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String text = "";
+
+                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        ter3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String text = "";
+
+                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        ter4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String text = "";
+
+                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        ter5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String text = "";
+
+                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        ter6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String text = "";
+
+                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
             }
         });
     }

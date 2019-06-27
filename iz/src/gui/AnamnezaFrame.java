@@ -12,7 +12,6 @@ import java.util.ArrayList;
 public class AnamnezaFrame {
     private JPanel anamnezaPanel;
     private JButton zavrsiButton;
-    private JList list1;
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
@@ -22,16 +21,17 @@ public class AnamnezaFrame {
     private JList listSimptom;
     private JPanel unetiSimPanel;
     private JButton izbaciButton;
-    private JTextField tfHeight;
-    private JTextField tfWeight;
-    private JTextField tfBlood;
-    private JTextField tfTemperature;
     private JTextField tfFamilly;
     private JButton inputButton;
     private JList listFamilly;
     private JButton removeFamilly;
     private JButton bloodTestsButton;
     private JButton BMPButton;
+    private JTextField tfHeight;
+    private JTextField tfBPLow;
+    private JTextField tfBPHigh;
+    private JTextField tfWeight;
+    private JTextField tfTemperature;
     public static JDialog dialogBlood;
     public static boolean bloodTests;
 
@@ -100,7 +100,7 @@ public class AnamnezaFrame {
 
                 dialog.setTitle("Anamnesis");
                 dialog.setContentPane(new ZavrsiAmnezuFrame().getZavrsiAmnezuPanel());
-                dialog.setSize(600,400);
+                dialog.setSize(800,600);
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);
