@@ -8,7 +8,7 @@ poklapanje_testova([],Test,0,[]).
 poklapanje_testova([H|T],Test,N,L) :- testovi(Test,Ls),member(H,Ls) , poklapanje_testova(T,Test,N2,L1), N is N2 + 1, append([H],L1,L).
 poklapanje_testova([H|T],Test,N,L) :- testovi(Test,Ls),\+ member(H,Ls), poklapanje_testova(T,Test,N,L).
 
-simptomi(acute_respiratory_distress_syndrome,[blood_test,shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
+simptomi(acute_respiratory_distress_syndrome,[blood_test_infection,shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
 
 
 %infekcije:
@@ -128,7 +128,7 @@ acute_respiratory_distress_syndrome(coughing_up_sputum,9).
 acute_respiratory_distress_syndrome(congestion_in_chest,9).
 
 
-simptomi(hypertensive_heart_disease,[blood_test,palpitations,shortness_of_breath,sharp_chest_pain,difficulty_breathing,weakness,fatigue,chest_tightness, insomnia,heartburn,leg_swelling,fluid_retention,recent_pregnancy]).
+simptomi(hypertensive_heart_disease,[palpitations,shortness_of_breath,sharp_chest_pain,difficulty_breathing,weakness,fatigue,chest_tightness, insomnia,heartburn,leg_swelling,fluid_retention,recent_pregnancy]).
 
 prevalence(hypertensive_heart_disease, 21).
 
@@ -146,7 +146,7 @@ hypertensive_heart_disease(fluid_retention,8).
 hypertensive_heart_disease(recent_pregnancy,4).
 
 
-simptomi(ischemic_heart_disease,[blood_test,sharp_chest_pain,shortness_of_breath,difficulty_breathing,palpitations, dizziness,fatigue, chest_tightness,peripheral_edema,lymphedemia,increased_heart_rate,muscle_pain, throat_feels_tight]).
+simptomi(ischemic_heart_disease,[blood_test_heart,sharp_chest_pain,shortness_of_breath,difficulty_breathing,palpitations, dizziness,fatigue, chest_tightness,peripheral_edema,lymphedemia,increased_heart_rate,muscle_pain, throat_feels_tight]).
 
 prevalence(ischemic_heart_disease,5.3).
 
@@ -164,7 +164,7 @@ ischemic_heart_disease(muscle_pain,5).
 ischemic_heart_disease(throat_feels_tight,3).
 
 
-simptomi(diabetes,[blood_test,weight_gain,thirst,symptoms_of_the_kidneys]).
+simptomi(diabetes,[blood_test_diabetes,weight_gain,thirst,symptoms_of_the_kidneys]).
 
 prevalence(diabetes, 6).
 
@@ -173,7 +173,7 @@ diabetes(thirst,2).
 diabetes(symptoms_of_the_kidneys,1).
 
 
-simptomi(anemia, [blood_test,fatigue,weakness,dizziness,shortness_of_breath,nosebleed,heavy_menstrual_flow, melena,unpredictable_menstruation,vomiting_blood,changes_in_stool_appearance,recent_pregnancy,too_little_hair]).
+simptomi(anemia, [blood_test_anemia,fatigue,weakness,dizziness,shortness_of_breath,nosebleed,heavy_menstrual_flow, melena,unpredictable_menstruation,vomiting_blood,changes_in_stool_appearance,recent_pregnancy,too_little_hair]).
 
 prevalence(anemia, 10).
 
@@ -193,7 +193,7 @@ anemia(too_little_hair,2).
 
 
 
-simptomi(viral_hepatitis,[blood_test,sharp_abdominal_pain,abusing_alcohol,drug_abuse,melena,stomach_bloating,symptoms_of_the_kidneys,hand_or_finger_stiffness_or_tightness,low_self_esteem,incontinence_of_stool]).
+simptomi(viral_hepatitis,[blood_test_infection,blood_test_liver,sharp_abdominal_pain,abusing_alcohol,drug_abuse,melena,stomach_bloating,symptoms_of_the_kidneys,hand_or_finger_stiffness_or_tightness,low_self_esteem,incontinence_of_stool]).
 
 prevalence(viral_hepatitis,4.8).
 
@@ -208,7 +208,7 @@ viral_hepatitis(low_self_esteem,1).
 viral_hepatitis(incontinence_of_stool,1).
 
 
-simptomi(gastroesophageal_reflux_disease_gerd,[blood_test,sharp_chest_pain,sharp_abdominal_pain,vomiting,heartburn,cough,nausea,burning_abdominal_pain,upper_abdominal_pain,difficulty_in_swallowing,regurgitation,chest_tightness,hoarse_voice]).
+simptomi(gastroesophageal_reflux_disease_gerd,[sharp_chest_pain,sharp_abdominal_pain,vomiting,heartburn,cough,nausea,burning_abdominal_pain,upper_abdominal_pain,difficulty_in_swallowing,regurgitation,chest_tightness,hoarse_voice]).
 
 prevalence(gastroesophageal_reflux_disease_gerd,20.0).
 
@@ -227,7 +227,7 @@ gastroesophageal_reflux_disease_gerd(hoarse_voice,10).
 
 
 
-simptomi(emphysema,[blood_test,sharp_chest_pain,shortness_of_breath,chest_tightness,cough,nausea,ache_all_over,back_pain,cross_eyed,itchy_eyelid,excessive_growth,emotional_symptoms,elbow_cramps_or_spasms]).
+simptomi(emphysema,[sharp_chest_pain,shortness_of_breath,chest_tightness,cough,nausea,ache_all_over,back_pain,cross_eyed,itchy_eyelid,excessive_growth,emotional_symptoms,elbow_cramps_or_spasms]).
 
 prevalence(emphysema,1.8).
 
@@ -245,7 +245,7 @@ emphysema(emotional_symptoms,4).
 emphysema(elbow_cramps_or_spasms,4).
 
 
-simptomi(urinary_tract_infection,[blood_test,painful_urination,suprapubic_pain,sharp_abdominal_pain,frequent_urination,fever,vomiting,back_pain,nausea,blood_in_urine,side_pain,retention_of_urine,lower_abdominal_pain]).
+simptomi(urinary_tract_infection,[blood_test_infection,painful_urination,suprapubic_pain,sharp_abdominal_pain,frequent_urination,fever,vomiting,back_pain,nausea,blood_in_urine,side_pain,retention_of_urine,lower_abdominal_pain]).
 
 prevalence(urinary_tract_infection,21.5).
 
@@ -266,7 +266,7 @@ urinary_tract_infection(lower_abdominal_pain,25).
 
 
 
-simptomi(cardiomyopathy,[blood_test,shortness_of_breath,sharp_chest_pain,fatigue,peripheral_edema,palpitations,chest_tightness,weight_gain,irregular_heartbeat,heartburn,excessive_urination_at_night,decreased_heart_rate,muscle_weakness]).
+simptomi(cardiomyopathy,[blood_test_infection,blood_test_heart,shortness_of_breath,sharp_chest_pain,fatigue,peripheral_edema,palpitations,chest_tightness,weight_gain,irregular_heartbeat,heartburn,excessive_urination_at_night,decreased_heart_rate,muscle_weakness]).
 
 prevalence(cardiomyopathy,0.2).
 
@@ -285,7 +285,7 @@ cardiomyopathy(muscle_weakness,2).
 
 
 
-simptomi(celiac_disease,[blood_test,sharp_abdominal_pain,diarrhea,regurgitation,fatigue,vomiting,nausea,allergic_reaction,sharp_chest_pain,fears_and_phobias,peripheral_edema,leg_lump_or_mass,constipation]).
+simptomi(celiac_disease,[blood_test_autoimune,sharp_abdominal_pain,diarrhea,regurgitation,fatigue,vomiting,nausea,allergic_reaction,sharp_chest_pain,fears_and_phobias,peripheral_edema,leg_lump_or_mass,constipation]).
 
 prevalence(celiac_disease,1.0).
 
@@ -303,7 +303,7 @@ celiac_disease(leg_lump_or_mass,15).
 celiac_disease(constipation,15).
 
 
-simptomi(gastritis,[blood_test,sharp_abdominal_pain,vomiting,nausea,burning_abdominal_pain,sharp_chest_pain,upper_abdominal_pain,diarrhea,fever,headache,heartburn,vomiting_blood,regurgitation]).
+simptomi(gastritis,[sharp_abdominal_pain,vomiting,nausea,burning_abdominal_pain,sharp_chest_pain,upper_abdominal_pain,diarrhea,fever,headache,heartburn,vomiting_blood,regurgitation]).
 
 prevalence(gastritis,4.5).
 
@@ -321,7 +321,7 @@ gastritis(vomiting_blood,20).
 gastritis(regurgitation,15).
 
 
-simptomi(cirrhosis,[blood_test,sharp_abdominal_pain,shortness_of_breath,peripheral_edema,fatigue,upper_abdominal_pain,abdominal_distention,stomach_bloating,blood_in_stool,regurgitation,symptoms_of_the_kidneys,vomiting_blood,melena]).
+simptomi(cirrhosis,[blood_test_liver,sharp_abdominal_pain,shortness_of_breath,peripheral_edema,fatigue,upper_abdominal_pain,abdominal_distention,stomach_bloating,blood_in_stool,regurgitation,symptoms_of_the_kidneys,vomiting_blood,melena]).
 
 prevalence(cirrhosis,0.27).
 
@@ -339,7 +339,7 @@ cirrhosis(vomiting_blood,5).
 cirrhosis(melena,5).
 
 
-simptomi(hyponatremia,[blood_test,weakness,vomiting,nausea,shortness_of_breath,dizziness,sharp_abdominal_pain,sharp_chest_pain,headache,back_pain,fever,fainting,seizures]).
+simptomi(hyponatremia,[blood_test_heart,blood_test_kidney,weakness,vomiting,nausea,shortness_of_breath,dizziness,sharp_abdominal_pain,sharp_chest_pain,headache,back_pain,fever,fainting,seizures]).
 
 prevalence(hyponatremia,1.72).
 
@@ -357,7 +357,7 @@ hyponatremia(fainting,25).
 hyponatremia(seizures,23).
 
 
-simptomi(cerebral_palsy,[blood_test,seizures,problems_with_movement,cramps_and_spasms,difficulty_eating,lack_of_growth,leg_cramps_or_spasms,back_cramps_or_spasms,blindness,infant_feeding_problem,swollen_tongue,lip_sore,tongue_lesions]).
+simptomi(cerebral_palsy,[blood_test_autoimune,seizures,problems_with_movement,cramps_and_spasms,difficulty_eating,lack_of_growth,leg_cramps_or_spasms,back_cramps_or_spasms,blindness,infant_feeding_problem,swollen_tongue,lip_sore,tongue_lesions]).
 
 prevalence(cerebral_palsy,0.2).
 
@@ -377,7 +377,7 @@ cerebral_palsy(tongue_lesions,2).
 
 
 
-simptomi(myocarditis,[blood_test,palpitations,ache_all_over,cough,chest_tightness,fever,sharp_chest_pain,weakness,diarrhea,headache,difficulty_breathing,dizziness,coughing_up_sputum]).
+simptomi(myocarditis,[blood_test_infection,blood_test_heart,palpitations,ache_all_over,cough,chest_tightness,fever,sharp_chest_pain,weakness,diarrhea,headache,difficulty_breathing,dizziness,coughing_up_sputum]).
 
 prevalence(myocarditis,1.06).
 
@@ -395,7 +395,7 @@ myocarditis(dizziness,38).
 myocarditis(coughing_up_sputum,38).
 
 
-simptomi(meningitis,[blood_test,headache,fever,vomiting,neck_pain,ache_all_over,back_pain,seizures,nausea,low_back_pain,cough,leg_pain,neck_stiffness_or_tightness]).
+simptomi(meningitis,[blood_test_infection,headache,fever,vomiting,neck_pain,ache_all_over,back_pain,seizures,nausea,low_back_pain,cough,leg_pain,neck_stiffness_or_tightness]).
 
 prevalence(meningitis,1.2E-4).
 
@@ -413,7 +413,7 @@ meningitis(leg_pain,26).
 meningitis(neck_stiffness_or_tightness,21).
 
 
-simptomi(multiple_sclerosis,[blood_test,fatigue,loss_of_sensation,headache,dizziness,problems_with_movement,weakness,leg_weakness,paresthesia,disturbance_of_memory,abnormal_involuntary_movements,leg_stiffness_or_tightness,focal_weakness]).
+simptomi(multiple_sclerosis,[blood_test_autoimune,fatigue,loss_of_sensation,headache,dizziness,problems_with_movement,weakness,leg_weakness,paresthesia,disturbance_of_memory,abnormal_involuntary_movements,leg_stiffness_or_tightness,focal_weakness]).
 
 prevalence(multiple_sclerosis,0.03).
 
