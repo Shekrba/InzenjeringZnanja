@@ -33,11 +33,11 @@ public class AnamnezaFrame {
     private JTextField tfWeight;
     private JTextField tfTemperature;
     public static JDialog dialogBlood;
-    public static boolean bloodTests;
+
 
     public AnamnezaFrame() {
 
-        bloodTests = false;
+
         ArrayList<String> keywords = new ArrayList<String>();
 
         addElements(keywords);
@@ -92,9 +92,7 @@ public class AnamnezaFrame {
                     sms.add(dlmSimptomi.get(i).toString());
                 }
 
-                if(bloodTests){
-                    sms.add("blood_test");
-                }
+
 
                 MainFrame.setBolesti(DiagnosisUtil.findDiagnosis(sms,Integer.parseInt(textField4.getText()),String.valueOf(cbPol.getSelectedItem())));
 
@@ -504,5 +502,26 @@ public class AnamnezaFrame {
 
     public void setDialogBlood(JDialog dialogBlood) {
         this.dialogBlood = dialogBlood;
+    }
+
+    public static <T> ArrayList<T> removeDuplicates(ArrayList<T> list)
+    {
+
+        // Create a new ArrayList
+        ArrayList<T> newList = new ArrayList<T>();
+
+        // Traverse through the first list
+        for (T element : list) {
+
+            // If this element is not present in newList
+            // then add it
+            if (!newList.contains(element)) {
+
+                newList.add(element);
+            }
+        }
+
+        // return the new list
+        return newList;
     }
 }

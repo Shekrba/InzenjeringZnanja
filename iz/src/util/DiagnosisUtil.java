@@ -78,6 +78,8 @@ public class DiagnosisUtil {
             }
 
             b.setProcenat(calculateProb(b,age,pol));
+
+
             if(b.getPoklapanje()!=0)
                 ret.add(b);
         }
@@ -170,6 +172,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_anemia");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = anemiaNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) anemia.getValue() / 100);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -197,6 +201,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_heart");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) heartDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -222,6 +228,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_autoimune");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) autoimuneDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -247,6 +255,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("cancer");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) cancerDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -274,6 +284,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_infection");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) infectionDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -314,6 +326,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_kidney");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) kidneyDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -342,6 +356,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_liver");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) liverDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -367,6 +383,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_pancreatitis");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) pancreatitisDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -394,6 +412,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_diabetes");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) kidneyDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -421,6 +441,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_heart");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) heartDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -448,6 +470,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_autoimune");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) autoimuneDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -473,6 +497,8 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_cancer");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) cancerDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
@@ -500,11 +526,30 @@ public class DiagnosisUtil {
                         bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     } else {
+                        b.getSimptomi().add("blood_test_infection");
+                        b.setPoklapanje(b.getPoklapanje()+1);
                         PotentialTable bolestProb = bolestNode.getProbabilityFunction();
                         bolestProb.setValue(0, bolestProb.getValue(0) + (float) infectionDisease.getValue() / (10*10));
                         bolestProb.setValue(1, 1 - bolestProb.getValue(0));
                     }
 
+                }
+
+                //anemia
+                Variable anemia=fis.getVariable("anemia");
+                if(b.getNaziv().equals("anemia")) {
+                    ProbabilisticNode anemiaNode = (ProbabilisticNode) net.getNode("anemia");
+                    if (anemia.getValue() < 0) {
+                        PotentialTable bolestProb = anemiaNode.getProbabilityFunction();
+                        bolestProb.setValue(0, bolestProb.getValue(0) * (float) 0.5);
+                        bolestProb.setValue(1, 1 - bolestProb.getValue(0));
+                    } else {
+                        b.getSimptomi().add("blood_test_anemia");
+                        b.setPoklapanje(b.getPoklapanje()+1);
+                        PotentialTable bolestProb = anemiaNode.getProbabilityFunction();
+                        bolestProb.setValue(0, bolestProb.getValue(0) + (float) anemia.getValue() / 100);
+                        bolestProb.setValue(1, 1 - bolestProb.getValue(0));
+                    }
                 }
 
 
@@ -518,7 +563,7 @@ public class DiagnosisUtil {
 
             for (String sympom:
                     b.getSimptomi()) {
-                if(!sympom.equals("blood_test")) {
+                if(!sympom.contains("blood_test")) {
                     ProbabilisticNode factNode = (ProbabilisticNode) net.getNode(sympom);
                     int stateIndex = 0; // index of state "da"
                     factNode.addFinding(stateIndex);

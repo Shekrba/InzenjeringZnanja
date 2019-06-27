@@ -6,10 +6,12 @@ import model.BMP;
 import model.Bolest;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainFrame {
 
@@ -22,6 +24,7 @@ public class MainFrame {
     private static ArrayList<Bolest> bolesti;
     private static CBC cbc;
     private static BMP bmp;
+    private static List<String> positiveBloodTests=new ArrayList<>();
 
     public MainFrame() {
         ANAMNEZAButton.addActionListener(new ActionListener() {
@@ -133,5 +136,13 @@ public class MainFrame {
 
     public static void setBmp(BMP bmp) {
         MainFrame.bmp = bmp;
+    }
+
+    public static List<String> getPositiveBloodTests() {
+        return positiveBloodTests;
+    }
+
+    public static void setPositiveBloodTests(List<String> positiveBloodTests) {
+        MainFrame.positiveBloodTests = positiveBloodTests;
     }
 }

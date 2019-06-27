@@ -68,74 +68,59 @@ DEFUZZIFY anemia
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
-DEFUZZIFY anemia
+DEFUZZIFY pankreatitis
 	TERM niska := (-50,0) (-25,1) (0, 0);
 	TERM visoka := (0, 0) (50, 1) (100, 0);
 	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
-DEFUZZIFY pankreatitis
-	TERM niska := (-50,0) (-25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
-	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
-	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
-END_DEFUZZIFY
-
 DEFUZZIFY diabetes
 	TERM niska := (-50,0) (-25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
+	TERM visoka := (0, 0) (50, 1) (100, 0);
 	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
 DEFUZZIFY heart_desease
-	TERM niska := (-0.5,0) (-0.25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
+	TERM niska := (-50,0) (-25,1) (0, 0);
+    TERM visoka := (0, 0) (50, 1) (100, 0);
 	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
 DEFUZZIFY autoimune
-	TERM niska := (-0.5,0) (-0.25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
+	TERM niska := (-50,0) (-25,1) (0, 0);
+    	TERM visoka := (0, 0) (50, 1) (100, 0);
 	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
 DEFUZZIFY cancer
-	TERM niska := (-0.5,0) (-0.25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
+	TERM niska := (-50,0) (-25,1) (0, 0);
+    	TERM visoka := (0, 0) (50, 1) (100, 0);
 	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
 DEFUZZIFY infections
-	TERM niska := (-0.5,0) (-0.25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
+	TERM niska := (-50,0) (-25,1) (0, 0);
+    	TERM visoka := (0, 0) (50, 1) (100, 0);
 	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
 
 DEFUZZIFY kidney
-	TERM niska := (-0.5,0) (-0.25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
+	TERM niska := (-50,0) (-25,1) (0, 0);
+    	TERM visoka := (0, 0) (50, 1) (100, 0);
 	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
 DEFUZZIFY liver
-	TERM niska := (-0.5,0) (-0.25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
+	TERM niska := (-50,0) (-25,1) (0, 0);
+    	TERM visoka := (0, 0) (50, 1) (100, 0);
 	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
