@@ -45,6 +45,9 @@ public class ZavrsiAmnezuFrame {
 
         ArrayList<Bolest> bolesti = MainFrame.getBolesti();
 
+        DefaultListModel dlmTest = new DefaultListModel();
+        testList.setModel(dlmTest);
+
         ArrayList<Integer> poklapanja = new ArrayList<>();
         for (Bolest b: bolesti) {
             if(!poklapanja.contains(b.getPoklapanje())) {

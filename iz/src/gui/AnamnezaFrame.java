@@ -84,6 +84,42 @@ public class AnamnezaFrame {
                     return;
                 }
 
+                try{
+                    if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
+                        MainFrame.setPritisakHigh(Double.parseDouble(tfBPHigh.getText()));
+                        MainFrame.setPritisakLow(Double.parseDouble(tfBPLow.getText()));
+                    }
+                    else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
+                        JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
+                        return;
+                    }
+
+                    if(tfHeight.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog(null, "You have to input Height.");
+                        return;
+                    }
+
+                    if(tfWeight.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog(null, "You have to input Weight.");
+                        return;
+                    }
+
+                    double height = Double.parseDouble(tfHeight.getText());
+                    double weight = Double.parseDouble(tfWeight.getText());
+
+                    double bmi = weight/Math.pow(height,2);
+
+                    MainFrame.setBmi(bmi);
+
+                    if(!tfTemperature.getText().trim().equals("")) {
+                        MainFrame.setTemperatura(Double.parseDouble(tfTemperature.getText()));
+                    }
+
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "You have to input numbers in Physical examination fields.");
+                    return;
+                }
+
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
