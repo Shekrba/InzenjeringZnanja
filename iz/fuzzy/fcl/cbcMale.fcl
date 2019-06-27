@@ -11,7 +11,6 @@ END_VAR
 
 VAR_OUTPUT              // izlazne varijable
 	anemia : REAL;
-	polycythemia_vera : REAL;
 	heart_desease : REAL;
 	autoimune : REAL;
 	cancer : REAL;
@@ -55,13 +54,7 @@ DEFUZZIFY anemia
 	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
 END_DEFUZZIFY
 
-DEFUZZIFY polycythemia_vera
-	TERM niska := (-50,0) (-25,1) (0, 0);
-	TERM srednja := (0,0);
-	TERM visoka := (0, 0) (40, 1) (80, 0);
-	METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
-	DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
-END_DEFUZZIFY
+
 
 DEFUZZIFY heart_desease
 	TERM niska := (-0.5,0) (-0.25,1) (0, 0);
@@ -114,13 +107,7 @@ RULEBLOCK blok1
     RULE 31 : IF hematocrit IS high and redCellCount is high THEN heart_desease IS visoka with 0.75;
     RULE 32 : IF redCellCount IS high and hemoglobin is high THEN heart_desease IS visoka with 0.75;
     RULE 33 : IF hematocrit IS high and redCellCount is high and hemoglobin is high THEN heart_desease IS visoka;
-    	RULE 7 : IF redCellCount IS high THEN  polycythemia_vera IS visoka with 0.5;
-        RULE 8 : IF hemoglobin IS high THEN polycythemia_vera IS visoka with 0.5;
-        RULE 9 : IF hematocrit IS high THEN polycythemia_vera IS visoka with 0.5;
-        RULE 34 : IF hematocrit IS high and hemoglobin is high THEN polycythemia_vera IS visoka with 0.75;
-        RULE 35 : IF hematocrit IS high and redCellCount is high THEN polycythemia_vera IS visoka with 0.75;
-        RULE 36 : IF redCellCount IS high and hemoglobin is high THEN polycythemia_vera IS visoka with 0.75;
-        RULE 37 : IF hematocrit IS high and redCellCount is high and hemoglobin is high THEN polycythemia_vera IS visoka;
+
     RULE 10 : IF whiteBloodCellCount IS low THEN cancer IS visoka;
     RULE 11 : IF whiteBloodCellCount IS low THEN autoimune IS visoka;
     RULE 13 : IF whiteBloodCellCount IS high THEN infections IS visoka;
@@ -138,13 +125,6 @@ RULEBLOCK blok1
         RULE 42 : IF redCellCount IS low and hemoglobin is low THEN heart_desease IS niska with 0.75;
         RULE 43 : IF hematocrit IS low and redCellCount is low THEN heart_desease IS niska with 0.75;
         RULE 44 : IF hematocrit IS low and hemoglobin is low and redCellCount is low THEN heart_desease IS niska;
-        RULE 20 : IF redCellCount IS low THEN polycythemia_vera IS niska with 0.5;
-        RULE 21 : IF hemoglobin IS low THEN polycythemia_vera IS niska with 0.5;
-        RULE 22 : IF hematocrit IS low THEN polycythemia_vera IS niska with 0.5;
-                RULE 45 : IF hematocrit IS low and hemoglobin is low THEN polycythemia_vera IS niska with 0.75;
-                RULE 46 : IF redCellCount IS low and hemoglobin is low THEN polycythemia_vera IS niska with 0.75;
-                RULE 47 : IF hematocrit IS low and redCellCount is low THEN polycythemia_vera IS niska with 0.75;
-                RULE 48 : IF hematocrit IS low and hemoglobin is low and redCellCount is low THEN polycythemia_vera IS niska;
         RULE 23 : IF whiteBloodCellCount IS high THEN cancer IS niska;
         RULE 24 : IF whiteBloodCellCount IS high THEN autoimune IS niska;
         RULE 26 : IF whiteBloodCellCount IS low THEN infections IS niska;

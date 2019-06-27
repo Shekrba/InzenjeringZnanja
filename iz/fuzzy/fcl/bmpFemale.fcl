@@ -216,7 +216,7 @@ RULEBLOCK blok1
         RULE 56 : IF bilirubin IS low and urea is low THEN liver IS niska with 0.75;
         RULE 57 : IF urea IS low and calcium is high THEN liver IS niska with 0.75;
         RULE 58 : IF glucose IS high and calcium is high THEN liver IS niska with 0.75;
-        RULE 59 : IF glucose IS high and urea is low THEN liver IS vniska with 0.75;
+        RULE 59 : IF glucose IS high and urea is low THEN liver IS niska with 0.75;
             RULE 60 : IF glucose IS high and urea is low and calcium is high THEN liver IS niska with 0.9;
             RULE 61 : IF glucose IS high and urea is low and bilirubin is low THEN liver IS niska with 0.9;
             RULE 62 : IF bilirubin IS low and urea is low and calcium is high THEN liver IS niska with 0.9;
