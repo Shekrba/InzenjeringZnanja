@@ -33,10 +33,11 @@ public class AnamnezaFrame {
     private JButton bloodTestsButton;
     private JButton BMPButton;
     public static JDialog dialogBlood;
+    public static boolean bloodTests;
 
     public AnamnezaFrame() {
 
-
+        bloodTests = false;
         ArrayList<String> keywords = new ArrayList<String>();
 
         addElements(keywords);
@@ -90,6 +91,11 @@ public class AnamnezaFrame {
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
                     sms.add(dlmSimptomi.get(i).toString());
                 }
+
+                if(bloodTests){
+                    sms.add("blood_test");
+                }
+
                 MainFrame.setBolesti(DiagnosisUtil.findDiagnosis(sms,Integer.parseInt(textField4.getText()),String.valueOf(cbPol.getSelectedItem())));
 
                 dialog.setTitle("Anamnesis");

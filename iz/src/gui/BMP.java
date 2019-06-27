@@ -86,6 +86,8 @@ public class BMP {
                 MainFrame.getBmp().setSodium(sodiumDouble);
                 MainFrame.getBmp().setUrea(ureaDouble);
 
+                AnamnezaFrame.bloodTests = true;
+
                 AnamnezaFrame.dialogBlood.dispose();
             }
         });
