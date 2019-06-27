@@ -1,8 +1,14 @@
+%POKLAPANJE BOLESTI SA SIMPTOMIMA
 poklapanje_simptoma([],Bolest,0,[]).
 poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),member(H,Ls) , poklapanje_simptoma(T,Bolest,N2,L1), N is N2 + 1, append([H],L1,L).
 poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),\+ member(H,Ls), poklapanje_simptoma(T,Bolest,N,L).
 
-simptomi(acute_respiratory_distress_syndrome,[shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
+%POKLAPANJE TESTOVA SA BOLESTIMA
+poklapanje_testova([],Test,0,[]).
+poklapanje_testova([H|T],Test,N,L) :- testovi(Test,Ls),member(H,Ls) , poklapanje_testova(T,Test,N2,L1), N is N2 + 1, append([H],L1,L).
+poklapanje_testova([H|T],Test,N,L) :- testovi(Test,Ls),\+ member(H,Ls), poklapanje_testova(T,Test,N,L).
+
+simptomi(acute_respiratory_distress_syndrome,[blood_test,shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
 
 
 %infekcije:
@@ -65,121 +71,45 @@ uzmi(bolest,emphysema).
 uzmi(bolest,gastritis).
 
 
-testovi(urinary_tract_infection, urinalysis).
-testovi(urinary_tract_infection, hematologic_tests_blood_test).
-testovi(urinary_tract_infection, complete_blood_count_cbc).
-testovi(urinary_tract_infection, intravenous_fluid_replacement).
-testovi(urinary_tract_infection, glucose_measurement_glucose_level).
-testovi(urinary_tract_infection, kidney_function_tests_kidney_function_test).
-testovi(urinary_tract_infection, electrolytes_panel).
-
-testovi(viral_hepatitis, hematologic_tests_blood_test).
-testovi(viral_hepatitis, complete_blood_count_cbc).
-testovi(viral_hepatitis, complete_physical_skin_exam_performed).
-testovi(viral_hepatitis, lipid_panel).
-testovi(viral_hepatitis, ultrasonography_ultrasound).
-testovi(viral_hepatitis, other_diagnostic_procedures_interview).
-testovi(viral_hepatitis, mental_health_counseling).
-
-testovi(cardiomyopathy, hematologic_tests_blood_test).
-testovi(cardiomyopathy, electrocardiogram).
-testovi(cardiomyopathy, ultrasonography_ultrasound).
-testovi(cardiomyopathy, echocardiography).
-testovi(cardiomyopathy, lipid_panel).
-testovi(cardiomyopathy, other_diagnostic_procedures_interview).
-testovi(cardiomyopathy, hemoglobin_a1c_measurement).
-
-testovi(ischemic_heart_disease, hematologic_tests_blood_test).
-testovi(ischemic_heart_disease, electrocardiogram).
-testovi(ischemic_heart_disease, complete_blood_count_cbc).
-testovi(ischemic_heart_disease, glucose_measurement_glucose_level).
-testovi(ischemic_heart_disease, lipid_panel).
-testovi(ischemic_heart_disease, ultrasonography_ultrasound).
-testovi(ischemic_heart_disease, electrolytes_panel).
-testovi(ischemic_heart_disease, echocardiography).
-
-testovi(hypertensive_heart_disease, hematologic_tests_blood_test).
-testovi(hypertensive_heart_disease, complete_blood_count_cbc).
-testovi(hypertensive_heart_disease, electrocardiogram).
-testovi(hypertensive_heart_disease, glucose_measurement_glucose_level).
-testovi(hypertensive_heart_disease, lipid_panel).
-testovi(hypertensive_heart_disease, ultrasonography_ultrasound).
-testovi(hypertensive_heart_disease, complete_physical_skin_exam_performed).
-testovi(hypertensive_heart_disease, electrolytes_panel).
-
-testovi(cirrhosis, hematologic_tests_blood_test).
-testovi(cirrhosis, complete_blood_count_cbc).
-testovi(cirrhosis, glucose_measurement_glucose_level).
-testovi(cirrhosis, electrolytes_panel).
-testovi(cirrhosis, lipid_panel).
-testovi(cirrhosis, liver_function_test).
-testovi(cirrhosis, hemoglobin_a1c_measurement).
-testovi(cirrhosis, ultrasonography_ultrasound).
-
-testovi(cerebral_palsy, physical_therapy_exercises_exercises).
-testovi(cerebral_palsy, other_diagnostic_procedures_interview).
-testovi(cerebral_palsy, occupational_therapy_assessment_speech_therapy).
-testovi(cerebral_palsy, injections_and_aspirations_of_muscles).
-testovi(cerebral_palsy, other_therapeutic_procedures).
-testovi(cerebral_palsy, magnetic_resonance_imaging_mri).
-testovi(cerebral_palsy, electroencephalogram_eeg).
-testovi(cerebral_palsy, bone_density_scan).
-
-testovi(celiac_disease, hemoglobin_a1c_measurement).
-testovi(celiac_disease, complete_blood_count_cbc).
-testovi(celiac_disease, complete_physical_skin_exam_performed).
-testovi(celiac_disease, biopsy).
-testovi(celiac_disease, hemoglobin_a1c_measurement).
-testovi(celiac_disease, lipid_panel).
-testovi(celiac_disease, upper_gastrointestinal_endoscopy).
-testovi(celiac_disease, examination_of_foot).
-
-testovi(hyponatremia, hematologic_tests_blood_test).
-testovi(hyponatremia, complete_blood_count_cbc).
-testovi(hyponatremia, radiographic_imaging_procedure).
-testovi(hyponatremia, intravenous_fluid_replacement).
-testovi(hyponatremia, electrolytes_panel).
-testovi(hyponatremia, glucose_measurement_glucose_level).
-testovi(hyponatremia, kidney_function_tests_kidney_function_test).
-testovi(hyponatremia, urinalysis).
-
-testovi(diabetes, hematologic_tests_blood_test).
-testovi(diabetes, glucose_measurement_glucose_level).
-testovi(diabetes, hemoglobin_a1c_measurement).
-testovi(diabetes, lipid_panel).
-testovi(diabetes, complete_physical_skin_exam_performed).
-testovi(diabetes, wound_care_management).
-testovi(diabetes, examination_of_foot).
-testovi(diabetes, prostate_specific_antigen_measurement).
-
-testovi(emphysema, radiographic_imaging_procedure).
-testovi(emphysema, plain_x_ray).
-testovi(emphysema, complete_blood_count_cbc).
-testovi(emphysema, hematologic_tests_blood_test).
-testovi(emphysema, x-ray_computed_tomography_scan_ct).
-testovi(emphysema, kidney_function_tests_kidney_function_test).
-testovi(emphysema, intravenous_fluid_replacement).
-testovi(emphysema, electrocardiogram).
-
-testovi(gastritis, hematologic_tests_blood_test).
-testovi(gastritis, complete_blood_count_cbc).
-testovi(gastritis, urinalysis).
-testovi(gastritis, intravenous_fluid_replacement).
-testovi(gastritis, glucose_measurement_glucose_level).
-testovi(gastritis, kidney_function_tests_kidney_function_test).
-testovi(gastritis, electrolytes_panel).
-testovi(gastritis, liver_function_test).
-
-testovi(gastroesophageal_reflux_disease_gerd, electrocardiogram).
-testovi(gastroesophageal_reflux_disease_gerd, lipid_panel).
-testovi(gastroesophageal_reflux_disease_gerd, other_diagnostic_procedures_interview).
-testovi(gastroesophageal_reflux_disease_gerd, hemoglobin_a1c_measurement).
-testovi(gastroesophageal_reflux_disease_gerd, sigmoidoscopy_or_colonoscopy).
-testovi(gastroesophageal_reflux_disease_gerd, upper_gastrointestinal_endoscopy).
-testovi(gastroesophageal_reflux_disease_gerd, rectal_examination).
-testovi(gastroesophageal_reflux_disease_gerd, mammography).
-
-
+%TESTOVI
+testovi(urinalysis,[urinary_tract_infection,anemia,meningitis,hyponatremia,gastritis,cardiomyopathy]).
+testovi(hematologic_tests_blood_test,[meningitis,myocarditis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,diabetes,hyponatremia,cirrhosis,hypertensive_heart_disease,ischemic_heart_disease,urinary_tract_infection,viral_hepatitis ]).
+testovi(complete_blood_count_cbc,[meningitis,myocarditis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,hyponatremia,celiac_disease,cirrhosis,hypertensive_heart_disease,ischemic_heart_disease,urinary_tract_infection, viral_hepatitis]).
+testovi(intravenous_fluid_replacement,[meningitis,anemia,urinary_tract_infection, hyponatremia,emphysema,gastritis,acute_respiratory_distress_syndrome]).
+testovi(glucose_measurement_glucose_level,[meningitis,anemia,gastritis,diabetes,hyponatremia,cirrhosis,hypertensive_heart_disease,urinary_tract_infection,ischemic_heart_disease]).
+testovi(kidney_function_tests_kidney_function_test,[meningitis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,hyponatremia,urinary_tract_infection]).
+testovi(electrolytes_panel,[anemia,acute_respiratory_distress_syndrome,gastritis,hyponatremia,cirrhosis,hypertensive_heart_disease,urinary_tract_infection, ischemic_heart_disease]).
+testovi(complete_physical_skin_exam_performed,[diabetes,celiac_disease,viral_hepatitis,hypertensive_heart_disease]).
+testovi(lipid_panel,[gastroesophageal_reflux_disease_gerd,viral_hepatitis,cardiomyopathy,diabetes,ischemic_heart_disease,hypertensive_heart_disease,cirrhosis,celiac_disease]).
+testovi(ultrasonography_ultrasound,[myocarditis,viral_hepatitis,cardiomyopathy,ischemic_heart_disease,hypertensive_heart_disease,cirrhosis]).
+testovi(other_diagnostic_procedures_interview,[multiple_sclerosis,viral_hepatitis,cardiomyopathy,cerebral_palsy,gastroesophageal_reflux_disease_gerd]).
+testovi(mental_health_counseling,[viral_hepatitis]).
+testovi(electrocardiogram,[myocarditis,anemia,acute_respiratory_distress_syndrome,cardiomyopathy,ischemic_heart_disease,hypertensive_heart_disease,emphysema,gastroesophageal_reflux_disease_gerd]).
+testovi(echocardiography,[myocarditis,myocarditis,cardiomyopathy,ischemic_heart_disease]).
+testovi(hemoglobin_a1c_measurement,[gastroesophageal_reflux_disease_gerd,cardiomyopathy,cirrhosis,celiac_disease,diabetes]).
+testovi(liver_function_test,[cirrhosis,gastritis]).
+testovi(physical_therapy_exercises_exercises,[cerebral_palsy,multiple_sclerosis]).
+testovi(occupational_therapy_assessment_speech_therapy,[cerebral_palsy,multiple_sclerosis]).
+testovi(injections_and_aspirations_of_muscles,[cerebral_palsy]).
+testovi(other_therapeutic_procedures,[cerebral_palsy,multiple_sclerosis]).
+testovi(magnetic_resonance_imaging_mri,[cerebral_palsy,multiple_sclerosis,multiple_sclerosis]).
+testovi(electroencephalogram_eeg,[cerebral_palsy]).
+testovi(bone_density_scan,[cerebral_palsy]).
+testovi(biopsy,[celiac_disease]).
+testovi(upper_gastrointestinal_endoscopy,[celiac_disease,gastroesophageal_reflux_disease_gerd]).
+testovi(examination_of_foot,[celiac_disease,diabetes]).
+testovi(radiographic_imaging_procedure,[meningitis,hyponatremia,emphysema,acute_respiratory_distress_syndrome,myocarditis]).
+testovi(wound_care_management,[diabetes]).
+testovi(prostate_specific_antigen_measurement,[diabetes]).
+testovi(plain_x_ray,[emphysema,acute_respiratory_distress_syndrome]).
+testovi(x_ray_computed_tomography_scan_ct,[emphysema,meningitis]).
+testovi(sigmoidoscopy_or_colonoscopy,[gastroesophageal_reflux_disease_gerd]).
+testovi(rectal_examination,[gastroesophageal_reflux_disease_gerd]).
+testovi(mammography,[gastroesophageal_reflux_disease_gerd,myocarditis]).
+testovi(cardiac_monitoring_cardiac_monitor,[myocarditis]).
+testovi(referral_to_home_health_care_service,[multiple_sclerosis]).
+testovi(debridement_of_wound_infection_or_burn,[multiple_sclerosis]).
+testovi(diagnostic_spinal_tap_spinal_tap,[multiple_sclerosis]).
 
 
 prevalence(acute_respiratory_distress_syndrome,0.07).
@@ -198,7 +128,7 @@ acute_respiratory_distress_syndrome(coughing_up_sputum,9).
 acute_respiratory_distress_syndrome(congestion_in_chest,9).
 
 
-simptomi(hypertensive_heart_disease,[palpitations,shortness_of_breath,sharp_chest_pain,difficulty_breathing,weakness,fatigue,chest_tightness, insomnia,heartburn,leg_swelling,fluid_retention,recent_pregnancy]).
+simptomi(hypertensive_heart_disease,[blood_test,palpitations,shortness_of_breath,sharp_chest_pain,difficulty_breathing,weakness,fatigue,chest_tightness, insomnia,heartburn,leg_swelling,fluid_retention,recent_pregnancy]).
 
 prevalence(hypertensive_heart_disease, 21).
 
@@ -216,7 +146,7 @@ hypertensive_heart_disease(fluid_retention,8).
 hypertensive_heart_disease(recent_pregnancy,4).
 
 
-simptomi(ischemic_heart_disease,[sharp_chest_pain,shortness_of_breath,difficulty_breathing,palpitations, dizziness,fatigue, chest_tightness,peripheral_edema,lymphedemia,increased_heart_rate,muscle_pain, throat_feels_tight]).
+simptomi(ischemic_heart_disease,[blood_test,sharp_chest_pain,shortness_of_breath,difficulty_breathing,palpitations, dizziness,fatigue, chest_tightness,peripheral_edema,lymphedemia,increased_heart_rate,muscle_pain, throat_feels_tight]).
 
 prevalence(ischemic_heart_disease,5.3).
 
@@ -234,7 +164,7 @@ ischemic_heart_disease(muscle_pain,5).
 ischemic_heart_disease(throat_feels_tight,3).
 
 
-simptomi(diabetes,[weight_gain,thirst,symptoms_of_the_kidneys]).
+simptomi(diabetes,[blood_test,weight_gain,thirst,symptoms_of_the_kidneys]).
 
 prevalence(diabetes, 6).
 
@@ -243,7 +173,7 @@ diabetes(thirst,2).
 diabetes(symptoms_of_the_kidneys,1).
 
 
-simptomi(anemia, [fatigue,weakness,dizziness,shortness_of_breath,nosebleed,heavy_menstrual_flow, melena,unpredictable_menstruation,vomiting_blood,changes_in_stool_appearance,recent_pregnancy,too_little_hair]).
+simptomi(anemia, [blood_test,fatigue,weakness,dizziness,shortness_of_breath,nosebleed,heavy_menstrual_flow, melena,unpredictable_menstruation,vomiting_blood,changes_in_stool_appearance,recent_pregnancy,too_little_hair]).
 
 prevalence(anemia, 10).
 
@@ -263,7 +193,7 @@ anemia(too_little_hair,2).
 
 
 
-simptomi(viral_hepatitis,[sharp_abdominal_pain,abusing_alcohol,drug_abuse,melena,stomach_bloating,symptoms_of_the_kidneys,hand_or_finger_stiffness_or_tightness,low_self_esteem,incontinence_of_stool]).
+simptomi(viral_hepatitis,[blood_test,sharp_abdominal_pain,abusing_alcohol,drug_abuse,melena,stomach_bloating,symptoms_of_the_kidneys,hand_or_finger_stiffness_or_tightness,low_self_esteem,incontinence_of_stool]).
 
 prevalence(viral_hepatitis,4.8).
 
@@ -278,7 +208,7 @@ viral_hepatitis(low_self_esteem,1).
 viral_hepatitis(incontinence_of_stool,1).
 
 
-simptomi(gastroesophageal_reflux_disease_gerd,[sharp_chest_pain,sharp_abdominal_pain,vomiting,heartburn,cough,nausea,burning_abdominal_pain,upper_abdominal_pain,difficulty_in_swallowing,regurgitation,chest_tightness,hoarse_voice]).
+simptomi(gastroesophageal_reflux_disease_gerd,[blood_test,sharp_chest_pain,sharp_abdominal_pain,vomiting,heartburn,cough,nausea,burning_abdominal_pain,upper_abdominal_pain,difficulty_in_swallowing,regurgitation,chest_tightness,hoarse_voice]).
 
 prevalence(gastroesophageal_reflux_disease_gerd,20.0).
 
@@ -297,7 +227,7 @@ gastroesophageal_reflux_disease_gerd(hoarse_voice,10).
 
 
 
-simptomi(emphysema,[sharp_chest_pain,shortness_of_breath,chest_tightness,cough,nausea,ache_all_over,back_pain,cross_eyed,itchy_eyelid,excessive_growth,emotional_symptoms,elbow_cramps_or_spasms]).
+simptomi(emphysema,[blood_test,sharp_chest_pain,shortness_of_breath,chest_tightness,cough,nausea,ache_all_over,back_pain,cross_eyed,itchy_eyelid,excessive_growth,emotional_symptoms,elbow_cramps_or_spasms]).
 
 prevalence(emphysema,1.8).
 
@@ -315,7 +245,7 @@ emphysema(emotional_symptoms,4).
 emphysema(elbow_cramps_or_spasms,4).
 
 
-simptomi(urinary_tract_infection,[painful_urination,suprapubic_pain,sharp_abdominal_pain,frequent_urination,fever,vomiting,back_pain,nausea,blood_in_urine,side_pain,retention_of_urine,lower_abdominal_pain]).
+simptomi(urinary_tract_infection,[blood_test,painful_urination,suprapubic_pain,sharp_abdominal_pain,frequent_urination,fever,vomiting,back_pain,nausea,blood_in_urine,side_pain,retention_of_urine,lower_abdominal_pain]).
 
 prevalence(urinary_tract_infection,21.5).
 
@@ -336,7 +266,7 @@ urinary_tract_infection(lower_abdominal_pain,25).
 
 
 
-simptomi(cardiomyopathy,[shortness_of_breath,sharp_chest_pain,fatigue,peripheral_edema,palpitations,chest_tightness,weight_gain,irregular_heartbeat,heartburn,excessive_urination_at_night,decreased_heart_rate,muscle_weakness]).
+simptomi(cardiomyopathy,[blood_test,shortness_of_breath,sharp_chest_pain,fatigue,peripheral_edema,palpitations,chest_tightness,weight_gain,irregular_heartbeat,heartburn,excessive_urination_at_night,decreased_heart_rate,muscle_weakness]).
 
 prevalence(cardiomyopathy,0.2).
 
@@ -355,7 +285,7 @@ cardiomyopathy(muscle_weakness,2).
 
 
 
-simptomi(celiac_disease,[sharp_abdominal_pain,diarrhea,regurgitation,fatigue,vomiting,nausea,allergic_reaction,sharp_chest_pain,fears_and_phobias,peripheral_edema,leg_lump_or_mass,constipation]).
+simptomi(celiac_disease,[blood_test,sharp_abdominal_pain,diarrhea,regurgitation,fatigue,vomiting,nausea,allergic_reaction,sharp_chest_pain,fears_and_phobias,peripheral_edema,leg_lump_or_mass,constipation]).
 
 prevalence(celiac_disease,1.0).
 
@@ -373,7 +303,7 @@ celiac_disease(leg_lump_or_mass,15).
 celiac_disease(constipation,15).
 
 
-simptomi(gastritis,[sharp_abdominal_pain,vomiting,nausea,burning_abdominal_pain,sharp_chest_pain,upper_abdominal_pain,diarrhea,fever,headache,heartburn,vomiting_blood,regurgitation]).
+simptomi(gastritis,[blood_test,sharp_abdominal_pain,vomiting,nausea,burning_abdominal_pain,sharp_chest_pain,upper_abdominal_pain,diarrhea,fever,headache,heartburn,vomiting_blood,regurgitation]).
 
 prevalence(gastritis,4.5).
 
@@ -391,7 +321,7 @@ gastritis(vomiting_blood,20).
 gastritis(regurgitation,15).
 
 
-simptomi(cirrhosis,[sharp_abdominal_pain,shortness_of_breath,peripheral_edema,fatigue,upper_abdominal_pain,abdominal_distention,stomach_bloating,blood_in_stool,regurgitation,symptoms_of_the_kidneys,vomiting_blood,melena]).
+simptomi(cirrhosis,[blood_test,sharp_abdominal_pain,shortness_of_breath,peripheral_edema,fatigue,upper_abdominal_pain,abdominal_distention,stomach_bloating,blood_in_stool,regurgitation,symptoms_of_the_kidneys,vomiting_blood,melena]).
 
 prevalence(cirrhosis,0.27).
 
@@ -409,7 +339,7 @@ cirrhosis(vomiting_blood,5).
 cirrhosis(melena,5).
 
 
-simptomi(hyponatremia,[weakness,vomiting,nausea,shortness_of_breath,dizziness,sharp_abdominal_pain,sharp_chest_pain,headache,back_pain,fever,fainting,seizures]).
+simptomi(hyponatremia,[blood_test,weakness,vomiting,nausea,shortness_of_breath,dizziness,sharp_abdominal_pain,sharp_chest_pain,headache,back_pain,fever,fainting,seizures]).
 
 prevalence(hyponatremia,1.72).
 
@@ -427,7 +357,7 @@ hyponatremia(fainting,25).
 hyponatremia(seizures,23).
 
 
-simptomi(cerebral_palsy,[seizures,problems_with_movement,cramps_and_spasms,difficulty_eating,lack_of_growth,leg_cramps_or_spasms,back_cramps_or_spasms,blindness,infant_feeding_problem,swollen_tongue,lip_sore,tongue_lesions]).
+simptomi(cerebral_palsy,[blood_test,seizures,problems_with_movement,cramps_and_spasms,difficulty_eating,lack_of_growth,leg_cramps_or_spasms,back_cramps_or_spasms,blindness,infant_feeding_problem,swollen_tongue,lip_sore,tongue_lesions]).
 
 prevalence(cerebral_palsy,0.2).
 
@@ -447,7 +377,7 @@ cerebral_palsy(tongue_lesions,2).
 
 
 
-simptomi(myocarditis,[palpitations,ache_all_over,cough,chest_tightness,fever,sharp_chest_pain,weakness,diarrhea,headache,difficulty_breathing,dizziness,coughing_up_sputum]).
+simptomi(myocarditis,[blood_test,palpitations,ache_all_over,cough,chest_tightness,fever,sharp_chest_pain,weakness,diarrhea,headache,difficulty_breathing,dizziness,coughing_up_sputum]).
 
 prevalence(myocarditis,1.06).
 
@@ -465,7 +395,7 @@ myocarditis(dizziness,38).
 myocarditis(coughing_up_sputum,38).
 
 
-simptomi(meningitis,[headache,fever,vomiting,neck_pain,ache_all_over,back_pain,seizures,nausea,low_back_pain,cough,leg_pain,neck_stiffness_or_tightness]).
+simptomi(meningitis,[blood_test,headache,fever,vomiting,neck_pain,ache_all_over,back_pain,seizures,nausea,low_back_pain,cough,leg_pain,neck_stiffness_or_tightness]).
 
 prevalence(meningitis,1.2E-4).
 
@@ -483,7 +413,7 @@ meningitis(leg_pain,26).
 meningitis(neck_stiffness_or_tightness,21).
 
 
-simptomi(multiple_sclerosis,[fatigue,loss_of_sensation,headache,dizziness,problems_with_movement,weakness,leg_weakness,paresthesia,disturbance_of_memory,abnormal_involuntary_movements,leg_stiffness_or_tightness,focal_weakness]).
+simptomi(multiple_sclerosis,[blood_test,fatigue,loss_of_sensation,headache,dizziness,problems_with_movement,weakness,leg_weakness,paresthesia,disturbance_of_memory,abnormal_involuntary_movements,leg_stiffness_or_tightness,focal_weakness]).
 
 prevalence(multiple_sclerosis,0.03).
 
@@ -515,16 +445,6 @@ ages_factor(acute_respiratory_distress_syndrome,60,74,2.0).
 ages_factor(acute_respiratory_distress_syndrome,75,150,3.3).
 
 
-testovi(acute_respiratory_distress_syndrome,radiographic_imaging_procedure).
-testovi(acute_respiratory_distress_syndrome,hematologic_tests_blood_test).
-testovi(acute_respiratory_distress_syndrome,complete_blood_count_cbc).
-testovi(acute_respiratory_distress_syndrome,plain_x-ray_x_ray).
-testovi(acute_respiratory_distress_syndrome,electrocardiogram).
-testovi(acute_respiratory_distress_syndrome,intravenous_fluid_replacement).
-testovi(acute_respiratory_distress_syndrome,kidney_function_tests_kidney_function_test).
-testovi(acute_respiratory_distress_syndrome,electrolytes_panel).
-
-
 terapija(acute_respiratory_distress_syndrome,methylprednisolone_medrol_21_days).
 terapija(acute_respiratory_distress_syndrome,levofloxacin_levaquin_7_days).
 terapija(acute_respiratory_distress_syndrome,midazolam_versed).
@@ -553,19 +473,11 @@ ages_factor(anemia,60,74,1.5).
 ages_factor(anemia,75,150,2.5).
 
 
-testovi(anemia,hematologic_tests_blood_test).
-testovi(anemia,complete_blood_count_cbc).
-testovi(anemia,glucose_measurement_glucose_level).
-testovi(anemia,electrolytes_panel).
-testovi(anemia,urinalysis).
-testovi(anemia,kidney_function_tests_kidney_function_test).
-testovi(anemia,electrocardiogram).
-testovi(anemia,intravenous_fluid_replacement).
 
 
 terapija(anemia,epoetin_alfa_procrit_21_days).
 terapija(anemia,darbepoetin_alfa_aranesp_21_days).
-terapija(anemia,ferric_oxide,_saccharated_venofer).
+terapija(anemia,ferric_oxide,saccharated_venofer).
 terapija(anemia,filgrastim_neupogen_14_days).
 terapija(anemia,sodium_ferric_gluconate_complex_ferrlecit).
 terapija(anemia,deferasirox_exjade_28_days).
@@ -592,15 +504,6 @@ ages_factor(myocarditis,45,59,0.6).
 ages_factor(myocarditis,60,74,0.4).
 ages_factor(myocarditis,75,150,2.4).
 
-
-testovi(myocarditis,radiographic_imaging_procedure).
-testovi(myocarditis,hematologic_tests_blood_test).
-testovi(myocarditis,complete_blood_count_cbc).
-testovi(myocarditis,electrocardiogram).
-testovi(myocarditis,plain_x-ray_x_ray).
-testovi(myocarditis,echocardiography).
-testovi(myocarditis,ultrasonography_ultrasound).
-testovi(myocarditis,cardiac_monitoring_cardiac_monitor).
 
 
 terapija(myocarditis,carvedilol_28_days).
@@ -631,14 +534,6 @@ ages_factor(meningitis,60,74,0.5).
 ages_factor(meningitis,75,150,0.3).
 
 
-testovi(meningitis,hematologic_tests_blood_test).
-testovi(meningitis,complete_blood_count_cbc).
-testovi(meningitis,radiographic_imaging_procedure).
-testovi(meningitis,intravenous_fluid_replacement).
-testovi(meningitis,glucose_measurement_glucose_level).
-testovi(meningitis,urinalysis).
-testovi(meningitis,kidney_function_tests_kidney_function_test).
-testovi(meningitis,x-ray_computed_tomography_scan_ct).
 
 
 terapija(meningitis,ceftriaxone_7_days).
@@ -669,13 +564,8 @@ ages_factor(multiple_sclerosis,60,74,0.9).
 ages_factor(multiple_sclerosis,75,150,0.2).
 
 
-testovi(multiple_sclerosis,magnetic_resonance_imaging_mri).
-testovi(multiple_sclerosis,physical_therapy_exercises_exercises).
-testovi(multiple_sclerosis,other_diagnostic_procedures_interview;_evaluation;_consultation).
 testovi(multiple_sclerosis,referral_to_home_health_care_service).
-testovi(multiple_sclerosis,other_therapeutic_procedures).
-testovi(multiple_sclerosis,occupational_therapy_assessment_speech_therapy).
-testovi(multiple_sclerosis,debridement_of_wound;_infection_or_burn).
+testovi(multiple_sclerosis,debridement_of_wound;infection_or_burn).
 testovi(multiple_sclerosis,diagnostic_spinal_tap_spinal_tap).
 
 
@@ -768,7 +658,7 @@ terapija(diabetes,metformin_28_days).
 terapija(diabetes,insulin).
 terapija(diabetes,insulin_glargine_lantus_28_days).
 terapija(diabetes,glipizide_28_days).
-terapija(diabetes,insulin,_aspart,_human_novolog_28_days).
+terapija(diabetes,insulin,aspart,human_novolog_28_days).
 terapija(diabetes,pioglitazone_actos_28_days).
 terapija(diabetes,glyburide_28_days).
 terapija(diabetes,glimepiride_28_days).
@@ -932,7 +822,7 @@ ages_factor(celiac_disease,75,150,0.5).
 
 
 terapija(celiac_disease,dicyclomine_28_days).
-terapija(celiac_disease,insulin,_aspart,_human_novolog_28_days).
+terapija(celiac_disease,insulin,aspart,human_novolog_28_days).
 terapija(celiac_disease,glucagon_7_days).
 terapija(celiac_disease,estradiol_28_days).
 terapija(celiac_disease,carbenicillin).
@@ -1048,5 +938,20 @@ terapija(cerebral_palsy,tizanidine_28_days).
 terapija(cerebral_palsy,clorazepate_28_days).
 
 
+%TEMPERATURA
+temperatura(myocarditis,38).
+temperatura(meningitis,38).
+temperatura(urinary_tract_infection,38).
 
+%TEZINA I VISINA
+bmi(diabetes,26).
+bmi(ischemic_heart_disease,26).
+bmi(hypertensive_heart_disease,26).
+bmi(myocarditis,26).
+bmi(cardiomyopathy,26).
+
+%PRITISAK
+pritisak(ischemic_heart_disease,visi,140,90).
+pritisak(anemia,nizi,120,80).
+pritisak(cardiomyopathy,nizi,120,80).
 
