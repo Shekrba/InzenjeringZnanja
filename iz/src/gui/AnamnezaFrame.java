@@ -1,6 +1,7 @@
 package gui;
 
 
+import cbr.CbrApplication;
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
 import util.DiagnosisUtil;
 
@@ -104,8 +105,8 @@ public class AnamnezaFrame {
 
                 try{
                     if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
-                        MainFrame.setPritisakHigh(Double.parseDouble(tfBPHigh.getText()));
-                        MainFrame.setPritisakLow(Double.parseDouble(tfBPLow.getText()));
+                        MainFrame.setPritisakHigh(Integer.parseInt(tfBPHigh.getText()));
+                        MainFrame.setPritisakLow(Integer.parseInt(tfBPLow.getText()));
                     }
                     else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
                         JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
@@ -270,8 +271,8 @@ public class AnamnezaFrame {
 
                 try{
                     if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
-                        MainFrame.setPritisakHigh(Double.parseDouble(tfBPHigh.getText()));
-                        MainFrame.setPritisakLow(Double.parseDouble(tfBPLow.getText()));
+                        MainFrame.setPritisakHigh(Integer.parseInt(tfBPHigh.getText()));
+                        MainFrame.setPritisakLow(Integer.parseInt(tfBPLow.getText()));
                     }
                     else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
                         JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
@@ -308,6 +309,36 @@ public class AnamnezaFrame {
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
                     MainFrame.getSimptomi().add(dlmSimptomi.get(i).toString());
                 }
+
+                double height = Double.parseDouble(tfHeight.getText());
+                double weight = Double.parseDouble(tfWeight.getText());
+
+                double bmi = weight/Math.pow(height,2);
+
+                MainFrame.setBmi(bmi);
+
+                double temp=Double.parseDouble(tfTemperature.getText());
+                MainFrame.setTemperatura(temp);
+
+                int lowPritisak=Integer.parseInt(tfBPLow.getText());
+                int highPritisak=Integer.parseInt(tfBPHigh.getText());
+                MainFrame.setPritisakLow(lowPritisak);
+                MainFrame.setPritisakHigh(highPritisak);
+
+                int age=Integer.parseInt(textField4.getText());
+                MainFrame.setGodine(age);
+
+                CbrApplication cbr = new CbrApplication();
+
+                boolean cbc=false;
+                if(!(MainFrame.getCbc().getWhiteBloodCellCount()==0.0))
+                    cbc=true;
+
+                boolean bmp=false;
+                if(!(MainFrame.getBmp().getGlucose()==0.0))
+                    bmp=true;
+
+                cbr.doCbr(MainFrame.getSimptomi(),cbc,bmp);
 
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();

@@ -22,7 +22,17 @@ public class ExaminationDescription implements CaseComponent {
 	private double urea;
 	private double creatinine;
 	private double bilirubin;
+	private int age;
+	private String sex;
+	private String bolest;
 
+	public String getBolest() {
+		return bolest;
+	}
+
+	public void setBolest(String bolest) {
+		this.bolest = bolest;
+	}
 
 	public String getSymptoms() {
 		return symptoms;
@@ -160,9 +170,30 @@ public class ExaminationDescription implements CaseComponent {
 		this.bilirubin = bilirubin;
 	}
 
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
 	@Override
 	public Attribute getIdAttribute() {
 		return null;
+	}
+
+	@Override
+	public String toString(){
+		return this.bolest;
 	}
 	
 }

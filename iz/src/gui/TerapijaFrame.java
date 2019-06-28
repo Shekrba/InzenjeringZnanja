@@ -28,8 +28,9 @@ public class TerapijaFrame {
                      MainFrame.getSimptomi()) {
                     b = b.toLowerCase().replaceAll(" ", "_");
                     s+=b;
-                    s+="?;";
+                    s+="?";
                 }
+                s+=";";
                 if(MainFrame.getTemperatura() == 0) {
                     s+=36.5;
                 }else {
@@ -39,6 +40,8 @@ public class TerapijaFrame {
                 s+=MainFrame.getPritisakHigh();
                 s+=";";
                 s+=MainFrame.getPritisakLow();
+                s+=";";
+                s+=MainFrame.getBmi();
                 s+=";";
                 if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
                     s+=4.8;
@@ -144,8 +147,9 @@ public class TerapijaFrame {
                             MainFrame.getSimptomi()) {
                         b = b.toLowerCase().replaceAll(" ", "_");
                         s+=b;
-                        s+="?;";
+                        s+="?";
                     }
+                    s+=";";
                     if(MainFrame.getTemperatura() == 0) {
                         s+=36.5;
                     }else {
@@ -155,6 +159,8 @@ public class TerapijaFrame {
                     s+=MainFrame.getPritisakHigh();
                     s+=";";
                     s+=MainFrame.getPritisakLow();
+                    s+=";";
+                    s+=MainFrame.getBmi();
                     s+=";";
                     if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
                         s+=4.8;
@@ -259,8 +265,9 @@ public class TerapijaFrame {
                             MainFrame.getSimptomi()) {
                         b = b.toLowerCase().replaceAll(" ", "_");
                         s+=b;
-                        s+="?;";
+                        s+="?";
                     }
+                    s+=";";
                     if(MainFrame.getTemperatura() == 0) {
                         s+=36.5;
                     }else {
@@ -270,6 +277,8 @@ public class TerapijaFrame {
                     s+=MainFrame.getPritisakHigh();
                     s+=";";
                     s+=MainFrame.getPritisakLow();
+                    s+=";";
+                    s+=MainFrame.getBmi();
                     s+=";";
                     if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
                         s+=4.8;
@@ -375,8 +384,9 @@ public class TerapijaFrame {
                             MainFrame.getSimptomi()) {
                         b = b.toLowerCase().replaceAll(" ", "_");
                         s+=b;
-                        s+="?;";
+                        s+="?";
                     }
+                    s+=";";
                     if(MainFrame.getTemperatura() == 0) {
                         s+=36.5;
                     }else {
@@ -386,6 +396,8 @@ public class TerapijaFrame {
                     s+=MainFrame.getPritisakHigh();
                     s+=";";
                     s+=MainFrame.getPritisakLow();
+                    s+=";";
+                    s+=MainFrame.getBmi();
                     s+=";";
                     if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
                         s+=4.8;
@@ -492,8 +504,9 @@ public class TerapijaFrame {
                             MainFrame.getSimptomi()) {
                         b = b.toLowerCase().replaceAll(" ", "_");
                         s+=b;
-                        s+="?;";
+                        s+="?";
                     }
+                    s+=";";
                     if(MainFrame.getTemperatura() == 0) {
                         s+=36.5;
                     }else {
@@ -503,6 +516,8 @@ public class TerapijaFrame {
                     s+=MainFrame.getPritisakHigh();
                     s+=";";
                     s+=MainFrame.getPritisakLow();
+                    s+=";";
+                    s+=MainFrame.getBmi();
                     s+=";";
                     if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
                         s+=4.8;
