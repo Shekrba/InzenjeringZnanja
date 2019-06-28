@@ -40,6 +40,8 @@ public class ZavrsiAmnezuFrame {
     private JButton ter4;
     private JButton ter5;
     private JButton ter6;
+    private JDialog dialog;
+
 
     public ZavrsiAmnezuFrame() {
 
@@ -112,6 +114,7 @@ public class ZavrsiAmnezuFrame {
         bolestTer.add(ter4);
         bolestTer.add(ter5);
         bolestTer.add(ter6);
+
 
         for (int i = 0; i < diseases.size(); i++){
 
@@ -336,10 +339,24 @@ public class ZavrsiAmnezuFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                Bolest bol1 = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab1.getText())){
+                        bol1 = b;
+                        break;
+                    }
+                }
+
                 String text = "";
 
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
-            }
+                dialog = new JDialog();
+                dialog.setTitle(bol1.getNaziv());
+                dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
+                dialog.setSize(800,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);            }
         });
 
         ter2.addActionListener(new ActionListener() {
@@ -348,8 +365,14 @@ public class ZavrsiAmnezuFrame {
 
                 String text = "";
 
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
-            }
+
+                dialog = new JDialog();
+                dialog.setTitle("Procedures");
+                dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
+                dialog.setSize(800,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);               }
         });
 
         ter3.addActionListener(new ActionListener() {
@@ -358,8 +381,14 @@ public class ZavrsiAmnezuFrame {
 
                 String text = "";
 
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
-            }
+
+                dialog = new JDialog();
+                dialog.setTitle("Procedures");
+                dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
+                dialog.setSize(800,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);               }
         });
 
         ter4.addActionListener(new ActionListener() {
@@ -368,8 +397,14 @@ public class ZavrsiAmnezuFrame {
 
                 String text = "";
 
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
-            }
+
+                dialog = new JDialog();
+                dialog.setTitle("Procedures");
+                dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
+                dialog.setSize(800,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);               }
         });
 
         ter5.addActionListener(new ActionListener() {
@@ -378,8 +413,14 @@ public class ZavrsiAmnezuFrame {
 
                 String text = "";
 
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
-            }
+
+                dialog = new JDialog();
+                dialog.setTitle("Procedures");
+                dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
+                dialog.setSize(800,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);               }
         });
 
         ter6.addActionListener(new ActionListener() {
@@ -388,9 +429,16 @@ public class ZavrsiAmnezuFrame {
 
                 String text = "";
 
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
-            }
+
+                dialog = new JDialog();
+                dialog.setTitle("Procedures");
+                dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
+                dialog.setSize(800,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);               }
         });
+
     }
 
     public JPanel getZavrsiAmnezuPanel() {
