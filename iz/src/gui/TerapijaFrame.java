@@ -47,7 +47,7 @@ public class TerapijaFrame {
                 int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
                 if (option == JOptionPane.YES_OPTION) {
 
-                    
+
                 }
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();

@@ -665,7 +665,8 @@ public class DiagnosisUtil {
 
             for (String sympom:
                     b.getSimptomi()) {
-                if(!(sympom.contains("blood_test") || sympom.contains("temperature")|| sympom.contains("body_mass_index")|| sympom.contains("blood_pressure"))) {
+                if(!(sympom.contains("blood_test") || sympom.contains("temperature")|| sympom.contains("body_mass_index")|| sympom.contains("blood_pressure") || sympom.contains("cancer"))) {
+                    System.out.println(sympom);
                     ProbabilisticNode factNode = (ProbabilisticNode) net.getNode(sympom);
                     int stateIndex = 0; // index of state "da"
                     factNode.addFinding(stateIndex);

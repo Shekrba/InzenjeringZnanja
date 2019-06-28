@@ -19,7 +19,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.concurrent.ExecutionException;
 
 public class AnamnezaFrame {
     private JPanel anamnezaPanel;
