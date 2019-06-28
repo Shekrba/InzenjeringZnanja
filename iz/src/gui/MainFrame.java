@@ -29,6 +29,11 @@ public class MainFrame {
     private static double temperatura;
     private static double pritisakLow;
     private static double pritisakHigh;
+    private static ArrayList<String> simptomi=new ArrayList<>();
+
+    public static ArrayList<String> getSimptomi() {
+        return simptomi;
+    }
 
 
 

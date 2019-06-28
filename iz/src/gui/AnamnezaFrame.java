@@ -138,6 +138,7 @@ public class AnamnezaFrame {
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
+
                 ArrayList<String> sms=new ArrayList<String>();
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
                     sms.add(dlmSimptomi.get(i).toString());
@@ -296,13 +297,18 @@ public class AnamnezaFrame {
                     return;
                 }
 
+                MainFrame.getSimptomi().clear();
+                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
+                    MainFrame.getSimptomi().add(dlmSimptomi.get(i).toString());
+                }
+
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
-                ArrayList<String> sms=new ArrayList<String>();
-                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
-                    sms.add(dlmSimptomi.get(i).toString());
-                }
+
+
+
+
 
 
                 dialog.setTitle("Anamnesis");
@@ -770,24 +776,5 @@ public class AnamnezaFrame {
         this.dialogBlood = dialogBlood;
     }
 
-    public static <T> ArrayList<T> removeDuplicates(ArrayList<T> list)
-    {
 
-        // Create a new ArrayList
-        ArrayList<T> newList = new ArrayList<T>();
-
-        // Traverse through the first list
-        for (T element : list) {
-
-            // If this element is not present in newList
-            // then add it
-            if (!newList.contains(element)) {
-
-                newList.add(element);
-            }
-        }
-
-        // return the new list
-        return newList;
-    }
 }

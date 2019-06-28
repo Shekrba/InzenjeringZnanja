@@ -20,7 +20,7 @@ public class CsvConnector implements Connector {
 		LinkedList<CBRCase> cases = new LinkedList<CBRCase>();
 		
 		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(FileIO.openFile("data/primer2.csv")));
+			BufferedReader br = new BufferedReader(new InputStreamReader(FileIO.openFile("data/cases.csv")));
 			if (br == null)
 				throw new Exception("Error opening file");
 
@@ -33,16 +33,23 @@ public class CsvConnector implements Connector {
 				CBRCase cbrCase = new CBRCase();
 
 				ExaminationDescription examinationDescription = new ExaminationDescription();
-				examinationDescription.setId(values[0]);
-				examinationDescription.setType(values[1]);
-				examinationDescription.setPrice(Float.parseFloat(values[2]));
-				examinationDescription.setPersons(Integer.parseInt(values[3]));
-				examinationDescription.setRegion(values[4]);
-				examinationDescription.setTransportation(values[5]);
-				examinationDescription.setDuration(Integer.parseInt(values[6]));
-				examinationDescription.setSeason(values[7]);
-				examinationDescription.setAccommodation(values[8]);
-				examinationDescription.setHotel(values[9]);
+				examinationDescription.setSymptoms(values[0]);
+				examinationDescription.setTemperature(Double.parseDouble(values[1]));
+				examinationDescription.setPressureHigh(Integer.parseInt(values[2]));
+				examinationDescription.setPressureLow(Integer.parseInt(values[3]));
+				examinationDescription.setBmi(Double.parseDouble(values[4]));
+				examinationDescription.setRedBloodCellCount(Double.parseDouble(values[5]));
+				examinationDescription.setHemoglobin(Double.parseDouble(values[6]));
+				examinationDescription.setHematocrit(Double.parseDouble(values[7]));
+				examinationDescription.setWhiteBloodCellCount(Double.parseDouble(values[8]));
+				examinationDescription.setPlatelet(Double.parseDouble(values[9]));
+				examinationDescription.setGlucose(Double.parseDouble(values[10]));
+				examinationDescription.setCalcium(Double.parseDouble(values[11]));
+				examinationDescription.setSodium(Double.parseDouble(values[12]));
+				examinationDescription.setPotassium(Double.parseDouble(values[13]));
+				examinationDescription.setUrea(Double.parseDouble(values[14]));
+				examinationDescription.setCreatinine(Double.parseDouble(values[15]));
+				examinationDescription.setBilirubin(Double.parseDouble(values[16]));
 				
 				cbrCase.setDescription(examinationDescription);
 				cases.add(cbrCase);

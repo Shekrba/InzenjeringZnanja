@@ -1,6 +1,8 @@
 package cbr;
 
 
+import gui.MainFrame;
+import model.Bolest;
 import ucm.gaia.jcolibri.casebase.LinealCaseBase;
 import ucm.gaia.jcolibri.cbraplications.StandardCBRApplication;
 import ucm.gaia.jcolibri.cbrcore.*;
@@ -13,10 +15,14 @@ import ucm.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Interval;
 import ucm.gaia.jcolibri.method.retrieve.RetrievalResult;
 import ucm.gaia.jcolibri.method.retrieve.selection.SelectCases;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class CbrApplication implements StandardCBRApplication {
-	
+
+	private boolean cbc;
+	private boolean bmp;
+
 	Connector _connector;  /** Connector object */
 	CBRCaseBase _caseBase;  /** CaseBase object */
 
@@ -74,28 +80,31 @@ public class CbrApplication implements StandardCBRApplication {
 		return _caseBase;
 	}
 
-	public static void main(String[] args) {
+	public void doCbr(ArrayList<String> symptoms,boolean bmpTest,boolean cbcTest){
 		StandardCBRApplication recommender = new CbrApplication();
-		try {
-			recommender.configure();
+		for(String symptom:symptoms) {
+			try {
+				recommender.configure();
 
-			recommender.preCycle();
+				recommender.preCycle();
 
-			CBRQuery query = new CBRQuery();
-			
-			ExaminationDescription examinationDescription = new ExaminationDescription();
-			examinationDescription.setType("Skiing");
-			examinationDescription.setPersons(4);
-			examinationDescription.setRegion("France");
-			examinationDescription.setTransportation("Plane");
-			examinationDescription.setDuration(7);
-			
-			query.setDescription(examinationDescription);
-			recommender.cycle(query);
+				CBRQuery query = new CBRQuery();
 
-			recommender.postCycle();
-		} catch (Exception e) {
-			e.printStackTrace();
+/*
+				ExaminationDescription examinationDescription = new ExaminationDescription();
+				examinationDescription.setType("Skiing");
+				examinationDescription.setPersons(4);
+				examinationDescription.setRegion("France");
+				examinationDescription.setTransportation("Plane");
+				examinationDescription.setDuration(7);
+
+				query.setDescription(examinationDescription);
+				recommender.cycle(query);
+
+				recommender.postCycle();*/
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
