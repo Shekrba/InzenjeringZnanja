@@ -6,6 +6,9 @@ import util.DiagnosisUtil;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -353,10 +356,16 @@ public class ZavrsiAmnezuFrame {
 
                 String text = "";
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
-                dialog = new JDialog();
+
+                insertDisease(bol1.getNaziv());
+
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
+
+                dialog.setContentPane(new ZavrsiAmnezuFrame().getZavrsiAmnezuPanel());
                 dialog.setTitle(bol1.getNaziv());
                 dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
-                dialog.setSize(800,350);
+                dialog.setSize(400,350);
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);            }
@@ -369,7 +378,7 @@ public class ZavrsiAmnezuFrame {
                 Bolest bol1 = new Bolest();
 
                 for (Bolest b: bolesti) {
-                    if(b.getNaziv().equals(lab1.getText())){
+                    if(b.getNaziv().equals(lab2.getText())){
                         bol1 = b;
                         break;
                     }
@@ -378,10 +387,13 @@ public class ZavrsiAmnezuFrame {
                 String text = "";
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
-                dialog = new JDialog();
+                insertDisease(bol1.getNaziv());
+
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
                 dialog.setTitle("Procedures");
                 dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
-                dialog.setSize(800,350);
+                dialog.setSize(400,350);
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);               }
@@ -394,7 +406,7 @@ public class ZavrsiAmnezuFrame {
                 Bolest bol1 = new Bolest();
 
                 for (Bolest b: bolesti) {
-                    if(b.getNaziv().equals(lab1.getText())){
+                    if(b.getNaziv().equals(lab3.getText())){
                         bol1 = b;
                         break;
                     }
@@ -404,10 +416,13 @@ public class ZavrsiAmnezuFrame {
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
 
-                dialog = new JDialog();
+                insertDisease(bol1.getNaziv());
+
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
                 dialog.setTitle("Procedures");
                 dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
-                dialog.setSize(800,350);
+                dialog.setSize(400,350);
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);               }
@@ -420,7 +435,7 @@ public class ZavrsiAmnezuFrame {
                 Bolest bol1 = new Bolest();
 
                 for (Bolest b: bolesti) {
-                    if(b.getNaziv().equals(lab1.getText())){
+                    if(b.getNaziv().equals(lab4.getText())){
                         bol1 = b;
                         break;
                     }
@@ -430,10 +445,13 @@ public class ZavrsiAmnezuFrame {
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
 
-                dialog = new JDialog();
+                insertDisease(bol1.getNaziv());
+
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
                 dialog.setTitle("Procedures");
                 dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
-                dialog.setSize(800,350);
+                dialog.setSize(400,350);
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);               }
@@ -446,7 +464,7 @@ public class ZavrsiAmnezuFrame {
                 Bolest bol1 = new Bolest();
 
                 for (Bolest b: bolesti) {
-                    if(b.getNaziv().equals(lab1.getText())){
+                    if(b.getNaziv().equals(lab5.getText())){
                         bol1 = b;
                         break;
                     }
@@ -456,10 +474,13 @@ public class ZavrsiAmnezuFrame {
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
 
-                dialog = new JDialog();
+                insertDisease(bol1.getNaziv());
+
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
                 dialog.setTitle("Procedures");
                 dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
-                dialog.setSize(800,350);
+                dialog.setSize(400,350);
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);               }
@@ -472,7 +493,7 @@ public class ZavrsiAmnezuFrame {
                 Bolest bol1 = new Bolest();
 
                 for (Bolest b: bolesti) {
-                    if(b.getNaziv().equals(lab1.getText())){
+                    if(b.getNaziv().equals(lab6.getText())){
                         bol1 = b;
                         break;
                     }
@@ -482,15 +503,38 @@ public class ZavrsiAmnezuFrame {
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
 
-                dialog = new JDialog();
+                insertDisease(bol1.getNaziv());
+
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
                 dialog.setTitle("Procedures");
                 dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
-                dialog.setSize(800,350);
+                dialog.setSize(400,350);
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
-                dialog.setVisible(true);               }
+                dialog.setVisible(true);
+            }
         });
 
+    }
+
+    public void insertDisease(String disease){
+        Connection conn = null;
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/iz", "root", "1234");
+
+            String sql = "INSERT INTO disease_history (patient_id,disease) VALUES (?, ?)";
+
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setInt(1, AnamnezaFrame.ID);
+            preparedStatement.setString(2,disease);
+            preparedStatement.executeUpdate();
+
+        } catch(Exception ex) {
+
+        }
     }
 
     public JPanel getZavrsiAmnezuPanel() {

@@ -135,6 +135,8 @@ public class TerapijaFrame {
                 printWriter.println(s);  //New line
                 printWriter.close();
             }
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
             }
         });
         prepisi2.addActionListener(new ActionListener() {
@@ -253,7 +255,10 @@ public class TerapijaFrame {
                     PrintWriter printWriter = new PrintWriter(fileWriter);
                     printWriter.println(s);  //New line
                     printWriter.close();
-                }            }
+                }
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
+            }
         });
         prepisi3.addActionListener(new ActionListener() {
             @Override
@@ -372,6 +377,8 @@ public class TerapijaFrame {
                     printWriter.println(s);  //New line
                     printWriter.close();
                 }
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
             }
         });
         prepisi4.addActionListener(new ActionListener() {
@@ -492,6 +499,8 @@ public class TerapijaFrame {
                     printWriter.close();
 
                 }
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
             }
         });
         prepisi5.addActionListener(new ActionListener() {
@@ -633,6 +642,8 @@ public class TerapijaFrame {
                         }
                     }*/
                 }
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
             }
         });
     }

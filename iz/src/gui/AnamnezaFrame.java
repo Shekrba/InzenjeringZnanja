@@ -13,6 +13,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class AnamnezaFrame {
     private JPanel anamnezaPanel;
@@ -43,10 +44,12 @@ public class AnamnezaFrame {
     private JList dhList;
     private JButton addButton;
     public static JDialog dialogBlood;
+    public static int ID;
 
 
     public AnamnezaFrame() {
 
+        ID = 0;
 
         ArrayList<String> keywords = new ArrayList<String>();
         ArrayList<String> keywordsFamilly = new ArrayList<String>();
@@ -151,8 +154,6 @@ public class AnamnezaFrame {
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
                     sms.add(dlmSimptomi.get(i).toString());
                 }
-
-
 
                 MainFrame.setBolesti(DiagnosisUtil.findDiagnosis(sms,Integer.parseInt(textField4.getText()),String.valueOf(cbPol.getSelectedItem())));
 
@@ -363,6 +364,18 @@ public class AnamnezaFrame {
                 Connection conn = null;
 
                 try {
+
+                    try {
+                        if(tfId.getText().trim().equals("")){
+                            JOptionPane.showMessageDialog(null, "ID cant be empty");
+                            return;
+                        }
+                        ID = Integer.parseInt(tfId.getText());
+                    }catch (Exception exep){
+                        JOptionPane.showMessageDialog(null, "ID has to be a number");
+                        return;
+                    }
+
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/iz", "root", "1234");
 
@@ -438,6 +451,8 @@ public class AnamnezaFrame {
                 try{
                     id = Integer.parseInt(tfId.getText());
                     age = Integer.parseInt(textField4.getText());
+
+                    ID = id;
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "You have to input a number in the field \"ID\" and \"Age\".");
                     return;
@@ -813,6 +828,7 @@ public class AnamnezaFrame {
     public void setDialogBlood(JDialog dialogBlood) {
         this.dialogBlood = dialogBlood;
     }
+
 
 
 }
