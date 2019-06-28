@@ -7,6 +7,10 @@ import util.DiagnosisUtil;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public class AnamnezaFrame {
@@ -33,6 +37,10 @@ public class AnamnezaFrame {
     private JTextField tfWeight;
     private JTextField tfTemperature;
     private JButton similarityPastExaminationsButton;
+    private JTextField tfId;
+    private JButton importButton;
+    private JList dhList;
+    private JButton addButton;
     public static JDialog dialogBlood;
 
 
@@ -56,6 +64,9 @@ public class AnamnezaFrame {
 
         DefaultListModel dlmFamilly = new DefaultListModel();
         listFamilly.setModel(dlmFamilly);
+
+        DefaultListModel dlmDh = new DefaultListModel();
+        dhList.setModel(dlmDh);
 
         zavrsiButton.addActionListener(new ActionListener() {
             @Override
@@ -313,6 +324,115 @@ public class AnamnezaFrame {
                 dialog.setModal(true);
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);
+            }
+        });
+        importButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Connection conn = null;
+
+                try {
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/iz", "root", "1234");
+
+                    String sql = "SELECT *  FROM patient WHERE id="+tfId.getText();
+
+                    PreparedStatement preparedStatement = conn.prepareStatement(sql);
+                    ResultSet resultSet = preparedStatement.executeQuery();
+
+                    boolean found = false;
+
+                    while (resultSet.next()) {
+
+                        found = true;
+
+                        textField2.setText(resultSet.getString("first_name"));
+                        textField3.setText(resultSet.getString("last_name"));
+                        textField4.setText(resultSet.getString("age"));
+                        if (resultSet.getString("sex").equals("Male")) {
+                            cbPol.setSelectedIndex(0);
+                        } else if (resultSet.getString("sex").equals("Female")) {
+                            cbPol.setSelectedIndex(1);
+                        }
+                    }
+
+                    if (!found) {
+                        JOptionPane.showMessageDialog(null, "No patient with id " + tfId.getText());
+                        textField2.setText("");
+                        textField3.setText("");
+                        textField4.setText("");
+                        cbPol.setSelectedIndex(0);
+                        dlmDh.removeAllElements();
+                        return;
+                    }
+
+                    sql = "SELECT *  FROM disease_history WHERE patient_id="+tfId.getText();
+
+                    preparedStatement = conn.prepareStatement(sql);
+                    resultSet = preparedStatement.executeQuery();
+
+                    dlmDh.removeAllElements();
+
+                    while (resultSet.next()) {
+                        dlmDh.addElement(resultSet.getString("disease"));
+                    }
+
+                } catch(Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+        addButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                int age;
+                int id;
+
+                if(textField2.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's first name.");
+                    return;
+                }
+
+                if(textField3.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's last name.");
+                    return;
+                }
+
+                if(textField4.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's age.");
+                    return;
+                }
+
+                try{
+                    id = Integer.parseInt(tfId.getText());
+                    age = Integer.parseInt(textField4.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "You have to input a number in the field \"ID\" and \"Age\".");
+                    return;
+                }
+
+                Connection conn = null;
+
+                try {
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/iz", "root", "1234");
+
+                    String sql = "INSERT INTO patient (id, first_name, last_name, age, sex) VALUES (?, ?, ?, ?, ?)";
+
+                    PreparedStatement preparedStatement = conn.prepareStatement(sql);
+                    preparedStatement.setInt(1,id);
+                    preparedStatement.setString(2, textField2.getText());
+                    preparedStatement.setString(3, textField3.getText());
+                    preparedStatement.setInt(4, age);
+                    preparedStatement.setString(5, cbPol.getSelectedItem().toString());
+                    preparedStatement.executeUpdate();
+
+                    JOptionPane.showMessageDialog(null, "Patient added to database");
+
+                } catch(Exception ex) {
+                    JOptionPane.showMessageDialog(null, "ID is already taken in database");
+                }
             }
         });
     }
