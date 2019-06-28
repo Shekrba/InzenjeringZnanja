@@ -32,6 +32,7 @@ public class AnamnezaFrame {
     private JTextField tfBPHigh;
     private JTextField tfWeight;
     private JTextField tfTemperature;
+    private JButton similarityPastExaminationsButton;
     public static JDialog dialogBlood;
 
 
@@ -39,10 +40,13 @@ public class AnamnezaFrame {
 
 
         ArrayList<String> keywords = new ArrayList<String>();
+        ArrayList<String> keywordsFamilly = new ArrayList<String>();
 
         addElements(keywords);
+        addElementsFamilly(keywordsFamilly);
 
         AutoCompleteDecorator.decorate(tfSimptom, keywords, false);
+        AutoCompleteDecorator.decorate(tfFamilly, keywordsFamilly, false);
 
         cbPol.addItem("Male");
         cbPol.addItem("Female");
@@ -84,8 +88,45 @@ public class AnamnezaFrame {
                     return;
                 }
 
+                try{
+                    if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
+                        MainFrame.setPritisakHigh(Double.parseDouble(tfBPHigh.getText()));
+                        MainFrame.setPritisakLow(Double.parseDouble(tfBPLow.getText()));
+                    }
+                    else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
+                        JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
+                        return;
+                    }
+
+                    if(tfHeight.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog(null, "You have to input Height.");
+                        return;
+                    }
+
+                    if(tfWeight.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog(null, "You have to input Weight.");
+                        return;
+                    }
+
+                    double height = Double.parseDouble(tfHeight.getText());
+                    double weight = Double.parseDouble(tfWeight.getText());
+
+                    double bmi = weight/Math.pow(height,2);
+
+                    MainFrame.setBmi(bmi);
+
+                    if(!tfTemperature.getText().trim().equals("")) {
+                        MainFrame.setTemperatura(Double.parseDouble(tfTemperature.getText()));
+                    }
+
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "You have to input numbers in Physical examination fields.");
+                    return;
+                }
+
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
+
 
                 ArrayList<String> sms=new ArrayList<String>();
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
@@ -177,6 +218,94 @@ public class AnamnezaFrame {
                 dialogBlood.setModal(true);
                 dialogBlood.setLocationRelativeTo(null);
                 dialogBlood.setVisible(true);
+            }
+        });
+        similarityPastExaminationsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(textField2.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's first name.");
+                    return;
+                }
+
+                if(textField3.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's last name.");
+                    return;
+                }
+
+                if(textField4.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's age.");
+                    return;
+                }
+
+                try{
+                    Integer.parseInt(textField4.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "You have to input a number in the field \"Age\".");
+                    return;
+                }
+
+                if(dlmSimptomi.isEmpty()){
+                    JOptionPane.showMessageDialog(null, "You have to input at least one symptom.");
+                    return;
+                }
+
+                try{
+                    if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
+                        MainFrame.setPritisakHigh(Double.parseDouble(tfBPHigh.getText()));
+                        MainFrame.setPritisakLow(Double.parseDouble(tfBPLow.getText()));
+                    }
+                    else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
+                        JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
+                        return;
+                    }
+
+                    if(tfHeight.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog(null, "You have to input Height.");
+                        return;
+                    }
+
+                    if(tfWeight.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog(null, "You have to input Weight.");
+                        return;
+                    }
+
+                    double height = Double.parseDouble(tfHeight.getText());
+                    double weight = Double.parseDouble(tfWeight.getText());
+
+                    double bmi = weight/Math.pow(height,2);
+
+                    MainFrame.setBmi(bmi);
+
+                    if(!tfTemperature.getText().trim().equals("")) {
+                        MainFrame.setTemperatura(Double.parseDouble(tfTemperature.getText()));
+                    }
+
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "You have to input numbers in Physical examination fields.");
+                    return;
+                }
+
+                MainFrame.getSimptomi().clear();
+                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
+                    MainFrame.getSimptomi().add(dlmSimptomi.get(i).toString());
+                }
+
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
+
+
+
+
+
+
+
+                dialog.setTitle("Anamnesis");
+                dialog.setContentPane(new CaseBaseFrame().getCaseBased());
+                dialog.setSize(800,600);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);
             }
         });
     }
@@ -496,6 +625,29 @@ public class AnamnezaFrame {
         keywords.add("Abnormal involuntary movements");
     }
 
+    public void addElementsFamilly(ArrayList<String> keywordsFamilly){
+        keywordsFamilly.add("myocarditis");
+        keywordsFamilly.add("meningitis");
+        keywordsFamilly.add("urinary_tract_infection");
+        keywordsFamilly.add("acute_respiratory_distress_syndrome");
+        keywordsFamilly.add("viral_hepatitis");
+        keywordsFamilly.add("cardiomyopathy");
+        keywordsFamilly.add("ischemic_heart_disease");
+        keywordsFamilly.add("hypertensive_heart_disease");
+        keywordsFamilly.add("hyponatremia");
+        keywordsFamilly.add("diabetes");
+        keywordsFamilly.add("anemia");
+        keywordsFamilly.add("gastroesophageal_reflux_disease_gerd");
+        keywordsFamilly.add("emphysema");
+        keywordsFamilly.add("celiac_disease");
+        keywordsFamilly.add("gastritis");
+        keywordsFamilly.add("cirrhosis");
+        keywordsFamilly.add("cerebral_palsy");
+        keywordsFamilly.add("multiple_sclerosis");
+        keywordsFamilly.add("acute_pancreatitis");
+        keywordsFamilly.add("the_pancreatic_cancer");
+    }
+
     public JDialog getDialogBlood() {
         return dialogBlood;
     }
@@ -504,24 +656,5 @@ public class AnamnezaFrame {
         this.dialogBlood = dialogBlood;
     }
 
-    public static <T> ArrayList<T> removeDuplicates(ArrayList<T> list)
-    {
 
-        // Create a new ArrayList
-        ArrayList<T> newList = new ArrayList<T>();
-
-        // Traverse through the first list
-        for (T element : list) {
-
-            // If this element is not present in newList
-            // then add it
-            if (!newList.contains(element)) {
-
-                newList.add(element);
-            }
-        }
-
-        // return the new list
-        return newList;
-    }
 }

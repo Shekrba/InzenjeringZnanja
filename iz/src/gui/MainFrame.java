@@ -24,7 +24,21 @@ public class MainFrame {
     private static ArrayList<Bolest> bolesti;
     private static CBC cbc;
     private static BMP bmp;
+
+    private static double bmi;
+    private static double temperatura;
+    private static double pritisakLow;
+    private static double pritisakHigh;
+    private static ArrayList<String> simptomi=new ArrayList<>();
+
+    public static ArrayList<String> getSimptomi() {
+        return simptomi;
+    }
+
+
+
     private static List<String> positiveBloodTests=new ArrayList<>();
+
 
     public MainFrame() {
         ANAMNEZAButton.addActionListener(new ActionListener() {
@@ -33,6 +47,11 @@ public class MainFrame {
 
                 cbc = new CBC();
                 bmp = new BMP();
+
+                bmi = 22;
+                temperatura = 36.5;
+                pritisakLow = 80;
+                pritisakHigh = 120;
 
                 dialog = new JDialog();
                 dialog.setTitle("Anamnesis");
@@ -138,6 +157,39 @@ public class MainFrame {
         MainFrame.bmp = bmp;
     }
 
+
+    public static double getBmi() {
+        return bmi;
+    }
+
+    public static void setBmi(double bmi) {
+        MainFrame.bmi = bmi;
+    }
+
+    public static double getTemperatura() {
+        return temperatura;
+    }
+
+    public static void setTemperatura(double temperatura) {
+        MainFrame.temperatura = temperatura;
+    }
+
+    public static double getPritisakLow() {
+        return pritisakLow;
+    }
+
+    public static void setPritisakLow(double pritisakLow) {
+        MainFrame.pritisakLow = pritisakLow;
+    }
+
+    public static double getPritisakHigh() {
+        return pritisakHigh;
+    }
+
+    public static void setPritisakHigh(double pritisakHigh) {
+        MainFrame.pritisakHigh = pritisakHigh;
+
+    }
     public static List<String> getPositiveBloodTests() {
         return positiveBloodTests;
     }
