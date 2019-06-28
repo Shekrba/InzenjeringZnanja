@@ -30,6 +30,33 @@ public class MainFrame {
     private static double pritisakLow;
     private static double pritisakHigh;
     private static ArrayList<String> simptomi=new ArrayList<>();
+    private static int godine;
+    private static String pol;
+    private static String bolestOdabrana;
+
+    public static void setBolestOdabrana(String bolestOdabrana) {
+        MainFrame.bolestOdabrana = bolestOdabrana;
+    }
+
+    public static String getBolestOdabrana() {
+        return bolestOdabrana;
+    }
+
+    public static void setGodine(int godine) {
+        MainFrame.godine = godine;
+    }
+
+    public static void setPol(String pol) {
+        MainFrame.pol = pol;
+    }
+
+    public static int getGodine() {
+        return godine;
+    }
+
+    public static String getPol() {
+        return pol;
+    }
 
     public static ArrayList<String> getSimptomi() {
         return simptomi;

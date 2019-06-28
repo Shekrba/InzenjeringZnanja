@@ -352,7 +352,7 @@ public class ZavrsiAmnezuFrame {
                 }
 
                 String text = "";
-
+                MainFrame.setBolestOdabrana(bol1.getNaziv());
                 dialog = new JDialog();
                 dialog.setTitle(bol1.getNaziv());
                 dialog.setContentPane(new TerapijaFrame().getTerapijaPanel());
@@ -366,8 +366,17 @@ public class ZavrsiAmnezuFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String text = "";
+                Bolest bol1 = new Bolest();
 
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab1.getText())){
+                        bol1 = b;
+                        break;
+                    }
+                }
+
+                String text = "";
+                MainFrame.setBolestOdabrana(bol1.getNaziv());
 
                 dialog = new JDialog();
                 dialog.setTitle("Procedures");
@@ -382,7 +391,17 @@ public class ZavrsiAmnezuFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                Bolest bol1 = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab1.getText())){
+                        bol1 = b;
+                        break;
+                    }
+                }
+
                 String text = "";
+                MainFrame.setBolestOdabrana(bol1.getNaziv());
 
 
                 dialog = new JDialog();
@@ -398,7 +417,17 @@ public class ZavrsiAmnezuFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                Bolest bol1 = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab1.getText())){
+                        bol1 = b;
+                        break;
+                    }
+                }
+
                 String text = "";
+                MainFrame.setBolestOdabrana(bol1.getNaziv());
 
 
                 dialog = new JDialog();
@@ -414,7 +443,17 @@ public class ZavrsiAmnezuFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                Bolest bol1 = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab1.getText())){
+                        bol1 = b;
+                        break;
+                    }
+                }
+
                 String text = "";
+                MainFrame.setBolestOdabrana(bol1.getNaziv());
 
 
                 dialog = new JDialog();
@@ -430,7 +469,17 @@ public class ZavrsiAmnezuFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                Bolest bol1 = new Bolest();
+
+                for (Bolest b: bolesti) {
+                    if(b.getNaziv().equals(lab1.getText())){
+                        bol1 = b;
+                        break;
+                    }
+                }
+
                 String text = "";
+                MainFrame.setBolestOdabrana(bol1.getNaziv());
 
 
                 dialog = new JDialog();

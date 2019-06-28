@@ -60,6 +60,8 @@ public class AnamnezaFrame {
         zavrsiButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String c = cbPol.getSelectedItem().toString();
+                MainFrame.setPol(c);
 
                 if(textField2.getText().trim().equals("")){
                     JOptionPane.showMessageDialog(null, "Please input patient's first name.");
@@ -77,7 +79,8 @@ public class AnamnezaFrame {
                 }
 
                 try{
-                    Integer.parseInt(textField4.getText());
+                    int go = Integer.parseInt(textField4.getText());
+                    MainFrame.setGodine(go);
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "You have to input a number in the field \"Age\".");
                     return;
@@ -127,6 +130,10 @@ public class AnamnezaFrame {
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
+                MainFrame.getSimptomi().clear();
+                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
+                    MainFrame.getSimptomi().add(dlmSimptomi.get(i).toString());
+                }
 
                 ArrayList<String> sms=new ArrayList<String>();
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){

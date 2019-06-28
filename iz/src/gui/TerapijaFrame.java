@@ -3,6 +3,9 @@ package gui;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 
 public class TerapijaFrame {
     private JPanel terapijaPanel;
@@ -20,39 +23,601 @@ public class TerapijaFrame {
             public void actionPerformed(ActionEvent e) {
             int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
             if(option == JOptionPane.YES_OPTION) {
-                System.out.println("rbc: " + MainFrame.getCbc().getRedBloodCellCount());
-                System.out.println("hemog: " + MainFrame.getCbc().getHemoglobin());
-                System.out.println("hemat: " + MainFrame.getCbc().getHematocrit());
-                System.out.println("whitebl: " + MainFrame.getCbc().getRedBloodCellCount());
-                System.out.println("plate: " + MainFrame.getCbc().getPlatelet());
+                String s = "";
+                for (String b:
+                     MainFrame.getSimptomi()) {
+                    b = b.toLowerCase().replaceAll(" ", "_");
+                    s+=b;
+                    s+="?;";
+                }
+                if(MainFrame.getTemperatura() == 0) {
+                    s+=36.5;
+                }else {
+                    s += MainFrame.getTemperatura();
+                }
+                s+=";";
+                s+=MainFrame.getPritisakHigh();
+                s+=";";
+                s+=MainFrame.getPritisakLow();
+                s+=";";
+                if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
+                    s+=4.8;
+                } else {
+                    s += MainFrame.getCbc().getRedBloodCellCount();
+                }
+                s+=";";
+                if(MainFrame.getCbc().getHemoglobin() == 0) {
+                    s+= 14;
+                } else {
+                    s += MainFrame.getCbc().getHemoglobin();
+                }
+                s+=";";
+                if(MainFrame.getCbc().getHematocrit() ==0) {
+                    s+= 41;
+                } else {
+                    s += MainFrame.getCbc().getHematocrit();
+                }
+                s+=";";
+                if(MainFrame.getCbc().getWhiteBloodCellCount() == 0) {
+                    s+= 6;
+                } else {
+                    s += MainFrame.getCbc().getWhiteBloodCellCount();
+                }
+                s+=";";
+                if(MainFrame.getCbc().getPlatelet() == 0) {
+                    s+= 250;
+                }else {
+                    s += MainFrame.getCbc().getPlatelet();
+                }
+                s+=";";
+                if(MainFrame.getBmp().getGlucose() == 0) {
+                    s+= 80;
+                }else {
+                    s += MainFrame.getBmp().getGlucose();
+                }
+                s+=";";
+                if(MainFrame.getBmp().getCalcium() == 0) {
+                    s+=9.5;
+                }
+                else {
+                    s += MainFrame.getBmp().getCalcium();
+                }
+                s+=";";
+                if(MainFrame.getBmp().getSodium() ==0) {
+                    s+=130;
+                }
+                else {
+                    s += MainFrame.getBmp().getSodium();
+                }
+                s+=";";
+                if(MainFrame.getBmp().getPotassium() == 0) {
+                    s+=4.2;
+                }else {
+                    s += MainFrame.getBmp().getPotassium();
+                }
+                s+=";";
+                if(MainFrame.getBmp().getUrea() == 0) {
+                    s+=4;
+                }else {
+                    s += MainFrame.getBmp().getUrea();
+                }
+                s+=";";
+                if(MainFrame.getBmp().getCreatinine() == 0) {
+                    s+=110;
+                } else {
+                    s += MainFrame.getBmp().getCreatinine();
+                }
+                s+=";";
+                if(MainFrame.getBmp().getBilirubin() == 0) {
+                    s+=1.1;
+                } else {
+                    s += MainFrame.getBmp().getBilirubin();
+                }
+                s+=";";
+                s+=MainFrame.getGodine();
+                s+=";";
+                s+=MainFrame.getPol();
+                s+=";";
+                s+=MainFrame.getBolestOdabrana();
+
+                System.out.println(s);
+
+                FileWriter fileWriter = null; //Set true for append mode
+                try {
+                    fileWriter = new FileWriter("data\\results.csv", true);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                PrintWriter printWriter = new PrintWriter(fileWriter);
+                printWriter.println(s);  //New line
+                printWriter.close();
             }
             }
         });
         prepisi2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
-            }
+                int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
+                if(option == JOptionPane.YES_OPTION) {
+                    String s = "";
+                    for (String b:
+                            MainFrame.getSimptomi()) {
+                        b = b.toLowerCase().replaceAll(" ", "_");
+                        s+=b;
+                        s+="?;";
+                    }
+                    if(MainFrame.getTemperatura() == 0) {
+                        s+=36.5;
+                    }else {
+                        s += MainFrame.getTemperatura();
+                    }
+                    s+=";";
+                    s+=MainFrame.getPritisakHigh();
+                    s+=";";
+                    s+=MainFrame.getPritisakLow();
+                    s+=";";
+                    if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
+                        s+=4.8;
+                    } else {
+                        s += MainFrame.getCbc().getRedBloodCellCount();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getHemoglobin() == 0) {
+                        s+= 14;
+                    } else {
+                        s += MainFrame.getCbc().getHemoglobin();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getHematocrit() ==0) {
+                        s+= 41;
+                    } else {
+                        s += MainFrame.getCbc().getHematocrit();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getWhiteBloodCellCount() == 0) {
+                        s+= 6;
+                    } else {
+                        s += MainFrame.getCbc().getWhiteBloodCellCount();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getPlatelet() == 0) {
+                        s+= 250;
+                    }else {
+                        s += MainFrame.getCbc().getPlatelet();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getGlucose() == 0) {
+                        s+= 80;
+                    }else {
+                        s += MainFrame.getBmp().getGlucose();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getCalcium() == 0) {
+                        s+=9.5;
+                    }
+                    else {
+                        s += MainFrame.getBmp().getCalcium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getSodium() ==0) {
+                        s+=130;
+                    }
+                    else {
+                        s += MainFrame.getBmp().getSodium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getPotassium() == 0) {
+                        s+=4.2;
+                    }else {
+                        s += MainFrame.getBmp().getPotassium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getUrea() == 0) {
+                        s+=4;
+                    }else {
+                        s += MainFrame.getBmp().getUrea();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getCreatinine() == 0) {
+                        s+=110;
+                    } else {
+                        s += MainFrame.getBmp().getCreatinine();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getBilirubin() == 0) {
+                        s+=1.1;
+                    } else {
+                        s += MainFrame.getBmp().getBilirubin();
+                    }
+                    s+=";";
+                    s+=MainFrame.getGodine();
+                    s+=";";
+                    s+=MainFrame.getPol();
+                    s+=";";
+                    s+=MainFrame.getBolestOdabrana();
+
+                    System.out.println(s);
+
+                    FileWriter fileWriter = null; //Set true for append mode
+                    try {
+                        fileWriter = new FileWriter("data\\results.csv", true);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    PrintWriter printWriter = new PrintWriter(fileWriter);
+                    printWriter.println(s);  //New line
+                    printWriter.close();
+                }            }
         });
         prepisi3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
+                int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
+                if(option == JOptionPane.YES_OPTION) {
+                    String s = "";
+                    for (String b:
+                            MainFrame.getSimptomi()) {
+                        b = b.toLowerCase().replaceAll(" ", "_");
+                        s+=b;
+                        s+="?;";
+                    }
+                    if(MainFrame.getTemperatura() == 0) {
+                        s+=36.5;
+                    }else {
+                        s += MainFrame.getTemperatura();
+                    }
+                    s+=";";
+                    s+=MainFrame.getPritisakHigh();
+                    s+=";";
+                    s+=MainFrame.getPritisakLow();
+                    s+=";";
+                    if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
+                        s+=4.8;
+                    } else {
+                        s += MainFrame.getCbc().getRedBloodCellCount();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getHemoglobin() == 0) {
+                        s+= 14;
+                    } else {
+                        s += MainFrame.getCbc().getHemoglobin();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getHematocrit() ==0) {
+                        s+= 41;
+                    } else {
+                        s += MainFrame.getCbc().getHematocrit();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getWhiteBloodCellCount() == 0) {
+                        s+= 6;
+                    } else {
+                        s += MainFrame.getCbc().getWhiteBloodCellCount();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getPlatelet() == 0) {
+                        s+= 250;
+                    }else {
+                        s += MainFrame.getCbc().getPlatelet();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getGlucose() == 0) {
+                        s+= 80;
+                    }else {
+                        s += MainFrame.getBmp().getGlucose();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getCalcium() == 0) {
+                        s+=9.5;
+                    }
+                    else {
+                        s += MainFrame.getBmp().getCalcium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getSodium() ==0) {
+                        s+=130;
+                    }
+                    else {
+                        s += MainFrame.getBmp().getSodium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getPotassium() == 0) {
+                        s+=4.2;
+                    }else {
+                        s += MainFrame.getBmp().getPotassium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getUrea() == 0) {
+                        s+=4;
+                    }else {
+                        s += MainFrame.getBmp().getUrea();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getCreatinine() == 0) {
+                        s+=110;
+                    } else {
+                        s += MainFrame.getBmp().getCreatinine();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getBilirubin() == 0) {
+                        s+=1.1;
+                    } else {
+                        s += MainFrame.getBmp().getBilirubin();
+                    }
+                    s+=";";
+                    s+=MainFrame.getGodine();
+                    s+=";";
+                    s+=MainFrame.getPol();
+                    s+=";";
+                    s+=MainFrame.getBolestOdabrana();
 
+                    System.out.println(s);
+
+                    FileWriter fileWriter = null; //Set true for append mode
+                    try {
+                        fileWriter = new FileWriter("data\\results.csv", true);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    PrintWriter printWriter = new PrintWriter(fileWriter);
+                    printWriter.println(s);  //New line
+                    printWriter.close();
+                }
             }
         });
         prepisi4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
+                int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
+                if(option == JOptionPane.YES_OPTION) {
+                    String s = "";
+                    for (String b:
+                            MainFrame.getSimptomi()) {
+                        b = b.toLowerCase().replaceAll(" ", "_");
+                        s+=b;
+                        s+="?;";
+                    }
+                    if(MainFrame.getTemperatura() == 0) {
+                        s+=36.5;
+                    }else {
+                        s += MainFrame.getTemperatura();
+                    }
+                    s+=";";
+                    s+=MainFrame.getPritisakHigh();
+                    s+=";";
+                    s+=MainFrame.getPritisakLow();
+                    s+=";";
+                    if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
+                        s+=4.8;
+                    } else {
+                        s += MainFrame.getCbc().getRedBloodCellCount();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getHemoglobin() == 0) {
+                        s+= 14;
+                    } else {
+                        s += MainFrame.getCbc().getHemoglobin();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getHematocrit() ==0) {
+                        s+= 41;
+                    } else {
+                        s += MainFrame.getCbc().getHematocrit();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getWhiteBloodCellCount() == 0) {
+                        s+= 6;
+                    } else {
+                        s += MainFrame.getCbc().getWhiteBloodCellCount();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getPlatelet() == 0) {
+                        s+= 250;
+                    }else {
+                        s += MainFrame.getCbc().getPlatelet();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getGlucose() == 0) {
+                        s+= 80;
+                    }else {
+                        s += MainFrame.getBmp().getGlucose();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getCalcium() == 0) {
+                        s+=9.5;
+                    }
+                    else {
+                        s += MainFrame.getBmp().getCalcium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getSodium() ==0) {
+                        s+=130;
+                    }
+                    else {
+                        s += MainFrame.getBmp().getSodium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getPotassium() == 0) {
+                        s+=4.2;
+                    }else {
+                        s += MainFrame.getBmp().getPotassium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getUrea() == 0) {
+                        s+=4;
+                    }else {
+                        s += MainFrame.getBmp().getUrea();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getCreatinine() == 0) {
+                        s+=110;
+                    } else {
+                        s += MainFrame.getBmp().getCreatinine();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getBilirubin() == 0) {
+                        s+=1.1;
+                    } else {
+                        s += MainFrame.getBmp().getBilirubin();
+                    }
+                    s+=";";
+                    s+=MainFrame.getGodine();
+                    s+=";";
+                    s+=MainFrame.getPol();
+                    s+=";";
+                    s+=MainFrame.getBolestOdabrana();
 
+                    System.out.println(s);
+
+                    FileWriter fileWriter = null; //Set true for append mode
+                    try {
+                        fileWriter = new FileWriter("data\\results.csv", true);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    PrintWriter printWriter = new PrintWriter(fileWriter);
+                    printWriter.println(s);  //New line
+                    printWriter.close();
+
+                }
             }
         });
         prepisi5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
+                int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
+                if(option == JOptionPane.YES_OPTION) {
+                    String s = "";
+                    for (String b:
+                            MainFrame.getSimptomi()) {
+                        b = b.toLowerCase().replaceAll(" ", "_");
+                        s+=b;
+                        s+="?;";
+                    }
+                    if(MainFrame.getTemperatura() == 0) {
+                        s+=36.5;
+                    }else {
+                        s += MainFrame.getTemperatura();
+                    }
+                    s+=";";
+                    s+=MainFrame.getPritisakHigh();
+                    s+=";";
+                    s+=MainFrame.getPritisakLow();
+                    s+=";";
+                    if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
+                        s+=4.8;
+                    } else {
+                        s += MainFrame.getCbc().getRedBloodCellCount();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getHemoglobin() == 0) {
+                        s+= 14;
+                    } else {
+                        s += MainFrame.getCbc().getHemoglobin();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getHematocrit() ==0) {
+                        s+= 41;
+                    } else {
+                        s += MainFrame.getCbc().getHematocrit();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getWhiteBloodCellCount() == 0) {
+                        s+= 6;
+                    } else {
+                        s += MainFrame.getCbc().getWhiteBloodCellCount();
+                    }
+                    s+=";";
+                    if(MainFrame.getCbc().getPlatelet() == 0) {
+                        s+= 250;
+                    }else {
+                        s += MainFrame.getCbc().getPlatelet();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getGlucose() == 0) {
+                        s+= 80;
+                    }else {
+                        s += MainFrame.getBmp().getGlucose();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getCalcium() == 0) {
+                        s+=9.5;
+                    }
+                    else {
+                        s += MainFrame.getBmp().getCalcium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getSodium() ==0) {
+                        s+=130;
+                    }
+                    else {
+                        s += MainFrame.getBmp().getSodium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getPotassium() == 0) {
+                        s+=4.2;
+                    }else {
+                        s += MainFrame.getBmp().getPotassium();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getUrea() == 0) {
+                        s+=4;
+                    }else {
+                        s += MainFrame.getBmp().getUrea();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getCreatinine() == 0) {
+                        s+=110;
+                    } else {
+                        s += MainFrame.getBmp().getCreatinine();
+                    }
+                    s+=";";
+                    if(MainFrame.getBmp().getBilirubin() == 0) {
+                        s+=1.1;
+                    } else {
+                        s += MainFrame.getBmp().getBilirubin();
+                    }
+                    s+=";";
+                    s+=MainFrame.getGodine();
+                    s+=";";
+                    s+=MainFrame.getPol();
+                    s+=";";
+                    s+=MainFrame.getBolestOdabrana();
+                    s+="\n";
 
+                    System.out.println(s);
+
+                    FileWriter fileWriter = null; //Set true for append mode
+                    try {
+                        fileWriter = new FileWriter("data\\results.csv", true);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    PrintWriter printWriter = new PrintWriter(fileWriter);
+                    printWriter.println(s);  //New line
+                    printWriter.close();
+                   /*
+                    try {
+                        Writer writer = null;
+                        //create a temporary file
+                        File logFile = new File("data\\results.csv");
+
+                        // This will output the full path where the file will be written to...
+
+                        writer = new BufferedWriter(new FileWriter(logFile));
+                        writer.write(s);
+
+                        writer.close();
+
+                    } catch (Exception e1) {
+                        e1.printStackTrace();
+                    } finally {
+                        try {
+                            // Close the writer regardless of what happens...
+                        } catch (Exception e1) {
+                        }
+                    }*/
+                }
             }
         });
     }
