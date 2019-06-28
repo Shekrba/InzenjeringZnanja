@@ -31,6 +31,7 @@ public class MainFrame {
     private static double pritisakHigh;
 
 
+
     private static List<String> positiveBloodTests=new ArrayList<>();
 
 
@@ -43,7 +44,7 @@ public class MainFrame {
                 bmp = new BMP();
 
                 bmi = 22;
-                temperatura = 37;
+                temperatura = 36.5;
                 pritisakLow = 80;
                 pritisakHigh = 120;
 

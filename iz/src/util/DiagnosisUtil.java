@@ -155,6 +155,9 @@ public class DiagnosisUtil {
 
 
 
+
+
+
             CBC cbc= MainFrame.getCbc();
             //ako je cbc test unet
             if(cbc.getWhiteBloodCellCount()!=0.0) {
@@ -556,6 +559,105 @@ public class DiagnosisUtil {
             }
 
 
+            //uracunavanje temperature
+            JIPQuery queryTemp=engine.openSynchronousQuery("temperatura(" + b.getNaziv() + ",X)");
+            JIPTerm solutionTemp;
+            while ( (solutionTemp = queryTemp.nextSolution()) != null) {
+                for(JIPVariable var : solutionTemp.getVariables()){
+                    if(MainFrame.getTemperatura()>=Double.parseDouble(var.getValue().toString())){
+                        ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
+                        PotentialTable bolestProb=bolestNode.getProbabilityFunction();
+                        bolestProb.setValue(0,bolestProb.getValue(0)*(float)1.5);
+                        bolestProb.setValue(1,1-bolestProb.getValue(0));
+                        b.getSimptomi().add("temperature");
+                        b.setPoklapanje(b.getPoklapanje()+1);
+                    }
+                }
+            }
+
+
+            //uracunavanje BMI
+            JIPQuery queryBMI=engine.openSynchronousQuery("bmi(" + b.getNaziv() + ",X)");
+            JIPTerm solutionBMI;
+            while ( (solutionBMI = queryBMI.nextSolution()) != null) {
+                for(JIPVariable var : solutionBMI.getVariables()){
+                    if(MainFrame.getBmi()>=Double.parseDouble(var.getValue().toString())){
+                        ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
+                        PotentialTable bolestProb=bolestNode.getProbabilityFunction();
+                        bolestProb.setValue(0,bolestProb.getValue(0)*(float)1.2);
+                        bolestProb.setValue(1,1-bolestProb.getValue(0));
+                        b.getSimptomi().add("body_mass_index");
+                        b.setPoklapanje(b.getPoklapanje()+1);
+                    }
+                }
+            }
+
+
+
+            //uracunavanje pritiska
+            JIPQuery queryBP=engine.openSynchronousQuery("pritisak(" + b.getNaziv() + ",X,Y,Z)");
+            JIPTerm solutionBP;
+            while ( (solutionBP = queryBP.nextSolution()) != null) {
+                boolean visi=false;
+                for(JIPVariable var : solutionBP.getVariables()){
+                    if(var.getName().equals("X")) {
+                        if (var.getValue().toString().equals("visi")) {
+                            visi = true;
+                        } else {
+                            visi = false;
+                        }
+                    }
+                    if(var.getName().equals("Y")){
+                            if(visi){
+                                if(MainFrame.getPritisakHigh()>Double.parseDouble(var.getValue().toString())){
+                                    ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
+                                    PotentialTable bolestProb=bolestNode.getProbabilityFunction();
+                                    bolestProb.setValue(0,bolestProb.getValue(0)*(float)1.25);
+                                    bolestProb.setValue(1,1-bolestProb.getValue(0));
+                                    b.getSimptomi().add("blood_pressure_high");
+                                    b.setPoklapanje(b.getPoklapanje()+1);
+                                }
+                            }else{
+                                if(MainFrame.getPritisakHigh()<Double.parseDouble(var.getValue().toString())){
+                                    ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
+                                    PotentialTable bolestProb=bolestNode.getProbabilityFunction();
+                                    bolestProb.setValue(0,bolestProb.getValue(0)*(float)1.25);
+                                    bolestProb.setValue(1,1-bolestProb.getValue(0));
+                                    b.getSimptomi().add("blood_pressure_low");
+                                    b.setPoklapanje(b.getPoklapanje()+1);
+                                }
+                            }
+                        }
+                        if(var.getName().equals("Z")){
+                            if(visi){
+                                if(MainFrame.getPritisakLow()>Double.parseDouble(var.getValue().toString())){
+                                    ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
+                                    PotentialTable bolestProb=bolestNode.getProbabilityFunction();
+                                    bolestProb.setValue(0,bolestProb.getValue(0)*(float)1.25);
+                                    bolestProb.setValue(1,1-bolestProb.getValue(0));
+                                    if(!b.getSimptomi().contains("blood_pressure_high")) {
+                                        b.getSimptomi().add("blood_pressure_high");
+                                        b.setPoklapanje(b.getPoklapanje()+1);
+                                    }
+                                }
+                            }else{
+                                if(MainFrame.getPritisakLow()<Double.parseDouble(var.getValue().toString())){
+                                    ProbabilisticNode bolestNode = (ProbabilisticNode)net.getNode(b.getNaziv());
+                                    PotentialTable bolestProb=bolestNode.getProbabilityFunction();
+                                    bolestProb.setValue(0,bolestProb.getValue(0)*(float)1.25);
+                                    bolestProb.setValue(1,1-bolestProb.getValue(0));
+                                    if(!b.getSimptomi().contains("blood_pressure_low")) {
+                                        b.getSimptomi().add("blood_pressure_low");
+                                        b.setPoklapanje(b.getPoklapanje()+1);
+                                    }
+                                }
+                            }
+                        }
+
+                }
+            }
+
+
 
             IInferenceAlgorithm algorithm = new JunctionTreeAlgorithm();
             algorithm.setNetwork(net);
@@ -563,7 +665,7 @@ public class DiagnosisUtil {
 
             for (String sympom:
                     b.getSimptomi()) {
-                if(!sympom.contains("blood_test")) {
+                if(!(sympom.contains("blood_test") || sympom.contains("temperature")|| sympom.contains("body_mass_index")|| sympom.contains("blood_pressure"))) {
                     ProbabilisticNode factNode = (ProbabilisticNode) net.getNode(sympom);
                     int stateIndex = 0; // index of state "da"
                     factNode.addFinding(stateIndex);
