@@ -6,11 +6,15 @@ import model.BMP;
 import model.Bolest;
 import model.DodatanTest;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +24,7 @@ public class MainFrame {
     private JButton DOPUNSKAISPITIVANJAButton;
     private JButton FIZIKALNIPREGLEDButton;
     private JButton ANAMNEZAButton;
+    private JLabel imgLab;
     private static JFrame frame;
     private static JDialog dialog;
     private static ArrayList<Bolest> bolesti;
@@ -82,6 +87,15 @@ public class MainFrame {
 
 
     public MainFrame() {
+
+        BufferedImage image = null;
+        try {
+            image = ImageIO.read(new File("img/dtu.jpg"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        imgLab.setIcon(new ImageIcon(image));
+
         ANAMNEZAButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -117,7 +131,7 @@ public class MainFrame {
             e.printStackTrace();
         }
 
-        frame = new JFrame("IZ");
+        frame = new JFrame("DONTTRUSTUS");
         frame.setContentPane(new MainFrame().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
