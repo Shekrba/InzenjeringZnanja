@@ -127,11 +127,10 @@ public class AnamnezaFrame {
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
-                MainFrame.getSimptomi().clear();
+
                 ArrayList<String> sms=new ArrayList<String>();
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
                     sms.add(dlmSimptomi.get(i).toString());
-                    MainFrame.getSimptomi().add(dlmSimptomi.get(i).toString());
                 }
 
 
@@ -287,13 +286,18 @@ public class AnamnezaFrame {
                     return;
                 }
 
+                MainFrame.getSimptomi().clear();
+                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
+                    MainFrame.getSimptomi().add(dlmSimptomi.get(i).toString());
+                }
+
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
-                ArrayList<String> sms=new ArrayList<String>();
-                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
-                    sms.add(dlmSimptomi.get(i).toString());
-                }
+
+
+
+
 
 
                 dialog.setTitle("Anamnesis");

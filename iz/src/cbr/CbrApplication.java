@@ -19,7 +19,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class CbrApplication implements StandardCBRApplication {
-	
+
+	private boolean cbc;
+	private boolean bmp;
+
 	Connector _connector;  /** Connector object */
 	CBRCaseBase _caseBase;  /** CaseBase object */
 
@@ -77,30 +80,31 @@ public class CbrApplication implements StandardCBRApplication {
 		return _caseBase;
 	}
 
-	public void doCbr(ArrayList<String> symptoms){
+	public void doCbr(ArrayList<String> symptoms,boolean bmpTest,boolean cbcTest){
 		StandardCBRApplication recommender = new CbrApplication();
-		try {
-			recommender.configure();
+		for(String symptom:symptoms) {
+			try {
+				recommender.configure();
 
-			recommender.preCycle();
+				recommender.preCycle();
 
-			CBRQuery query = new CBRQuery();
+				CBRQuery query = new CBRQuery();
 
-			/*symptoms=
+/*
+				ExaminationDescription examinationDescription = new ExaminationDescription();
+				examinationDescription.setType("Skiing");
+				examinationDescription.setPersons(4);
+				examinationDescription.setRegion("France");
+				examinationDescription.setTransportation("Plane");
+				examinationDescription.setDuration(7);
 
-			ExaminationDescription examinationDescription = new ExaminationDescription();
-			examinationDescription.setType("Skiing");
-			examinationDescription.setPersons(4);
-			examinationDescription.setRegion("France");
-			examinationDescription.setTransportation("Plane");
-			examinationDescription.setDuration(7);
-			
-			query.setDescription(examinationDescription);
-			recommender.cycle(query);
+				query.setDescription(examinationDescription);
+				recommender.cycle(query);
 
-			recommender.postCycle();*/
-		} catch (Exception e) {
-			e.printStackTrace();
+				recommender.postCycle();*/
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
