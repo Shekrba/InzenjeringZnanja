@@ -4,6 +4,7 @@ import de.javasoft.synthetica.dark.SyntheticaDarkLookAndFeel;
 import model.CBC;
 import model.BMP;
 import model.Bolest;
+import model.DodatanTest;
 
 import javax.swing.*;
 
@@ -33,6 +34,19 @@ public class MainFrame {
     private static int godine;
     private static String pol;
     private static String bolestOdabrana;
+    private static ArrayList<DodatanTest> dodatniTestovi=new ArrayList<>();
+
+    public static void setSimptomi(ArrayList<String> simptomi) {
+        MainFrame.simptomi = simptomi;
+    }
+
+    public static ArrayList<DodatanTest> getDodatniTestovi() {
+        return dodatniTestovi;
+    }
+
+    public static void setDodatniTestovi(ArrayList<DodatanTest> dodatniTestovi) {
+        MainFrame.dodatniTestovi = dodatniTestovi;
+    }
 
     public static void setBolestOdabrana(String bolestOdabrana) {
         MainFrame.bolestOdabrana = bolestOdabrana;

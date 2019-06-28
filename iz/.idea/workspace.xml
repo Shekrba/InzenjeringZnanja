@@ -1,6 +1,494 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90464b3a-ce5e-4079-87cc-4fd3ee41aa76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/acute_pancreatitis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/the_pancreatic_cancer.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/BNs/acute_pancreatitis.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/BNs/the_pancreatic_cancer.net" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/iz/model/DodatanTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/DodatanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/acute_respiratory_distress_syndrome.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/acute_respiratory_distress_syndrome.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/anemia.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/anemia.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/bell_palsy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/bin/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/bin/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/bronchiectasis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cardiomyopathy.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/cardiomyopathy.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/celiac_disease.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/celiac_disease.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cerebral_palsy.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/cerebral_palsy.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/chronic_constipation.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cirrhosis.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/cirrhosis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/coagulation_bleeding_disorder.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/dementia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/diabetes.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/diabetes.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/emphysema.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/emphysema.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/encephalitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/gastritis.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/gastritis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/gastroesophageal_reflux_disease_gerd.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/hyperlipidemia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/hypertensive_heart_disease.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/hypertensive_heart_disease.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/hyponatremia.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/hyponatremia.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/ischemic_heart_disease.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/ischemic_heart_disease.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/meningitis.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/meningitis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/multiple_sclerosis.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/multiple_sclerosis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/myocarditis.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/myocarditis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/parkinson_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/polymyalgia_rheumatica.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/program.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/src/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/src/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/urinary_tract_infection.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/urinary_tract_infection.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/viral_hepatitis.net" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/viral_hepatitis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/acute_respiratory_distress_syndrome.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/acute_respiratory_distress_syndrome.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/anemia.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/anemia.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/bell_palsy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/bronchiectasis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/cardiomyopathy.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/cardiomyopathy.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/celiac_disease.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/celiac_disease.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/cerebral_palsy.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/cerebral_palsy.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/chronic_constipation.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/cirrhosis.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/cirrhosis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/coagulation_bleeding_disorder.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/dementia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/diabetes.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/diabetes.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/emphysema.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/emphysema.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/encephalitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/gastritis.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/gastritis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/gastroesophageal_reflux_disease_gerd.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/hyperlipidemia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/hypertensive_heart_disease.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/hypertensive_heart_disease.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/hyponatremia.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/hyponatremia.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/ischemic_heart_disease.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/ischemic_heart_disease.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/meningitis.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/meningitis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/multiple_sclerosis.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/multiple_sclerosis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/myocarditis.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/myocarditis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/parkinson_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/polymyalgia_rheumatica.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/urinary_tract_infection.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/urinary_tract_infection.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/BNs/viral_hepatitis.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/BNs/viral_hepatitis.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/data/program.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/cbr/CbrApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/cbr/CbrApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cbr/CbrApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cbr/CbrApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/MainFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/TerapijaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TerapijaFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="130" column="67" selection-start-line="130" selection-start-column="67" selection-end-line="130" selection-end-column="67" />
+              <folding>
+                <element signature="e#1945#1953#0" expanded="true" />
+                <element signature="e#2011#2020#0" expanded="true" />
+                <element signature="e#2342#2351#0" expanded="true" />
+                <element signature="e#4235#4236#0" expanded="true" />
+                <element signature="e#4298#4299#0" expanded="true" />
+                <element signature="e#4913#4922#0" expanded="true" />
+                <element signature="e#5307#5316#0" expanded="true" />
+                <element signature="method#fja#0;class#ZavrsiAmnezuFrame#0" />
+                <element signature="e#20318#20319#0" expanded="true" />
+                <element signature="e#20440#20441#0" expanded="true" />
+                <element signature="method#sortDiseases#0;class#ZavrsiAmnezuFrame#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/program.pl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="963" column="39" lean-forward="true" selection-start-line="963" selection-start-column="39" selection-end-line="963" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="198" column="32" selection-start-line="198" selection-start-column="32" selection-end-line="198" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addElements#0;class#AnamnezaFrame#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>id</find>
+      <find>insert</find>
+      <find>testovi(elec</find>
+      <find>Zavr</find>
+      <find>pancrea</find>
+      <find>prevalence</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" />
+        <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
+        <option value="$PROJECT_DIR$/src/gui/MainFrame.form" />
+        <option value="$PROJECT_DIR$/data/program.pl" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="AnamnezaFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="MainFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="ZavrsiAmnezuFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainFrame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.MainFrame" />
+      <module name="iz" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="gui.MainFrame" />
+      <module name="iz" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2122000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20738254" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.31771597" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013423" side_tool="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4986979" weight="0.32796487" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1380#1381#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#2985#2986#0" expanded="true" />
+            <element signature="e#3017#3018#0" expanded="true" />
+            <element signature="e#3067#3068#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
+            <element signature="e#3162#3163#0" expanded="true" />
+            <element signature="e#3210#3211#0" expanded="true" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3462#3463#0" expanded="true" />
+            <element signature="e#3649#3650#0" expanded="true" />
+            <element signature="e#3686#3687#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3838#3839#0" expanded="true" />
+            <element signature="e#3866#3867#0" expanded="true" />
+            <element signature="e#3915#3916#0" expanded="true" />
+            <element signature="e#3954#3955#0" expanded="true" />
+            <element signature="e#3995#3996#0" expanded="true" />
+            <element signature="e#4024#4025#0" expanded="true" />
+            <element signature="e#4076#4077#0" expanded="true" />
+            <element signature="e#4117#4118#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
+            <element signature="e#4199#4200#0" expanded="true" />
+            <element signature="e#4263#4264#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
+            <element signature="e#4340#4341#0" expanded="true" />
+            <element signature="e#4366#4367#0" expanded="true" />
+            <element signature="e#4408#4409#0" expanded="true" />
+            <element signature="e#4443#4444#0" expanded="true" />
+            <element signature="e#4477#4478#0" expanded="true" />
+            <element signature="e#4503#4504#0" expanded="true" />
+            <element signature="e#4545#4546#0" expanded="true" />
+            <element signature="e#4580#4581#0" expanded="true" />
+            <element signature="e#4618#4619#0" expanded="true" />
+            <element signature="e#4644#4645#0" expanded="true" />
+            <element signature="e#4689#4690#0" expanded="true" />
+            <element signature="e#4724#4725#0" expanded="true" />
+            <element signature="e#4769#4770#0" expanded="true" />
+            <element signature="e#4803#4804#0" expanded="true" />
+            <element signature="e#4864#4865#0" expanded="true" />
+            <element signature="e#4915#4916#0" expanded="true" />
+            <element signature="e#4957#4958#0" expanded="true" />
+            <element signature="e#4991#4992#0" expanded="true" />
+            <element signature="e#5049#5050#0" expanded="true" />
+            <element signature="e#5100#5101#0" expanded="true" />
+            <element signature="e#5143#5144#0" expanded="true" />
+            <element signature="e#5178#5179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1407">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1158#1167#0" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2687#2688#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4619#4620#0" expanded="true" />
+            <element signature="e#4656#4657#0" expanded="true" />
+            <element signature="method#sortDiseases#0;class#CaseBaseFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="130" column="67" selection-start-line="130" selection-start-column="67" selection-end-line="130" selection-end-column="67" />
+          <folding>
+            <element signature="e#1945#1953#0" expanded="true" />
+            <element signature="e#2011#2020#0" expanded="true" />
+            <element signature="e#2342#2351#0" expanded="true" />
+            <element signature="e#4235#4236#0" expanded="true" />
+            <element signature="e#4298#4299#0" expanded="true" />
+            <element signature="e#4913#4922#0" expanded="true" />
+            <element signature="e#5307#5316#0" expanded="true" />
+            <element signature="method#fja#0;class#ZavrsiAmnezuFrame#0" />
+            <element signature="e#20318#20319#0" expanded="true" />
+            <element signature="e#20440#20441#0" expanded="true" />
+            <element signature="method#sortDiseases#0;class#ZavrsiAmnezuFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="198" column="32" selection-start-line="198" selection-start-column="32" selection-end-line="198" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addElements#0;class#AnamnezaFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/program.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="963" column="39" lean-forward="true" selection-start-line="963" selection-start-column="39" selection-end-line="963" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

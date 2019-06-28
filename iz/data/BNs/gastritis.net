@@ -105,31 +105,31 @@ potential (gastritis)
 potential (sharp_abdominal_pain | gastritis)
 {
  data = (( 0.82 0.18 )
-( 0.355769 0.64423096 ));
+( 0.25274903 0.747251 ));
 }
 
 potential (vomiting | gastritis)
 {
  data = (( 0.75 0.25 )
-( 0.21621664 0.7837834 ));
+( 0.16521665 0.8347833 ));
 }
 
 potential (nausea | gastritis)
 {
  data = (( 0.65 0.35000002 )
-( 0.19558638 0.8044136 ));
+( 0.15208636 0.8479136 ));
 }
 
 potential (burning_abdominal_pain | gastritis)
 {
  data = (( 0.55 0.45 )
-( 0.0975 0.90250003 ));
+( 0.042 0.958 ));
 }
 
 potential (sharp_chest_pain | gastritis)
 {
  data = (( 0.41 0.59000003 )
-( 0.24325499 0.756745 ));
+( 0.248511 0.751489 ));
 }
 
 potential (upper_abdominal_pain | gastritis)
@@ -141,25 +141,25 @@ potential (upper_abdominal_pain | gastritis)
 potential (diarrhea | gastritis)
 {
  data = (( 0.4 0.6 )
-( 0.0092279995 0.990772 ));
+( 0.0132559985 0.986744 ));
 }
 
 potential (fever | gastritis)
 {
  data = (( 0.27 0.73 )
-( 0.10160196 0.89839804 ));
+( 0.10721295 0.89278704 ));
 }
 
 potential (headache | gastritis)
 {
  data = (( 0.24 0.76 )
-( 0.010339043 0.989661 ));
+( 0.013826042 0.986174 ));
 }
 
 potential (heartburn | gastritis)
 {
  data = (( 0.24 0.76 )
-( 0.08922 0.91078 ));
+( 0.08934001 0.91065997 ));
 }
 
 potential (vomiting_blood | gastritis)

@@ -105,49 +105,49 @@ potential (ischemic_heart_disease)
 potential (sharp_chest_pain | ischemic_heart_disease)
 {
  data = (( 0.57 0.43 )
-( 0.23149501 0.768505 ));
+( 0.23675099 0.76324904 ));
 }
 
 potential (shortness_of_breath | ischemic_heart_disease)
 {
  data = (( 0.48 0.52 )
-( 0.14367399 0.856326 ));
+( 0.144006 0.855994 ));
 }
 
 potential (difficulty_breathing | ischemic_heart_disease)
 {
  data = (( 0.32 0.68 )
-( 0.093265 0.906735 ));
+( 0.09676 0.90324 ));
 }
 
 potential (palpitations | ischemic_heart_disease)
 {
  data = (( 0.31 0.69 )
-( 0.108162 0.891838 ));
+( 0.115524 0.884476 ));
 }
 
 potential (dizziness | ischemic_heart_disease)
 {
  data = (( 0.28 0.72 )
-( 0.0412395 0.9587605 ));
+( 0.042708002 0.957292 ));
 }
 
 potential (fatigue | ischemic_heart_disease)
 {
  data = (( 0.27 0.73 )
-( 0.093753 0.906247 ));
+( 0.092448995 0.907551 ));
 }
 
 potential (chest_tightness | ischemic_heart_disease)
 {
  data = (( 0.26 0.74 )
-( 0.088993 0.911007 ));
+( 0.095189 0.904811 ));
 }
 
 potential (peripheral_edema | ischemic_heart_disease)
 {
  data = (( 0.13 0.87 )
-( 0.0027080001 0.997292 ));
+( 0.002788 0.997212 ));
 }
 
 potential (lymphedemia | ischemic_heart_disease)
@@ -165,7 +165,7 @@ potential (increased_heart_rate | ischemic_heart_disease)
 potential (muscle_pain | ischemic_heart_disease)
 {
  data = (( 0.05 0.95 )
-( 7.04E-4 0.999296 ));
+( 0.0 1.0 ));
 }
 
 potential (throat_feels_tight | ischemic_heart_disease)

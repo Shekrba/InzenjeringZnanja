@@ -1,36 +1,123 @@
+%POKLAPANJE BOLESTI SA SIMPTOMIMA
 poklapanje_simptoma([],Bolest,0,[]).
 poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),member(H,Ls) , poklapanje_simptoma(T,Bolest,N2,L1), N is N2 + 1, append([H],L1,L).
 poklapanje_simptoma([H|T],Bolest,N,L) :- simptomi(Bolest,Ls),\+ member(H,Ls), poklapanje_simptoma(T,Bolest,N,L).
 
-simptomi(acute_respiratory_distress_syndrome,[shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
+%POKLAPANJE TESTOVA SA BOLESTIMA
+poklapanje_testova([],Test,0,[]).
+poklapanje_testova([H|T],Test,N,L) :- testovi(Test,Ls),member(H,Ls) , poklapanje_testova(T,Test,N2,L1), N is N2 + 1, append([H],L1,L).
+poklapanje_testova([H|T],Test,N,L) :- testovi(Test,Ls),\+ member(H,Ls), poklapanje_testova(T,Test,N,L).
 
-uzmi(bolest,acute_respiratory_distress_syndrome).
-uzmi(bolest,hypertensive_heart_disease).
-uzmi(bolest,ischemic_heart_disease).
-uzmi(bolest,diabetes).
-uzmi(bolest,anemia).
-uzmi(bolest,coagulation_bleeding_disorder).
-uzmi(bolest,viral_hepatitis).
-uzmi(bolest,gastroesophageal_reflux_disease_gerd).
-uzmi(bolest,chronic_constipation).
-uzmi(bolest,emphysema).
-uzmi(bolest,urinary_tract_infection).
-uzmi(bolest,dementia).
-uzmi(bolest,hyperlipidemia).
-uzmi(bolest,cardiomyopathy).
-uzmi(bolest,bronchiectasis).
-uzmi(bolest,celiac_disease).
-uzmi(bolest,gastritis).
-uzmi(bolest,cirrhosis).
-uzmi(bolest,hyponatremia).
-uzmi(bolest,cerebral_palsy).
-uzmi(bolest,polymyalgia_rheumatica).
+
+
+
+simptomi(acute_respiratory_distress_syndrome,[blood_test_infection,shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
+
+%infekcije:
 uzmi(bolest,myocarditis).
 uzmi(bolest,meningitis).
+uzmi(bolest,urinary_tract_infection).
+uzmi(bolest,acute_respiratory_distress_syndrome).
+uzmi(bolest,viral_hepatitis).
+uzmi(bolest,cardiomyopathy).
+
+infekcija(myocarditis).
+infekcija(meningitis).
+infekcija(urinary_tract_infection).
+infekcija(acute_respiratory_distress_syndrome).
+infekcija(viral_hepatitis).
+infekcija(cardiomyopathy).
+
+%heart:
+uzmi(bolest,ischemic_heart_disease).
+uzmi(bolest,hypertensive_heart_disease).
+uzmi(bolest,cardiomyopathy).
+uzmi(bolest,myocarditis).
+
+heart(ischemic_heart_disease).
+heart(hypertensive_heart_disease).
+heart(cardiomyopathy).
+heart(myocarditis).
+
+%cancer:
+uzmi(bolest, acute_pancreatitis).
+uzmi(bolest, the_pancreatic_cancer).
+cancer(the_pancreatic_cancer).
+
+%pancreatitis:
+pancreatitis(acute_pancreatitis).
+
+%liver_desease
+uzmi(bolest,cirrhosis).
+uzmi(bolest,viral_hepatitis).
+
+liver(cirrhosis).
+liver(viral_hepatitis).
+
+%autoimune:
+uzmi(bolest,celiac_disease).
+uzmi(bolest,cerebral_palsy).
 uzmi(bolest,multiple_sclerosis).
-uzmi(bolest,parkinson_disease).
-uzmi(bolest,encephalitis).
-uzmi(bolest,bell_palsy).
+
+autoimune(celiac_disease).
+autoimune(cerebral_palsy).
+autoimune(multiple_sclerosis).
+
+%kidney_deasease:
+uzmi(bolest,hyponatremia).
+
+kidney(hyponatremia).
+
+uzmi(bolest,anemia).
+uzmi(bolest,diabetes).
+anemia(anemia).
+diabetes(diabetes).
+
+
+uzmi(bolest,gastroesophageal_reflux_disease_gerd).
+uzmi(bolest,emphysema).
+uzmi(bolest,gastritis).
+
+
+%TESTOVI
+testovi(urinalysis,[urinary_tract_infection,anemia,meningitis,hyponatremia,gastritis,acute_pancreatitis,cardiomyopathy]).
+testovi(hematologic_tests_blood_test,[the_pancreatic_cancer,meningitis,myocarditis,acute_pancreatitis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,diabetes,hyponatremia,cirrhosis,hypertensive_heart_disease,ischemic_heart_disease,urinary_tract_infection,viral_hepatitis ]).
+testovi(complete_blood_count_cbc,[meningitis,myocarditis,the_pancreatic_cancer,anemia,acute_pancreatitis,acute_respiratory_distress_syndrome,gastritis,emphysema,hyponatremia,celiac_disease,cirrhosis,hypertensive_heart_disease,ischemic_heart_disease,urinary_tract_infection, viral_hepatitis]).
+testovi(intravenous_fluid_replacement,[meningitis,anemia,urinary_tract_infection, hyponatremia,emphysema,acute_pancreatitis,gastritis,acute_respiratory_distress_syndrome]).
+testovi(glucose_measurement_glucose_level,[meningitis,anemia,gastritis,diabetes,the_pancreatic_cancer,hyponatremia,cirrhosis,acute_pancreatitis,hypertensive_heart_disease,urinary_tract_infection,ischemic_heart_disease]).
+testovi(kidney_function_tests_kidney_function_test,[meningitis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,acute_pancreatitis,hyponatremia,urinary_tract_infection]).
+testovi(electrolytes_panel,[anemia,acute_respiratory_distress_syndrome,gastritis,hyponatremia,cirrhosis,the_pancreatic_cancer,acute_pancreatitis,hypertensive_heart_disease,urinary_tract_infection, ischemic_heart_disease]).
+testovi(complete_physical_skin_exam_performed,[diabetes,celiac_disease,viral_hepatitis,hypertensive_heart_disease]).
+testovi(lipid_panel,[gastroesophageal_reflux_disease_gerd,viral_hepatitis,cardiomyopathy,diabetes,ischemic_heart_disease,hypertensive_heart_disease,cirrhosis,celiac_disease]).
+testovi(ultrasonography_ultrasound,[myocarditis,viral_hepatitis,cardiomyopathy,ischemic_heart_disease,hypertensive_heart_disease,cirrhosis]).
+testovi(other_diagnostic_procedures_interview,[multiple_sclerosis,viral_hepatitis,cardiomyopathy,cerebral_palsy,gastroesophageal_reflux_disease_gerd]).
+testovi(mental_health_counseling,[viral_hepatitis]).
+testovi(electrocardiogram,[myocarditis,anemia,acute_respiratory_distress_syndrome,cardiomyopathy,ischemic_heart_disease,hypertensive_heart_disease,emphysema,gastroesophageal_reflux_disease_gerd]).
+testovi(echocardiography,[myocarditis,myocarditis,cardiomyopathy,ischemic_heart_disease]).
+testovi(hemoglobin_a1c_measurement,[gastroesophageal_reflux_disease_gerd,cardiomyopathy,cirrhosis,celiac_disease,diabetes,the_pancreatic_cancer]).
+testovi(liver_function_test,[cirrhosis,gastritis]).
+testovi(physical_therapy_exercises_exercises,[cerebral_palsy,multiple_sclerosis]).
+testovi(occupational_therapy_assessment_speech_therapy,[cerebral_palsy,multiple_sclerosis]).
+testovi(injections_and_aspirations_of_muscles,[cerebral_palsy]).
+testovi(other_therapeutic_procedures,[cerebral_palsy,multiple_sclerosis]).
+testovi(magnetic_resonance_imaging_mri,[cerebral_palsy,multiple_sclerosis,multiple_sclerosis]).
+testovi(electroencephalogram_eeg,[cerebral_palsy]).
+testovi(bone_density_scan,[cerebral_palsy]).
+testovi(biopsy,[celiac_disease]).
+testovi(upper_gastrointestinal_endoscopy,[celiac_disease,gastroesophageal_reflux_disease_gerd]).
+testovi(examination_of_foot,[celiac_disease,diabetes]).
+testovi(radiographic_imaging_procedure,[meningitis,hyponatremia,emphysema,acute_pancreatitis,acute_respiratory_distress_syndrome,myocarditis]).
+testovi(wound_care_management,[diabetes]).
+testovi(prostate_specific_antigen_measurement,[diabetes]).
+testovi(plain_x_ray,[emphysema,acute_respiratory_distress_syndrome,the_pancreatic_cancer]).
+testovi(x_ray_computed_tomography_scan_ct,[emphysema,meningitis]).
+testovi(sigmoidoscopy_or_colonoscopy,[gastroesophageal_reflux_disease_gerd]).
+testovi(rectal_examination,[gastroesophageal_reflux_disease_gerd]).
+testovi(mammography,[gastroesophageal_reflux_disease_gerd,myocarditis]).
+testovi(cardiac_monitoring_cardiac_monitor,[myocarditis]).
+testovi(referral_to_home_health_care_service,[multiple_sclerosis]).
+testovi(debridement_of_wound_infection_or_burn,[multiple_sclerosis]).
+testovi(diagnostic_spinal_tap_spinal_tap,[multiple_sclerosis]).
 
 
 prevalence(acute_respiratory_distress_syndrome,0.07).
@@ -67,7 +154,7 @@ hypertensive_heart_disease(fluid_retention,8).
 hypertensive_heart_disease(recent_pregnancy,4).
 
 
-simptomi(ischemic_heart_disease,[sharp_chest_pain,shortness_of_breath,difficulty_breathing,palpitations, dizziness,fatigue, chest_tightness,peripheral_edema,lymphedemia,increased_heart_rate,muscle_pain, throat_feels_tight]).
+simptomi(ischemic_heart_disease,[blood_test_heart,sharp_chest_pain,shortness_of_breath,difficulty_breathing,palpitations, dizziness,fatigue, chest_tightness,peripheral_edema,lymphedemia,increased_heart_rate,muscle_pain, throat_feels_tight]).
 
 prevalence(ischemic_heart_disease,5.3).
 
@@ -85,7 +172,7 @@ ischemic_heart_disease(muscle_pain,5).
 ischemic_heart_disease(throat_feels_tight,3).
 
 
-simptomi(diabetes,[weight_gain,thirst,symptoms_of_the_kidneys]).
+simptomi(diabetes,[blood_test_diabetes,weight_gain,thirst,symptoms_of_the_kidneys]).
 
 prevalence(diabetes, 6).
 
@@ -94,7 +181,7 @@ diabetes(thirst,2).
 diabetes(symptoms_of_the_kidneys,1).
 
 
-simptomi(anemia, [fatigue,weakness,dizziness,shortness_of_breath,nosebleed,heavy_menstrual_flow, melena,unpredictable_menstruation,vomiting_blood,changes_in_stool_appearance,recent_pregnancy,too_little_hair]).
+simptomi(anemia, [blood_test_anemia,fatigue,weakness,dizziness,shortness_of_breath,nosebleed,heavy_menstrual_flow, melena,unpredictable_menstruation,vomiting_blood,changes_in_stool_appearance,recent_pregnancy,too_little_hair]).
 
 prevalence(anemia, 10).
 
@@ -112,25 +199,9 @@ anemia(recent_pregnancy,2).
 anemia(too_little_hair,2).
 
 
-simptomi(coagulation_bleeding_disorder,[leg_pain,leg_swelling,nosebleed,blood_in_urine,eye_redness,melena,lymphedema,hemoptysis,leg_cramps_or_spasms,early_or_late_onset_of_menopause,knee_swelling,vaginal_pain]).
-
-prevalence(coagulation_bleeding_disorder,0.1).
-
-coagulation_bleeding_disorder(leg_pain,30).
-coagulation_bleeding_disorder(leg_swelling,17).
-coagulation_bleeding_disorder(nosebleed,17).
-coagulation_bleeding_disorder(blood_in_urine,17).
-coagulation_bleeding_disorder(eye_redness,11).
-coagulation_bleeding_disorder(melena,8).
-coagulation_bleeding_disorder(lymphedema,8).
-coagulation_bleeding_disorder(hemoptysis,8).
-coagulation_bleeding_disorder(leg_cramps_or_spasms,4).
-coagulation_bleeding_disorder(early_or_late_onset_of_menopause,4).
-coagulation_bleeding_disorder(knee_swelling,4).
-coagulation_bleeding_disorder(vaginal_pain,4).
 
 
-simptomi(viral_hepatitis,[sharp_abdominal_pain,abusing_alcohol,drug_abuse,melena,stomach_bloating,symptoms_of_the_kidneys,hand_or_finger_stiffness_or_tightness,low_self_esteem,incontinence_of_stool]).
+simptomi(viral_hepatitis,[blood_test_infection,blood_test_liver,sharp_abdominal_pain,abusing_alcohol,drug_abuse,melena,stomach_bloating,symptoms_of_the_kidneys,hand_or_finger_stiffness_or_tightness,low_self_esteem,incontinence_of_stool]).
 
 prevalence(viral_hepatitis,4.8).
 
@@ -163,23 +234,6 @@ gastroesophageal_reflux_disease_gerd(chest_tightness,11).
 gastroesophageal_reflux_disease_gerd(hoarse_voice,10).
 
 
-simptomi(chronic_constipation,[constipation,sharp_abdominal_pain,burning_abdominal_pain,vomiting,nausea,lower_abdominal_pain,rectal_bleeding,blood_in_stool,pain_of_the_anus,retention_of_urine,stomach_bloating,changes_in_stool_appearance]).
-
-prevalence(chronic_constipation,15.0).
-
-chronic_constipation(constipation,87).
-chronic_constipation(sharp_abdominal_pain,77).
-chronic_constipation(burning_abdominal_pain,37).
-chronic_constipation(vomiting,34).
-chronic_constipation(nausea,29).
-chronic_constipation(lower_abdominal_pain,19).
-chronic_constipation(rectal_bleeding,18).
-chronic_constipation(blood_in_stool,17).
-chronic_constipation(pain_of_the_anus,13).
-chronic_constipation(retention_of_urine,11).
-chronic_constipation(stomach_bloating,11).
-chronic_constipation(changes_in_stool_appearance,10).
-
 
 simptomi(emphysema,[sharp_chest_pain,shortness_of_breath,chest_tightness,cough,nausea,ache_all_over,back_pain,cross_eyed,itchy_eyelid,excessive_growth,emotional_symptoms,elbow_cramps_or_spasms]).
 
@@ -199,7 +253,7 @@ emphysema(emotional_symptoms,4).
 emphysema(elbow_cramps_or_spasms,4).
 
 
-simptomi(urinary_tract_infection,[painful_urination,suprapubic_pain,sharp_abdominal_pain,frequent_urination,fever,vomiting,back_pain,nausea,blood_in_urine,side_pain,retention_of_urine,lower_abdominal_pain]).
+simptomi(urinary_tract_infection,[blood_test_infection,painful_urination,suprapubic_pain,sharp_abdominal_pain,frequent_urination,fever,vomiting,back_pain,nausea,blood_in_urine,side_pain,retention_of_urine,lower_abdominal_pain]).
 
 prevalence(urinary_tract_infection,21.5).
 
@@ -217,36 +271,10 @@ urinary_tract_infection(retention_of_urine,26).
 urinary_tract_infection(lower_abdominal_pain,25).
 
 
-simptomi(dementia,[disturbance_of_memory,problems_with_movement,dizziness,depressive_or_psychotic_symptoms,abnormal_involuntary_movements,paresthesia,hostile_behavior,delusions_or_hallucinations,difficulty_speaking,insomnia,disturbance_of_smell_or_taste,focal_weakness]).
-
-prevalence(dementia,0.7).
-
-dementia(disturbance_of_memory,53).
-dementia(problems_with_movement,45).
-dementia(dizziness,32).
-dementia(depressive_or_psychotic_symptoms,32).
-dementia(abnormal_involuntary_movements,26).
-dementia(paresthesia,21).
-dementia(hostile_behavior,21).
-dementia(delusions_or_hallucinations,15).
-dementia(difficulty_speaking,13).
-dementia(insomnia,13).
-dementia(disturbance_of_smell_or_taste,13).
-dementia(focal_weakness,9).
 
 
-simptomi(hyperlipidemia,[sharp_chest_pain,weight_gain,lymphedema,smoking_problems,leg_cramps_or_spasms]).
 
-prevalence(hyperlipidemia,0.2).
-
-hyperlipidemia(sharp_chest_pain,25).
-hyperlipidemia(weight_gain,10).
-hyperlipidemia(lymphedema,2).
-hyperlipidemia(smoking_problems,2).
-hyperlipidemia(leg_cramps_or_spasms,2).
-
-
-simptomi(cardiomyopathy,[shortness_of_breath,sharp_chest_pain,fatigue,peripheral_edema,palpitations,chest_tightness,weight_gain,irregular_heartbeat,heartburn,excessive_urination_at_night,decreased_heart_rate,muscle_weakness]).
+simptomi(cardiomyopathy,[blood_test_infection,blood_test_heart,shortness_of_breath,sharp_chest_pain,fatigue,peripheral_edema,palpitations,chest_tightness,weight_gain,irregular_heartbeat,heartburn,excessive_urination_at_night,decreased_heart_rate,muscle_weakness]).
 
 prevalence(cardiomyopathy,0.2).
 
@@ -264,25 +292,8 @@ cardiomyopathy(decreased_heart_rate,2).
 cardiomyopathy(muscle_weakness,2).
 
 
-simptomi(bronchiectasis,[cough,shortness_of_breath,hemoptysis,difficulty_breathing,coughing_up_sputum,nasal_congestion,coryza,sore_throat,fever,fatigue,drainage_in_throat,fluid_retention]).
 
-prevalence(bronchiectasis,0.13).
-
-bronchiectasis(cough,74).
-bronchiectasis(shortness_of_breath,56).
-bronchiectasis(hemoptysis,47).
-bronchiectasis(difficulty_breathing,41).
-bronchiectasis(coughing_up_sputum,41).
-bronchiectasis(nasal_congestion,34).
-bronchiectasis(coryza,34).
-bronchiectasis(sore_throat,34).
-bronchiectasis(fever,25).
-bronchiectasis(fatigue,25).
-bronchiectasis(drainage_in_throat,25).
-bronchiectasis(fluid_retention,14).
-
-
-simptomi(celiac_disease,[sharp_abdominal_pain,diarrhea,regurgitation,fatigue,vomiting,nausea,allergic_reaction,sharp_chest_pain,fears_and_phobias,peripheral_edema,leg_lump_or_mass,constipation]).
+simptomi(celiac_disease,[blood_test_autoimune,sharp_abdominal_pain,diarrhea,regurgitation,fatigue,vomiting,nausea,allergic_reaction,sharp_chest_pain,fears_and_phobias,peripheral_edema,leg_lump_or_mass,constipation]).
 
 prevalence(celiac_disease,1.0).
 
@@ -318,7 +329,7 @@ gastritis(vomiting_blood,20).
 gastritis(regurgitation,15).
 
 
-simptomi(cirrhosis,[sharp_abdominal_pain,shortness_of_breath,peripheral_edema,fatigue,upper_abdominal_pain,abdominal_distention,stomach_bloating,blood_in_stool,regurgitation,symptoms_of_the_kidneys,vomiting_blood,melena]).
+simptomi(cirrhosis,[blood_test_liver,sharp_abdominal_pain,shortness_of_breath,peripheral_edema,fatigue,upper_abdominal_pain,abdominal_distention,stomach_bloating,blood_in_stool,regurgitation,symptoms_of_the_kidneys,vomiting_blood,melena]).
 
 prevalence(cirrhosis,0.27).
 
@@ -336,7 +347,7 @@ cirrhosis(vomiting_blood,5).
 cirrhosis(melena,5).
 
 
-simptomi(hyponatremia,[weakness,vomiting,nausea,shortness_of_breath,dizziness,sharp_abdominal_pain,sharp_chest_pain,headache,back_pain,fever,fainting,seizures]).
+simptomi(hyponatremia,[blood_test_heart,blood_test_kidney,weakness,vomiting,nausea,shortness_of_breath,dizziness,sharp_abdominal_pain,sharp_chest_pain,headache,back_pain,fever,fainting,seizures]).
 
 prevalence(hyponatremia,1.72).
 
@@ -354,7 +365,7 @@ hyponatremia(fainting,25).
 hyponatremia(seizures,23).
 
 
-simptomi(cerebral_palsy,[seizures,problems_with_movement,cramps_and_spasms,difficulty_eating,lack_of_growth,leg_cramps_or_spasms,back_cramps_or_spasms,blindness,infant_feeding_problem,swollen_tongue,lip_sore,tongue_lesions]).
+simptomi(cerebral_palsy,[blood_test_autoimune,seizures,problems_with_movement,cramps_and_spasms,difficulty_eating,lack_of_growth,leg_cramps_or_spasms,back_cramps_or_spasms,blindness,infant_feeding_problem,swollen_tongue,lip_sore,tongue_lesions]).
 
 prevalence(cerebral_palsy,0.2).
 
@@ -372,25 +383,9 @@ cerebral_palsy(lip_sore,2).
 cerebral_palsy(tongue_lesions,2).
 
 
-simptomi(polymyalgia_rheumatica,[fatigue,shoulder_pain,leg_pain,ache_all_over,sharp_chest_pain,muscle_pain,hip_pain,irregular_heartbeat,leg_weakness,stiffness_all_over,difficulty_in_swallowing,temper_problems]).
-
-prevalence(polymyalgia_rheumatica,0.32).
-
-polymyalgia_rheumatica(fatigue,47).
-polymyalgia_rheumatica(shoulder_pain,42).
-polymyalgia_rheumatica(leg_pain,36).
-polymyalgia_rheumatica(ache_all_over,36).
-polymyalgia_rheumatica(sharp_chest_pain,30).
-polymyalgia_rheumatica(muscle_pain,22).
-polymyalgia_rheumatica(hip_pain,22).
-polymyalgia_rheumatica(irregular_heartbeat,22).
-polymyalgia_rheumatica(leg_weakness,12).
-polymyalgia_rheumatica(stiffness_all_over,12).
-polymyalgia_rheumatica(difficulty_in_swallowing,12).
-polymyalgia_rheumatica(temper_problems,12).
 
 
-simptomi(myocarditis,[palpitations,ache_all_over,cough,chest_tightness,fever,sharp_chest_pain,weakness,diarrhea,headache,difficulty_breathing,dizziness,coughing_up_sputum]).
+simptomi(myocarditis,[blood_test_infection,blood_test_heart,palpitations,ache_all_over,cough,chest_tightness,fever,sharp_chest_pain,weakness,diarrhea,headache,difficulty_breathing,dizziness,coughing_up_sputum]).
 
 prevalence(myocarditis,1.06).
 
@@ -408,7 +403,7 @@ myocarditis(dizziness,38).
 myocarditis(coughing_up_sputum,38).
 
 
-simptomi(meningitis,[headache,fever,vomiting,neck_pain,ache_all_over,back_pain,seizures,nausea,low_back_pain,cough,leg_pain,neck_stiffness_or_tightness]).
+simptomi(meningitis,[blood_test_infection,headache,fever,vomiting,neck_pain,ache_all_over,back_pain,seizures,nausea,low_back_pain,cough,leg_pain,neck_stiffness_or_tightness]).
 
 prevalence(meningitis,1.2E-4).
 
@@ -426,7 +421,7 @@ meningitis(leg_pain,26).
 meningitis(neck_stiffness_or_tightness,21).
 
 
-simptomi(multiple_sclerosis,[fatigue,loss_of_sensation,headache,dizziness,problems_with_movement,weakness,leg_weakness,paresthesia,disturbance_of_memory,abnormal_involuntary_movements,leg_stiffness_or_tightness,focal_weakness]).
+simptomi(multiple_sclerosis,[blood_test_autoimune,fatigue,loss_of_sensation,headache,dizziness,problems_with_movement,weakness,leg_weakness,paresthesia,disturbance_of_memory,abnormal_involuntary_movements,leg_stiffness_or_tightness,focal_weakness]).
 
 prevalence(multiple_sclerosis,0.03).
 
@@ -444,54 +439,686 @@ multiple_sclerosis(leg_stiffness_or_tightness,12).
 multiple_sclerosis(focal_weakness,11).
 
 
-simptomi(parkinson_disease,[abnormal_involuntary_movements,problems_with_movement,disturbance_of_memory,dizziness,weakness,stiffness_all_over,leg_weakness,focal_weakness,muscle_stiffness_or_tightness,difficulty_speaking,leg_stiffness_or_tightness,fears_and_phobias]).
 
-prevalence(parkinson_disease,0.12).
+sex_factor(acute_respiratory_distress_syndrome,male,1.1).
+sex_factor(acute_respiratory_distress_syndrome,female,0.9).
 
-parkinson_disease(abnormal_involuntary_movements,64).
-parkinson_disease(problems_with_movement,41).
-parkinson_disease(disturbance_of_memory,28).
-parkinson_disease(dizziness,25).
-parkinson_disease(weakness,22).
-parkinson_disease(stiffness_all_over,7).
-parkinson_disease(leg_weakness,7).
-parkinson_disease(focal_weakness,5).
-parkinson_disease(muscle_stiffness_or_tightness,5).
-parkinson_disease(difficulty_speaking,4).
-parkinson_disease(leg_stiffness_or_tightness,3).
-parkinson_disease(fears_and_phobias,3).
+ages_factor(acute_respiratory_distress_syndrome,0,1,0.9).
+ages_factor(acute_respiratory_distress_syndrome,1,4,0.3).
+ages_factor(acute_respiratory_distress_syndrome,5,14,0.2).
+ages_factor(acute_respiratory_distress_syndrome,15,29,0.2).
+ages_factor(acute_respiratory_distress_syndrome,30,44,0.4).
+ages_factor(acute_respiratory_distress_syndrome,45,59,1.1).
+ages_factor(acute_respiratory_distress_syndrome,60,74,2.0).
+ages_factor(acute_respiratory_distress_syndrome,75,150,3.3).
 
 
-simptomi(encephalitis,[headache,loss_of_sensation,seizures,dizziness,leg_pain,fatigue,disturbance_of_memory,problems_with_movement,paresthesia,insomnia,joint_pain,leg_weakness]).
-
-prevalence(encephalitis,0.005).
-
-encephalitis(headache,62).
-encephalitis(loss_of_sensation,53).
-encephalitis(seizures,53).
-encephalitis(dizziness,39).
-encephalitis(leg_pain,39).
-encephalitis(fatigue,30).
-encephalitis(disturbance_of_memory,30).
-encephalitis(problems_with_movement,18).
-encephalitis(paresthesia,18).
-encephalitis(joint_pain,18).
-encephalitis(leg_weakness,18).
+terapija(acute_respiratory_distress_syndrome,methylprednisolone_medrol_21_days).
+terapija(acute_respiratory_distress_syndrome,levofloxacin_levaquin_7_days).
+terapija(acute_respiratory_distress_syndrome,midazolam_versed).
+terapija(acute_respiratory_distress_syndrome,propofol).
+terapija(acute_respiratory_distress_syndrome,ipratropium_21_days).
+terapija(acute_respiratory_distress_syndrome,zosyn_7_days).
+terapija(acute_respiratory_distress_syndrome,dopamine).
+terapija(acute_respiratory_distress_syndrome,vancomycin_7_days).
+terapija(acute_respiratory_distress_syndrome,combivent_28_days).
+terapija(acute_respiratory_distress_syndrome,vecuronium).
+terapija(acute_respiratory_distress_syndrome,oxygen).
+terapija(acute_respiratory_distress_syndrome,moxifloxacin_avelox_14_days).
+terapija(acute_respiratory_distress_syndrome,enoxaparin_lovenox_7_days).
 
 
-simptomi(bell_palsy,[focal_weakness,loss_of_sensation,symptoms_of_the_face,headache,facial_pain,weakness,peripheral_edema,symptoms_of_eye,paresthesia,diminished_vision,eyelid_lesion_or_rash,abnormal_involuntary_movements]).
+sex_factor(anemia,male,0.7).
+sex_factor(anemia,female,1.2).
 
-prevalence(bell_palsy,0.1).
+ages_factor(anemia,0,1,0.4).
+ages_factor(anemia,1,4,0.6).
+ages_factor(anemia,5,14,0.2).
+ages_factor(anemia,15,29,0.8).
+ages_factor(anemia,30,44,0.8).
+ages_factor(anemia,45,59,0.9).
+ages_factor(anemia,60,74,1.5).
+ages_factor(anemia,75,150,2.5).
 
-bell_palsy(focal_weakness,82).
-bell_palsy(loss_of_sensation,70).
-bell_palsy(symptoms_of_the_face,67).
-bell_palsy(headache,51).
-bell_palsy(facial_pain,39).
-bell_palsy(weakness,28).
-bell_palsy(peripheral_edema,24).
-bell_palsy(symptoms_of_eye,21).
-bell_palsy(paresthesia,19).
-bell_palsy(diminished_vision,19).
-bell_palsy(eyelid_lesion_or_rash,16).
-bell_palsy(abnormal_involuntary_movements,16).
+
+
+
+terapija(anemia,epoetin_alfa_procrit_21_days).
+terapija(anemia,darbepoetin_alfa_aranesp_21_days).
+terapija(anemia,ferric_oxide,saccharated_venofer).
+terapija(anemia,filgrastim_neupogen_14_days).
+terapija(anemia,sodium_ferric_gluconate_complex_ferrlecit).
+terapija(anemia,deferasirox_exjade_28_days).
+terapija(anemia,valganciclovir_valcyte_28_days).
+terapija(anemia,ferrous_gluconate_28_days).
+terapija(anemia,lenalidomide_revlimid_28_days).
+terapija(anemia,sorafenib_28_days).
+terapija(anemia,anagrelide_28_days).
+terapija(anemia,dextran_1).
+
+
+
+
+
+sex_factor(myocarditis,male,1.4).
+sex_factor(myocarditis,female,0.7).
+
+ages_factor(myocarditis,0,1,0.1).
+ages_factor(myocarditis,1,4,0.022).
+ages_factor(myocarditis,5,14,0.022).
+ages_factor(myocarditis,15,29,1.5).
+ages_factor(myocarditis,30,44,1.8).
+ages_factor(myocarditis,45,59,0.6).
+ages_factor(myocarditis,60,74,0.4).
+ages_factor(myocarditis,75,150,2.4).
+
+
+
+terapija(myocarditis,carvedilol_28_days).
+terapija(myocarditis,nitroglycerin_28_days).
+terapija(myocarditis,ceftriaxone_7_days).
+terapija(myocarditis,magnesium_sulfate_14_days).
+terapija(myocarditis,tamoxifen_28_days).
+terapija(myocarditis,rosiglitazone_avandia_28_days).
+terapija(myocarditis,glimepiride_28_days).
+terapija(myocarditis,tiotropium_spiriva_28_days).
+terapija(myocarditis,budesonide_28_days).
+terapija(myocarditis,olmesartan_benicar_28_days).
+terapija(myocarditis,enoxaparin_lovenox_7_days).
+terapija(myocarditis,isosorbide_28_days).
+terapija(myocarditis,oxygen).
+
+
+sex_factor(meningitis,male,1.0).
+sex_factor(meningitis,female,1.0).
+
+ages_factor(meningitis,0,1,2.9).
+ages_factor(meningitis,1,4,1.0).
+ages_factor(meningitis,5,14,1.2).
+ages_factor(meningitis,15,29,1.1).
+ages_factor(meningitis,30,44,1.1).
+ages_factor(meningitis,45,59,1.2).
+ages_factor(meningitis,60,74,0.5).
+ages_factor(meningitis,75,150,0.3).
+
+
+
+
+terapija(meningitis,ceftriaxone_7_days).
+terapija(meningitis,vancomycin_7_days).
+terapija(meningitis,ampicillin_7_days).
+terapija(meningitis,prochlorperazine_compro_14_days).
+terapija(meningitis,midazolam_versed).
+terapija(meningitis,cefotaxime_7_days).
+terapija(meningitis,acyclovir_21_days).
+terapija(meningitis,phenobarbital_28_days).
+terapija(meningitis,gentamicin_ophthalmic).
+terapija(meningitis,cefuroxime_7_days).
+terapija(meningitis,micafungin_7_days).
+terapija(meningitis,amphotericin_b_14_days).
+terapija(meningitis,tapentadol_nucynta_21_days).
+
+
+sex_factor(multiple_sclerosis,male,0.6).
+sex_factor(multiple_sclerosis,female,1.3).
+
+ages_factor(multiple_sclerosis,0,1,0.022).
+ages_factor(multiple_sclerosis,1,4,0.022).
+ages_factor(multiple_sclerosis,5,14,0.1).
+ages_factor(multiple_sclerosis,15,29,0.5).
+ages_factor(multiple_sclerosis,30,44,1.7).
+ages_factor(multiple_sclerosis,45,59,2.1).
+ages_factor(multiple_sclerosis,60,74,0.9).
+ages_factor(multiple_sclerosis,75,150,0.2).
+
+
+testovi(multiple_sclerosis,referral_to_home_health_care_service).
+testovi(multiple_sclerosis,debridement_of_wound;infection_or_burn).
+testovi(multiple_sclerosis,diagnostic_spinal_tap_spinal_tap).
+
+
+terapija(multiple_sclerosis,interferon_beta_1a_avonex_28_days).
+terapija(multiple_sclerosis,glatiramer_copaxone_28_days).
+terapija(multiple_sclerosis,baclofen_28_days).
+terapija(multiple_sclerosis,modafinil_provigil_28_days).
+terapija(multiple_sclerosis,oxybutynin_28_days).
+terapija(multiple_sclerosis,tizanidine_28_days).
+terapija(multiple_sclerosis,natalizumab_tysabri_28_days).
+terapija(multiple_sclerosis,tolterodine_detrol_28_days).
+terapija(multiple_sclerosis,amantadine_28_days).
+terapija(multiple_sclerosis,solifenacin_vesicare_28_days).
+terapija(multiple_sclerosis,azathioprine_28_days).
+terapija(multiple_sclerosis,cyclophosphamide_28_days).
+terapija(multiple_sclerosis,armodafinil_nuvigil_28_days).
+
+
+
+
+sex_factor(hypertensive_heart_disease,male,1.0).
+sex_factor(hypertensive_heart_disease,female,1.0).
+
+ages_factor(hypertensive_heart_disease,0,1,0.02).
+ages_factor(hypertensive_heart_disease,1,4,0.02).
+ages_factor(hypertensive_heart_disease,5,14,0.02).
+ages_factor(hypertensive_heart_disease,15,29,0.02).
+ages_factor(hypertensive_heart_disease,30,44,0.3).
+ages_factor(hypertensive_heart_disease,45,59,1.2).
+ages_factor(hypertensive_heart_disease,60,74,2.2).
+ages_factor(hypertensive_heart_disease,75,150,4.0).
+
+
+terapija(hypertensive_heart_disease,amlodipine_28_days).
+terapija(hypertensive_heart_disease,carvedilol_28_days).
+terapija(hypertensive_heart_disease,isosorbide_28_days).
+terapija(hypertensive_heart_disease,rosuvastatin_crestor_28_days).
+terapija(hypertensive_heart_disease,valsartan_diovan_28_days).
+terapija(hypertensive_heart_disease,digoxin_28_days).
+terapija(hypertensive_heart_disease,diltiazem_28_days).
+terapija(hypertensive_heart_disease,spironolactone_28_days).
+terapija(hypertensive_heart_disease,benazepril_28_days).
+terapija(hypertensive_heart_disease,hydralazine_28_days).
+terapija(hypertensive_heart_disease,torsemide_28_days).
+terapija(hypertensive_heart_disease,hyzaar_28_days).
+
+
+sex_factor(ischemic_heart_disease,male,1.6).
+sex_factor(ischemic_heart_disease,female,0.6).
+
+ages_factor(ischemic_heart_disease,0,1,0.02).
+ages_factor(ischemic_heart_disease,1,4,0.02).
+ages_factor(ischemic_heart_disease,5,14,0.02).
+ages_factor(ischemic_heart_disease,15,29,0.02).
+ages_factor(ischemic_heart_disease,30,44,0.2).
+ages_factor(ischemic_heart_disease,45,59,1.0).
+ages_factor(ischemic_heart_disease,60,74,2.9).
+ages_factor(ischemic_heart_disease,75,150,3.7).
+
+
+terapija(ischemic_heart_disease,carvedilol_28_days).
+terapija(ischemic_heart_disease,clopidogrel_plavix_28_days).
+terapija(ischemic_heart_disease,nitroglycerin_28_days).
+terapija(ischemic_heart_disease,digoxin_28_days).
+terapija(ischemic_heart_disease,spironolactone_28_days).
+terapija(ischemic_heart_disease,isosorbide_28_days).
+terapija(ischemic_heart_disease,rosuvastatin_crestor_28_days).
+terapija(ischemic_heart_disease,amiodarone_28_days).
+terapija(ischemic_heart_disease,niacin_28_days).
+terapija(ischemic_heart_disease,fenofibrate_tricor_28_days).
+terapija(ischemic_heart_disease,allopurinol_28_days).
+terapija(ischemic_heart_disease,torsemide_28_days).
+terapija(ischemic_heart_disease,ezetimibe_zetia_28_days).
+
+
+sex_factor(diabetes,male,1.1).
+sex_factor(diabetes,female,1.0).
+
+ages_factor(diabetes,0,1,0.02).
+ages_factor(diabetes,1,4,0.02).
+ages_factor(diabetes,5,14,0.2).
+ages_factor(diabetes,15,29,0.3).
+ages_factor(diabetes,30,44,0.7).
+ages_factor(diabetes,45,59,1.6).
+ages_factor(diabetes,60,74,2.3).
+ages_factor(diabetes,75,150,1.5).
+
+
+terapija(diabetes,metformin_28_days).
+terapija(diabetes,insulin).
+terapija(diabetes,insulin_glargine_lantus_28_days).
+terapija(diabetes,glipizide_28_days).
+terapija(diabetes,insulin,aspart,human_novolog_28_days).
+terapija(diabetes,pioglitazone_actos_28_days).
+terapija(diabetes,glyburide_28_days).
+terapija(diabetes,glimepiride_28_days).
+terapija(diabetes,rosiglitazone_avandia_28_days).
+terapija(diabetes,quinapril_28_days).
+terapija(diabetes,sitagliptin_januvia_28_days).
+terapija(diabetes,exenatide_byetta_28_days).
+
+
+
+sex_factor(viral_hepatitis,male,1.4).
+sex_factor(viral_hepatitis,female,0.7).
+
+ages_factor(viral_hepatitis,0,1,0.02).
+ages_factor(viral_hepatitis,1,4,0.1).
+ages_factor(viral_hepatitis,5,14,0.1).
+ages_factor(viral_hepatitis,15,29,0.3).
+ages_factor(viral_hepatitis,30,44,1.2).
+ages_factor(viral_hepatitis,45,59,2.8).
+ages_factor(viral_hepatitis,60,74,0.9).
+ages_factor(viral_hepatitis,75,150,0.1).
+
+
+terapija(viral_hepatitis,ribavirin_28_days).
+terapija(viral_hepatitis,peginterferon_alfa_2b_sylatron_28_days).
+terapija(viral_hepatitis,methadone_28_days).
+terapija(viral_hepatitis,spironolactone_28_days).
+terapija(viral_hepatitis,emtricitabine-tenofovir).
+terapija(viral_hepatitis,lactulose_21_days).
+terapija(viral_hepatitis,tacrolimus_prograf_28_days).
+terapija(viral_hepatitis,ritonavir_norvir_28_days).
+terapija(viral_hepatitis,atazanavir_reyataz_28_days).
+terapija(viral_hepatitis,mycophenolate_mofetil_cellcept_28_days).
+terapija(viral_hepatitis,epoetin_alfa_procrit_21_days).
+
+
+sex_factor(gastroesophageal_reflux_disease_gerd,male,1.0).
+sex_factor(gastroesophageal_reflux_disease_gerd,female,1.0).
+
+ages_factor(gastroesophageal_reflux_disease_gerd,0,1,2.5).
+ages_factor(gastroesophageal_reflux_disease_gerd,1,4,0.5).
+ages_factor(gastroesophageal_reflux_disease_gerd,5,14,0.5).
+ages_factor(gastroesophageal_reflux_disease_gerd,15,29,0.5).
+ages_factor(gastroesophageal_reflux_disease_gerd,30,44,0.9).
+ages_factor(gastroesophageal_reflux_disease_gerd,45,59,1.3).
+ages_factor(gastroesophageal_reflux_disease_gerd,60,74,1.4).
+ages_factor(gastroesophageal_reflux_disease_gerd,75,150,1.1).
+
+
+terapija(gastroesophageal_reflux_disease_gerd,omeprazole_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,esomeprazole_nexium_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,ranitidine_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,lansoprazole_prevacid_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,pantoprazole_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,rabeprazole_aciphex_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,sucralfate_carafate_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,dexlansoprazole_dexilant_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,nizatidine_axid_28_days).
+terapija(gastroesophageal_reflux_disease_gerd,aluminum_hydroxide_m_a_h_).
+
+
+
+sex_factor(emphysema,male,1.9).
+sex_factor(emphysema,female,0.3).
+
+ages_factor(emphysema,0,1,2.9).
+ages_factor(emphysema,1,4,0.1).
+ages_factor(emphysema,5,14,2.1).
+ages_factor(emphysema,15,29,2.9).
+ages_factor(emphysema,30,44,0.5).
+ages_factor(emphysema,45,59,0.02).
+ages_factor(emphysema,60,74,0.02).
+ages_factor(emphysema,75,150,1.0).
+
+
+terapija(emphysema,sodium_chloride_deep_sea_7_days).
+terapija(emphysema,diphenhydramine_benadryl_21_days).
+terapija(emphysema,hydromorphone_dilaudid_21_days).
+terapija(emphysema,sucralfate_carafate_28_days).
+terapija(emphysema,nicotine_21_days).
+terapija(emphysema,zosyn_7_days).
+terapija(emphysema,epinephrine_7_days).
+terapija(emphysema,budesonide_28_days).
+terapija(emphysema,adderall).
+terapija(emphysema,losartan_28_days).
+terapija(emphysema,combivent_28_days).
+terapija(emphysema,penicillin).
+terapija(emphysema,paroxetine_paxil_28_days).
+
+
+sex_factor(urinary_tract_infection,male,0.4).
+sex_factor(urinary_tract_infection,female,1.5).
+
+ages_factor(urinary_tract_infection,0,1,0.4).
+ages_factor(urinary_tract_infection,1,4,0.6).
+ages_factor(urinary_tract_infection,5,14,0.6).
+ages_factor(urinary_tract_infection,15,29,1.5).
+ages_factor(urinary_tract_infection,30,44,1.0).
+ages_factor(urinary_tract_infection,45,59,0.7).
+ages_factor(urinary_tract_infection,60,74,0.9).
+ages_factor(urinary_tract_infection,75,150,1.7).
+
+
+terapija(urinary_tract_infection,ciprofloxacin_7_days).
+terapija(urinary_tract_infection,bactrim_14_days).
+terapija(urinary_tract_infection,nitrofurantoin_21_days).
+terapija(urinary_tract_infection,levofloxacin_levaquin_7_days).
+terapija(urinary_tract_infection,phenazopyridine_azo_7_days).
+terapija(urinary_tract_infection,trimethoprim_28_days).
+terapija(urinary_tract_infection,cefixime_suprax_7_days).
+terapija(urinary_tract_infection,oxacillin_7_days).
+terapija(urinary_tract_infection,cefpodoxime_7_days).
+terapija(urinary_tract_infection,clofazimine).
+terapija(urinary_tract_infection,trospium_sanctura_28_days).
+
+
+
+
+sex_factor(cardiomyopathy,male,1.4).
+sex_factor(cardiomyopathy,female,0.7).
+
+ages_factor(cardiomyopathy,0,1,0.02).
+ages_factor(cardiomyopathy,1,4,0.1).
+ages_factor(cardiomyopathy,5,14,0.1).
+ages_factor(cardiomyopathy,15,29,0.2).
+ages_factor(cardiomyopathy,30,44,0.8).
+ages_factor(cardiomyopathy,45,59,1.4).
+ages_factor(cardiomyopathy,60,74,2.1).
+ages_factor(cardiomyopathy,75,150,2.3).
+
+
+terapija(cardiomyopathy,carvedilol_28_days).
+terapija(cardiomyopathy,furosemide_28_days).
+terapija(cardiomyopathy,lisinopril_28_days).
+terapija(cardiomyopathy,warfarin_28_days).
+terapija(cardiomyopathy,spironolactone_28_days).
+terapija(cardiomyopathy,digoxin_28_days).
+terapija(cardiomyopathy,amiodarone_28_days).
+terapija(cardiomyopathy,enalapril_28_days).
+terapija(cardiomyopathy,rosuvastatin_crestor_28_days).
+terapija(cardiomyopathy,ramipril_28_days).
+terapija(cardiomyopathy,losartan_28_days).
+terapija(cardiomyopathy,isosorbide_28_days).
+terapija(cardiomyopathy,torsemide_28_days).
+
+
+
+
+
+sex_factor(celiac_disease,male,0.6).
+sex_factor(celiac_disease,female,1.3).
+
+ages_factor(celiac_disease,0,1,0.02).
+ages_factor(celiac_disease,1,4,0.8).
+ages_factor(celiac_disease,5,14,2.8).
+ages_factor(celiac_disease,15,29,0.7).
+ages_factor(celiac_disease,30,44,1.2).
+ages_factor(celiac_disease,45,59,0.6).
+ages_factor(celiac_disease,60,74,1.2).
+ages_factor(celiac_disease,75,150,0.5).
+
+
+terapija(celiac_disease,dicyclomine_28_days).
+terapija(celiac_disease,insulin,aspart,human_novolog_28_days).
+terapija(celiac_disease,glucagon_7_days).
+terapija(celiac_disease,estradiol_28_days).
+terapija(celiac_disease,carbenicillin).
+terapija(celiac_disease,disopyramide_28_days).
+terapija(celiac_disease,nitroprusside).
+terapija(celiac_disease,aloe_vera_topical).
+terapija(celiac_disease,ketotifen_ophthalmic).
+terapija(celiac_disease,nizatidine_axid_28_days).
+
+
+sex_factor(gastritis,male,0.9).
+sex_factor(gastritis,female,1.0).
+
+ages_factor(gastritis,0,1,0.3).
+ages_factor(gastritis,1,4,0.7).
+ages_factor(gastritis,5,14,0.8).
+ages_factor(gastritis,15,29,1.3).
+ages_factor(gastritis,30,44,1.3).
+ages_factor(gastritis,45,59,1.0).
+ages_factor(gastritis,60,74,0.8).
+ages_factor(gastritis,75,150,0.6).
+
+
+terapija(gastritis,famotidine_28_days).
+terapija(gastritis,pantoprazole_28_days).
+terapija(gastritis,ranitidine_28_days).
+terapija(gastritis,sucralfate_carafate_28_days).
+terapija(gastritis,cimetidine_28_days).
+terapija(gastritis,bismuth_subsalicylate_pepto-bismol_14_days).
+terapija(gastritis,amylases).
+terapija(gastritis,benzocaine_topical).
+terapija(gastritis,aluminum_hydroxide_m_a_h_).
+terapija(gastritis,dexlansoprazole_dexilant_28_days).
+
+
+sex_factor(cirrhosis,male,1.4).
+sex_factor(cirrhosis,female,0.7).
+
+ages_factor(cirrhosis,0,1,0.2).
+ages_factor(cirrhosis,1,4,0.1).
+ages_factor(cirrhosis,5,14,0.1).
+ages_factor(cirrhosis,15,29,0.1).
+ages_factor(cirrhosis,30,44,0.7).
+ages_factor(cirrhosis,45,59,2.6).
+ages_factor(cirrhosis,60,74,1.7).
+ages_factor(cirrhosis,75,150,0.5).
+
+
+terapija(cirrhosis,furosemide_28_days).
+terapija(cirrhosis,spironolactone_28_days).
+terapija(cirrhosis,lactulose_21_days).
+terapija(cirrhosis,tacrolimus_prograf_28_days).
+terapija(cirrhosis,nadolol_28_days).
+terapija(cirrhosis,mycophenolate_mofetil_cellcept_28_days).
+terapija(cirrhosis,propranolol_28_days).
+terapija(cirrhosis,thiamine_28_days).
+terapija(cirrhosis,methadone_28_days).
+terapija(cirrhosis,ursodiol_urso).
+terapija(cirrhosis,epoetin_alfa_procrit_21_days).
+terapija(cirrhosis,peginterferon_alfa_2b_sylatron_28_days).
+terapija(cirrhosis,zinc_sulfate_28_days).
+
+
+sex_factor(hyponatremia,male,0.8).
+sex_factor(hyponatremia,female,1.1).
+
+ages_factor(hyponatremia,0,1,0.3).
+ages_factor(hyponatremia,1,4,0.1).
+ages_factor(hyponatremia,5,14,0.02).
+ages_factor(hyponatremia,15,29,0.2).
+ages_factor(hyponatremia,30,44,0.4).
+ages_factor(hyponatremia,45,59,1.2).
+ages_factor(hyponatremia,60,74,1.7).
+ages_factor(hyponatremia,75,150,4.1).
+
+
+terapija(hyponatremia,sodium_bicarbonate_21_days).
+terapija(hyponatremia,econazole_topical).
+terapija(hyponatremia,desmopressin_28_days).
+terapija(hyponatremia,sodium_polystyrene_sulfonate_kayexalate_14_days).
+terapija(hyponatremia,metipranolol_ophthalmic).
+terapija(hyponatremia,diphenoxylate_lomotil).
+terapija(hyponatremia,dofetilide_tikosyn_28_days).
+terapija(hyponatremia,tiagabine_gabitril_28_days).
+terapija(hyponatremia,lipase).
+
+
+sex_factor(cerebral_palsy,male,1.4).
+sex_factor(cerebral_palsy,female,0.7).
+
+ages_factor(cerebral_palsy,0,1,0.8).
+ages_factor(cerebral_palsy,1,4,2.7).
+ages_factor(cerebral_palsy,5,14,4.4).
+ages_factor(cerebral_palsy,15,29,1.3).
+ages_factor(cerebral_palsy,30,44,0.5).
+ages_factor(cerebral_palsy,45,59,0.2).
+ages_factor(cerebral_palsy,60,74,0.2).
+ages_factor(cerebral_palsy,75,150,0.02).
+
+
+terapija(cerebral_palsy,baclofen_28_days).
+terapija(cerebral_palsy,levetiracetam_keppra_28_days).
+terapija(cerebral_palsy,botulinum_toxin_type_a_botox).
+terapija(cerebral_palsy,topiramate_topamax_28_days).
+terapija(cerebral_palsy,carbamazepine_28_days).
+terapija(cerebral_palsy,phenobarbital_28_days).
+terapija(cerebral_palsy,polyethylene_glycol_3350_miralax_28_days).
+terapija(cerebral_palsy,glycopyrrolate_28_days).
+terapija(cerebral_palsy,oxcarbazepine_trileptal_28_days).
+terapija(cerebral_palsy,budesonide_28_days).
+terapija(cerebral_palsy,zonisamide_28_days).
+terapija(cerebral_palsy,tizanidine_28_days).
+terapija(cerebral_palsy,clorazepate_28_days).
+
+simptomi(acute_pancreatitis, [sharp_abdominal_pain, vomiting, nausea, upper_abdominal_pain, diarrhea, sharp_chest_pain, burning_abdominal_pain, back_pain, side_pain, abusing_alcohol, lower_body_pain, hemoptysis]).
+simptomi(the_pancreatic_cancer, [sharp_abdominal_pain, nausea, ache_all_over, fatigue, diarrhea, jaundice, constipation, stomach_bloating, arm_swelling, elbow_swelling, irregular_appearing_scalp, vomiting_blood]).
+
+acute_pancreatitis(sharp_abdominal_pain, 89).
+acute_pancreatitis(vomiting, 72).
+acute_pancreatitis(nausea, 65).
+acute_pancreatitis(upper_abdominal_pain, 49).
+acute_pancreatitis(diarrhea, 38).
+acute_pancreatitis(sharp_chest_pain, 37).
+acute_pancreatitis(burning_abdominal_pain, 30).
+acute_pancreatitis(back_pain, 25).
+acute_pancreatitis(side_pain, 19).
+acute_pancreatitis(abusing_alcohol, 140).
+acute_pancreatitis(lower_body_pain, 11).
+acute_pancreatitis(hemoptysis, 6).
+
+the_pancreatic_cancer(sharp_abdominal_pain, 49).
+the_pancreatic_cancer(nausea, 33).
+the_pancreatic_cancer(ache_all_over, 27).
+the_pancreatic_cancer(fatigue, 27).
+the_pancreatic_cancer(diarrhea, 25).
+the_pancreatic_cancer(jaundice, 16).
+the_pancreatic_cancer(constipation, 13).
+the_pancreatic_cancer(stomach_bloating, 13).
+the_pancreatic_cancer(arm_swelling, 4).
+the_pancreatic_cancer(elbow_swelling, 4).
+the_pancreatic_cancer(irregular_appearing_scalp, 4).
+the_pancreatic_cancer(vomiting_blood, 4).
+
+terapija(acute_pancreatitis, ondansetron).
+terapija(acute_pancreatitis, hydromorphone_dilaudid_21_days).
+terapija(acute_pancreatitis, zosyn_7_days).
+terapija(acute_pancreatitis, diatrizoate).
+terapija(acute_pancreatitis, chlordiazepoxide).
+terapija(acute_pancreatitis, pancrelipase).
+terapija(acute_pancreatitis, pancreatin).
+terapija(acute_pancreatitis, cefotetan).
+
+terapija(the_pancreatic_cancer, gemcitabine).
+terapija(the_pancreatic_cancer, dexamethasone).
+terapija(the_pancreatic_cancer, erlotinib).
+terapija(the_pancreatic_cancer, palonosetron).
+terapija(the_pancreatic_cancer, capecitabine).
+terapija(the_pancreatic_cancer, prochlorperazine_compro_14_days).
+terapija(the_pancreatic_cancer, oxaliplatin).
+terapija(the_pancreatic_cancer, granisetron).
+
+sex_factor(acute_pancreatitis,male,1.2).
+sex_factor(acute_pancreatitis,female,0.9).
+
+ages_factor(acute_pancreatitis,0,1,0.02).
+ages_factor(acute_pancreatitis,1,4,0.1).
+ages_factor(acute_pancreatitis,5,14,0.1).
+ages_factor(acute_pancreatitis,15,29,0.6).
+ages_factor(acute_pancreatitis,30,44,1.4).
+ages_factor(acute_pancreatitis,45,59,1.6).
+ages_factor(acute_pancreatitis,60,74,1.2).
+ages_factor(acute_pancreatitis,75,150,1.2).
+
+
+sex_factor(the_pancreatic_cancer,male,1.3).
+sex_factor(the_pancreatic_cancer,female,0.8).
+
+ages_factor(the_pancreatic_cancer,0,1,0.02).
+ages_factor(the_pancreatic_cancer,1,4,0.02).
+ages_factor(the_pancreatic_cancer,5,14,0.02).
+ages_factor(the_pancreatic_cancer,15,29,0.02).
+ages_factor(the_pancreatic_cancer,30,44,0.4).
+ages_factor(the_pancreatic_cancer,45,59,1.7).
+ages_factor(the_pancreatic_cancer,60,74,2.8).
+ages_factor(the_pancreatic_cancer,75,150,2.0).
+
+preventivni(the_pancreatic_cancer, [hematologic_tests_blood_test, complete_blood_count_cbc]).
+preventivni(acute_pancreatitis, [hematologic_tests_blood_test, complete_blood_count_cbc]).
+
+preventivni(ischemic_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(hypertensive_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(cardiomyopathy, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(myocarditis, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+
+preventivni(cirrhosis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
+preventivni(viral_hepatitis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
+
+preventivni(diabetes, [complete_blood_count_cbc, glucose_measurement_glucose_level, lipid_panel]).
+
+preventivni(myocarditis, [complete_blood_count_cbc]).
+preventivni(meningitis, [complete_blood_count_cbc]).
+preventivni(urinary_tract_infection, [complete_blood_count_cbc]).
+preventivni(acute_respiratory_distress_syndrome, [complete_blood_count_cbc]).
+preventivni(viral_hepatitis, [complete_blood_count_cbc]).
+preventivni(cardiomyopathy, [complete_blood_count_cbc]).
+
+
+%TEMPERATURA
+temperatura(myocarditis,38).
+temperatura(meningitis,38).
+temperatura(urinary_tract_infection,38).
+
+%TEZINA I VISINA
+bmi(diabetes,26).
+bmi(ischemic_heart_disease,26).
+bmi(hypertensive_heart_disease,26).
+bmi(myocarditis,26).
+bmi(cardiomyopathy,26).
+
+%PRITISAK
+pritisak(ischemic_heart_disease,visi,140,90).
+pritisak(anemia,nizi,120,80).
+pritisak(cardiomyopathy,nizi,120,80).
+
+
+
+
+terapija(acute_pancreatitis, ondansetron).
+terapija(acute_pancreatitis, hydromorphone_dilaudid_21_days).
+terapija(acute_pancreatitis, zosyn_7_days).
+terapija(acute_pancreatitis, diatrizoate).
+terapija(acute_pancreatitis, chlordiazepoxide).
+terapija(acute_pancreatitis, pancrelipase).
+terapija(acute_pancreatitis, pancreatin).
+terapija(acute_pancreatitis, cefotetan).
+
+terapija(the_pancreatic_cancer, gemcitabine).
+terapija(the_pancreatic_cancer, dexamethasone).
+terapija(the_pancreatic_cancer, erlotinib).
+terapija(the_pancreatic_cancer, palonosetron).
+terapija(the_pancreatic_cancer, capecitabine).
+terapija(the_pancreatic_cancer, prochlorperazine_compro_14_days).
+terapija(the_pancreatic_cancer, oxaliplatin).
+terapija(the_pancreatic_cancer, granisetron).
+
+sex_factor(acute_pancreatitis,male,1.2).
+sex_factor(acute_pancreatitis,female,0.9).
+
+ages_factor(acute_pancreatitis,0,1,0.02).
+ages_factor(acute_pancreatitis,1,4,0.1).
+ages_factor(acute_pancreatitis,5,14,0.1).
+ages_factor(acute_pancreatitis,15,29,0.6).
+ages_factor(acute_pancreatitis,30,44,1.4).
+ages_factor(acute_pancreatitis,45,59,1.6).
+ages_factor(acute_pancreatitis,60,74,1.2).
+ages_factor(acute_pancreatitis,75,150,1.2).
+
+
+sex_factor(the_pancreatic_cancer,male,1.3).
+sex_factor(the_pancreatic_cancer,female,0.8).
+
+ages_factor(the_pancreatic_cancer,0,1,0.02).
+ages_factor(the_pancreatic_cancer,1,4,0.02).
+ages_factor(the_pancreatic_cancer,5,14,0.02).
+ages_factor(the_pancreatic_cancer,15,29,0.02).
+ages_factor(the_pancreatic_cancer,30,44,0.4).
+ages_factor(the_pancreatic_cancer,45,59,1.7).
+ages_factor(the_pancreatic_cancer,60,74,2.8).
+ages_factor(the_pancreatic_cancer,75,150,2.0).
+
+preventivni(the_pancreatic_cancer, [hematologic_tests_blood_test, complete_blood_count_cbc]).
+preventivni(acute_pancreatitis, [hematologic_tests_blood_test, complete_blood_count_cbc]).
+
+preventivni(ischemic_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(hypertensive_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(cardiomyopathy, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(myocarditis, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+
+preventivni(cirrhosis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
+preventivni(viral_hepatitis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
+
+preventivni(diabetes, [complete_blood_count_cbc, glucose_measurement_glucose_level, lipid_panel]).
+
+preventivni(myocarditis, [complete_blood_count_cbc]).
+preventivni(meningitis, [complete_blood_count_cbc]).
+preventivni(urinary_tract_infection, [complete_blood_count_cbc]).
+preventivni(acute_respiratory_distress_syndrome, [complete_blood_count_cbc]).
+preventivni(viral_hepatitis, [complete_blood_count_cbc]).
+preventivni(cardiomyopathy, [complete_blood_count_cbc]).
+
+

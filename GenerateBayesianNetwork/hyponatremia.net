@@ -105,49 +105,49 @@ potential (hyponatremia)
 potential (weakness | hyponatremia)
 {
  data = (( 0.55 0.45 )
-( 0.091437995 0.908562 ));
+( 0.09492199 0.905078 ));
 }
 
 potential (vomiting | hyponatremia)
 {
  data = (( 0.53 0.47000003 )
-( 0.24085064 0.7591494 ));
+( 0.18985064 0.8101494 ));
 }
 
 potential (nausea | hyponatremia)
 {
  data = (( 0.48 0.52 )
-( 0.21658038 0.7834196 ));
+( 0.17308035 0.8269197 ));
 }
 
 potential (shortness_of_breath | hyponatremia)
 {
  data = (( 0.44 0.56 )
-( 0.16154598 0.838454 ));
+( 0.16187799 0.838122 ));
 }
 
 potential (dizziness | hyponatremia)
 {
  data = (( 0.44 0.56 )
-( 0.0485115 0.9514885 ));
+( 0.04998 0.95002 ));
 }
 
 potential (sharp_abdominal_pain | hyponatremia)
 {
  data = (( 0.38 0.62 )
-( 0.386133 0.61386704 ));
+( 0.283113 0.716887 ));
 }
 
 potential (sharp_chest_pain | hyponatremia)
 {
  data = (( 0.33 0.66999996 )
-( 0.25602898 0.743971 ));
+( 0.261285 0.738715 ));
 }
 
 potential (headache | hyponatremia)
 {
  data = (( 0.33 0.66999996 )
-( 0.015463042 0.98453695 ));
+( 0.018950041 0.98104995 ));
 }
 
 potential (back_pain | hyponatremia)
@@ -159,7 +159,7 @@ potential (back_pain | hyponatremia)
 potential (fever | hyponatremia)
 {
  data = (( 0.28 0.72 )
-( 0.10893596 0.89106405 ));
+( 0.114546955 0.88545305 ));
 }
 
 potential (fainting | hyponatremia)
@@ -171,6 +171,6 @@ potential (fainting | hyponatremia)
 potential (seizures | hyponatremia)
 {
  data = (( 0.23 0.77 )
-( 0.0010468719 0.9989531 ));
+( 0.0010203719 0.9989796 ));
 }
 

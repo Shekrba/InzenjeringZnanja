@@ -70,6 +70,7 @@ public class Main {
 						varSymptom.setName(var.getValue().toString());
 						varSymptom.appendState("da");
 						varSymptom.appendState("ne");
+						System.out.println(bolest+" "+var.getValue());
 						net.addNode(varSymptom);
 						PotentialTable probSymptom = varSymptom.getProbabilityFunction();
 						probSymptom.addVariable(varSymptom);

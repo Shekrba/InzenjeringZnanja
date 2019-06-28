@@ -105,31 +105,31 @@ potential (anemia)
 potential (fatigue | anemia)
 {
  data = (( 0.32 0.68 )
-( 0.07606301 0.92393696 ));
+( 0.074759014 0.925241 ));
 }
 
 potential (weakness | anemia)
 {
  data = (( 0.28 0.72 )
-( 0.07289799 0.927102 ));
+( 0.076381996 0.923618 ));
 }
 
 potential (dizziness | anemia)
 {
  data = (( 0.27 0.73 )
-( 0.0290795 0.9709205 ));
+( 0.030548 0.969452 ));
 }
 
 potential (shortness_of_breath | anemia)
 {
  data = (( 0.26 0.74 )
-( 0.14311399 0.856886 ));
+( 0.143446 0.85655403 ));
 }
 
 potential (nosebleed | anemia)
 {
  data = (( 0.08 0.92 )
-( 1.7000001E-4 0.99983 ));
+( 0.0 1.0 ));
 }
 
 potential (heavy_menstrual_flow | anemia)
@@ -141,7 +141,7 @@ potential (heavy_menstrual_flow | anemia)
 potential (melena | anemia)
 {
  data = (( 0.04 0.96 )
-( 0.0016550001 0.998345 ));
+( 0.0030150004 0.996985 ));
 }
 
 potential (unpredictable_menstruation | anemia)
@@ -159,7 +159,7 @@ potential (vomiting_blood | anemia)
 potential (changes_in_stool_appearance | anemia)
 {
  data = (( 0.02 0.98 )
-( 0.015 0.985 ));
+( 0.0 1.0 ));
 }
 
 potential (recent_pregnancy | anemia)
