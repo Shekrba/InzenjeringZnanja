@@ -123,7 +123,7 @@ potential (cough | acute_respiratory_distress_syndrome)
 potential (sharp_chest_pain | acute_respiratory_distress_syndrome)
 {
  data = (( 0.39 0.61 )
-( 0.266688 0.733312 ));
+( 0.266836 0.733164 ));
 }
 
 potential (depressive_or_psychotic_symptoms | acute_respiratory_distress_syndrome)

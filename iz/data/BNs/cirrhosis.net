@@ -105,7 +105,7 @@ potential (cirrhosis)
 potential (sharp_abdominal_pain | cirrhosis)
 {
  data = (( 0.39 0.61 )
-( 0.28859603 0.71140397 ));
+( 0.28919703 0.710803 ));
 }
 
 potential (shortness_of_breath | cirrhosis)
@@ -123,13 +123,13 @@ potential (peripheral_edema | cirrhosis)
 potential (fatigue | cirrhosis)
 {
  data = (( 0.2 0.8 )
-( 0.10621901 0.893781 ));
+( 0.106354006 0.893646 ));
 }
 
 potential (upper_abdominal_pain | cirrhosis)
 {
  data = (( 0.2 0.8 )
-( 0.049999997 0.95 ));
+( 0.050196 0.949804 ));
 }
 
 potential (abdominal_distention | cirrhosis)
@@ -141,7 +141,7 @@ potential (abdominal_distention | cirrhosis)
 potential (stomach_bloating | cirrhosis)
 {
  data = (( 0.1 0.9 )
-( 0.0019200001 0.99808 ));
+( 0.001985 0.998015 ));
 }
 
 potential (blood_in_stool | cirrhosis)
@@ -165,7 +165,7 @@ potential (symptoms_of_the_kidneys | cirrhosis)
 potential (vomiting_blood | cirrhosis)
 {
  data = (( 0.05 0.95 )
-( 0.012 0.988 ));
+( 0.01202 0.98798 ));
 }
 
 potential (melena | cirrhosis)

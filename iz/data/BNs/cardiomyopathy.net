@@ -111,13 +111,13 @@ potential (shortness_of_breath | cardiomyopathy)
 potential (sharp_chest_pain | cardiomyopathy)
 {
  data = (( 0.39 0.61 )
-( 0.265401 0.734599 ));
+( 0.265549 0.734451 ));
 }
 
 potential (fatigue | cardiomyopathy)
 {
  data = (( 0.27 0.73 )
-( 0.105679005 0.89432096 ));
+( 0.105814 0.894186 ));
 }
 
 potential (peripheral_edema | cardiomyopathy)

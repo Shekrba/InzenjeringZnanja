@@ -99,19 +99,19 @@ node vomiting_blood
 
 potential (the_pancreatic_cancer)
 {
- data = ( 0.0 0.0 );
+ data = ( 5.0E-4 0.9995 );
 }
 
 potential (sharp_abdominal_pain | the_pancreatic_cancer)
 {
  data = (( 0.49 0.51 )
-( 0.289649 0.710351 ));
+( 0.29000503 0.709995 ));
 }
 
 potential (nausea | the_pancreatic_cancer)
 {
  data = (( 0.33 0.66999996 )
-( 0.18133636 0.81866366 ));
+( 0.18159635 0.81840366 ));
 }
 
 potential (ache_all_over | the_pancreatic_cancer)
@@ -129,7 +129,7 @@ potential (fatigue | the_pancreatic_cancer)
 potential (diarrhea | the_pancreatic_cancer)
 {
  data = (( 0.25 0.75 )
-( 0.031255998 0.968744 ));
+( 0.031408 0.968592 ));
 }
 
 potential (jaundice | the_pancreatic_cancer)

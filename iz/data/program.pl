@@ -957,7 +957,7 @@ acute_pancreatitis(sharp_chest_pain, 37).
 acute_pancreatitis(burning_abdominal_pain, 30).
 acute_pancreatitis(back_pain, 25).
 acute_pancreatitis(side_pain, 19).
-acute_pancreatitis(abusing_alcohol, 140).
+acute_pancreatitis(abusing_alcohol, 14).
 acute_pancreatitis(lower_body_pain, 11).
 acute_pancreatitis(hemoptysis, 6).
 

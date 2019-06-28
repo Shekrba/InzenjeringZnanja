@@ -105,13 +105,13 @@ potential (celiac_disease)
 potential (sharp_abdominal_pain | celiac_disease)
 {
  data = (( 0.52 0.48000002 )
-( 0.28444904 0.71555096 ));
+( 0.28505003 0.71494997 ));
 }
 
 potential (diarrhea | celiac_disease)
 {
  data = (( 0.52 0.48000002 )
-( 0.026056 0.973944 ));
+( 0.026333 0.973667 ));
 }
 
 potential (regurgitation | celiac_disease)
@@ -123,19 +123,19 @@ potential (regurgitation | celiac_disease)
 potential (fatigue | celiac_disease)
 {
  data = (( 0.41 0.59000003 )
-( 0.10265901 0.897341 ));
+( 0.10279401 0.897206 ));
 }
 
 potential (vomiting | celiac_disease)
 {
  data = (( 0.41 0.59000003 )
-( 0.19486664 0.80513334 ));
+( 0.19515464 0.80484533 ));
 }
 
 potential (nausea | celiac_disease)
 {
  data = (( 0.34 0.65999997 )
-( 0.17793636 0.8220636 ));
+( 0.17836136 0.82163864 ));
 }
 
 potential (allergic_reaction | celiac_disease)
@@ -147,7 +147,7 @@ potential (allergic_reaction | celiac_disease)
 potential (sharp_chest_pain | celiac_disease)
 {
  data = (( 0.25 0.75 )
-( 0.264461 0.73553896 ));
+( 0.264609 0.735391 ));
 }
 
 potential (fears_and_phobias | celiac_disease)
@@ -171,6 +171,6 @@ potential (leg_lump_or_mass | celiac_disease)
 potential (constipation | celiac_disease)
 {
  data = (( 0.15 0.85 )
-( 0.0 1.0 ));
+( 6.5E-5 0.999935 ));
 }
 

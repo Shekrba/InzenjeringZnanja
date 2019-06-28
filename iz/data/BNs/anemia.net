@@ -105,7 +105,7 @@ potential (anemia)
 potential (fatigue | anemia)
 {
  data = (( 0.32 0.68 )
-( 0.074759014 0.925241 ));
+( 0.07489401 0.925106 ));
 }
 
 potential (weakness | anemia)
@@ -153,7 +153,7 @@ potential (unpredictable_menstruation | anemia)
 potential (vomiting_blood | anemia)
 {
  data = (( 0.03 0.97 )
-( 0.009135 0.990865 ));
+( 0.009155001 0.990845 ));
 }
 
 potential (changes_in_stool_appearance | anemia)
