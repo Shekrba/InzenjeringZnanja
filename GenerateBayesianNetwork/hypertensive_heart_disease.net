@@ -117,7 +117,7 @@ potential (shortness_of_breath | hypertensive_heart_disease)
 potential (sharp_chest_pain | hypertensive_heart_disease)
 {
  data = (( 0.44 0.56 )
-( 0.174561 0.825439 ));
+( 0.17470899 0.82529104 ));
 }
 
 potential (difficulty_breathing | hypertensive_heart_disease)
@@ -135,7 +135,7 @@ potential (weakness | hypertensive_heart_disease)
 potential (fatigue | hypertensive_heart_disease)
 {
  data = (( 0.26 0.74 )
-( 0.052159 0.947841 ));
+( 0.052294 0.947706 ));
 }
 
 potential (chest_tightness | hypertensive_heart_disease)

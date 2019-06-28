@@ -117,7 +117,7 @@ potential (fever | meningitis)
 potential (vomiting | meningitis)
 {
  data = (( 0.53 0.47000003 )
-( 0.19896601 0.801034 ));
+( 0.199254 0.80074596 ));
 }
 
 potential (neck_pain | meningitis)
@@ -129,13 +129,13 @@ potential (neck_pain | meningitis)
 potential (ache_all_over | meningitis)
 {
  data = (( 0.42 0.58000004 )
-( 0.021052 0.978948 ));
+( 0.021187 0.978813 ));
 }
 
 potential (back_pain | meningitis)
 {
  data = (( 0.31 0.69 )
-( 0.091396004 0.908604 ));
+( 0.091496006 0.908504 ));
 }
 
 potential (seizures | meningitis)
@@ -147,7 +147,7 @@ potential (seizures | meningitis)
 potential (nausea | meningitis)
 {
  data = (( 0.31 0.69 )
-( 0.18133599 0.818664 ));
+( 0.18176098 0.81823903 ));
 }
 
 potential (low_back_pain | meningitis)

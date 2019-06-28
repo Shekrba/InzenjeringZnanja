@@ -105,7 +105,7 @@ potential (multiple_sclerosis)
 potential (fatigue | multiple_sclerosis)
 {
  data = (( 0.43 0.57 )
-( 0.10663001 0.89337 ));
+( 0.10676501 0.89323497 ));
 }
 
 potential (loss_of_sensation | multiple_sclerosis)

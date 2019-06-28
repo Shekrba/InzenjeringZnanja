@@ -99,13 +99,13 @@ node hemoptysis
 
 potential (acute_pancreatitis)
 {
- data = ( 0.0 0.0 );
+ data = ( 4.0E-4 0.9996 );
 }
 
 potential (sharp_abdominal_pain | acute_pancreatitis)
 {
  data = (( 0.89 0.110000014 )
-( 0.289649 0.710351 ));
+( 0.28989404 0.71010596 ));
 }
 
 potential (vomiting | acute_pancreatitis)
@@ -117,7 +117,7 @@ potential (vomiting | acute_pancreatitis)
 potential (nausea | acute_pancreatitis)
 {
  data = (( 0.65 0.35000002 )
-( 0.18133636 0.81866366 ));
+( 0.18150136 0.8184986 ));
 }
 
 potential (upper_abdominal_pain | acute_pancreatitis)
@@ -129,7 +129,7 @@ potential (upper_abdominal_pain | acute_pancreatitis)
 potential (diarrhea | acute_pancreatitis)
 {
  data = (( 0.38 0.62 )
-( 0.031255998 0.968744 ));
+( 0.031381 0.968619 ));
 }
 
 potential (sharp_chest_pain | acute_pancreatitis)
@@ -158,7 +158,7 @@ potential (side_pain | acute_pancreatitis)
 
 potential (abusing_alcohol | acute_pancreatitis)
 {
- data = (( 1.4 -0.39999998 )
+ data = (( 0.14 0.86 )
 ( 0.01248 0.98752 ));
 }
 

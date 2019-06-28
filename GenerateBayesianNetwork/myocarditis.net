@@ -111,7 +111,7 @@ potential (palpitations | myocarditis)
 potential (ache_all_over | myocarditis)
 {
  data = (( 0.56 0.44 )
-( 0.009180504 0.9908195 ));
+( 0.009315504 0.9906845 ));
 }
 
 potential (cough | myocarditis)
@@ -135,7 +135,7 @@ potential (fever | myocarditis)
 potential (sharp_chest_pain | myocarditis)
 {
  data = (( 0.56 0.44 )
-( 0.255089 0.74491096 ));
+( 0.255237 0.744763 ));
 }
 
 potential (weakness | myocarditis)
@@ -147,7 +147,7 @@ potential (weakness | myocarditis)
 potential (diarrhea | myocarditis)
 {
  data = (( 0.38 0.62 )
-( 0.023200002 0.9768 ));
+( 0.023477001 0.976523 ));
 }
 
 potential (headache | myocarditis)

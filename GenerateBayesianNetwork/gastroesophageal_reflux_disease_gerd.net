@@ -105,19 +105,19 @@ potential (gastroesophageal_reflux_disease_gerd)
 potential (sharp_chest_pain | gastroesophageal_reflux_disease_gerd)
 {
  data = (( 0.44 0.56 )
-( 0.17896101 0.82103896 ));
+( 0.179109 0.820891 ));
 }
 
 potential (sharp_abdominal_pain | gastroesophageal_reflux_disease_gerd)
 {
  data = (( 0.43 0.57 )
-( 0.20364903 0.79635096 ));
+( 0.20425004 0.79574996 ));
 }
 
 potential (vomiting | gastroesophageal_reflux_disease_gerd)
 {
  data = (( 0.33 0.66999996 )
-( 0.13296664 0.86703336 ));
+( 0.13325465 0.86674535 ));
 }
 
 potential (heartburn | gastroesophageal_reflux_disease_gerd)
@@ -135,19 +135,19 @@ potential (cough | gastroesophageal_reflux_disease_gerd)
 potential (nausea | gastroesophageal_reflux_disease_gerd)
 {
  data = (( 0.28 0.72 )
-( 0.12533638 0.8746636 ));
+( 0.12576137 0.8742386 ));
 }
 
 potential (burning_abdominal_pain | gastroesophageal_reflux_disease_gerd)
 {
  data = (( 0.21 0.79 )
-( 0.024750002 0.97525 ));
+( 0.024870003 0.97513 ));
 }
 
 potential (upper_abdominal_pain | gastroesophageal_reflux_disease_gerd)
 {
  data = (( 0.16 0.84000003 )
-( 0.01854 0.98146 ));
+( 0.018736001 0.981264 ));
 }
 
 potential (difficulty_in_swallowing | gastroesophageal_reflux_disease_gerd)

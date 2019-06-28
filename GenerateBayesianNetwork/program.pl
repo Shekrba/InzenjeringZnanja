@@ -100,7 +100,7 @@ testovi(physical_therapy_exercises_exercises,[cerebral_palsy,multiple_sclerosis]
 testovi(occupational_therapy_assessment_speech_therapy,[cerebral_palsy,multiple_sclerosis]).
 testovi(injections_and_aspirations_of_muscles,[cerebral_palsy]).
 testovi(other_therapeutic_procedures,[cerebral_palsy,multiple_sclerosis]).
-testovi(magnetic_resonance_imaging_mri,[cerebral_palsy,multiple_sclerosis,multiple_sclerosis]).
+testovi(magnetic_resonance_imaging_mri,[cerebral_palsy,multiple_sclerosis]).
 testovi(electroencephalogram_eeg,[cerebral_palsy]).
 testovi(bone_density_scan,[cerebral_palsy]).
 testovi(biopsy,[celiac_disease]).
@@ -572,9 +572,7 @@ ages_factor(multiple_sclerosis,60,74,0.9).
 ages_factor(multiple_sclerosis,75,150,0.2).
 
 
-testovi(multiple_sclerosis,referral_to_home_health_care_service).
-testovi(multiple_sclerosis,debridement_of_wound;infection_or_burn).
-testovi(multiple_sclerosis,diagnostic_spinal_tap_spinal_tap).
+
 
 
 terapija(multiple_sclerosis,interferon_beta_1a_avonex_28_days).
@@ -948,6 +946,8 @@ terapija(cerebral_palsy,clorazepate_28_days).
 simptomi(acute_pancreatitis, [sharp_abdominal_pain, vomiting, nausea, upper_abdominal_pain, diarrhea, sharp_chest_pain, burning_abdominal_pain, back_pain, side_pain, abusing_alcohol, lower_body_pain, hemoptysis]).
 simptomi(the_pancreatic_cancer, [sharp_abdominal_pain, nausea, ache_all_over, fatigue, diarrhea, jaundice, constipation, stomach_bloating, arm_swelling, elbow_swelling, irregular_appearing_scalp, vomiting_blood]).
 
+prevalence(acute_pancreatitis,0.04).
+
 acute_pancreatitis(sharp_abdominal_pain, 89).
 acute_pancreatitis(vomiting, 72).
 acute_pancreatitis(nausea, 65).
@@ -957,9 +957,11 @@ acute_pancreatitis(sharp_chest_pain, 37).
 acute_pancreatitis(burning_abdominal_pain, 30).
 acute_pancreatitis(back_pain, 25).
 acute_pancreatitis(side_pain, 19).
-acute_pancreatitis(abusing_alcohol, 140).
+acute_pancreatitis(abusing_alcohol, 14).
 acute_pancreatitis(lower_body_pain, 11).
 acute_pancreatitis(hemoptysis, 6).
+
+prevalence(the_pancreatic_cancer,0.05).
 
 the_pancreatic_cancer(sharp_abdominal_pain, 49).
 the_pancreatic_cancer(nausea, 33).
@@ -1057,68 +1059,5 @@ pritisak(cardiomyopathy,nizi,120,80).
 
 
 
-
-terapija(acute_pancreatitis, ondansetron).
-terapija(acute_pancreatitis, hydromorphone_dilaudid_21_days).
-terapija(acute_pancreatitis, zosyn_7_days).
-terapija(acute_pancreatitis, diatrizoate).
-terapija(acute_pancreatitis, chlordiazepoxide).
-terapija(acute_pancreatitis, pancrelipase).
-terapija(acute_pancreatitis, pancreatin).
-terapija(acute_pancreatitis, cefotetan).
-
-terapija(the_pancreatic_cancer, gemcitabine).
-terapija(the_pancreatic_cancer, dexamethasone).
-terapija(the_pancreatic_cancer, erlotinib).
-terapija(the_pancreatic_cancer, palonosetron).
-terapija(the_pancreatic_cancer, capecitabine).
-terapija(the_pancreatic_cancer, prochlorperazine_compro_14_days).
-terapija(the_pancreatic_cancer, oxaliplatin).
-terapija(the_pancreatic_cancer, granisetron).
-
-sex_factor(acute_pancreatitis,male,1.2).
-sex_factor(acute_pancreatitis,female,0.9).
-
-ages_factor(acute_pancreatitis,0,1,0.02).
-ages_factor(acute_pancreatitis,1,4,0.1).
-ages_factor(acute_pancreatitis,5,14,0.1).
-ages_factor(acute_pancreatitis,15,29,0.6).
-ages_factor(acute_pancreatitis,30,44,1.4).
-ages_factor(acute_pancreatitis,45,59,1.6).
-ages_factor(acute_pancreatitis,60,74,1.2).
-ages_factor(acute_pancreatitis,75,150,1.2).
-
-
-sex_factor(the_pancreatic_cancer,male,1.3).
-sex_factor(the_pancreatic_cancer,female,0.8).
-
-ages_factor(the_pancreatic_cancer,0,1,0.02).
-ages_factor(the_pancreatic_cancer,1,4,0.02).
-ages_factor(the_pancreatic_cancer,5,14,0.02).
-ages_factor(the_pancreatic_cancer,15,29,0.02).
-ages_factor(the_pancreatic_cancer,30,44,0.4).
-ages_factor(the_pancreatic_cancer,45,59,1.7).
-ages_factor(the_pancreatic_cancer,60,74,2.8).
-ages_factor(the_pancreatic_cancer,75,150,2.0).
-
-preventivni(the_pancreatic_cancer, [hematologic_tests_blood_test, complete_blood_count_cbc]).
-preventivni(acute_pancreatitis, [hematologic_tests_blood_test, complete_blood_count_cbc]).
-
-preventivni(ischemic_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
-preventivni(hypertensive_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
-preventivni(cardiomyopathy, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
-preventivni(myocarditis, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
-
-preventivni(cirrhosis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
-preventivni(viral_hepatitis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
-
-preventivni(diabetes, [complete_blood_count_cbc, glucose_measurement_glucose_level, lipid_panel]).
-
-preventivni(myocarditis, [complete_blood_count_cbc]).
-preventivni(meningitis, [complete_blood_count_cbc]).
-preventivni(urinary_tract_infection, [complete_blood_count_cbc]).
-preventivni(acute_respiratory_distress_syndrome, [complete_blood_count_cbc]).
-preventivni(viral_hepatitis, [complete_blood_count_cbc]).
-preventivni(cardiomyopathy, [complete_blood_count_cbc]).
 
 
