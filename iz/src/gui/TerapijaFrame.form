@@ -8,7 +8,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="52658" class="javax.swing.JLabel">
+      <component id="52658" class="javax.swing.JLabel" binding="l1">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -16,7 +16,7 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="b25df" class="javax.swing.JLabel">
+      <component id="b25df" class="javax.swing.JLabel" binding="l2">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -24,7 +24,7 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="73854" class="javax.swing.JLabel">
+      <component id="73854" class="javax.swing.JLabel" binding="l3">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -32,7 +32,7 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="e8086" class="javax.swing.JLabel">
+      <component id="e8086" class="javax.swing.JLabel" binding="l4">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -40,7 +40,7 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="b5c21" class="javax.swing.JLabel">
+      <component id="b5c21" class="javax.swing.JLabel" binding="l5">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>

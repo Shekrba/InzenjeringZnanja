@@ -1,5 +1,11 @@
 package gui;
 
+import com.ugos.jiprolog.engine.JIPEngine;
+import com.ugos.jiprolog.engine.JIPQuery;
+import com.ugos.jiprolog.engine.JIPTerm;
+import com.ugos.jiprolog.engine.JIPVariable;
+import model.DodatanTest;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,17 +22,35 @@ public class TerapijaFrame {
 
     public TerapijaFrame() {
 
-//simptomi sa upitnikom, temperatura, presure high, low, bmi, rbc count, hemoglobin, hematocrit, whitebloodcell count, plete, glucose, calc, sodium, potas
-        //urea, crat, bili, godine, pol, bolest
+        ArrayList<String> terapije=new ArrayList<>();
+        JIPEngine engine = new JIPEngine();
+        engine.consultFile("data/program.pl");
+        JIPQuery query = engine.openSynchronousQuery("terapija("+MainFrame.getBolestOdabrana()+",X)");
+        JIPTerm solution;
+        while ( (solution = query.nextSolution()) != null) {
+            for (JIPVariable var: solution.getVariables()) {
+                terapije.add(var.getValue().toString());
+            }
+        }
+
+        l1.setText(terapije.get(0));
+        l2.setText(terapije.get(1));
+        l3.setText(terapije.get(2));
+        l4.setText(terapije.get(3));
+        l5.setText(terapije.get(4));
+
+
+
         prepisi1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
                 if (option == JOptionPane.YES_OPTION) {
 
-                    JDialog dialog = MainFrame.getDialog();
-                    dialog.dispose();
+                    
                 }
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
             }
         });
         prepisi2.addActionListener(new ActionListener() {
@@ -76,6 +100,11 @@ public class TerapijaFrame {
     }
 
     private JButton prepisi5;
+    private JLabel l1;
+    private JLabel l2;
+    private JLabel l3;
+    private JLabel l4;
+    private JLabel l5;
 
     public void setTerapijaPanel(JPanel terapijaPanel) {
         this.terapijaPanel = terapijaPanel;

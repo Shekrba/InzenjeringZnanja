@@ -2,51 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a5a570b-f08b-4de9-b78c-ae6b1aaa9dff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acute_pancreatitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/acute_respiratory_distress_syndrome.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/anemia.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardiomyopathy.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/celiac_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cerebral_palsy.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cirrhosis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diabetes.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emphysema.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gastritis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hypertensive_heart_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hyponatremia.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischemic_heart_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meningitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiple_sclerosis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myocarditis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/program.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_pancreatic_cancer.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/urinary_tract_infection.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/viral_hepatitis.net" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/acute_pancreatitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/acute_respiratory_distress_syndrome.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/anemia.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/cardiomyopathy.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/celiac_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/cerebral_palsy.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/cirrhosis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/diabetes.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/emphysema.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/gastritis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/hypertensive_heart_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/hyponatremia.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/ischemic_heart_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/meningitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/multiple_sclerosis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/myocarditis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/the_pancreatic_cancer.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/urinary_tract_infection.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/viral_hepatitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/data/program.pl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/data/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/data/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/gui/TerapijaFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/TerapijaFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/gui/TerapijaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/TerapijaFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -220,12 +185,12 @@
       <workItem from="1559594449989" duration="618000" />
       <workItem from="1560941725850" duration="92000" />
       <workItem from="1561709652843" duration="2037000" />
-      <workItem from="1561716998212" duration="390000" />
+      <workItem from="1561716998212" duration="659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18807000" />
+    <option name="totallyTimeSpent" value="19076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />

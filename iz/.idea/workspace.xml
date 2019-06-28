@@ -3,50 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4fed0268-c5e0-4e3d-9b1f-63b92b6cfc88" name="Default Changelist" comment="Male.fcl">
       <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/acute_pancreatitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/acute_respiratory_distress_syndrome.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/anemia.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cardiomyopathy.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/celiac_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cerebral_palsy.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cirrhosis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/diabetes.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/emphysema.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/gastritis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/hypertensive_heart_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/hyponatremia.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/ischemic_heart_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/meningitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/multiple_sclerosis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/myocarditis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/program.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/the_pancreatic_cancer.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/urinary_tract_infection.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/viral_hepatitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/acute_pancreatitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/acute_respiratory_distress_syndrome.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/anemia.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/cardiomyopathy.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/celiac_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/cerebral_palsy.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/cirrhosis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/diabetes.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/emphysema.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/gastritis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/hypertensive_heart_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/hyponatremia.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/ischemic_heart_disease.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/meningitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/multiple_sclerosis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/myocarditis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/the_pancreatic_cancer.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/urinary_tract_infection.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BNs/viral_hepatitis.net" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/data/program.pl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/TerapijaFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TerapijaFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/TerapijaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TerapijaFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,18 +23,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/program.pl">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="1008" selection-start-line="1008" selection-end-line="1008" />
+            <state relative-caret-position="294">
+              <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+              <folding>
+                <element signature="e#3101#3102#0" expanded="true" />
+                <element signature="e#3151#3152#0" expanded="true" />
+                <element signature="e#3200#3201#0" expanded="true" />
+                <element signature="e#3240#3241#0" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
+                <element signature="e#3329#3330#0" expanded="true" />
+                <element signature="e#3378#3379#0" expanded="true" />
+                <element signature="e#3418#3419#0" expanded="true" />
+                <element signature="e#3467#3468#0" expanded="true" />
+                <element signature="e#3507#3508#0" expanded="true" />
+                <element signature="e#3556#3557#0" expanded="true" />
+                <element signature="e#3596#3597#0" expanded="true" />
+                <element signature="e#3636#3637#0" expanded="true" />
+                <element signature="e#3672#3673#0" expanded="true" />
+                <element signature="e#3708#3709#0" expanded="true" />
+                <element signature="e#3739#3740#0" expanded="true" />
+                <element signature="e#3775#3776#0" expanded="true" />
+                <element signature="e#3806#3807#0" expanded="true" />
+                <element signature="e#3842#3843#0" expanded="true" />
+                <element signature="e#3873#3874#0" expanded="true" />
+                <element signature="e#3909#3910#0" expanded="true" />
+                <element signature="e#3940#3941#0" expanded="true" />
+                <element signature="e#3976#3977#0" expanded="true" />
+                <element signature="e#4007#4008#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/BNs/the_pancreatic_cancer.net">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1314">
+              <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="191" column="17" lean-forward="true" selection-start-line="175" selection-start-column="16" selection-end-line="191" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addElementsFamilly#0;class#AnamnezaFrame#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -94,6 +108,8 @@
         <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
         <option value="$PROJECT_DIR$/src/gui/MainFrame.form" />
         <option value="$PROJECT_DIR$/data/program.pl" />
+        <option value="$PROJECT_DIR$/src/gui/TerapijaFrame.form" />
+        <option value="$PROJECT_DIR$/src/gui/TerapijaFrame.java" />
       </list>
     </option>
   </component>
@@ -144,6 +160,27 @@
               <item name="iz" type="b2602c69:ProjectViewProjectNode" />
               <item name="iz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="AnamnezaFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="MainFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="TerapijaFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -160,7 +197,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/BNs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../rdfExample" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -202,7 +239,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3039000" />
+    <option name="totallyTimeSpent" value="4982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -242,29 +279,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1407">
-          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -307,25 +321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="193" column="58" selection-start-line="193" selection-start-column="58" selection-end-line="193" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#20479#20480#0" expanded="true" />
-            <element signature="e#20515#20516#0" expanded="true" />
-            <element signature="e#20573#20574#0" expanded="true" />
-            <element signature="e#20623#20624#0" expanded="true" />
-            <element signature="method#addElementsFamilly#0;class#AnamnezaFrame#0" />
-            <element signature="e#34029#34030#0" expanded="true" />
-            <element signature="e#34063#34064#0" expanded="true" />
-            <element signature="e#34118#34119#0" expanded="true" />
-            <element signature="e#34164#34165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -364,6 +359,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/BNs/the_pancreatic_cancer.net">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="191" column="17" lean-forward="true" selection-start-line="175" selection-start-column="16" selection-end-line="191" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addElementsFamilly#0;class#AnamnezaFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1314">
+          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="e#3101#3102#0" expanded="true" />
+            <element signature="e#3151#3152#0" expanded="true" />
+            <element signature="e#3200#3201#0" expanded="true" />
+            <element signature="e#3240#3241#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="e#3329#3330#0" expanded="true" />
+            <element signature="e#3378#3379#0" expanded="true" />
+            <element signature="e#3418#3419#0" expanded="true" />
+            <element signature="e#3467#3468#0" expanded="true" />
+            <element signature="e#3507#3508#0" expanded="true" />
+            <element signature="e#3556#3557#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3636#3637#0" expanded="true" />
+            <element signature="e#3672#3673#0" expanded="true" />
+            <element signature="e#3708#3709#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3806#3807#0" expanded="true" />
+            <element signature="e#3842#3843#0" expanded="true" />
+            <element signature="e#3873#3874#0" expanded="true" />
+            <element signature="e#3909#3910#0" expanded="true" />
+            <element signature="e#3940#3941#0" expanded="true" />
+            <element signature="e#3976#3977#0" expanded="true" />
+            <element signature="e#4007#4008#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
