@@ -20,7 +20,7 @@ public class CsvConnector implements Connector {
 		LinkedList<CBRCase> cases = new LinkedList<CBRCase>();
 		
 		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(FileIO.openFile("data/cases.csv")));
+			BufferedReader br = new BufferedReader(new InputStreamReader(FileIO.openFile("data/results.csv")));
 			if (br == null)
 				throw new Exception("Error opening file");
 
@@ -50,6 +50,9 @@ public class CsvConnector implements Connector {
 				examinationDescription.setUrea(Double.parseDouble(values[14]));
 				examinationDescription.setCreatinine(Double.parseDouble(values[15]));
 				examinationDescription.setBilirubin(Double.parseDouble(values[16]));
+				examinationDescription.setAge(Integer.parseInt(values[17]));
+				examinationDescription.setSex(values[18]);
+				examinationDescription.setBolest(values[19]);
 				
 				cbrCase.setDescription(examinationDescription);
 				cases.add(cbrCase);

@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fed0268-c5e0-4e3d-9b1f-63b92b6cfc88" name="Default Changelist" comment="Male.fcl" />
+    <list default="true" id="4fed0268-c5e0-4e3d-9b1f-63b92b6cfc88" name="Default Changelist" comment="Male.fcl">
+      <change afterPath="$PROJECT_DIR$/data/results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/TerapijaFrame.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/TerapijaFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/data/program.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/cbr/CbrApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/cbr/CbrApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/cbr/CsvConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/cbr/CsvConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/cbr/ExaminationDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/cbr/ExaminationDescription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/util/DiagnosisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/util/DiagnosisUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cbr/CbrApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cbr/CbrApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cbr/CsvConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cbr/CsvConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cbr/ExaminationDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cbr/ExaminationDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,38 +71,107 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-698">
-              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+            <state relative-caret-position="126">
+              <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3509#3510#0" expanded="true" />
-                <element signature="e#3552#3553#0" expanded="true" />
-                <element signature="e#3864#3865#0" expanded="true" />
-                <element signature="e#3890#3891#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+                <element signature="e#1222#1223#0" expanded="true" />
+                <element signature="e#1263#1264#0" expanded="true" />
+                <element signature="e#1308#1309#0" expanded="true" />
+                <element signature="e#1343#1344#0" expanded="true" />
+                <element signature="e#1380#1381#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1446#1447#0" expanded="true" />
+                <element signature="e#1472#1473#0" expanded="true" />
+                <element signature="e#1525#1526#0" expanded="true" />
+                <element signature="e#1556#1557#0" expanded="true" />
+                <element signature="e#2985#2986#0" expanded="true" />
+                <element signature="e#3017#3018#0" expanded="true" />
+                <element signature="e#3067#3068#0" expanded="true" />
+                <element signature="e#3109#3110#0" expanded="true" />
+                <element signature="e#3162#3163#0" expanded="true" />
+                <element signature="e#3210#3211#0" expanded="true" />
+                <element signature="e#3417#3418#0" expanded="true" />
+                <element signature="e#3462#3463#0" expanded="true" />
+                <element signature="e#3649#3650#0" expanded="true" />
+                <element signature="e#3686#3687#0" expanded="true" />
+                <element signature="e#3747#3748#0" expanded="true" />
+                <element signature="e#3799#3800#0" expanded="true" />
+                <element signature="e#3838#3839#0" expanded="true" />
+                <element signature="e#3866#3867#0" expanded="true" />
+                <element signature="e#3915#3916#0" expanded="true" />
+                <element signature="e#3954#3955#0" expanded="true" />
+                <element signature="e#3995#3996#0" expanded="true" />
+                <element signature="e#4024#4025#0" expanded="true" />
+                <element signature="e#4076#4077#0" expanded="true" />
+                <element signature="e#4117#4118#0" expanded="true" />
+                <element signature="e#4169#4170#0" expanded="true" />
+                <element signature="e#4199#4200#0" expanded="true" />
+                <element signature="e#4263#4264#0" expanded="true" />
+                <element signature="e#4306#4307#0" expanded="true" />
+                <element signature="e#4340#4341#0" expanded="true" />
+                <element signature="e#4366#4367#0" expanded="true" />
+                <element signature="e#4408#4409#0" expanded="true" />
+                <element signature="e#4443#4444#0" expanded="true" />
+                <element signature="e#4477#4478#0" expanded="true" />
+                <element signature="e#4503#4504#0" expanded="true" />
+                <element signature="e#4545#4546#0" expanded="true" />
+                <element signature="e#4580#4581#0" expanded="true" />
+                <element signature="e#4618#4619#0" expanded="true" />
+                <element signature="e#4644#4645#0" expanded="true" />
+                <element signature="e#4689#4690#0" expanded="true" />
+                <element signature="e#4724#4725#0" expanded="true" />
+                <element signature="e#4769#4770#0" expanded="true" />
+                <element signature="e#4803#4804#0" expanded="true" />
+                <element signature="e#4864#4865#0" expanded="true" />
+                <element signature="e#4915#4916#0" expanded="true" />
+                <element signature="e#4957#4958#0" expanded="true" />
+                <element signature="e#4991#4992#0" expanded="true" />
+                <element signature="e#5049#5050#0" expanded="true" />
+                <element signature="e#5100#5101#0" expanded="true" />
+                <element signature="e#5143#5144#0" expanded="true" />
+                <element signature="e#5178#5179#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form">
+        <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7764">
-              <caret line="406" column="85" selection-start-line="406" selection-start-column="85" selection-end-line="406" selection-end-column="85" />
+            <state relative-caret-position="156">
+              <caret line="495" column="47" selection-start-line="495" selection-start-column="47" selection-end-line="495" selection-end-column="47" />
               <folding>
-                <element signature="e#1805#1814#0" expanded="true" />
-                <element signature="e#2136#2145#0" expanded="true" />
-                <element signature="e#3890#3891#0" expanded="true" />
-                <element signature="e#3953#3954#0" expanded="true" />
-                <element signature="e#4706#4715#0" expanded="true" />
-                <element signature="e#5100#5109#0" expanded="true" />
+                <element signature="e#1768#1776#0" expanded="true" />
+                <element signature="e#1834#1843#0" expanded="true" />
+                <element signature="e#2165#2174#0" expanded="true" />
+                <element signature="e#4014#4015#0" expanded="true" />
+                <element signature="e#4077#4078#0" expanded="true" />
+                <element signature="e#4736#4745#0" expanded="true" />
+                <element signature="e#5130#5139#0" expanded="true" />
+                <element signature="e#15122#15123#0" expanded="true" />
+                <element signature="e#15162#15163#0" expanded="true" />
+                <element signature="e#16650#16651#0" expanded="true" />
                 <element signature="method#sortDiseases#0;class#ZavrsiAmnezuFrame#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2777">
+              <caret line="645" column="33" selection-start-line="645" selection-start-column="33" selection-end-line="645" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -76,22 +196,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="355" column="47" selection-start-line="355" selection-start-column="47" selection-end-line="355" selection-end-column="47" />
+            <state relative-caret-position="179">
+              <caret line="376" column="21" selection-start-line="376" selection-start-column="21" selection-end-line="376" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5223#5231#0" expanded="true" />
-                <element signature="e#16758#16759#0" expanded="true" />
-                <element signature="e#16794#16795#0" expanded="true" />
-                <element signature="e#16852#16853#0" expanded="true" />
-                <element signature="e#16902#16903#0" expanded="true" />
-                <element signature="e#30308#30309#0" expanded="true" />
-                <element signature="e#30342#30343#0" expanded="true" />
-                <element signature="e#30397#30398#0" expanded="true" />
-                <element signature="e#30443#30444#0" expanded="true" />
+                <element signature="e#1492#1500#0" expanded="true" />
+                <element signature="e#1511#1519#0" expanded="true" />
+                <element signature="e#5609#5617#0" expanded="true" />
+                <element signature="e#18888#18889#0" expanded="true" />
+                <element signature="e#18996#18997#0" expanded="true" />
+                <element signature="method#addElements#0;class#AnamnezaFrame#0" />
+                <element signature="e#32436#32437#0" expanded="true" />
+                <element signature="e#32537#32538#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +223,31 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>conn</find>
+      <find>id</find>
+      <find>id</find>
+      <find>350</find>
+      <find>dialog</find>
+      <find>ter</find>
+      <find>id</find>
+      <find>insert</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/gui/TerapijaFrame.form" />
+        <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form" />
+        <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
+        <option value="$PROJECT_DIR$/src/gui/TerapijaFrame.java" />
+        <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -159,6 +301,20 @@
               <item name="iz" type="b2602c69:ProjectViewProjectNode" />
               <item name="iz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="TerapijaFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="ZavrsiAmnezuFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -182,6 +338,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="MainFrame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.MainFrame" />
+      <module name="iz" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="gui.MainFrame" />
+      <module name="iz" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -189,13 +361,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1203000" />
+    <option name="totallyTimeSpent" value="3064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20738254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20738254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -204,7 +376,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.16837482" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.31771597" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,5 +397,153 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/DiagnosisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7113">
+          <caret line="103" column="43" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1380#1381#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#2985#2986#0" expanded="true" />
+            <element signature="e#3017#3018#0" expanded="true" />
+            <element signature="e#3067#3068#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
+            <element signature="e#3162#3163#0" expanded="true" />
+            <element signature="e#3210#3211#0" expanded="true" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3462#3463#0" expanded="true" />
+            <element signature="e#3649#3650#0" expanded="true" />
+            <element signature="e#3686#3687#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3838#3839#0" expanded="true" />
+            <element signature="e#3866#3867#0" expanded="true" />
+            <element signature="e#3915#3916#0" expanded="true" />
+            <element signature="e#3954#3955#0" expanded="true" />
+            <element signature="e#3995#3996#0" expanded="true" />
+            <element signature="e#4024#4025#0" expanded="true" />
+            <element signature="e#4076#4077#0" expanded="true" />
+            <element signature="e#4117#4118#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
+            <element signature="e#4199#4200#0" expanded="true" />
+            <element signature="e#4263#4264#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
+            <element signature="e#4340#4341#0" expanded="true" />
+            <element signature="e#4366#4367#0" expanded="true" />
+            <element signature="e#4408#4409#0" expanded="true" />
+            <element signature="e#4443#4444#0" expanded="true" />
+            <element signature="e#4477#4478#0" expanded="true" />
+            <element signature="e#4503#4504#0" expanded="true" />
+            <element signature="e#4545#4546#0" expanded="true" />
+            <element signature="e#4580#4581#0" expanded="true" />
+            <element signature="e#4618#4619#0" expanded="true" />
+            <element signature="e#4644#4645#0" expanded="true" />
+            <element signature="e#4689#4690#0" expanded="true" />
+            <element signature="e#4724#4725#0" expanded="true" />
+            <element signature="e#4769#4770#0" expanded="true" />
+            <element signature="e#4803#4804#0" expanded="true" />
+            <element signature="e#4864#4865#0" expanded="true" />
+            <element signature="e#4915#4916#0" expanded="true" />
+            <element signature="e#4957#4958#0" expanded="true" />
+            <element signature="e#4991#4992#0" expanded="true" />
+            <element signature="e#5049#5050#0" expanded="true" />
+            <element signature="e#5100#5101#0" expanded="true" />
+            <element signature="e#5143#5144#0" expanded="true" />
+            <element signature="e#5178#5179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="376" column="21" selection-start-line="376" selection-start-column="21" selection-end-line="376" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1492#1500#0" expanded="true" />
+            <element signature="e#1511#1519#0" expanded="true" />
+            <element signature="e#5609#5617#0" expanded="true" />
+            <element signature="e#18888#18889#0" expanded="true" />
+            <element signature="e#18996#18997#0" expanded="true" />
+            <element signature="method#addElements#0;class#AnamnezaFrame#0" />
+            <element signature="e#32436#32437#0" expanded="true" />
+            <element signature="e#32537#32538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1158#1167#0" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2687#2688#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4619#4620#0" expanded="true" />
+            <element signature="e#4656#4657#0" expanded="true" />
+            <element signature="method#sortDiseases#0;class#CaseBaseFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2777">
+          <caret line="645" column="33" selection-start-line="645" selection-start-column="33" selection-end-line="645" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="495" column="47" selection-start-line="495" selection-start-column="47" selection-end-line="495" selection-end-column="47" />
+          <folding>
+            <element signature="e#1768#1776#0" expanded="true" />
+            <element signature="e#1834#1843#0" expanded="true" />
+            <element signature="e#2165#2174#0" expanded="true" />
+            <element signature="e#4014#4015#0" expanded="true" />
+            <element signature="e#4077#4078#0" expanded="true" />
+            <element signature="e#4736#4745#0" expanded="true" />
+            <element signature="e#5130#5139#0" expanded="true" />
+            <element signature="e#15122#15123#0" expanded="true" />
+            <element signature="e#15162#15163#0" expanded="true" />
+            <element signature="e#16650#16651#0" expanded="true" />
+            <element signature="method#sortDiseases#0;class#ZavrsiAmnezuFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

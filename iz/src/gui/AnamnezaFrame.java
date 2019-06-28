@@ -1,6 +1,7 @@
 package gui;
 
 
+import cbr.CbrApplication;
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
 import util.DiagnosisUtil;
 
@@ -12,6 +13,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class AnamnezaFrame {
     private JPanel anamnezaPanel;
@@ -42,10 +44,12 @@ public class AnamnezaFrame {
     private JList dhList;
     private JButton addButton;
     public static JDialog dialogBlood;
+    public static int ID;
 
 
     public AnamnezaFrame() {
 
+        ID = 0;
 
         ArrayList<String> keywords = new ArrayList<String>();
         ArrayList<String> keywordsFamilly = new ArrayList<String>();
@@ -71,6 +75,8 @@ public class AnamnezaFrame {
         zavrsiButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String c = cbPol.getSelectedItem().toString();
+                MainFrame.setPol(c);
 
                 if(textField2.getText().trim().equals("")){
                     JOptionPane.showMessageDialog(null, "Please input patient's first name.");
@@ -88,7 +94,8 @@ public class AnamnezaFrame {
                 }
 
                 try{
-                    Integer.parseInt(textField4.getText());
+                    int go = Integer.parseInt(textField4.getText());
+                    MainFrame.setGodine(go);
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "You have to input a number in the field \"Age\".");
                     return;
@@ -101,8 +108,8 @@ public class AnamnezaFrame {
 
                 try{
                     if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
-                        MainFrame.setPritisakHigh(Double.parseDouble(tfBPHigh.getText()));
-                        MainFrame.setPritisakLow(Double.parseDouble(tfBPLow.getText()));
+                        MainFrame.setPritisakHigh(Integer.parseInt(tfBPHigh.getText()));
+                        MainFrame.setPritisakLow(Integer.parseInt(tfBPLow.getText()));
                     }
                     else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
                         JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
@@ -138,13 +145,15 @@ public class AnamnezaFrame {
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
+                MainFrame.getSimptomi().clear();
+                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
+                    MainFrame.getSimptomi().add(dlmSimptomi.get(i).toString());
+                }
 
                 ArrayList<String> sms=new ArrayList<String>();
                 for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
                     sms.add(dlmSimptomi.get(i).toString());
                 }
-
-
 
                 MainFrame.setBolesti(DiagnosisUtil.findDiagnosis(sms,Integer.parseInt(textField4.getText()),String.valueOf(cbPol.getSelectedItem())));
 
@@ -263,8 +272,8 @@ public class AnamnezaFrame {
 
                 try{
                     if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
-                        MainFrame.setPritisakHigh(Double.parseDouble(tfBPHigh.getText()));
-                        MainFrame.setPritisakLow(Double.parseDouble(tfBPLow.getText()));
+                        MainFrame.setPritisakHigh(Integer.parseInt(tfBPHigh.getText()));
+                        MainFrame.setPritisakLow(Integer.parseInt(tfBPLow.getText()));
                     }
                     else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
                         JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
@@ -302,6 +311,36 @@ public class AnamnezaFrame {
                     MainFrame.getSimptomi().add(dlmSimptomi.get(i).toString());
                 }
 
+                double height = Double.parseDouble(tfHeight.getText());
+                double weight = Double.parseDouble(tfWeight.getText());
+
+                double bmi = weight/Math.pow(height,2);
+
+                MainFrame.setBmi(bmi);
+
+                double temp=Double.parseDouble(tfTemperature.getText());
+                MainFrame.setTemperatura(temp);
+
+                int lowPritisak=Integer.parseInt(tfBPLow.getText());
+                int highPritisak=Integer.parseInt(tfBPHigh.getText());
+                MainFrame.setPritisakLow(lowPritisak);
+                MainFrame.setPritisakHigh(highPritisak);
+
+                int age=Integer.parseInt(textField4.getText());
+                MainFrame.setGodine(age);
+
+                CbrApplication cbr = new CbrApplication();
+
+                boolean cbc=false;
+                if(!(MainFrame.getCbc().getWhiteBloodCellCount()==0.0))
+                    cbc=true;
+
+                boolean bmp=false;
+                if(!(MainFrame.getBmp().getGlucose()==0.0))
+                    bmp=true;
+
+                cbr.doCbr(MainFrame.getSimptomi(),cbc,bmp);
+
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
 
@@ -325,6 +364,18 @@ public class AnamnezaFrame {
                 Connection conn = null;
 
                 try {
+
+                    try {
+                        if(tfId.getText().trim().equals("")){
+                            JOptionPane.showMessageDialog(null, "ID cant be empty");
+                            return;
+                        }
+                        ID = Integer.parseInt(tfId.getText());
+                    }catch (Exception exep){
+                        JOptionPane.showMessageDialog(null, "ID has to be a number");
+                        return;
+                    }
+
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/iz", "root", "1234");
 
@@ -400,6 +451,8 @@ public class AnamnezaFrame {
                 try{
                     id = Integer.parseInt(tfId.getText());
                     age = Integer.parseInt(textField4.getText());
+
+                    ID = id;
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "You have to input a number in the field \"ID\" and \"Age\".");
                     return;
@@ -775,6 +828,7 @@ public class AnamnezaFrame {
     public void setDialogBlood(JDialog dialogBlood) {
         this.dialogBlood = dialogBlood;
     }
+
 
 
 }

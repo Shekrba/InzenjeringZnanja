@@ -27,9 +27,36 @@ public class MainFrame {
 
     private static double bmi;
     private static double temperatura;
-    private static double pritisakLow;
-    private static double pritisakHigh;
+    private static int pritisakLow;
+    private static int pritisakHigh;
     private static ArrayList<String> simptomi=new ArrayList<>();
+    private static int godine;
+    private static String pol;
+    private static String bolestOdabrana;
+
+    public static void setBolestOdabrana(String bolestOdabrana) {
+        MainFrame.bolestOdabrana = bolestOdabrana;
+    }
+
+    public static String getBolestOdabrana() {
+        return bolestOdabrana;
+    }
+
+    public static void setGodine(int godine) {
+        MainFrame.godine = godine;
+    }
+
+    public static void setPol(String pol) {
+        MainFrame.pol = pol;
+    }
+
+    public static int getGodine() {
+        return godine;
+    }
+
+    public static String getPol() {
+        return pol;
+    }
 
     public static ArrayList<String> getSimptomi() {
         return simptomi;
@@ -174,19 +201,19 @@ public class MainFrame {
         MainFrame.temperatura = temperatura;
     }
 
-    public static double getPritisakLow() {
+    public static int getPritisakLow() {
         return pritisakLow;
     }
 
-    public static void setPritisakLow(double pritisakLow) {
+    public static void setPritisakLow(int pritisakLow) {
         MainFrame.pritisakLow = pritisakLow;
     }
 
-    public static double getPritisakHigh() {
+    public static int getPritisakHigh() {
         return pritisakHigh;
     }
 
-    public static void setPritisakHigh(double pritisakHigh) {
+    public static void setPritisakHigh(int pritisakHigh) {
         MainFrame.pritisakHigh = pritisakHigh;
 
     }
