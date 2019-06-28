@@ -42,7 +42,7 @@ potential (diabetes)
 potential (weight_gain | diabetes)
 {
  data = (( 0.07 0.93 )
-( 3.8000004E-4 0.99962 ));
+( 3.6000003E-4 0.99964 ));
 }
 
 potential (thirst | diabetes)
@@ -54,6 +54,6 @@ potential (thirst | diabetes)
 potential (symptoms_of_the_kidneys | diabetes)
 {
  data = (( 0.01 0.99 )
-( 6.15E-4 0.999385 ));
+( 0.0010950001 0.998905 ));
 }
 

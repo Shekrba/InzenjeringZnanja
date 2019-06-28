@@ -1,7 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a5a570b-f08b-4de9-b78c-ae6b1aaa9dff" name="Default Changelist" comment="" />
+    <list default="true" id="1a5a570b-f08b-4de9-b78c-ae6b1aaa9dff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acute_respiratory_distress_syndrome.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anemia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bell_palsy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bronchiectasis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardiomyopathy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/celiac_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cerebral_palsy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chronic_constipation.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cirrhosis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coagulation_bleeding_disorder.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dementia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetes.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/emphysema.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/encephalitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gastritis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyperlipidemia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hypertensive_heart_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyponatremia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischemic_heart_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meningitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiple_sclerosis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myocarditis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkinson_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polymyalgia_rheumatica.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/program.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urinary_tract_infection.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viral_hepatitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/acute_respiratory_distress_syndrome.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/anemia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/bell_palsy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/bronchiectasis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/cardiomyopathy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/celiac_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/cerebral_palsy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/chronic_constipation.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/cirrhosis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/coagulation_bleeding_disorder.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/dementia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/diabetes.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/emphysema.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/encephalitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/gastritis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/hyperlipidemia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/hypertensive_heart_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/hyponatremia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/ischemic_heart_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/meningitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/multiple_sclerosis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/myocarditis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/parkinson_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/polymyalgia_rheumatica.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/urinary_tract_infection.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/BNs/viral_hepatitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/data/program.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/data/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/data/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/cbr/CbrApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/cbr/CbrApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/cbr/CbrApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/cbr/CbrApplication.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,20 +97,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/example/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="273">
+              <caret line="72" column="68" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program.pl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -57,6 +113,8 @@
       <find>varTaxi</find>
       <find>probTaxi</find>
       <find>probWitness</find>
+      <find>sharp_abdo</find>
+      <find>acute_pancreatitis(sharp_abdominal_pain</find>
     </findStrings>
     <replaceStrings>
       <replace>varBolest</replace>
@@ -71,8 +129,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/program.pl" />
         <option value="$PROJECT_DIR$/src/example/Main.java" />
+        <option value="$PROJECT_DIR$/program.pl" />
       </list>
     </option>
   </component>
@@ -95,28 +153,12 @@
               <item name="GenerateBayesianNetwork" type="b2602c69:ProjectViewProjectNode" />
               <item name="GenerateBayesianNetwork" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GenerateBayesianNetwork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GenerateBayesianNetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GenerateBayesianNetwork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GenerateBayesianNetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GenerateBayesianNetwork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GenerateBayesianNetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,12 +169,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IZ\MedicalDiagnosis\InzenjeringZnanja\GenerateBayesianNetwork" />
       <recent name="C:\IZ\BayesExample" />
       <recent name="C:\IZ\BayesExample\lib" />
     </key>
@@ -186,16 +229,18 @@
       <workItem from="1559593005410" duration="274000" />
       <workItem from="1559594449989" duration="618000" />
       <workItem from="1560941725850" duration="92000" />
+      <workItem from="1561709652843" duration="1107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16380000" />
+    <option name="totallyTimeSpent" value="17487000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2622108" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26171875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -204,7 +249,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32784638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -214,7 +259,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32921812" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -230,20 +275,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/example/Main.java">
+    <entry file="file://$PROJECT_DIR$/program.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="156">
+          <caret line="948" column="32" selection-start-line="948" selection-start-column="32" selection-end-line="948" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program.pl">
+    <entry file="file://$PROJECT_DIR$/src/example/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="273">
+          <caret line="72" column="68" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

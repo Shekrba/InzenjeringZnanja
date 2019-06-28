@@ -105,49 +105,49 @@ potential (cardiomyopathy)
 potential (shortness_of_breath | cardiomyopathy)
 {
  data = (( 0.53 0.47000003 )
-( 0.16805398 0.831946 ));
+( 0.16732599 0.832674 ));
 }
 
 potential (sharp_chest_pain | cardiomyopathy)
 {
  data = (( 0.39 0.61 )
-( 0.26092497 0.73907506 ));
+( 0.265401 0.734599 ));
 }
 
 potential (fatigue | cardiomyopathy)
 {
  data = (( 0.27 0.73 )
-( 0.107523 0.892477 ));
+( 0.105679005 0.89432096 ));
 }
 
 potential (peripheral_edema | cardiomyopathy)
 {
  data = (( 0.16 0.84000003 )
-( 0.009278 0.990722 ));
+( 0.009038 0.990962 ));
 }
 
 potential (palpitations | cardiomyopathy)
 {
  data = (( 0.13 0.87 )
-( 0.124331996 0.875668 ));
+( 0.13143401 0.868566 ));
 }
 
 potential (chest_tightness | cardiomyopathy)
 {
  data = (( 0.13 0.87 )
-( 0.102513 0.897487 ));
+( 0.108449 0.891551 ));
 }
 
 potential (weight_gain | cardiomyopathy)
 {
  data = (( 0.09 0.90999997 )
-( 0.0044000004 0.9956 ));
+( 0.0042000003 0.9958 ));
 }
 
 potential (irregular_heartbeat | cardiomyopathy)
 {
  data = (( 0.09 0.90999997 )
-( 7.04E-4 0.999296 ));
+( 0.0 1.0 ));
 }
 
 potential (heartburn | cardiomyopathy)

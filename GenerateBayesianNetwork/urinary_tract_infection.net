@@ -117,7 +117,7 @@ potential (suprapubic_pain | urinary_tract_infection)
 potential (sharp_abdominal_pain | urinary_tract_infection)
 {
  data = (( 0.6 0.39999998 )
-( 0.26366898 0.736331 ));
+( 0.160649 0.839351 ));
 }
 
 potential (frequent_urination | urinary_tract_infection)
@@ -129,13 +129,13 @@ potential (frequent_urination | urinary_tract_infection)
 potential (fever | urinary_tract_infection)
 {
  data = (( 0.42 0.58000004 )
-( 0.02345196 0.976548 ));
+( 0.02906296 0.970937 ));
 }
 
 potential (vomiting | urinary_tract_infection)
 {
  data = (( 0.4 0.6 )
-( 0.16396664 0.83603334 ));
+( 0.11296664 0.88703334 ));
 }
 
 potential (back_pain | urinary_tract_infection)
@@ -147,13 +147,13 @@ potential (back_pain | urinary_tract_infection)
 potential (nausea | urinary_tract_infection)
 {
  data = (( 0.35 0.65 )
-( 0.14958638 0.8504136 ));
+( 0.10608637 0.8939136 ));
 }
 
 potential (blood_in_urine | urinary_tract_infection)
 {
  data = (( 0.33 0.66999996 )
-( 1.7000001E-4 0.99983 ));
+( 0.0 1.0 ));
 }
 
 potential (side_pain | urinary_tract_infection)
@@ -165,12 +165,12 @@ potential (side_pain | urinary_tract_infection)
 potential (retention_of_urine | urinary_tract_infection)
 {
  data = (( 0.26 0.74 )
-( 0.0165 0.9835 ));
+( 0.0 1.0 ));
 }
 
 potential (lower_abdominal_pain | urinary_tract_infection)
 {
  data = (( 0.25 0.75 )
-( 0.028499998 0.9715 ));
+( 0.0 1.0 ));
 }
 

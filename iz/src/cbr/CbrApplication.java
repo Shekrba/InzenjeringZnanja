@@ -19,6 +19,7 @@ import ucm.gaia.jcolibri.method.retrieve.selection.SelectCases;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 
 public class CbrApplication implements StandardCBRApplication {
 
@@ -87,13 +88,29 @@ public class CbrApplication implements StandardCBRApplication {
 		eval = SelectCases.selectTopKRR(eval, 5);
 		System.out.println("Retrieved cases:");
 		MainFrame.setBolesti(new ArrayList<>());
+		HashMap<String,Double> sum=new HashMap<String,Double>();
+		HashMap<String,Integer> br=new HashMap<String,Integer>();
 		for (RetrievalResult nse : eval) {
 			System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
+			if(sum.containsKey(nse.get_case().getDescription().toString())){
+				Double d=sum.get(nse.get_case().getDescription().toString());
+				d+=nse.getEval();
+				sum.put(nse.get_case().getDescription().toString(),d);
+				Integer integer=br.get(nse.get_case().getDescription().toString());
+				integer++;
+				br.put(nse.get_case().getDescription().toString(),integer);
+			}else{
+				sum.put(nse.get_case().getDescription().toString(),nse.getEval());
+				br.put(nse.get_case().getDescription().toString(),1);
+			}
+		}
+		for(String boles : sum.keySet()){
 			Bolest bolest=new Bolest();
-			bolest.setNaziv(nse.get_case().getDescription().toString());
-			bolest.setProcenat(Math.round((float)nse.getEval()*100));
+			bolest.setNaziv(boles);
+			bolest.setProcenat(Math.round((float)(double)sum.get(boles)/br.get(boles)*100));
 			MainFrame.getBolesti().add(bolest);
 		}
+
 	}
 
 	public void postCycle() throws ExecutionException {

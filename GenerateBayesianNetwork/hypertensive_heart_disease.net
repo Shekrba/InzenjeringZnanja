@@ -105,67 +105,67 @@ potential (hypertensive_heart_disease)
 potential (palpitations | hypertensive_heart_disease)
 {
  data = (( 0.48 0.52 )
-( 0.023792 0.976208 ));
+( 0.031154001 0.968846 ));
 }
 
 potential (shortness_of_breath | hypertensive_heart_disease)
 {
  data = (( 0.45 0.55 )
-( 0.074614 0.925386 ));
+( 0.074946 0.925054 ));
 }
 
 potential (sharp_chest_pain | hypertensive_heart_disease)
 {
  data = (( 0.44 0.56 )
-( 0.16930498 0.83069503 ));
+( 0.174561 0.825439 ));
 }
 
 potential (difficulty_breathing | hypertensive_heart_disease)
 {
  data = (( 0.42 0.58000004 )
-( 0.022025 0.977975 ));
+( 0.02552 0.97448 ));
 }
 
 potential (weakness | hypertensive_heart_disease)
 {
  data = (( 0.28 0.72 )
-( 0.042098 0.957902 ));
+( 0.045581996 0.954418 ));
 }
 
 potential (fatigue | hypertensive_heart_disease)
 {
  data = (( 0.26 0.74 )
-( 0.053463 0.946537 ));
+( 0.052159 0.947841 ));
 }
 
 potential (chest_tightness | hypertensive_heart_disease)
 {
  data = (( 0.23 0.77 )
-( 0.054472998 0.945527 ));
+( 0.060668997 0.939331 ));
 }
 
 potential (insomnia | hypertensive_heart_disease)
 {
  data = (( 0.15 0.85 )
-( 9.1E-4 0.99909 ));
+( 0.0 1.0 ));
 }
 
 potential (heartburn | hypertensive_heart_disease)
 {
  data = (( 0.11 0.89 )
-( 0.07692 0.92307997 ));
+( 0.07704 0.92296 ));
 }
 
 potential (leg_swelling | hypertensive_heart_disease)
 {
  data = (( 0.08 0.92 )
-( 1.7000001E-4 0.99983 ));
+( 0.0 1.0 ));
 }
 
 potential (fluid_retention | hypertensive_heart_disease)
 {
  data = (( 0.08 0.92 )
-( 1.8199999E-4 0.999818 ));
+( 0.0 1.0 ));
 }
 
 potential (recent_pregnancy | hypertensive_heart_disease)

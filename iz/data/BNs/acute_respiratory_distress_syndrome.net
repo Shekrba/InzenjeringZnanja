@@ -105,37 +105,37 @@ potential (acute_respiratory_distress_syndrome)
 potential (shortness_of_breath | acute_respiratory_distress_syndrome)
 {
  data = (( 0.84 0.16000003 )
-( 0.16852598 0.831474 ));
+( 0.16885799 0.831142 ));
 }
 
 potential (difficulty_breathing | acute_respiratory_distress_syndrome)
 {
  data = (( 0.72 0.27999997 )
-( 0.109721 0.890279 ));
+( 0.113216 0.886784 ));
 }
 
 potential (cough | acute_respiratory_distress_syndrome)
 {
  data = (( 0.45 0.55 )
-( 0.082078315 0.91792166 ));
+( 0.08705232 0.91294765 ));
 }
 
 potential (sharp_chest_pain | acute_respiratory_distress_syndrome)
 {
  data = (( 0.39 0.61 )
-( 0.261432 0.738568 ));
+( 0.266688 0.733312 ));
 }
 
 potential (depressive_or_psychotic_symptoms | acute_respiratory_distress_syndrome)
 {
  data = (( 0.35 0.65 )
-( 0.0022399998 0.99776 ));
+( 0.0 1.0 ));
 }
 
 potential (fever | acute_respiratory_distress_syndrome)
 {
  data = (( 0.32 0.68 )
-( 0.11352795 0.88647205 ));
+( 0.119138956 0.88086104 ));
 }
 
 potential (wheezing | acute_respiratory_distress_syndrome)
@@ -153,7 +153,7 @@ potential (hurts_to_breath | acute_respiratory_distress_syndrome)
 potential (chest_tightness | acute_respiratory_distress_syndrome)
 {
  data = (( 0.11 0.89 )
-( 0.102695994 0.897304 ));
+( 0.108892 0.891108 ));
 }
 
 potential (chills | acute_respiratory_distress_syndrome)
@@ -165,7 +165,7 @@ potential (chills | acute_respiratory_distress_syndrome)
 potential (coughing_up_sputum | acute_respiratory_distress_syndrome)
 {
  data = (( 0.09 0.90999997 )
-( 0.0045609996 0.995439 ));
+( 0.008055999 0.991944 ));
 }
 
 potential (congestion_in_chest | acute_respiratory_distress_syndrome)

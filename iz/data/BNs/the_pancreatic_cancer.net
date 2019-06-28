@@ -1,0 +1,176 @@
+net
+{
+     node_size = (0 0);
+     name = "the_pancreatic_cancer";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node the_pancreatic_cancer
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node sharp_abdominal_pain
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node nausea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node ache_all_over
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node fatigue
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node diarrhea
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node jaundice
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node constipation
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node stomach_bloating
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node arm_swelling
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node elbow_swelling
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node irregular_appearing_scalp
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+node vomiting_blood
+{
+     label = "";
+     position = (0 0);
+     states = ("da" "ne");
+}
+
+potential (the_pancreatic_cancer)
+{
+ data = ( 0.0 0.0 );
+}
+
+potential (sharp_abdominal_pain | the_pancreatic_cancer)
+{
+ data = (( 0.49 0.51 )
+( 0.289649 0.710351 ));
+}
+
+potential (nausea | the_pancreatic_cancer)
+{
+ data = (( 0.33 0.66999996 )
+( 0.18133636 0.81866366 ));
+}
+
+potential (ache_all_over | the_pancreatic_cancer)
+{
+ data = (( 0.27 0.73 )
+( 0.021052502 0.9789475 ));
+}
+
+potential (fatigue | the_pancreatic_cancer)
+{
+ data = (( 0.27 0.73 )
+( 0.10675901 0.893241 ));
+}
+
+potential (diarrhea | the_pancreatic_cancer)
+{
+ data = (( 0.25 0.75 )
+( 0.031255998 0.968744 ));
+}
+
+potential (jaundice | the_pancreatic_cancer)
+{
+ data = (( 0.16 0.84000003 )
+( 0.0 1.0 ));
+}
+
+potential (constipation | the_pancreatic_cancer)
+{
+ data = (( 0.13 0.87 )
+( 0.0015 0.9985 ));
+}
+
+potential (stomach_bloating | the_pancreatic_cancer)
+{
+ data = (( 0.13 0.87 )
+( 0.0021900001 0.99781 ));
+}
+
+potential (arm_swelling | the_pancreatic_cancer)
+{
+ data = (( 0.04 0.96 )
+( 0.0 1.0 ));
+}
+
+potential (elbow_swelling | the_pancreatic_cancer)
+{
+ data = (( 0.04 0.96 )
+( 0.0 1.0 ));
+}
+
+potential (irregular_appearing_scalp | the_pancreatic_cancer)
+{
+ data = (( 0.04 0.96 )
+( 0.0 1.0 ));
+}
+
+potential (vomiting_blood | the_pancreatic_cancer)
+{
+ data = (( 0.04 0.96 )
+( 0.012135001 0.987865 ));
+}
+

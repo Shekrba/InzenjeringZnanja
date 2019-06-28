@@ -2,33 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fed0268-c5e0-4e3d-9b1f-63b92b6cfc88" name="Default Changelist" comment="Male.fcl">
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/acute_respiratory_distress_syndrome.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/anemia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/bell_palsy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/bin/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/bin/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/bronchiectasis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cardiomyopathy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/celiac_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cerebral_palsy.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/chronic_constipation.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/cirrhosis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/coagulation_bleeding_disorder.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/dementia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/diabetes.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/emphysema.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/encephalitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/gastritis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/gastroesophageal_reflux_disease_gerd.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/hyperlipidemia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/hypertensive_heart_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/hyponatremia.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/ischemic_heart_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/meningitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/multiple_sclerosis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/myocarditis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/parkinson_disease.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/polymyalgia_rheumatica.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/program.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/src/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GenerateBayesianNetwork/src/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/urinary_tract_infection.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenerateBayesianNetwork/viral_hepatitis.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/data/program.pl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/AnamnezaFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/MainFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/TerapijaFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iz/util/DiagnosisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/util/DiagnosisUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/cbr/CbrApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/cbr/CbrApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cbr/CbrApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cbr/CbrApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cbr/CsvConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cbr/CsvConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cbr/ExaminationDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cbr/ExaminationDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/TerapijaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TerapijaFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +50,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cbr/CbrApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="92" column="72" selection-start-line="92" selection-start-column="72" selection-end-line="92" selection-end-column="72" />
+            <state relative-caret-position="340">
+              <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+              <folding>
+                <element signature="e#5412#5427#0" expanded="true" />
+                <element signature="e#5471#5487#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/program.pl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1801">
+              <caret line="1058" selection-start-line="1058" selection-end-line="1058" />
             </state>
           </provider>
         </entry>
@@ -93,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="126" column="56" lean-forward="true" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="56" />
+              <caret line="126" column="56" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -110,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/results.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            <state relative-caret-position="42">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -139,16 +162,12 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>prog</find>
+      <find>acute_pancrea</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,9 +181,10 @@
         <option value="$PROJECT_DIR$/src/cbr/CsvConnector.java" />
         <option value="$PROJECT_DIR$/src/gui/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
-        <option value="$PROJECT_DIR$/data/results.csv" />
         <option value="$PROJECT_DIR$/src/gui/CaseBaseFrame.java" />
+        <option value="$PROJECT_DIR$/data/results.csv" />
         <option value="$PROJECT_DIR$/src/cbr/CbrApplication.java" />
+        <option value="$PROJECT_DIR$/data/program.pl" />
       </list>
     </option>
   </component>
@@ -209,41 +229,6 @@
               <item name="iz" type="b2602c69:ProjectViewProjectNode" />
               <item name="iz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="AnamnezaFrame" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="CaseBaseFrame" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="MainFrame" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="TerapijaFrame" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="ZavrsiAmnezuFrame" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -254,6 +239,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/BNs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -294,13 +280,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7522000" />
+    <option name="totallyTimeSpent" value="10361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20572917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20572917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -309,8 +295,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.29766804" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.29766804" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39917696" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -374,13 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/results.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -389,6 +368,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="207" column="42" selection-start-line="207" selection-start-column="42" selection-end-line="207" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="126" column="56" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+          <folding>
+            <element signature="e#2764#2765#0" expanded="true" />
+            <element signature="e#2827#2828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cbr/CsvConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/results.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cbr/ExaminationDescription.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -416,45 +437,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cbr/CsvConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="207" column="42" selection-start-line="207" selection-start-column="42" selection-end-line="207" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="126" column="56" lean-forward="true" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
-          <folding>
-            <element signature="e#2764#2765#0" expanded="true" />
-            <element signature="e#2827#2828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cbr/CbrApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="92" column="72" selection-start-line="92" selection-start-column="72" selection-end-line="92" selection-end-column="72" />
+        <state relative-caret-position="340">
+          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+          <folding>
+            <element signature="e#5412#5427#0" expanded="true" />
+            <element signature="e#5471#5487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/program.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1801">
+          <caret line="1058" selection-start-line="1058" selection-end-line="1058" />
         </state>
       </provider>
     </entry>

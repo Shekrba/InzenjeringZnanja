@@ -105,19 +105,19 @@ potential (meningitis)
 potential (headache | meningitis)
 {
  data = (( 0.87 0.13 )
-( 0.021138 0.978862 ));
+( 0.024625 0.975375 ));
 }
 
 potential (fever | meningitis)
 {
  data = (( 0.8 0.19999999 )
-( 0.113751 0.886249 ));
+( 0.119362 0.880638 ));
 }
 
 potential (vomiting | meningitis)
 {
  data = (( 0.53 0.47000003 )
-( 0.249966 0.750034 ));
+( 0.19896601 0.801034 ));
 }
 
 potential (neck_pain | meningitis)
@@ -129,7 +129,7 @@ potential (neck_pain | meningitis)
 potential (ache_all_over | meningitis)
 {
  data = (( 0.42 0.58000004 )
-( 0.016268 0.983732 ));
+( 0.021052 0.978948 ));
 }
 
 potential (back_pain | meningitis)
@@ -141,13 +141,13 @@ potential (back_pain | meningitis)
 potential (seizures | meningitis)
 {
  data = (( 0.31 0.69 )
-( 0.0050025 0.9949975 ));
+( 0.004976 0.995024 ));
 }
 
 potential (nausea | meningitis)
 {
  data = (( 0.31 0.69 )
-( 0.224836 0.775164 ));
+( 0.18133599 0.818664 ));
 }
 
 potential (low_back_pain | meningitis)
@@ -159,13 +159,13 @@ potential (low_back_pain | meningitis)
 potential (cough | meningitis)
 {
  data = (( 0.26 0.74 )
-( 0.082393005 0.917607 ));
+( 0.087367006 0.912633 ));
 }
 
 potential (leg_pain | meningitis)
 {
  data = (( 0.26 0.74 )
-( 0.0014715001 0.9985285 ));
+( 0.0 1.0 ));
 }
 
 potential (neck_stiffness_or_tightness | meningitis)

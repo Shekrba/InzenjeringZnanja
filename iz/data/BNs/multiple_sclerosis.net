@@ -105,72 +105,72 @@ potential (multiple_sclerosis)
 potential (fatigue | multiple_sclerosis)
 {
  data = (( 0.43 0.57 )
-( 0.107934006 0.892066 ));
+( 0.10663001 0.89337 ));
 }
 
 potential (loss_of_sensation | multiple_sclerosis)
 {
  data = (( 0.42 0.58000004 )
-( 7.2649994E-4 0.9992735 ));
+( 0.0 1.0 ));
 }
 
 potential (headache | multiple_sclerosis)
 {
  data = (( 0.31 0.69 )
-( 0.021046042 0.97895396 ));
+( 0.02453304 0.97546697 ));
 }
 
 potential (dizziness | multiple_sclerosis)
 {
  data = (( 0.28 0.72 )
-( 0.055995498 0.9440045 ));
+( 0.057464004 0.942536 ));
 }
 
 potential (problems_with_movement | multiple_sclerosis)
 {
  data = (( 0.27 0.73 )
-( 0.004231 0.995769 ));
+( 5.8E-4 0.99942 ));
 }
 
 potential (weakness | multiple_sclerosis)
 {
  data = (( 0.22 0.78 )
-( 0.100832 0.899168 ));
+( 0.104315996 0.895684 ));
 }
 
 potential (leg_weakness | multiple_sclerosis)
 {
  data = (( 0.19 0.81 )
-( 4.77E-4 0.999523 ));
+( 0.0 1.0 ));
 }
 
 potential (paresthesia | multiple_sclerosis)
 {
  data = (( 0.16 0.84000003 )
-( 0.0016689999 0.998331 ));
+( 0.0 1.0 ));
 }
 
 potential (disturbance_of_memory | multiple_sclerosis)
 {
  data = (( 0.13 0.87 )
-( 0.0040609995 0.995939 ));
+( 0.0 1.0 ));
 }
 
 potential (abnormal_involuntary_movements | multiple_sclerosis)
 {
  data = (( 0.12 0.88 )
-( 0.002748 0.997252 ));
+( 0.0 1.0 ));
 }
 
 potential (leg_stiffness_or_tightness | multiple_sclerosis)
 {
  data = (( 0.12 0.88 )
-( 3.5999998E-5 0.999964 ));
+( 0.0 1.0 ));
 }
 
 potential (focal_weakness | multiple_sclerosis)
 {
  data = (( 0.11 0.89 )
-( 0.0015100001 0.99849 ));
+( 0.0 1.0 ));
 }
 

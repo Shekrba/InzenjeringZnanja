@@ -84,7 +84,7 @@ potential (viral_hepatitis)
 potential (sharp_abdominal_pain | viral_hepatitis)
 {
  data = (( 0.26 0.74 )
-( 0.38018903 0.61981094 ));
+( 0.26468903 0.735311 ));
 }
 
 potential (abusing_alcohol | viral_hepatitis)
@@ -102,13 +102,13 @@ potential (drug_abuse | viral_hepatitis)
 potential (melena | viral_hepatitis)
 {
  data = (( 0.03 0.97 )
-( 0.0042149997 0.995785 ));
+( 0.0041349996 0.995865 ));
 }
 
 potential (stomach_bloating | viral_hepatitis)
 {
  data = (( 0.02 0.98 )
-( 0.01677 0.98323 ));
+( 2.7000002E-4 0.99973 ));
 }
 
 potential (symptoms_of_the_kidneys | viral_hepatitis)
