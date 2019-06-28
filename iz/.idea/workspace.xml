@@ -20,6 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,6 +111,11 @@
               </folding>
             </state>
           </provider>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -131,8 +137,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="254">
               <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
@@ -143,12 +150,45 @@
                 <element signature="e#3552#3553#0" expanded="true" />
                 <element signature="e#3864#3865#0" expanded="true" />
                 <element signature="e#3890#3891#0" expanded="true" />
+=======
+            <state relative-caret-position="2257">
+              <caret line="406" column="85" selection-start-line="406" selection-start-column="85" selection-end-line="406" selection-end-column="85" />
+              <folding>
+                <element signature="e#1805#1814#0" expanded="true" />
+                <element signature="e#2136#2145#0" expanded="true" />
+                <element signature="e#3890#3891#0" expanded="true" />
+                <element signature="e#3953#3954#0" expanded="true" />
+                <element signature="e#4706#4715#0" expanded="true" />
+                <element signature="e#5100#5109#0" expanded="true" />
+                <element signature="method#sortDiseases#0;class#ZavrsiAmnezuFrame#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1158#1167#0" expanded="true" />
+                <element signature="e#2624#2625#0" expanded="true" />
+                <element signature="e#2687#2688#0" expanded="true" />
+                <element signature="e#4537#4538#0" expanded="true" />
+                <element signature="e#4569#4570#0" expanded="true" />
+                <element signature="e#4619#4620#0" expanded="true" />
+                <element signature="e#4656#4657#0" expanded="true" />
+                <element signature="method#sortDiseases#0;class#CaseBaseFrame#0" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/model/CBC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
@@ -164,21 +204,42 @@
               <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="295" selection-start-line="295" selection-end-line="295" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addElementsFamilly#0;class#AnamnezaFrame#0" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/model/BMP.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
               <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="9" selection-end-column="29" />
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -225,7 +286,6 @@
         <option value="$USER_HOME$/Desktop/New-Text-Document-3.txt" />
         <option value="$PROJECT_DIR$/src/gui/BMP.java" />
         <option value="$PROJECT_DIR$/src/gui/CBC.java" />
-        <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.form" />
         <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form" />
         <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" />
         <option value="$PROJECT_DIR$/data/program.pl" />
@@ -233,7 +293,15 @@
         <option value="$PROJECT_DIR$/src/cbr/CsvConnector.java" />
         <option value="$PROJECT_DIR$/src/cbr/CbrApplication.java" />
         <option value="$PROJECT_DIR$/src/gui/MainFrame.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
+=======
+        <option value="$PROJECT_DIR$/data/program.pl" />
+        <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.form" />
+        <option value="$PROJECT_DIR$/src/gui/AnamnezaFrame.java" />
+        <option value="$PROJECT_DIR$/src/gui/CaseBaseFrame.form" />
+        <option value="$PROJECT_DIR$/src/gui/CaseBaseFrame.java" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
       </list>
     </option>
   </component>
@@ -293,6 +361,27 @@
               <item name="iz" type="b2602c69:ProjectViewProjectNode" />
               <item name="iz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="CaseBaseFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="MainFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="ZavrsiAmnezuFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -311,6 +400,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kicka\Documents\InzenjeringZnanja\iz\data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -353,13 +447,21 @@
       <workItem from="1561553219062" duration="23000" />
       <workItem from="1561582366824" duration="3884000" />
       <workItem from="1561587221921" duration="13480000" />
+<<<<<<< HEAD
       <workItem from="1561664707753" duration="10036000" />
       <workItem from="1561687142178" duration="2411000" />
+=======
+      <workItem from="1561664707753" duration="12961000" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="30227000" />
+=======
+    <option name="totallyTimeSpent" value="30741000" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -374,7 +476,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.29766804" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.3001464" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -439,6 +545,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -446,6 +553,9 @@
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
@@ -456,6 +566,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -570,10 +681,42 @@
             <element signature="e#2899#2900#0" expanded="true" />
             <element signature="e#2946#2947#0" expanded="true" />
             <element signature="e#2979#2980#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/data/program.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="941" lean-forward="true" selection-start-line="940" selection-end-line="941" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/simptomi.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="295" selection-start-line="295" selection-end-line="295" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addElementsFamilly#0;class#AnamnezaFrame#0" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/cbr/CbrApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1071">
@@ -593,10 +736,25 @@
             <element signature="e#3552#3553#0" expanded="true" />
             <element signature="e#3864#3865#0" expanded="true" />
             <element signature="e#3890#3891#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2257">
+          <caret line="406" column="85" selection-start-line="406" selection-start-column="85" selection-end-line="406" selection-end-column="85" />
+          <folding>
+            <element signature="e#1805#1814#0" expanded="true" />
+            <element signature="e#2136#2145#0" expanded="true" />
+            <element signature="e#3890#3891#0" expanded="true" />
+            <element signature="e#3953#3954#0" expanded="true" />
+            <element signature="e#4706#4715#0" expanded="true" />
+            <element signature="e#5100#5109#0" expanded="true" />
+            <element signature="method#sortDiseases#0;class#ZavrsiAmnezuFrame#0" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -604,6 +762,22 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addElementsFamilly#0;class#AnamnezaFrame#0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/gui/CaseBaseFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1158#1167#0" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2687#2688#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4619#4620#0" expanded="true" />
+            <element signature="e#4656#4657#0" expanded="true" />
+            <element signature="method#sortDiseases#0;class#CaseBaseFrame#0" />
+>>>>>>> bc07cf8f6cee72ce8883d072e31a67d5321f76a9
           </folding>
         </state>
       </provider>

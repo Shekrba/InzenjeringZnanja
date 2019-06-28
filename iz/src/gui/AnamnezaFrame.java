@@ -32,6 +32,7 @@ public class AnamnezaFrame {
     private JTextField tfBPHigh;
     private JTextField tfWeight;
     private JTextField tfTemperature;
+    private JButton similarityPastExaminationsButton;
     public static JDialog dialogBlood;
 
 
@@ -218,6 +219,89 @@ public class AnamnezaFrame {
                 dialogBlood.setModal(true);
                 dialogBlood.setLocationRelativeTo(null);
                 dialogBlood.setVisible(true);
+            }
+        });
+        similarityPastExaminationsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(textField2.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's first name.");
+                    return;
+                }
+
+                if(textField3.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's last name.");
+                    return;
+                }
+
+                if(textField4.getText().trim().equals("")){
+                    JOptionPane.showMessageDialog(null, "Please input patient's age.");
+                    return;
+                }
+
+                try{
+                    Integer.parseInt(textField4.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "You have to input a number in the field \"Age\".");
+                    return;
+                }
+
+                if(dlmSimptomi.isEmpty()){
+                    JOptionPane.showMessageDialog(null, "You have to input at least one symptom.");
+                    return;
+                }
+
+                try{
+                    if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
+                        MainFrame.setPritisakHigh(Double.parseDouble(tfBPHigh.getText()));
+                        MainFrame.setPritisakLow(Double.parseDouble(tfBPLow.getText()));
+                    }
+                    else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
+                        JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
+                        return;
+                    }
+
+                    if(tfHeight.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog(null, "You have to input Height.");
+                        return;
+                    }
+
+                    if(tfWeight.getText().trim().equals("")) {
+                        JOptionPane.showMessageDialog(null, "You have to input Weight.");
+                        return;
+                    }
+
+                    double height = Double.parseDouble(tfHeight.getText());
+                    double weight = Double.parseDouble(tfWeight.getText());
+
+                    double bmi = weight/Math.pow(height,2);
+
+                    MainFrame.setBmi(bmi);
+
+                    if(!tfTemperature.getText().trim().equals("")) {
+                        MainFrame.setTemperatura(Double.parseDouble(tfTemperature.getText()));
+                    }
+
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "You have to input numbers in Physical examination fields.");
+                    return;
+                }
+
+                JDialog dialog = MainFrame.getDialog();
+                dialog.dispose();
+
+                ArrayList<String> sms=new ArrayList<String>();
+                for(int i=0 ; i<dlmSimptomi.getSize() ; i++){
+                    sms.add(dlmSimptomi.get(i).toString());
+                }
+
+
+                dialog.setTitle("Anamnesis");
+                dialog.setContentPane(new CaseBaseFrame().getCaseBased());
+                dialog.setSize(800,600);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);
             }
         });
     }
