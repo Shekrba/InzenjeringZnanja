@@ -193,6 +193,9 @@ public class AnamnezaFrame {
                 MainFrame.setDodatniTestovi(dodatniTestovi);
 
 
+                MainFrame.setIme(textField2.getText());
+                MainFrame.setPrezime(textField3.getText());
+
                 dialog.setTitle("Anamnesis");
                 dialog.setContentPane(new ZavrsiAmnezuFrame().getZavrsiAmnezuPanel());
                 dialog.setSize(900,600);
@@ -383,7 +386,8 @@ public class AnamnezaFrame {
 
 
 
-
+                MainFrame.setIme(textField2.getText());
+                MainFrame.setPrezime(textField3.getText());
 
 
                 dialog.setTitle("Anamnesis");

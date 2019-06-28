@@ -92,16 +92,18 @@ public class CbrApplication implements StandardCBRApplication {
 		HashMap<String,Integer> br=new HashMap<String,Integer>();
 		for (RetrievalResult nse : eval) {
 			System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
-			if(sum.containsKey(nse.get_case().getDescription().toString())){
-				Double d=sum.get(nse.get_case().getDescription().toString());
-				d+=nse.getEval();
-				sum.put(nse.get_case().getDescription().toString(),d);
-				Integer integer=br.get(nse.get_case().getDescription().toString());
-				integer++;
-				br.put(nse.get_case().getDescription().toString(),integer);
-			}else{
-				sum.put(nse.get_case().getDescription().toString(),nse.getEval());
-				br.put(nse.get_case().getDescription().toString(),1);
+			if(nse.getEval()>0) {
+				if (sum.containsKey(nse.get_case().getDescription().toString())) {
+					Double d = sum.get(nse.get_case().getDescription().toString());
+					d += nse.getEval();
+					sum.put(nse.get_case().getDescription().toString(), d);
+					Integer integer = br.get(nse.get_case().getDescription().toString());
+					integer++;
+					br.put(nse.get_case().getDescription().toString(), integer);
+				} else {
+					sum.put(nse.get_case().getDescription().toString(), nse.getEval());
+					br.put(nse.get_case().getDescription().toString(), 1);
+				}
 			}
 		}
 		for(String boles : sum.keySet()){

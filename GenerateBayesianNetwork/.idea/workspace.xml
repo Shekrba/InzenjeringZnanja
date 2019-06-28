@@ -2,15 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a5a570b-f08b-4de9-b78c-ae6b1aaa9dff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../iz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/.idea/iz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/.idea/iz.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/data/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/data/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/cbr/CbrApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/cbr/CbrApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/AnamnezaFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/CaseBaseFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/MainFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/out/production/iz/gui/TerapijaFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iz/src/gui/TerapijaFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/TerapijaFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/cbr/CbrApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/cbr/CbrApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/gui/AnamnezaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/AnamnezaFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/gui/CaseBaseFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/CaseBaseFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/gui/CaseBaseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/CaseBaseFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iz/src/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iz/src/gui/TerapijaFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../iz/src/gui/TerapijaFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />

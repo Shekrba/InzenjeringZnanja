@@ -35,6 +35,24 @@ public class MainFrame {
     private static String pol;
     private static String bolestOdabrana;
     private static ArrayList<DodatanTest> dodatniTestovi=new ArrayList<>();
+    private static String ime;
+    private static String prezime;
+
+    public static String getIme() {
+        return ime;
+    }
+
+    public static void setIme(String ime) {
+        MainFrame.ime = ime;
+    }
+
+    public static String getPrezime() {
+        return prezime;
+    }
+
+    public static void setPrezime(String prezime) {
+        MainFrame.prezime = prezime;
+    }
 
     public static void setSimptomi(ArrayList<String> simptomi) {
         MainFrame.simptomi = simptomi;

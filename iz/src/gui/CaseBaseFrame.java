@@ -1,10 +1,18 @@
 package gui;
 
 import model.Bolest;
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.Literal;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.riot.Lang;
+import org.apache.jena.riot.RDFDataMgr;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
 import java.util.ArrayList;
 
 public class CaseBaseFrame {
@@ -101,60 +109,108 @@ public class CaseBaseFrame {
         ter1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                String text = "";
-
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+                MainFrame.setBolestOdabrana(lab1.getText());
+                JDialog dialog=MainFrame.getDialog();
+                dialog.dispose();
+                dialog = new JDialog();
+                dialog.setTitle("Therapies");
+                dialog.setContentPane(new TerapijaFrameCBR(runSparqlQuery(lab1.getText())).getTerapijaPanel());
+                dialog.setSize(400,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);
+                MainFrame.setDialog(dialog);
+                fja();
             }
         });
 
         ter2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                String text = "";
-
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+                MainFrame.setBolestOdabrana(lab2.getText());
+                JDialog dialog=MainFrame.getDialog();
+                dialog.dispose();
+                dialog = new JDialog();
+                dialog.setTitle("Therapies");
+                dialog.setContentPane(new TerapijaFrameCBR(runSparqlQuery(lab2.getText())).getTerapijaPanel());
+                dialog.setSize(400,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);
+                MainFrame.setDialog(dialog);
+                fja();
             }
         });
 
         ter3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                String text = "";
-
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+                MainFrame.setBolestOdabrana(lab3.getText());
+                JDialog dialog=MainFrame.getDialog();
+                dialog.dispose();
+                dialog = new JDialog();
+                dialog.setTitle("Therapies");
+                dialog.setContentPane(new TerapijaFrameCBR(runSparqlQuery(lab3.getText())).getTerapijaPanel());
+                dialog.setSize(400,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);
+                MainFrame.setDialog(dialog);
+                fja();
             }
         });
 
         ter4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                String text = "";
-
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+                MainFrame.setBolestOdabrana(lab4.getText());
+                JDialog dialog=MainFrame.getDialog();
+                dialog.dispose();
+                dialog = new JDialog();
+                dialog.setTitle("Therapies");
+                dialog.setContentPane(new TerapijaFrameCBR(runSparqlQuery(lab4.getText())).getTerapijaPanel());
+                dialog.setSize(400,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);
+                MainFrame.setDialog(dialog);
+                fja();
             }
         });
 
         ter5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                String text = "";
-
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+                MainFrame.setBolestOdabrana(lab5.getText());
+                JDialog dialog=MainFrame.getDialog();
+                dialog.dispose();
+                dialog = new JDialog();
+                dialog.setTitle("Therapies");
+                dialog.setContentPane(new TerapijaFrameCBR(runSparqlQuery(lab5.getText())).getTerapijaPanel());
+                dialog.setSize(400,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);
+                MainFrame.setDialog(dialog);
+                fja();
             }
         });
 
         ter6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                String text = "";
-
-                JOptionPane.showMessageDialog(null,text,"THERAPY",JOptionPane.INFORMATION_MESSAGE);
+                MainFrame.setBolestOdabrana(lab6.getText());
+                JDialog dialog=MainFrame.getDialog();
+                dialog.dispose();
+                dialog = new JDialog();
+                dialog.setTitle("Therapies");
+                dialog.setContentPane(new TerapijaFrameCBR(runSparqlQuery(lab6.getText())).getTerapijaPanel());
+                dialog.setSize(400,350);
+                dialog.setModal(true);
+                dialog.setLocationRelativeTo(null);
+                dialog.setVisible(true);
+                MainFrame.setDialog(dialog);
+                fja();
             }
         });
     }
@@ -187,5 +243,152 @@ public class CaseBaseFrame {
                 }
             }
         }
+    }
+
+    public ArrayList<String> runSparqlQuery(String bolest){
+        Model model = ModelFactory.createDefaultModel();
+        try {
+            InputStream is = new FileInputStream("data/diseasestherapies.ttl");
+            RDFDataMgr.read(model, is, Lang.TURTLE);
+            is.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        String queryString = ""
+                + "PREFIX iz: <http://www.donttrustus.rs/medhelp#> "
+                + "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>"
+                + "SELECT ?therapy  (count(?patient) as ?br)"
+                + "WHERE {"
+                + "    ?patient iz:hasdisease \""+bolest+"\" ;"
+                + "      iz:gottherapy ?therapy ."
+                + "}"
+                +"GROUP BY ?therapy "
+                +"ORDER BY DESC(xsd:nonNegativeInteger(?br))";
+        Query query = QueryFactory.create(queryString) ;
+        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        ResultSet results = qexec.execSelect() ;
+        ArrayList<String> ret=new ArrayList<>();
+        while (results.hasNext()) {
+            QuerySolution solution = results.nextSolution() ;
+            Literal literal = solution.getLiteral("therapy");
+            Literal literal1 = solution.getLiteral("br");
+            ret.add(literal.getString()+"   -   "+literal1.getInt());
+        }
+        return ret;
+    }
+
+    public void fja() {
+
+        String s = "";
+        for (String b:
+                MainFrame.getSimptomi()) {
+            b = b.toLowerCase().replaceAll(" ", "_");
+            s+=b;
+            s+="?";
+        }
+        s+=";";
+        if(MainFrame.getTemperatura() == 0) {
+            s+=36.5;
+        }else {
+            s += MainFrame.getTemperatura();
+        }
+        s+=";";
+        s+=MainFrame.getPritisakHigh();
+        s+=";";
+        s+=MainFrame.getPritisakLow();
+        s+=";";
+        s+=MainFrame.getBmi();
+        s+=";";
+        if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
+            s+=4.8;
+        } else {
+            s += MainFrame.getCbc().getRedBloodCellCount();
+        }
+        s+=";";
+        if(MainFrame.getCbc().getHemoglobin() == 0) {
+            s+= 14;
+        } else {
+            s += MainFrame.getCbc().getHemoglobin();
+        }
+        s+=";";
+        if(MainFrame.getCbc().getHematocrit() ==0) {
+            s+= 41;
+        } else {
+            s += MainFrame.getCbc().getHematocrit();
+        }
+        s+=";";
+        if(MainFrame.getCbc().getWhiteBloodCellCount() == 0) {
+            s+= 6;
+        } else {
+            s += MainFrame.getCbc().getWhiteBloodCellCount();
+        }
+        s+=";";
+        if(MainFrame.getCbc().getPlatelet() == 0) {
+            s+= 250;
+        }else {
+            s += MainFrame.getCbc().getPlatelet();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getGlucose() == 0) {
+            s+= 80;
+        }else {
+            s += MainFrame.getBmp().getGlucose();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getCalcium() == 0) {
+            s+=9.5;
+        }
+        else {
+            s += MainFrame.getBmp().getCalcium();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getSodium() ==0) {
+            s+=130;
+        }
+        else {
+            s += MainFrame.getBmp().getSodium();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getPotassium() == 0) {
+            s+=4.2;
+        }else {
+            s += MainFrame.getBmp().getPotassium();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getUrea() == 0) {
+            s+=4;
+        }else {
+            s += MainFrame.getBmp().getUrea();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getCreatinine() == 0) {
+            s+=110;
+        } else {
+            s += MainFrame.getBmp().getCreatinine();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getBilirubin() == 0) {
+            s+=1.1;
+        } else {
+            s += MainFrame.getBmp().getBilirubin();
+        }
+        s+=";";
+        s+=MainFrame.getGodine();
+        s+=";";
+        s+=MainFrame.getPol();
+        s+=";";
+        s+=MainFrame.getBolestOdabrana();
+
+        System.out.println(s);
+
+        FileWriter fileWriter = null; //Set true for append mode
+        try {
+            fileWriter = new FileWriter("data\\results.csv", true);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+        printWriter.println(s);  //New line
+        printWriter.close();
     }
 }

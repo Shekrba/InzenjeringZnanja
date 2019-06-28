@@ -5,6 +5,15 @@ import com.ugos.jiprolog.engine.JIPQuery;
 import com.ugos.jiprolog.engine.JIPTerm;
 import com.ugos.jiprolog.engine.JIPVariable;
 import model.DodatanTest;
+import org.apache.jena.datatypes.xsd.XSDDatatype;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.riot.Lang;
+import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.vocabulary.RDF;
+import unbbayes.Main;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -46,7 +55,7 @@ public class TerapijaFrame {
             public void actionPerformed(ActionEvent e) {
                 int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
                 if (option == JOptionPane.YES_OPTION) {
-
+                    saveTherapy(l1.getText());
 
                 }
                 JDialog dialog = MainFrame.getDialog();
@@ -58,7 +67,7 @@ public class TerapijaFrame {
             public void actionPerformed(ActionEvent e) {
                 int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
                 if(option == JOptionPane.YES_OPTION) {
-
+                    saveTherapy(l2.getText());
                 }
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
@@ -69,7 +78,7 @@ public class TerapijaFrame {
             public void actionPerformed(ActionEvent e) {
                 int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
                 if(option == JOptionPane.YES_OPTION) {
-
+                    saveTherapy(l3.getText());
                 }
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
@@ -80,7 +89,7 @@ public class TerapijaFrame {
             public void actionPerformed(ActionEvent e) {
                 int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
                 if(option == JOptionPane.YES_OPTION) {
-
+                    saveTherapy(l4.getText());
                 }
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
@@ -91,7 +100,7 @@ public class TerapijaFrame {
             public void actionPerformed(ActionEvent e) {
                 int option = JOptionPane.showConfirmDialog(null, "Are you prescribing this procedure?", "Therapy", JOptionPane.YES_NO_CANCEL_OPTION);
                 if(option == JOptionPane.YES_OPTION) {
-
+                    saveTherapy(l5.getText());
                 }
                 JDialog dialog = MainFrame.getDialog();
                 dialog.dispose();
@@ -152,5 +161,66 @@ public class TerapijaFrame {
 
     public JButton getPrepisi5() {
         return prepisi5;
+    }
+
+    public void saveTherapy(String therapy){
+        Model model = ModelFactory.createDefaultModel();
+        try {
+
+            InputStream is = new FileInputStream("data/diseasestherapies.ttl");
+            RDFDataMgr.read(model, is, Lang.TURTLE);
+            is.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        String namespace = "http://www.donttrustus.rs/medhelp";
+
+        int n=8;
+
+        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                + "0123456789"
+                + "abcdefghijklmnopqrstuvxyz";
+        StringBuilder sb = new StringBuilder(n);
+
+        for (int i = 0; i < n; i++) {
+
+            // generate a random number between
+            // 0 to AlphaNumericString variable length
+            int index
+                    = (int)(AlphaNumericString.length()
+                    * Math.random());
+
+            // add Character one by one in end of sb
+            sb.append(AlphaNumericString
+                    .charAt(index));
+        }
+
+
+        Resource subject1 = model.createResource(namespace + "#"+sb.toString());
+        Resource object1 = model.getResource(namespace + "#Patient");
+        subject1.addProperty(RDF.type, object1);
+        subject1.addProperty(
+                model.getProperty(namespace + "#name"),
+                MainFrame.getIme()+" "+MainFrame.getPrezime(),
+                XSDDatatype.XSDstring);
+        subject1.addProperty(
+                model.getProperty(namespace + "#hasdisease"),
+                MainFrame.getBolestOdabrana(),
+                XSDDatatype.XSDstring);
+        subject1.addProperty(
+                model.getProperty(namespace + "#gottherapy"),
+                therapy,
+                XSDDatatype.XSDstring);
+
+
+
+        try {
+            OutputStream os = new FileOutputStream("data/diseasestherapies.ttl");
+            RDFDataMgr.write(os, model, Lang.TURTLE);
+            os.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
