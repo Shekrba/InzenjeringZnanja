@@ -48,6 +48,7 @@ public class AnamnezaFrame {
     private JButton importButton;
     private JList dhList;
     private JButton addButton;
+    private JButton preventiveTests;
     public static JDialog dialogBlood;
     public static int ID;
 
@@ -378,6 +379,8 @@ public class AnamnezaFrame {
                 if(!(MainFrame.getBmp().getGlucose()==0.0))
                     bmp=true;
 
+                MainFrame.setPol(cbPol.getSelectedItem().toString());
+
                 cbr.doCbr(MainFrame.getSimptomi(),cbc,bmp);
 
                 JDialog dialog = MainFrame.getDialog();
@@ -519,6 +522,33 @@ public class AnamnezaFrame {
                 } catch(Exception ex) {
                     JOptionPane.showMessageDialog(null, "ID is already taken in database");
                 }
+            }
+        });
+        preventiveTests.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ArrayList<String> bolesti=new ArrayList<>();
+                for(int i=0 ; i<dlmFamilly.getSize() ; i++){
+                    bolesti.add(dlmFamilly.getElementAt(i).toString());
+                }
+                ArrayList<String> testovi=new ArrayList<>();
+                JIPEngine engine = new JIPEngine();
+                engine.consultFile("data/program.pl");
+                for(String b : bolesti) {
+                    JIPQuery query = engine.openSynchronousQuery("preventivni(" + b + ",X)");
+                    JIPTerm solution;
+                    while ((solution = query.nextSolution()) != null) {
+                        for (JIPVariable var : solution.getVariables()) {
+                            if(!testovi.contains(var.getValue().toString()))
+                                testovi.add(var.getValue().toString());
+                        }
+                    }
+                }
+                String message="You should go check: \n";
+                for(String t : testovi){
+                    message+=t+"\n";
+                }
+                JOptionPane.showMessageDialog(null,message,"Preventive tests",JOptionPane.INFORMATION_MESSAGE);
             }
         });
     }

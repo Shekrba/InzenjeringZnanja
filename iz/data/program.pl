@@ -1019,25 +1019,47 @@ ages_factor(the_pancreatic_cancer,45,59,1.7).
 ages_factor(the_pancreatic_cancer,60,74,2.8).
 ages_factor(the_pancreatic_cancer,75,150,2.0).
 
-preventivni(the_pancreatic_cancer, [hematologic_tests_blood_test, complete_blood_count_cbc]).
-preventivni(acute_pancreatitis, [hematologic_tests_blood_test, complete_blood_count_cbc]).
+preventivni(the_pancreatic_cancer,  complete_blood_count_cbc).
+preventivni(the_pancreatic_cancer, hematologic_tests_blood_test).
 
-preventivni(ischemic_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
-preventivni(hypertensive_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
-preventivni(cardiomyopathy, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
-preventivni(myocarditis, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
 
-preventivni(cirrhosis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
-preventivni(viral_hepatitis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
+preventivni(acute_pancreatitis, hematologic_tests_blood_test).
+preventivni(acute_pancreatitis, complete_blood_count_cbc).
 
-preventivni(diabetes, [complete_blood_count_cbc, glucose_measurement_glucose_level, lipid_panel]).
 
-preventivni(myocarditis, [complete_blood_count_cbc]).
-preventivni(meningitis, [complete_blood_count_cbc]).
-preventivni(urinary_tract_infection, [complete_blood_count_cbc]).
-preventivni(acute_respiratory_distress_syndrome, [complete_blood_count_cbc]).
-preventivni(viral_hepatitis, [complete_blood_count_cbc]).
-preventivni(cardiomyopathy, [complete_blood_count_cbc]).
+
+preventivni(hypertensive_heart_disease, electrocardiogram).
+preventivni(hypertensive_heart_disease,  glucose_measurement_glucose_level).
+preventivni(hypertensive_heart_disease,  lipid_panel).
+
+
+preventivni(cardiomyopathy,  lipid_panel).
+preventivni(cardiomyopathy, glucose_measurement_glucose_level).
+preventivni(cardiomyopathy, electrocardiogram).
+
+preventivni(myocarditis,  lipid_panel).
+preventivni(myocarditis, glucose_measurement_glucose_level).
+preventivni(myocarditis, electrocardiogram).
+
+preventivni(cirrhosis,  liver_function_test).
+preventivni(cirrhosis, hemoglobin_a1c_measurement).
+preventivni(cirrhosis, complete_blood_count_cbc).
+
+
+preventivni(viral_hepatitis,liver_function_test).
+preventivni(viral_hepatitis,hemoglobin_a1c_measurement).
+preventivni(viral_hepatitis,complete_blood_count_cbc).
+
+preventivni(diabetes, complete_blood_count_cbc).
+preventivni(diabetes,  lipid_panel).
+preventivni(diabetes, glucose_measurement_glucose_level).
+
+preventivni(myocarditis, complete_blood_count_cbc).
+preventivni(meningitis, complete_blood_count_cbc).
+preventivni(urinary_tract_infection, complete_blood_count_cbc).
+preventivni(acute_respiratory_distress_syndrome, complete_blood_count_cbc).
+preventivni(viral_hepatitis, complete_blood_count_cbc).
+preventivni(cardiomyopathy, complete_blood_count_cbc).
 
 
 %TEMPERATURA
