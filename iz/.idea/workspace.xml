@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="17c09e7f-41de-4d66-975b-af6b2d8ad6dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/data/program.pl" beforeDir="false" afterPath="$PROJECT_DIR$/data/program.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iz/gui/ZavrsiAmnezuFrame.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/program.pl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="1056" column="56" lean-forward="true" selection-start-line="1056" selection-start-column="56" selection-end-line="1056" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="353" column="47" selection-start-line="353" selection-start-column="47" selection-end-line="353" selection-end-column="47" />
+              <folding>
+                <element signature="e#3824#3825#0" expanded="true" />
+                <element signature="e#3887#3888#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="26" column="81" lean-forward="true" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/BMP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/CBC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>liver</find>
+      <find>cirr</find>
+      <find>anemi</find>
+      <find>anamnezaPan</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="djare28 &lt;darko.jandric@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/program.pl" />
+        <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form" />
+        <option value="$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java" />
+        <option value="$PROJECT_DIR$/src/gui/TerapijaFrame.form" />
+        <option value="$PROJECT_DIR$/src/gui/TerapijaFrame.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="fuzzy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="fuzzy" type="462c0819:PsiDirectoryNode" />
+              <item name="fcl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="AnamnezaFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="MainFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="ZavrsiAmnezuFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainFrame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.MainFrame" />
+      <module name="iz" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="gui.MainFrame" />
+      <module name="iz" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17c09e7f-41de-4d66-975b-af6b2d8ad6dc" name="Default Changelist" comment="" />
+      <created>1561663686938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561663686938</updated>
+      <workItem from="1561663689172" duration="382000" />
+      <workItem from="1561664241422" duration="14089000" />
+    </task>
+    <task id="LOCAL-00001" summary="TerapijaFrame">
+      <created>1561691922271</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561691922271</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14471000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25321338" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="TerapijaFrame" />
+    <option name="LAST_COMMIT_MESSAGE" value="TerapijaFrame" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/fuzzy/fcl/cbcMale.fcl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/program.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="1056" column="56" lean-forward="true" selection-start-line="1056" selection-start-column="56" selection-end-line="1056" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ZavrsiAmnezuFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="353" column="47" selection-start-line="353" selection-start-column="47" selection-end-line="353" selection-end-column="47" />
+          <folding>
+            <element signature="e#3824#3825#0" expanded="true" />
+            <element signature="e#3887#3888#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/BMP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Bolest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AnamnezaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/CBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TerapijaFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="81" lean-forward="true" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>iz</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -8,8 +8,10 @@ poklapanje_testova([],Test,0,[]).
 poklapanje_testova([H|T],Test,N,L) :- testovi(Test,Ls),member(H,Ls) , poklapanje_testova(T,Test,N2,L1), N is N2 + 1, append([H],L1,L).
 poklapanje_testova([H|T],Test,N,L) :- testovi(Test,Ls),\+ member(H,Ls), poklapanje_testova(T,Test,N,L).
 
-simptomi(acute_respiratory_distress_syndrome,[blood_test_infection,shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
 
+
+
+simptomi(acute_respiratory_distress_syndrome,[blood_test_infection,shortness_of_breath,	difficulty_breathing, cough, sharp_chest_pain,depressive_or_psychotic_symptoms, fever, wheezing,hurts_to_breath,chest_tightness,chills,coughing_up_sputum, congestion_in_chest]).
 
 %infekcije:
 uzmi(bolest,myocarditis).
@@ -38,6 +40,12 @@ heart(cardiomyopathy).
 heart(myocarditis).
 
 %cancer:
+uzmi(bolest, acute_pancreatitis).
+uzmi(bolest, the_pancreatic_cancer).
+cancer(the_pancreatic_cancer).
+
+%pancreatitis:
+pancreatitis(acute_pancreatitis).
 
 %liver_desease
 uzmi(bolest,cirrhosis).
@@ -72,13 +80,13 @@ uzmi(bolest,gastritis).
 
 
 %TESTOVI
-testovi(urinalysis,[urinary_tract_infection,anemia,meningitis,hyponatremia,gastritis,cardiomyopathy]).
-testovi(hematologic_tests_blood_test,[meningitis,myocarditis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,diabetes,hyponatremia,cirrhosis,hypertensive_heart_disease,ischemic_heart_disease,urinary_tract_infection,viral_hepatitis ]).
-testovi(complete_blood_count_cbc,[meningitis,myocarditis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,hyponatremia,celiac_disease,cirrhosis,hypertensive_heart_disease,ischemic_heart_disease,urinary_tract_infection, viral_hepatitis]).
-testovi(intravenous_fluid_replacement,[meningitis,anemia,urinary_tract_infection, hyponatremia,emphysema,gastritis,acute_respiratory_distress_syndrome]).
-testovi(glucose_measurement_glucose_level,[meningitis,anemia,gastritis,diabetes,hyponatremia,cirrhosis,hypertensive_heart_disease,urinary_tract_infection,ischemic_heart_disease]).
-testovi(kidney_function_tests_kidney_function_test,[meningitis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,hyponatremia,urinary_tract_infection]).
-testovi(electrolytes_panel,[anemia,acute_respiratory_distress_syndrome,gastritis,hyponatremia,cirrhosis,hypertensive_heart_disease,urinary_tract_infection, ischemic_heart_disease]).
+testovi(urinalysis,[urinary_tract_infection,anemia,meningitis,hyponatremia,gastritis,acute_pancreatitis,cardiomyopathy]).
+testovi(hematologic_tests_blood_test,[the_pancreatic_cancer,meningitis,myocarditis,acute_pancreatitis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,diabetes,hyponatremia,cirrhosis,hypertensive_heart_disease,ischemic_heart_disease,urinary_tract_infection,viral_hepatitis ]).
+testovi(complete_blood_count_cbc,[meningitis,myocarditis,the_pancreatic_cancer,anemia,acute_pancreatitis,acute_respiratory_distress_syndrome,gastritis,emphysema,hyponatremia,celiac_disease,cirrhosis,hypertensive_heart_disease,ischemic_heart_disease,urinary_tract_infection, viral_hepatitis]).
+testovi(intravenous_fluid_replacement,[meningitis,anemia,urinary_tract_infection, hyponatremia,emphysema,acute_pancreatitis,gastritis,acute_respiratory_distress_syndrome]).
+testovi(glucose_measurement_glucose_level,[meningitis,anemia,gastritis,diabetes,the_pancreatic_cancer,hyponatremia,cirrhosis,acute_pancreatitis,hypertensive_heart_disease,urinary_tract_infection,ischemic_heart_disease]).
+testovi(kidney_function_tests_kidney_function_test,[meningitis,anemia,acute_respiratory_distress_syndrome,gastritis,emphysema,acute_pancreatitis,hyponatremia,urinary_tract_infection]).
+testovi(electrolytes_panel,[anemia,acute_respiratory_distress_syndrome,gastritis,hyponatremia,cirrhosis,the_pancreatic_cancer,acute_pancreatitis,hypertensive_heart_disease,urinary_tract_infection, ischemic_heart_disease]).
 testovi(complete_physical_skin_exam_performed,[diabetes,celiac_disease,viral_hepatitis,hypertensive_heart_disease]).
 testovi(lipid_panel,[gastroesophageal_reflux_disease_gerd,viral_hepatitis,cardiomyopathy,diabetes,ischemic_heart_disease,hypertensive_heart_disease,cirrhosis,celiac_disease]).
 testovi(ultrasonography_ultrasound,[myocarditis,viral_hepatitis,cardiomyopathy,ischemic_heart_disease,hypertensive_heart_disease,cirrhosis]).
@@ -86,7 +94,7 @@ testovi(other_diagnostic_procedures_interview,[multiple_sclerosis,viral_hepatiti
 testovi(mental_health_counseling,[viral_hepatitis]).
 testovi(electrocardiogram,[myocarditis,anemia,acute_respiratory_distress_syndrome,cardiomyopathy,ischemic_heart_disease,hypertensive_heart_disease,emphysema,gastroesophageal_reflux_disease_gerd]).
 testovi(echocardiography,[myocarditis,myocarditis,cardiomyopathy,ischemic_heart_disease]).
-testovi(hemoglobin_a1c_measurement,[gastroesophageal_reflux_disease_gerd,cardiomyopathy,cirrhosis,celiac_disease,diabetes]).
+testovi(hemoglobin_a1c_measurement,[gastroesophageal_reflux_disease_gerd,cardiomyopathy,cirrhosis,celiac_disease,diabetes,the_pancreatic_cancer]).
 testovi(liver_function_test,[cirrhosis,gastritis]).
 testovi(physical_therapy_exercises_exercises,[cerebral_palsy,multiple_sclerosis]).
 testovi(occupational_therapy_assessment_speech_therapy,[cerebral_palsy,multiple_sclerosis]).
@@ -98,10 +106,10 @@ testovi(bone_density_scan,[cerebral_palsy]).
 testovi(biopsy,[celiac_disease]).
 testovi(upper_gastrointestinal_endoscopy,[celiac_disease,gastroesophageal_reflux_disease_gerd]).
 testovi(examination_of_foot,[celiac_disease,diabetes]).
-testovi(radiographic_imaging_procedure,[meningitis,hyponatremia,emphysema,acute_respiratory_distress_syndrome,myocarditis]).
+testovi(radiographic_imaging_procedure,[meningitis,hyponatremia,emphysema,acute_pancreatitis,acute_respiratory_distress_syndrome,myocarditis]).
 testovi(wound_care_management,[diabetes]).
 testovi(prostate_specific_antigen_measurement,[diabetes]).
-testovi(plain_x_ray,[emphysema,acute_respiratory_distress_syndrome]).
+testovi(plain_x_ray,[emphysema,acute_respiratory_distress_syndrome,the_pancreatic_cancer]).
 testovi(x_ray_computed_tomography_scan_ct,[emphysema,meningitis]).
 testovi(sigmoidoscopy_or_colonoscopy,[gastroesophageal_reflux_disease_gerd]).
 testovi(rectal_examination,[gastroesophageal_reflux_disease_gerd]).
@@ -954,4 +962,98 @@ bmi(cardiomyopathy,26).
 pritisak(ischemic_heart_disease,visi,140,90).
 pritisak(anemia,nizi,120,80).
 pritisak(cardiomyopathy,nizi,120,80).
+
+
+simptomi(acute_pancreatitis, [sharp_abdominal_pain, vomiting, nausea, upper_abdominal_pain, diarrhea, sharp_chest_pain, burning_abdominal_pain, back_pain, side_pain, abusing_alcohol, lower_body_pain, hemoptysis]).
+simptomi(the_pancreatic_cancer, [sharp_abdominal_pain, nausea, ache_all_over, fatigue, diarrhea, jaundice, constipation, stomach_bloating, arm_swelling, elbow_swelling, irregular_appearing_scalp, vomiting_blood]).
+
+acute_pancreatitis(sharp_abdominal_pain, 89).
+acute_pancreatitis(vomiting, 72).
+acute_pancreatitis(nausea, 65).
+acute_pancreatitis(upper_abdominal_pain, 49).
+acute_pancreatitis(diarrhea, 38).
+acute_pancreatitis(sharp_chest_pain, 37).
+acute_pancreatitis(burning_abdominal_pain, 30).
+acute_pancreatitis(back_pain, 25).
+acute_pancreatitis(side_pain, 19).
+acute_pancreatitis(abusing_alcohol, 140).
+acute_pancreatitis(lower_body_pain, 11).
+acute_pancreatitis(hemoptysis, 6).
+
+the_pancreatic_cancer(sharp_abdominal_pain, 49).
+the_pancreatic_cancer(nausea, 33).
+the_pancreatic_cancer(ache_all_over, 27).
+the_pancreatic_cancer(fatigue, 27).
+the_pancreatic_cancer(diarrhea, 25).
+the_pancreatic_cancer(jaundice, 16).
+the_pancreatic_cancer(constipation, 13).
+the_pancreatic_cancer(stomach_bloating, 13).
+the_pancreatic_cancer(arm_swelling, 4).
+the_pancreatic_cancer(elbow_swelling, 4).
+the_pancreatic_cancer(irregular_appearing_scalp, 4).
+the_pancreatic_cancer(vomiting_blood, 4).
+
+terapija(acute_pancreatitis, ondansetron).
+terapija(acute_pancreatitis, hydromorphone_dilaudid_21_days).
+terapija(acute_pancreatitis, zosyn_7_days).
+terapija(acute_pancreatitis, diatrizoate).
+terapija(acute_pancreatitis, chlordiazepoxide).
+terapija(acute_pancreatitis, pancrelipase).
+terapija(acute_pancreatitis, pancreatin).
+terapija(acute_pancreatitis, cefotetan).
+
+terapija(the_pancreatic_cancer, gemcitabine).
+terapija(the_pancreatic_cancer, dexamethasone).
+terapija(the_pancreatic_cancer, erlotinib).
+terapija(the_pancreatic_cancer, palonosetron).
+terapija(the_pancreatic_cancer, capecitabine).
+terapija(the_pancreatic_cancer, prochlorperazine_compro_14_days).
+terapija(the_pancreatic_cancer, oxaliplatin).
+terapija(the_pancreatic_cancer, granisetron).
+
+sex_factor(acute_pancreatitis,male,1.2).
+sex_factor(acute_pancreatitis,female,0.9).
+
+ages_factor(acute_pancreatitis,0,1,0.02).
+ages_factor(acute_pancreatitis,1,4,0.1).
+ages_factor(acute_pancreatitis,5,14,0.1).
+ages_factor(acute_pancreatitis,15,29,0.6).
+ages_factor(acute_pancreatitis,30,44,1.4).
+ages_factor(acute_pancreatitis,45,59,1.6).
+ages_factor(acute_pancreatitis,60,74,1.2).
+ages_factor(acute_pancreatitis,75,150,1.2).
+
+
+sex_factor(the_pancreatic_cancer,male,1.3).
+sex_factor(the_pancreatic_cancer,female,0.8).
+
+ages_factor(the_pancreatic_cancer,0,1,0.02).
+ages_factor(the_pancreatic_cancer,1,4,0.02).
+ages_factor(the_pancreatic_cancer,5,14,0.02).
+ages_factor(the_pancreatic_cancer,15,29,0.02).
+ages_factor(the_pancreatic_cancer,30,44,0.4).
+ages_factor(the_pancreatic_cancer,45,59,1.7).
+ages_factor(the_pancreatic_cancer,60,74,2.8).
+ages_factor(the_pancreatic_cancer,75,150,2.0).
+
+preventivni(the_pancreatic_cancer, [hematologic_tests_blood_test, complete_blood_count_cbc]).
+preventivni(acute_pancreatitis, [hematologic_tests_blood_test, complete_blood_count_cbc]).
+
+preventivni(ischemic_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(hypertensive_heart_disease, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(cardiomyopathy, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+preventivni(myocarditis, [electrocardiogram, glucose_measurement_glucose_level, lipid_panel]).
+
+preventivni(cirrhosis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
+preventivni(viral_hepatitis, [complete_blood_count_cbc, hemoglobin_a1c_measurement, liver_function_test]).
+
+preventivni(diabetes, [complete_blood_count_cbc, glucose_measurement_glucose_level, lipid_panel]).
+
+preventivni(myocarditis, [complete_blood_count_cbc]).
+preventivni(meningitis, [complete_blood_count_cbc]).
+preventivni(urinary_tract_infection, [complete_blood_count_cbc]).
+preventivni(acute_respiratory_distress_syndrome, [complete_blood_count_cbc]).
+preventivni(viral_hepatitis, [complete_blood_count_cbc]).
+preventivni(cardiomyopathy, [complete_blood_count_cbc]).
+
 
