@@ -19,7 +19,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.concurrent.ExecutionException;
 
 public class AnamnezaFrame {
     private JPanel anamnezaPanel;
@@ -40,8 +39,8 @@ public class AnamnezaFrame {
     private JButton bloodTestsButton;
     private JButton BMPButton;
     private JTextField tfHeight;
-    private JTextField tfBPLow;
     private JTextField tfBPHigh;
+    private JTextField tfBPLow;
     private JTextField tfWeight;
     private JTextField tfTemperature;
     private JButton similarityPastExaminationsButton;
@@ -113,11 +112,11 @@ public class AnamnezaFrame {
                 }
 
                 try{
-                    if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
-                        MainFrame.setPritisakHigh(Integer.parseInt(tfBPHigh.getText()));
-                        MainFrame.setPritisakLow(Integer.parseInt(tfBPLow.getText()));
+                    if(!tfBPLow.getText().trim().equals("") && !tfBPHigh.getText().trim().equals("")) {
+                        MainFrame.setPritisakHigh(Integer.parseInt(tfBPLow.getText()));
+                        MainFrame.setPritisakLow(Integer.parseInt(tfBPHigh.getText()));
                     }
-                    else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
+                    else if((!tfBPLow.getText().trim().equals("") && tfBPHigh.getText().trim().equals("")) || (tfBPLow.getText().trim().equals("") && !tfBPHigh.getText().trim().equals(""))) {
                         JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
                         return;
                     }
@@ -308,11 +307,11 @@ public class AnamnezaFrame {
                 }
 
                 try{
-                    if(!tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals("")) {
-                        MainFrame.setPritisakHigh(Integer.parseInt(tfBPHigh.getText()));
-                        MainFrame.setPritisakLow(Integer.parseInt(tfBPLow.getText()));
+                    if(!tfBPLow.getText().trim().equals("") && !tfBPHigh.getText().trim().equals("")) {
+                        MainFrame.setPritisakHigh(Integer.parseInt(tfBPLow.getText()));
+                        MainFrame.setPritisakLow(Integer.parseInt(tfBPHigh.getText()));
                     }
-                    else if((!tfBPHigh.getText().trim().equals("") && tfBPLow.getText().trim().equals("")) || (tfBPHigh.getText().trim().equals("") && !tfBPLow.getText().trim().equals(""))) {
+                    else if((!tfBPLow.getText().trim().equals("") && tfBPHigh.getText().trim().equals("")) || (tfBPLow.getText().trim().equals("") && !tfBPHigh.getText().trim().equals(""))) {
                         JOptionPane.showMessageDialog(null, "You have to input both blood pressure parameters or none.");
                         return;
                     }
@@ -358,8 +357,8 @@ public class AnamnezaFrame {
                 double temp=Double.parseDouble(tfTemperature.getText());
                 MainFrame.setTemperatura(temp);
 
-                int lowPritisak=Integer.parseInt(tfBPLow.getText());
-                int highPritisak=Integer.parseInt(tfBPHigh.getText());
+                int lowPritisak=Integer.parseInt(tfBPHigh.getText());
+                int highPritisak=Integer.parseInt(tfBPLow.getText());
                 MainFrame.setPritisakLow(lowPritisak);
                 MainFrame.setPritisakHigh(highPritisak);
 
