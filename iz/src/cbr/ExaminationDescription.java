@@ -5,94 +5,161 @@ import ucm.gaia.jcolibri.cbrcore.CaseComponent;
 
 public class ExaminationDescription implements CaseComponent {
 
-	private String id;
-	private String type;
-	private float price;
-	private int persons;
-	private String region;
-	private String transportation;
-	private int duration;
-	private String season;
-	private String accommodation;
-	private String hotel;
-	
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
+	private String symptoms;
+	private double temperature;
+	private int pressureHigh;
+	private int pressureLow;
+	private double bmi;
+	private double redBloodCellCount;
+	private double hemoglobin;
+	private double hematocrit;
+	private double whiteBloodCellCount;
+	private double platelet;
+	private double glucose;
+	private double calcium;
+	private double sodium;
+	private double potassium;
+	private double urea;
+	private double creatinine;
+	private double bilirubin;
+
+
+	public String getSymptoms() {
+		return symptoms;
 	}
 
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
+	public void setSymptoms(String symptoms) {
+		this.symptoms = symptoms;
 	}
 
-	public float getPrice() {
-		return price;
-	}
-	public void setPrice(float price) {
-		this.price = price;
+	public double getTemperature() {
+		return temperature;
 	}
 
-	public int getPersons() {
-		return persons;
-	}
-	public void setPersons(int persons) {
-		this.persons = persons;
+	public void setTemperature(double temperature) {
+		this.temperature = temperature;
 	}
 
-	public String getRegion() {
-		return region;
-	}
-	public void setRegion(String region) {
-		this.region = region;
+	public int getPressureHigh() {
+		return pressureHigh;
 	}
 
-	public String getTransportation() {
-		return transportation;
-	}
-	public void setTransportation(String transportation) {
-		this.transportation = transportation;
+	public void setPressureHigh(int pressureHigh) {
+		this.pressureHigh = pressureHigh;
 	}
 
-	public int getDuration() {
-		return duration;
-	}
-	public void setDuration(int duration) {
-		this.duration = duration;
+	public int getPressureLow() {
+		return pressureLow;
 	}
 
-	public String getSeason() {
-		return season;
-	}
-	public void setSeason(String season) {
-		this.season = season;
+	public void setPressureLow(int pressureLow) {
+		this.pressureLow = pressureLow;
 	}
 
-	public String getAccommodation() {
-		return accommodation;
-	}
-	public void setAccommodation(String accommodation) {
-		this.accommodation = accommodation;
+	public double getBmi() {
+		return bmi;
 	}
 
-	public String getHotel() {
-		return hotel;
+	public void setBmi(double bmi) {
+		this.bmi = bmi;
 	}
-	public void setHotel(String hotel) {
-		this.hotel = hotel;
+
+	public double getRedBloodCellCount() {
+		return redBloodCellCount;
 	}
-	
-	@Override
-	public String toString() {
-		return "ExaminationDescription [id=" + id + ", type=" + type + ", price=" + price + ", persons=" + persons
-				+ ", region=" + region + ", transportation=" + transportation + ", duration=" + duration + ", season="
-				+ season + ", accommodation=" + accommodation + ", hotel=" + hotel + "]";
+
+	public void setRedBloodCellCount(double redBloodCellCount) {
+		this.redBloodCellCount = redBloodCellCount;
 	}
-	
+
+	public double getHemoglobin() {
+		return hemoglobin;
+	}
+
+	public void setHemoglobin(double hemoglobin) {
+		this.hemoglobin = hemoglobin;
+	}
+
+	public double getHematocrit() {
+		return hematocrit;
+	}
+
+	public void setHematocrit(double hematocrit) {
+		this.hematocrit = hematocrit;
+	}
+
+	public double getWhiteBloodCellCount() {
+		return whiteBloodCellCount;
+	}
+
+	public void setWhiteBloodCellCount(double whiteBloodCellCount) {
+		this.whiteBloodCellCount = whiteBloodCellCount;
+	}
+
+	public double getPlatelet() {
+		return platelet;
+	}
+
+	public void setPlatelet(double platelet) {
+		this.platelet = platelet;
+	}
+
+	public double getGlucose() {
+		return glucose;
+	}
+
+	public void setGlucose(double glucose) {
+		this.glucose = glucose;
+	}
+
+	public double getCalcium() {
+		return calcium;
+	}
+
+	public void setCalcium(double calcium) {
+		this.calcium = calcium;
+	}
+
+	public double getSodium() {
+		return sodium;
+	}
+
+	public void setSodium(double sodium) {
+		this.sodium = sodium;
+	}
+
+	public double getPotassium() {
+		return potassium;
+	}
+
+	public void setPotassium(double potassium) {
+		this.potassium = potassium;
+	}
+
+	public double getUrea() {
+		return urea;
+	}
+
+	public void setUrea(double urea) {
+		this.urea = urea;
+	}
+
+	public double getCreatinine() {
+		return creatinine;
+	}
+
+	public void setCreatinine(double creatinine) {
+		this.creatinine = creatinine;
+	}
+
+	public double getBilirubin() {
+		return bilirubin;
+	}
+
+	public void setBilirubin(double bilirubin) {
+		this.bilirubin = bilirubin;
+	}
+
 	@Override
 	public Attribute getIdAttribute() {
 		return null;

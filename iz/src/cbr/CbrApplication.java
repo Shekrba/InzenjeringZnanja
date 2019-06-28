@@ -1,6 +1,8 @@
 package cbr;
 
 
+import gui.MainFrame;
+import model.Bolest;
 import ucm.gaia.jcolibri.casebase.LinealCaseBase;
 import ucm.gaia.jcolibri.cbraplications.StandardCBRApplication;
 import ucm.gaia.jcolibri.cbrcore.*;
@@ -13,6 +15,7 @@ import ucm.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Interval;
 import ucm.gaia.jcolibri.method.retrieve.RetrievalResult;
 import ucm.gaia.jcolibri.method.retrieve.selection.SelectCases;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class CbrApplication implements StandardCBRApplication {
@@ -74,7 +77,7 @@ public class CbrApplication implements StandardCBRApplication {
 		return _caseBase;
 	}
 
-	public static void main(String[] args) {
+	public void doCbr(ArrayList<String> symptoms){
 		StandardCBRApplication recommender = new CbrApplication();
 		try {
 			recommender.configure();
@@ -82,7 +85,9 @@ public class CbrApplication implements StandardCBRApplication {
 			recommender.preCycle();
 
 			CBRQuery query = new CBRQuery();
-			
+
+			/*symptoms=
+
 			ExaminationDescription examinationDescription = new ExaminationDescription();
 			examinationDescription.setType("Skiing");
 			examinationDescription.setPersons(4);
@@ -93,7 +98,7 @@ public class CbrApplication implements StandardCBRApplication {
 			query.setDescription(examinationDescription);
 			recommender.cycle(query);
 
-			recommender.postCycle();
+			recommender.postCycle();*/
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
