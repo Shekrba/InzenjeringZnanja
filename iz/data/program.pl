@@ -100,7 +100,7 @@ testovi(physical_therapy_exercises_exercises,[cerebral_palsy,multiple_sclerosis]
 testovi(occupational_therapy_assessment_speech_therapy,[cerebral_palsy,multiple_sclerosis]).
 testovi(injections_and_aspirations_of_muscles,[cerebral_palsy]).
 testovi(other_therapeutic_procedures,[cerebral_palsy,multiple_sclerosis]).
-testovi(magnetic_resonance_imaging_mri,[cerebral_palsy,multiple_sclerosis,multiple_sclerosis]).
+testovi(magnetic_resonance_imaging_mri,[cerebral_palsy,multiple_sclerosis]).
 testovi(electroencephalogram_eeg,[cerebral_palsy]).
 testovi(bone_density_scan,[cerebral_palsy]).
 testovi(biopsy,[celiac_disease]).
@@ -572,9 +572,7 @@ ages_factor(multiple_sclerosis,60,74,0.9).
 ages_factor(multiple_sclerosis,75,150,0.2).
 
 
-testovi(multiple_sclerosis,referral_to_home_health_care_service).
-testovi(multiple_sclerosis,debridement_of_wound;infection_or_burn).
-testovi(multiple_sclerosis,diagnostic_spinal_tap_spinal_tap).
+
 
 
 terapija(multiple_sclerosis,interferon_beta_1a_avonex_28_days).

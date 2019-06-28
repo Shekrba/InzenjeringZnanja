@@ -2,6 +2,12 @@ package gui;
 
 
 import cbr.CbrApplication;
+import com.ugos.jiprolog.engine.JIPEngine;
+import com.ugos.jiprolog.engine.JIPQuery;
+import com.ugos.jiprolog.engine.JIPTerm;
+import com.ugos.jiprolog.engine.JIPVariable;
+import model.Bolest;
+import model.DodatanTest;
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
 import util.DiagnosisUtil;
 
@@ -156,6 +162,37 @@ public class AnamnezaFrame {
                 }
 
                 MainFrame.setBolesti(DiagnosisUtil.findDiagnosis(sms,Integer.parseInt(textField4.getText()),String.valueOf(cbPol.getSelectedItem())));
+
+                String bolesi="";
+                int brojac=0;
+                for(Bolest boles : MainFrame.getBolesti()){
+                    if(brojac>0)
+                        bolesi+=",";
+                    bolesi+=boles.getNaziv();
+                    brojac++;
+                }
+
+                //dodatni testovi
+                ArrayList<DodatanTest> dodatniTestovi=new ArrayList<>();
+                JIPEngine engine = new JIPEngine();
+                engine.consultFile("data/program.pl");
+                JIPQuery query = engine.openSynchronousQuery("poklapanje_testova(["+bolesi+"],X,Y,Z)");
+                JIPTerm solution;
+                while ( (solution = query.nextSolution()) != null) {
+                    DodatanTest dt=new DodatanTest();
+                    for (JIPVariable var: solution.getVariables()) {
+                        if(var.getName().equals("X")){
+                            dt.setNaziv(var.getValue().toString());
+                        }
+                        if(var.getName().equals("Y")){
+                            dt.setBrojPoklapanja(Integer.parseInt(var.getValue().toString()));
+                        }
+                    }
+                    dodatniTestovi.add(dt);
+                }
+
+                MainFrame.setDodatniTestovi(dodatniTestovi);
+
 
                 dialog.setTitle("Anamnesis");
                 dialog.setContentPane(new ZavrsiAmnezuFrame().getZavrsiAmnezuPanel());

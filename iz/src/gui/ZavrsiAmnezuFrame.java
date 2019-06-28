@@ -6,6 +6,9 @@ import util.DiagnosisUtil;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -357,6 +360,7 @@ public class ZavrsiAmnezuFrame {
                 String text = "";
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
+                fja();
                 insertDisease(bol1.getNaziv());
 
                 JDialog dialog = MainFrame.getDialog();
@@ -387,6 +391,7 @@ public class ZavrsiAmnezuFrame {
                 String text = "";
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
+                fja();
                 insertDisease(bol1.getNaziv());
 
                 JDialog dialog = MainFrame.getDialog();
@@ -415,7 +420,7 @@ public class ZavrsiAmnezuFrame {
                 String text = "";
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
-
+                fja();
                 insertDisease(bol1.getNaziv());
 
                 JDialog dialog = MainFrame.getDialog();
@@ -444,7 +449,7 @@ public class ZavrsiAmnezuFrame {
                 String text = "";
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
-
+                fja();
                 insertDisease(bol1.getNaziv());
 
                 JDialog dialog = MainFrame.getDialog();
@@ -473,7 +478,7 @@ public class ZavrsiAmnezuFrame {
                 String text = "";
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
-
+                fja();
                 insertDisease(bol1.getNaziv());
 
                 JDialog dialog = MainFrame.getDialog();
@@ -502,7 +507,7 @@ public class ZavrsiAmnezuFrame {
                 String text = "";
                 MainFrame.setBolestOdabrana(bol1.getNaziv());
 
-
+                fja();
                 insertDisease(bol1.getNaziv());
 
                 JDialog dialog = MainFrame.getDialog();
@@ -536,6 +541,123 @@ public class ZavrsiAmnezuFrame {
 
         }
     }
+
+    public void fja() {
+
+        String s = "";
+        for (String b:
+                MainFrame.getSimptomi()) {
+            b = b.toLowerCase().replaceAll(" ", "_");
+            s+=b;
+            s+="?";
+        }
+        s+=";";
+        if(MainFrame.getTemperatura() == 0) {
+            s+=36.5;
+        }else {
+            s += MainFrame.getTemperatura();
+        }
+        s+=";";
+        s+=MainFrame.getPritisakHigh();
+        s+=";";
+        s+=MainFrame.getPritisakLow();
+        s+=";";
+        s+=MainFrame.getBmi();
+        s+=";";
+        if(MainFrame.getCbc().getRedBloodCellCount() == 0) {
+            s+=4.8;
+        } else {
+            s += MainFrame.getCbc().getRedBloodCellCount();
+        }
+        s+=";";
+        if(MainFrame.getCbc().getHemoglobin() == 0) {
+            s+= 14;
+        } else {
+            s += MainFrame.getCbc().getHemoglobin();
+        }
+        s+=";";
+        if(MainFrame.getCbc().getHematocrit() ==0) {
+            s+= 41;
+        } else {
+            s += MainFrame.getCbc().getHematocrit();
+        }
+        s+=";";
+        if(MainFrame.getCbc().getWhiteBloodCellCount() == 0) {
+            s+= 6;
+        } else {
+            s += MainFrame.getCbc().getWhiteBloodCellCount();
+        }
+        s+=";";
+        if(MainFrame.getCbc().getPlatelet() == 0) {
+            s+= 250;
+        }else {
+            s += MainFrame.getCbc().getPlatelet();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getGlucose() == 0) {
+            s+= 80;
+        }else {
+            s += MainFrame.getBmp().getGlucose();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getCalcium() == 0) {
+            s+=9.5;
+        }
+        else {
+            s += MainFrame.getBmp().getCalcium();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getSodium() ==0) {
+            s+=130;
+        }
+        else {
+            s += MainFrame.getBmp().getSodium();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getPotassium() == 0) {
+            s+=4.2;
+        }else {
+            s += MainFrame.getBmp().getPotassium();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getUrea() == 0) {
+            s+=4;
+        }else {
+            s += MainFrame.getBmp().getUrea();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getCreatinine() == 0) {
+            s+=110;
+        } else {
+            s += MainFrame.getBmp().getCreatinine();
+        }
+        s+=";";
+        if(MainFrame.getBmp().getBilirubin() == 0) {
+            s+=1.1;
+        } else {
+            s += MainFrame.getBmp().getBilirubin();
+        }
+        s+=";";
+        s+=MainFrame.getGodine();
+        s+=";";
+        s+=MainFrame.getPol();
+        s+=";";
+        s+=MainFrame.getBolestOdabrana();
+
+        System.out.println(s);
+
+        FileWriter fileWriter = null; //Set true for append mode
+        try {
+            fileWriter = new FileWriter("data\\results.csv", true);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+        printWriter.println(s);  //New line
+        printWriter.close();
+    }
+
+
 
     public JPanel getZavrsiAmnezuPanel() {
         return zavrsiAmnezuPanel;
