@@ -12,8 +12,11 @@ END_VAR
 
 VAR_OUTPUT              // izlazne varijable
 	anemia : REAL;
-	polycythemia_vera : REAL;
 	heart_desease : REAL;
+	pankreatitis : REAL;
+	diabetes : REAL;
+	kidney : REAL;
+	liver : REAL;
 	autoimune : REAL;
 	cancer : REAL;
 	infections : REAL;
@@ -37,7 +40,7 @@ FUZZIFY sodium
 	TERM high := (143, 0) (148, 1) (200, 1);
 END_FUZZIFY
 
-FUZZIFY botassium
+FUZZIFY potassium
 	TERM low := (0, 1) (3, 1) (3.8, 0);
 	TERM normal := (3.2, 0) (4, 1) (4.9, 1) (5.2, 0);
 	TERM high := (5, 0) (5.3, 1) (10, 1);
@@ -135,8 +138,8 @@ RULEBLOCK blok1
     RULE 3 : IF urea IS high and glucose is high THEN heart_desease IS visoka with 0.75;
 
 	RULE 4 : IF glucose IS high THEN diabetes IS visoka;
-	RULE 5 : IF botassium IS high THEN diabetes IS visoka with 0.5;
-	RULE 6 : IF botassium IS high and glucose is high THEN diabetes IS visoka with 0.75;
+	RULE 5 : IF potassium IS high THEN diabetes IS visoka with 0.5;
+	RULE 6 : IF potassium IS high and glucose is high THEN diabetes IS visoka with 0.75;
 
 	RULE 7 : IF glucose IS low THEN liver IS visoka with 0.5;
 	RULE 8 : IF urea IS high THEN liver IS visoka with 0.2;
@@ -160,24 +163,24 @@ RULEBLOCK blok1
 
 	RULE 24 : IF urea IS high THEN kidney IS visoka with 0.5;
 	RULE 25 : IF sodium IS low THEN kidney IS visoka with 0.6;
-	RULE 26 : IF botassium IS high THEN kidney IS visoka with 0.5;
+	RULE 26 : IF potassium IS high THEN kidney IS visoka with 0.5;
 	RULE 27 : IF creatinine IS high THEN kidney IS visoka with 0.5;
-        RULE 28 : IF creatinine IS high and botassium is high THEN kidney IS visoka with 0.75;
+        RULE 28 : IF creatinine IS high and potassium is high THEN kidney IS visoka with 0.75;
         RULE 29 : IF creatinine IS high and sodium is low THEN kidney IS visoka with 0.75;
         RULE 30 : IF creatinine IS high and urea is high THEN kidney IS visoka with 0.75;
-        RULE 31 : IF urea IS high and botassium is high THEN kidney IS visoka with 0.75;
-        RULE 32 : IF sodium IS low and botassium is high THEN kidney IS visoka with 0.75;
+        RULE 31 : IF urea IS high and potassium is high THEN kidney IS visoka with 0.75;
+        RULE 32 : IF sodium IS low and potassium is high THEN kidney IS visoka with 0.75;
         RULE 33 : IF urea IS high and sodium is low THEN kidney IS visoka with 0.75;
-            RULE 34 : IF urea IS high and sodium is low and botassium is high THEN kidney IS visoka with 0.9;
+            RULE 34 : IF urea IS high and sodium is low and potassium is high THEN kidney IS visoka with 0.9;
             RULE 35 : IF urea IS high and sodium is low and creatinine is high THEN kidney IS visoka with 0.9;
-            RULE 36 : IF creatinine IS high and sodium is low and botassium is high THEN kidney IS visoka with 0.9;
-            RULE 37 : IF creatinine IS high and sodium is low and botassium is high and urea is high THEN kidney IS visoka;
+            RULE 36 : IF creatinine IS high and sodium is low and potassium is high THEN kidney IS visoka with 0.9;
+            RULE 37 : IF creatinine IS high and sodium is low and potassium is high and urea is high THEN kidney IS visoka;
 
 	RULE 38 : IF calcium IS high THEN cancer IS visoka with 0.5;
 
-	RULE 39 : IF botassium IS high THEN infections IS visoka with 0.5;
+	RULE 39 : IF potassium IS high THEN infections IS visoka with 0.5;
 	RULE 40 : IF creatinine IS high THEN infections IS visoka with 0.5;
-	RULE 41 : IF creatinine IS high and botassium is high THEN infections IS visoka;
+	RULE 41 : IF creatinine IS high and potassium is high THEN infections IS visoka;
 
 	RULE 42 : IF creatinine IS high THEN autoimune IS visoka with 0.5;
 
@@ -189,8 +192,8 @@ RULEBLOCK blok1
     RULE 46 : IF urea IS low and glucose is low THEN heart_desease IS niska with 0.75;
 
 	RULE 47 : IF glucose IS low THEN diabetes IS niska;
-	RULE 48 : IF botassium IS low THEN diabetes IS niska with 0.5;
-	RULE 49 : IF botassium IS low and glucose is low THEN diabetes IS niska with 0.75;
+	RULE 48 : IF potassium IS low THEN diabetes IS niska with 0.5;
+	RULE 49 : IF potassium IS low and glucose is low THEN diabetes IS niska with 0.75;
 
 	RULE 50 : IF glucose IS high THEN liver IS niska with 0.5;
 	RULE 51 : IF urea IS low THEN liver IS niska with 0.2;
@@ -214,24 +217,24 @@ RULEBLOCK blok1
 
 	RULE 67 : IF urea IS low THEN kidney IS niska with 0.5;
 	RULE 68 : IF sodium IS high THEN kidney IS niska with 0.6;
-	RULE 69 : IF botassium IS low THEN kidney IS niska with 0.5;
+	RULE 69 : IF potassium IS low THEN kidney IS niska with 0.5;
 	RULE 70 : IF creatinine IS low THEN kidney IS niska with 0.5;
-        RULE 71 : IF creatinine IS low and botassium is low THEN kidney IS niska with 0.75;
+        RULE 71 : IF creatinine IS low and potassium is low THEN kidney IS niska with 0.75;
         RULE 72 : IF creatinine IS low and sodium is high THEN kidney IS niska with 0.75;
         RULE 73 : IF creatinine IS low and urea is low THEN kidney IS niska with 0.75;
-        RULE 74 : IF urea IS low and botassium is low THEN kidney IS niska with 0.75;
-        RULE 75 : IF sodium IS high and botassium is low THEN kidney IS niska with 0.75;
+        RULE 74 : IF urea IS low and potassium is low THEN kidney IS niska with 0.75;
+        RULE 75 : IF sodium IS high and potassium is low THEN kidney IS niska with 0.75;
         RULE 76 : IF urea IS low and sodium is high THEN kidney IS niska with 0.75;
-            RULE 77 : IF urea IS low and sodium is high and botassium is low THEN kidney IS niska with 0.9;
+            RULE 77 : IF urea IS low and sodium is high and potassium is low THEN kidney IS niska with 0.9;
             RULE 78 : IF urea IS low and sodium is high and creatinine is low THEN kidney IS niska with 0.9;
-            RULE 79 : IF creatinine IS low and sodium is high and botassium is low THEN kidney IS niska with 0.9;
-            RULE 80 : IF creatinine IS low and sodium is high and botassium is low and urea is low THEN kidney IS niska;
+            RULE 79 : IF creatinine IS low and sodium is high and potassium is low THEN kidney IS niska with 0.9;
+            RULE 80 : IF creatinine IS low and sodium is high and potassium is low and urea is low THEN kidney IS niska;
 
 	RULE 81 : IF calcium IS low THEN cancer IS niska with 0.5;
 
-	RULE 82 : IF botassium IS low THEN infections IS niska with 0.5;
+	RULE 82 : IF potassium IS low THEN infections IS niska with 0.5;
 	RULE 83 : IF creatinine IS low THEN infections IS niska with 0.5;
-	RULE 84 : IF creatinine IS low and botassium is low THEN infections IS niska;
+	RULE 84 : IF creatinine IS low and potassium is low THEN infections IS niska;
 
 	RULE 85 : IF creatinine IS low THEN autoimune IS niska with 0.5;
 
